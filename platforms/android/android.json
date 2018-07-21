@@ -59,6 +59,10 @@
             {
               "xml": "<feature name=\"Keyboard\"><param name=\"android-package\" value=\"io.ionic.keyboard.IonicKeyboard\" /><param name=\"onload\" value=\"true\" /></feature>",
               "count": 1
+            },
+            {
+              "xml": "<feature name=\"SplashScreen\"><param name=\"android-package\" value=\"org.apache.cordova.splashscreen.SplashScreen\" /><param name=\"onload\" value=\"true\" /></feature>",
+              "count": 1
             }
           ],
           "widget": [
@@ -197,6 +201,9 @@
       "PACKAGE_NAME": "io.ionic.starter"
     },
     "ionic-plugin-keyboard": {
+      "PACKAGE_NAME": "io.ionic.starter"
+    },
+    "cordova-plugin-splashscreen": {
       "PACKAGE_NAME": "io.ionic.starter"
     }
   },
@@ -504,6 +511,14 @@
         "cordova.plugins.Keyboard"
       ],
       "runs": true
+    },
+    {
+      "id": "cordova-plugin-splashscreen.SplashScreen",
+      "file": "plugins/cordova-plugin-splashscreen/www/splashscreen.js",
+      "pluginId": "cordova-plugin-splashscreen",
+      "clobbers": [
+        "navigator.splashscreen"
+      ]
     }
   ],
   "plugin_metadata": {
@@ -521,6 +536,7 @@
     "cordova-plugin-whitelist": "1.3.1",
     "cordova-plugin-youtube-video-player": "1.0.6",
     "cordova-sms-plugin": "0.1.11",
-    "ionic-plugin-keyboard": "2.2.1"
+    "ionic-plugin-keyboard": "2.2.1",
+    "cordova-plugin-splashscreen": "4.0.3"
   }
 }

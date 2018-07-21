@@ -47,52 +47,10 @@ var LoginV1Module = (function () {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "LoginV3Module", function() { return LoginV3Module; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(38);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__login_v3__ = __webpack_require__(477);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-
-
-
-var LoginV3Module = (function () {
-    function LoginV3Module() {
-    }
-    LoginV3Module = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["NgModule"])({
-            declarations: [
-                __WEBPACK_IMPORTED_MODULE_2__login_v3__["a" /* LoginV3Component */],
-            ],
-            imports: [
-                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__login_v3__["a" /* LoginV3Component */]),
-            ],
-            exports: [
-                __WEBPACK_IMPORTED_MODULE_2__login_v3__["a" /* LoginV3Component */]
-            ],
-            schemas: [__WEBPACK_IMPORTED_MODULE_0__angular_core__["CUSTOM_ELEMENTS_SCHEMA"]]
-        })
-    ], LoginV3Module);
-    return LoginV3Module;
-}());
-
-//# sourceMappingURL=login-v3.module.js.map
-
-/***/ }),
-
-/***/ 394:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "LoginV2Module", function() { return LoginV2Module; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(38);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__login_v2__ = __webpack_require__(478);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__login_v2__ = __webpack_require__(477);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -126,91 +84,49 @@ var LoginV2Module = (function () {
 
 /***/ }),
 
+/***/ 394:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "LoginV3Module", function() { return LoginV3Module; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(38);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__login_v3__ = __webpack_require__(478);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+
+
+var LoginV3Module = (function () {
+    function LoginV3Module() {
+    }
+    LoginV3Module = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["NgModule"])({
+            declarations: [
+                __WEBPACK_IMPORTED_MODULE_2__login_v3__["a" /* LoginV3Component */],
+            ],
+            imports: [
+                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__login_v3__["a" /* LoginV3Component */]),
+            ],
+            exports: [
+                __WEBPACK_IMPORTED_MODULE_2__login_v3__["a" /* LoginV3Component */]
+            ],
+            schemas: [__WEBPACK_IMPORTED_MODULE_0__angular_core__["CUSTOM_ELEMENTS_SCHEMA"]]
+        })
+    ], LoginV3Module);
+    return LoginV3Module;
+}());
+
+//# sourceMappingURL=login-v3.module.js.map
+
+/***/ }),
+
 /***/ 395:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "LoginV5Module", function() { return LoginV5Module; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(38);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__login_v5__ = __webpack_require__(479);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-
-
-
-var LoginV5Module = (function () {
-    function LoginV5Module() {
-    }
-    LoginV5Module = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["NgModule"])({
-            declarations: [
-                __WEBPACK_IMPORTED_MODULE_2__login_v5__["a" /* LoginV5Component */],
-            ],
-            imports: [
-                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__login_v5__["a" /* LoginV5Component */]),
-            ],
-            exports: [
-                __WEBPACK_IMPORTED_MODULE_2__login_v5__["a" /* LoginV5Component */]
-            ],
-            schemas: [__WEBPACK_IMPORTED_MODULE_0__angular_core__["CUSTOM_ELEMENTS_SCHEMA"]]
-        })
-    ], LoginV5Module);
-    return LoginV5Module;
-}());
-
-//# sourceMappingURL=login-v5.module.js.map
-
-/***/ }),
-
-/***/ 396:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "LoginV7Module", function() { return LoginV7Module; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(38);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__login_v7__ = __webpack_require__(480);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-
-
-
-var LoginV7Module = (function () {
-    function LoginV7Module() {
-    }
-    LoginV7Module = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["NgModule"])({
-            declarations: [
-                __WEBPACK_IMPORTED_MODULE_2__login_v7__["a" /* LoginV7Component */],
-            ],
-            imports: [
-                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__login_v7__["a" /* LoginV7Component */]),
-            ],
-            exports: [
-                __WEBPACK_IMPORTED_MODULE_2__login_v7__["a" /* LoginV7Component */]
-            ],
-            schemas: [__WEBPACK_IMPORTED_MODULE_0__angular_core__["CUSTOM_ELEMENTS_SCHEMA"]]
-        })
-    ], LoginV7Module);
-    return LoginV7Module;
-}());
-
-//# sourceMappingURL=login-v7.module.js.map
-
-/***/ }),
-
-/***/ 397:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -218,7 +134,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "LoginV4Module", function() { return LoginV4Module; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(38);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__login_v4__ = __webpack_require__(481);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__login_v4__ = __webpack_require__(479);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -252,7 +168,49 @@ var LoginV4Module = (function () {
 
 /***/ }),
 
-/***/ 398:
+/***/ 396:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "LoginV5Module", function() { return LoginV5Module; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(38);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__login_v5__ = __webpack_require__(480);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+
+
+var LoginV5Module = (function () {
+    function LoginV5Module() {
+    }
+    LoginV5Module = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["NgModule"])({
+            declarations: [
+                __WEBPACK_IMPORTED_MODULE_2__login_v5__["a" /* LoginV5Component */],
+            ],
+            imports: [
+                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__login_v5__["a" /* LoginV5Component */]),
+            ],
+            exports: [
+                __WEBPACK_IMPORTED_MODULE_2__login_v5__["a" /* LoginV5Component */]
+            ],
+            schemas: [__WEBPACK_IMPORTED_MODULE_0__angular_core__["CUSTOM_ELEMENTS_SCHEMA"]]
+        })
+    ], LoginV5Module);
+    return LoginV5Module;
+}());
+
+//# sourceMappingURL=login-v5.module.js.map
+
+/***/ }),
+
+/***/ 397:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -260,7 +218,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "LoginV6Module", function() { return LoginV6Module; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(38);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__login_v6__ = __webpack_require__(482);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__login_v6__ = __webpack_require__(481);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -294,6 +252,48 @@ var LoginV6Module = (function () {
 
 /***/ }),
 
+/***/ 398:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "LoginV7Module", function() { return LoginV7Module; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(38);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__login_v7__ = __webpack_require__(482);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+
+
+var LoginV7Module = (function () {
+    function LoginV7Module() {
+    }
+    LoginV7Module = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["NgModule"])({
+            declarations: [
+                __WEBPACK_IMPORTED_MODULE_2__login_v7__["a" /* LoginV7Component */],
+            ],
+            imports: [
+                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__login_v7__["a" /* LoginV7Component */]),
+            ],
+            exports: [
+                __WEBPACK_IMPORTED_MODULE_2__login_v7__["a" /* LoginV7Component */]
+            ],
+            schemas: [__WEBPACK_IMPORTED_MODULE_0__angular_core__["CUSTOM_ELEMENTS_SCHEMA"]]
+        })
+    ], LoginV7Module);
+    return LoginV7Module;
+}());
+
+//# sourceMappingURL=login-v7.module.js.map
+
+/***/ }),
+
 /***/ 417:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -304,12 +304,12 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(38);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__login__ = __webpack_require__(539);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_login_login_v1_login_v1_module__ = __webpack_require__(392);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_login_login_v2_login_v2_module__ = __webpack_require__(394);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__components_login_login_v3_login_v3_module__ = __webpack_require__(393);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__components_login_login_v4_login_v4_module__ = __webpack_require__(397);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__components_login_login_v5_login_v5_module__ = __webpack_require__(395);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__components_login_login_v6_login_v6_module__ = __webpack_require__(398);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__components_login_login_v7_login_v7_module__ = __webpack_require__(396);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_login_login_v2_login_v2_module__ = __webpack_require__(393);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__components_login_login_v3_login_v3_module__ = __webpack_require__(394);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__components_login_login_v4_login_v4_module__ = __webpack_require__(395);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__components_login_login_v5_login_v5_module__ = __webpack_require__(396);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__components_login_login_v6_login_v6_module__ = __webpack_require__(397);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__components_login_login_v7_login_v7_module__ = __webpack_require__(398);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -412,61 +412,6 @@ var LoginV1Component = (function () {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return LoginV3Component; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-/**
- * Generated class for the LoginV3Component component.
- *
- * See https://angular.io/api/core/Component for more info on Angular
- * Components.
- */
-var LoginV3Component = (function () {
-    function LoginV3Component() {
-        var _this = this;
-        this.onCallbackEvent = function (event) {
-            if (_this.events[event]) {
-                _this.events[event]({
-                    'username': _this.username,
-                    'password': _this.password
-                });
-            }
-        };
-    }
-    __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Input"])(),
-        __metadata("design:type", Object)
-    ], LoginV3Component.prototype, "data", void 0);
-    __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Input"])(),
-        __metadata("design:type", Object)
-    ], LoginV3Component.prototype, "events", void 0);
-    LoginV3Component = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-            selector: 'login-v3',template:/*ion-inline-start:"/Users/andrewhein/Desktop/WestmorelandWorking/src/components/login/login-v3/login-v3.html"*/'<div *ngIf="data!=null">\n  <div class="bg-img">\n    <img [src]="data.imgBg" alt="">\n  </div>\n \n  <div class="wrapper-page text-center black-opct-1 {{data.ani}}">\n    <button ion-button outline icon-only small color="dark" class="text-grey-3 stroke-grey-3 stroke-1 button-circle back-page" (click)="onCallbackEvent(\'onDismiss\')">\n      <ion-icon name="ios-close"></ion-icon>\n    </button>\n    \n    <div class="full-width">\n      <ion-row class="logo-img mgb-50 ani-fade-out">\n        <img class="mg-auto" [src]="data.imgLogo" alt="">\n        <p class="text-grey-3 mgt-0 pdl-15 pdr-15">{{data.txtHead}}</p>\n      </ion-row>\n      <ion-list class="mgb-0 ani-bottom-to-top">\n        <ion-item class="text-white white-opct">\n          <ion-input type="text" placeholder="{{data.txtUserName}}" [(ngModel)]="username"></ion-input>\n        </ion-item>\n      </ion-list>\n      <ion-list class="ani-bottom-to-top">\n        <ion-item class="text-white white-opct">\n          <ion-input type="password" placeholder="{{data.txtPassword}}" [(ngModel)]="password"></ion-input>\n        </ion-item>\n      </ion-list>\n      \n      <button ion-button block color="light" class="ani-bottom-to-top white-opct text-white uppercase fw-600 spacing-1"  (click)="onCallbackEvent(\'onLogin\')">{{data.btnLogin}}</button>\n\n      <button ion-button color="light" clear block small class="ani-fade-out mgb-35 mgt-20 pull-right text-grey-3"\n       (click)="onCallbackEvent(\'onForgotPassword\')">{{data.btnForgotPassword}}</button>\n\n      <ion-row class="block text-center ani-fade-out">\n        <button ion-button icon-only color="light" class="text-white indigo pdl-20 pdr-20 fs-12" (click)="onCallbackEvent(\'onFacebookLogin\')">\n          <ion-icon name="logo-facebook"></ion-icon>\n        </button>\n        <button ion-button icon-only color="light" class="text-white cyan pdl-20 pdr-20 fs-12" (click)="onCallbackEvent(\'onTwitterLogin\')">\n          <ion-icon name="logo-twitter"></ion-icon>\n        </button>\n      </ion-row>\n      \n      <button ion-button color="light" clear block small class="ani-fade-out btn-signup mgb-15 text-grey-3"  (click)="onCallbackEvent(\'onSignUp\')">{{data.btnSignUp}}</button>\n\n    </div>\n  </div>\n  </div>\n'/*ion-inline-end:"/Users/andrewhein/Desktop/WestmorelandWorking/src/components/login/login-v3/login-v3.html"*/
-        }),
-        __metadata("design:paramtypes", [])
-    ], LoginV3Component);
-    return LoginV3Component;
-}());
-
-//# sourceMappingURL=login-v3.js.map
-
-/***/ }),
-
-/***/ 478:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return LoginV2Component; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -518,7 +463,117 @@ var LoginV2Component = (function () {
 
 /***/ }),
 
+/***/ 478:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return LoginV3Component; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+/**
+ * Generated class for the LoginV3Component component.
+ *
+ * See https://angular.io/api/core/Component for more info on Angular
+ * Components.
+ */
+var LoginV3Component = (function () {
+    function LoginV3Component() {
+        var _this = this;
+        this.onCallbackEvent = function (event) {
+            if (_this.events[event]) {
+                _this.events[event]({
+                    'username': _this.username,
+                    'password': _this.password
+                });
+            }
+        };
+    }
+    __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Input"])(),
+        __metadata("design:type", Object)
+    ], LoginV3Component.prototype, "data", void 0);
+    __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Input"])(),
+        __metadata("design:type", Object)
+    ], LoginV3Component.prototype, "events", void 0);
+    LoginV3Component = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+            selector: 'login-v3',template:/*ion-inline-start:"/Users/andrewhein/Desktop/WestmorelandWorking/src/components/login/login-v3/login-v3.html"*/'<div *ngIf="data!=null">\n  <div class="bg-img">\n    <img [src]="data.imgBg" alt="">\n  </div>\n \n  <div class="wrapper-page text-center black-opct-1 {{data.ani}}">\n    <button ion-button outline icon-only small color="dark" class="text-grey-3 stroke-grey-3 stroke-1 button-circle back-page" (click)="onCallbackEvent(\'onDismiss\')">\n      <ion-icon name="ios-close"></ion-icon>\n    </button>\n    \n    <div class="full-width">\n      <ion-row class="logo-img mgb-50 ani-fade-out">\n        <img class="mg-auto" [src]="data.imgLogo" alt="">\n        <p class="text-grey-3 mgt-0 pdl-15 pdr-15">{{data.txtHead}}</p>\n      </ion-row>\n      <ion-list class="mgb-0 ani-bottom-to-top">\n        <ion-item class="text-white white-opct">\n          <ion-input type="text" placeholder="{{data.txtUserName}}" [(ngModel)]="username"></ion-input>\n        </ion-item>\n      </ion-list>\n      <ion-list class="ani-bottom-to-top">\n        <ion-item class="text-white white-opct">\n          <ion-input type="password" placeholder="{{data.txtPassword}}" [(ngModel)]="password"></ion-input>\n        </ion-item>\n      </ion-list>\n      \n      <button ion-button block color="light" class="ani-bottom-to-top white-opct text-white uppercase fw-600 spacing-1"  (click)="onCallbackEvent(\'onLogin\')">{{data.btnLogin}}</button>\n\n      <button ion-button color="light" clear block small class="ani-fade-out mgb-35 mgt-20 pull-right text-grey-3"\n       (click)="onCallbackEvent(\'onForgotPassword\')">{{data.btnForgotPassword}}</button>\n\n      <ion-row class="block text-center ani-fade-out">\n        <button ion-button icon-only color="light" class="text-white indigo pdl-20 pdr-20 fs-12" (click)="onCallbackEvent(\'onFacebookLogin\')">\n          <ion-icon name="logo-facebook"></ion-icon>\n        </button>\n        <button ion-button icon-only color="light" class="text-white cyan pdl-20 pdr-20 fs-12" (click)="onCallbackEvent(\'onTwitterLogin\')">\n          <ion-icon name="logo-twitter"></ion-icon>\n        </button>\n      </ion-row>\n      \n      <button ion-button color="light" clear block small class="ani-fade-out btn-signup mgb-15 text-grey-3"  (click)="onCallbackEvent(\'onSignUp\')">{{data.btnSignUp}}</button>\n\n    </div>\n  </div>\n  </div>\n'/*ion-inline-end:"/Users/andrewhein/Desktop/WestmorelandWorking/src/components/login/login-v3/login-v3.html"*/
+        }),
+        __metadata("design:paramtypes", [])
+    ], LoginV3Component);
+    return LoginV3Component;
+}());
+
+//# sourceMappingURL=login-v3.js.map
+
+/***/ }),
+
 /***/ 479:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return LoginV4Component; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+/**
+ * Generated class for the LoginV4Component component.
+ *
+ * See https://angular.io/api/core/Component for more info on Angular
+ * Components.
+ */
+var LoginV4Component = (function () {
+    function LoginV4Component() {
+        var _this = this;
+        this.onCallbackEvent = function (event) {
+            if (_this.events[event]) {
+                _this.events[event]({
+                    'username': _this.username,
+                    'password': _this.password
+                });
+            }
+        };
+    }
+    __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Input"])(),
+        __metadata("design:type", Object)
+    ], LoginV4Component.prototype, "data", void 0);
+    __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Input"])(),
+        __metadata("design:type", Object)
+    ], LoginV4Component.prototype, "events", void 0);
+    LoginV4Component = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+            selector: 'login-v4',template:/*ion-inline-start:"/Users/andrewhein/Desktop/WestmorelandWorking/src/components/login/login-v4/login-v4.html"*/'<div *ngIf="data!=null">\n  <div class="wrapper-page text-center lama-vs-lama {{data.ani}}">\n    \n    <button ion-button icon-only small color="dark" class="text-white grey-2 back-page" (click)="onCallbackEvent(\'onDismiss\')">\n      <ion-icon name="md-close"></ion-icon>\n    </button>\n    \n    <div class="mgt-0">\n      <ion-row class="logo-img mgb-70 ani-bottom-to-right">\n        <img class="mg-auto" [src]="data.imgLogo" alt="">\n      </ion-row>\n\n      <ion-list>\n        <ion-item class="text-grey-5 grey-1 bdra-20 ani-right-to-left">\n          <ion-input type="text" placeholder="{{data.txtUserName}}" [(ngModel)]="username"></ion-input>\n        </ion-item>\n      </ion-list>\n\n      <ion-list>\n        <ion-item class="text-grey-5 grey-1 bdra-20 ani-right-to-left">\n          <ion-input type="password" placeholder="{{data.txtPassword}}" [(ngModel)]="password"></ion-input>\n        </ion-item>\n      </ion-list>\n      \n      <button ion-button round block color="light" class="blue text-black mgt-25 fw-600 spacing-1 ani-right-to-left" (click)="onCallbackEvent(\'onLogin\')" >{{data.btnLogin}}</button>  \n    </div>\n    \n    <button ion-button color="light" clear small class="btn-signup mgb-15 text-grey-4 ani-top-to-left" (click)="onCallbackEvent(\'onForgotPassword\')">{{data.btnForgotPassword}}</button>\n  </div>\n  </div>'/*ion-inline-end:"/Users/andrewhein/Desktop/WestmorelandWorking/src/components/login/login-v4/login-v4.html"*/
+        }),
+        __metadata("design:paramtypes", [])
+    ], LoginV4Component);
+    return LoginV4Component;
+}());
+
+//# sourceMappingURL=login-v4.js.map
+
+/***/ }),
+
+/***/ 480:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -573,7 +628,66 @@ var LoginV5Component = (function () {
 
 /***/ }),
 
-/***/ 480:
+/***/ 481:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return LoginV6Component; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+/**
+ * Generated class for the LoginV6Component component.
+ *
+ * See https://angular.io/api/core/Component for more info on Angular
+ * Components.
+ */
+var LoginV6Component = (function () {
+    function LoginV6Component() {
+        var _this = this;
+        this.type = "signup";
+        this.onCallbackEvent = function (event) {
+            if (_this.events[event]) {
+                _this.events[event]({
+                    'email': _this.email,
+                    'password': _this.password,
+                    'signUpEmail': _this.signUpEmail,
+                    'signUpPassword': _this.signUpPassword,
+                    'confirmPassword': _this.confirmPassword
+                });
+            }
+        };
+    }
+    __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Input"])(),
+        __metadata("design:type", Object)
+    ], LoginV6Component.prototype, "data", void 0);
+    __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Input"])(),
+        __metadata("design:type", Object)
+    ], LoginV6Component.prototype, "events", void 0);
+    LoginV6Component = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+            selector: 'login-v6',template:/*ion-inline-start:"/Users/andrewhein/Desktop/WestmorelandWorking/src/components/login/login-v6/login-v6.html"*/'<div *ngIf="data!=null">\n<div class="bg-img">\n    <img [src]="data.imgBg" alt="">\n  </div>\n  \n  <div padding class="wrapper-page text-center black-opct-1 block {{data.ani}}">\n    \n    <button ion-button icon-only small color="dark" class="text-grey-3 white-opct button-circle back-page" (click)="onCallbackEvent(\'onDismiss\')">\n      <ion-icon name="ios-close"></ion-icon>\n    </button>\n    \n    <div class="wrapper-flex" padding>\n      <ion-row class="logo-img mgb-50 mgt-50 ani-top-to-bottom">\n        <img class="mg-auto" [src]="data.imgLogo" alt="">\n        <p class="text-grey-3 mgt-0 pdl-15 pdr-15">{{data.txtHead}}</p>\n      </ion-row>\n\n      <div class="wrapper-slide">\n        <div class="full-width">\n          <ion-toolbar no-border-top class="mgb-30 ani-fade-out">\n            <ion-segment [(ngModel)]="type" class="segment-line-deviation text-white stroke-red">\n              <ion-segment-button value="signin" class="fs-18 fw-300 spacing-1">\n                {{data.btnSegmentLogin}}\n              </ion-segment-button>\n              <ion-segment-button value="signup" class="fs-18 fw-300 spacing-1">\n                {{data.btnSegmentSignUp}}\n              </ion-segment-button>\n            </ion-segment>\n          </ion-toolbar>\n\n\n          <div [ngSwitch]="type" class="ani-bottom-to-top">\n            <ion-list *ngSwitchCase="\'signin\'" class="mgb-0">\n              <div>\n                <ion-list class="mgb-5">\n                  <ion-item class="text-white line-1 stroke-white pdl-0">\n                    <ion-input type="email" placeholder="{{data.txtEmail}}" [(ngModel)]="email"></ion-input>\n                  </ion-item>\n                </ion-list>\n                <ion-list>\n                  <ion-item class="text-white line-1 stroke-white pdl-0">\n                    <ion-input type="password" placeholder="{{data.txtPassword}}" [(ngModel)]="password"></ion-input>\n                  </ion-item>\n                </ion-list>\n            \n                <button ion-button round color="light" class="white-opct text-white uppercase fw-600 spacing-1 mgt-20 fs-12" (click)="onCallbackEvent(\'onLogin\')">{{data.btnLogin}}</button>\n                <button ion-button color="light" clear block small class="mgb-10 mgt-35 pull-right text-grey-3" (click)="onCallbackEvent(\'onForgotPassword\')">{{data.btnForgotPassword}}</button>\n              </div>\n            </ion-list>\n\n            <ion-list *ngSwitchCase="\'signup\'" class="mgb-0">\n              <div>\n                <ion-list class="mgb-0">\n                  <ion-item class="text-grey-3 line-1 stroke-grey-3 pdl-0">\n                    <ion-input type="email" placeholder="{{data.txtEmail}}" [(ngModel)]="signUpEmail"></ion-input>\n                  </ion-item>\n                </ion-list>\n                <ion-list class="mgb-0">\n                  <ion-item class="text-grey-3 line-1 stroke-grey-3 pdl-0">\n                    <ion-input type="password" placeholder="{{data.txtPassword}}" [(ngModel)]="signUpPassword"></ion-input>\n                  </ion-item>\n                </ion-list>\n                <ion-list>\n                  <ion-item class="text-grey-3 line-1 stroke-grey-3 pdl-0">\n                    <ion-input type="password" placeholder="{{data.txtConfirmPassword}}" [(ngModel)]="confirmPassword"></ion-input>\n                  </ion-item>\n                </ion-list>\n            \n                <button ion-button round color="light" class="white-opct text-white uppercase fw-600 spacing-1 mgt-20 fs-12" (click)="onCallbackEvent(\'onSignUp\')">{{data.btnSignUp}}</button>\n\n                <ion-row class="block text-center mgt-30">\n                  <button ion-button icon-only clear small color="light" class="text-white pdl-5 pdr-5 fs-14" (click)="onCallbackEvent(\'onFacebookIconClick\')">\n                    <ion-icon name="logo-facebook"></ion-icon>\n                  </button>\n                  <button ion-button icon-only clear small color="light" class="text-white pdl-5 pdr-5 fs-14" (click)="onCallbackEvent(\'onTwitterIconClick\')">\n                    <ion-icon name="logo-twitter">\n                    </ion-icon>\n                  </button>\n                  <button ion-button icon-only clear small color="light" class="text-white pdl-5 pdr-5 fs-14" (click)="onCallbackEvent(\'onGoogleIconClick\')">\n                    <ion-icon name="logo-google"></ion-icon>\n                  </button>\n                  <button ion-button icon-only clear small color="light" class="text-white pdl-5 pdr-5 fs-14" (click)="onCallbackEvent(\'onLinkedInIconClick\')">\n                    <ion-icon name="logo-linkedin"></ion-icon>\n                  </button>\n                </ion-row>\n              </div>\n            </ion-list>\n\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n  </div>'/*ion-inline-end:"/Users/andrewhein/Desktop/WestmorelandWorking/src/components/login/login-v6/login-v6.html"*/
+        }),
+        __metadata("design:paramtypes", [])
+    ], LoginV6Component);
+    return LoginV6Component;
+}());
+
+//# sourceMappingURL=login-v6.js.map
+
+/***/ }),
+
+/***/ 482:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -635,120 +749,6 @@ var LoginV7Component = (function () {
 }());
 
 //# sourceMappingURL=login-v7.js.map
-
-/***/ }),
-
-/***/ 481:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return LoginV4Component; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-/**
- * Generated class for the LoginV4Component component.
- *
- * See https://angular.io/api/core/Component for more info on Angular
- * Components.
- */
-var LoginV4Component = (function () {
-    function LoginV4Component() {
-        var _this = this;
-        this.onCallbackEvent = function (event) {
-            if (_this.events[event]) {
-                _this.events[event]({
-                    'username': _this.username,
-                    'password': _this.password
-                });
-            }
-        };
-    }
-    __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Input"])(),
-        __metadata("design:type", Object)
-    ], LoginV4Component.prototype, "data", void 0);
-    __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Input"])(),
-        __metadata("design:type", Object)
-    ], LoginV4Component.prototype, "events", void 0);
-    LoginV4Component = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-            selector: 'login-v4',template:/*ion-inline-start:"/Users/andrewhein/Desktop/WestmorelandWorking/src/components/login/login-v4/login-v4.html"*/'<div *ngIf="data!=null">\n  <div class="wrapper-page text-center lama-vs-lama {{data.ani}}">\n    \n    <button ion-button icon-only small color="dark" class="text-white grey-2 back-page" (click)="onCallbackEvent(\'onDismiss\')">\n      <ion-icon name="md-close"></ion-icon>\n    </button>\n    \n    <div class="mgt-0">\n      <ion-row class="logo-img mgb-70 ani-bottom-to-right">\n        <img class="mg-auto" [src]="data.imgLogo" alt="">\n      </ion-row>\n\n      <ion-list>\n        <ion-item class="text-grey-5 grey-1 bdra-20 ani-right-to-left">\n          <ion-input type="text" placeholder="{{data.txtUserName}}" [(ngModel)]="username"></ion-input>\n        </ion-item>\n      </ion-list>\n\n      <ion-list>\n        <ion-item class="text-grey-5 grey-1 bdra-20 ani-right-to-left">\n          <ion-input type="password" placeholder="{{data.txtPassword}}" [(ngModel)]="password"></ion-input>\n        </ion-item>\n      </ion-list>\n      \n      <button ion-button round block color="light" class="blue text-black mgt-25 fw-600 spacing-1 ani-right-to-left" (click)="onCallbackEvent(\'onLogin\')" >{{data.btnLogin}}</button>  \n    </div>\n    \n    <button ion-button color="light" clear small class="btn-signup mgb-15 text-grey-4 ani-top-to-left" (click)="onCallbackEvent(\'onForgotPassword\')">{{data.btnForgotPassword}}</button>\n  </div>\n  </div>'/*ion-inline-end:"/Users/andrewhein/Desktop/WestmorelandWorking/src/components/login/login-v4/login-v4.html"*/
-        }),
-        __metadata("design:paramtypes", [])
-    ], LoginV4Component);
-    return LoginV4Component;
-}());
-
-//# sourceMappingURL=login-v4.js.map
-
-/***/ }),
-
-/***/ 482:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return LoginV6Component; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-/**
- * Generated class for the LoginV6Component component.
- *
- * See https://angular.io/api/core/Component for more info on Angular
- * Components.
- */
-var LoginV6Component = (function () {
-    function LoginV6Component() {
-        var _this = this;
-        this.type = "signup";
-        this.onCallbackEvent = function (event) {
-            if (_this.events[event]) {
-                _this.events[event]({
-                    'email': _this.email,
-                    'password': _this.password,
-                    'signUpEmail': _this.signUpEmail,
-                    'signUpPassword': _this.signUpPassword,
-                    'confirmPassword': _this.confirmPassword
-                });
-            }
-        };
-    }
-    __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Input"])(),
-        __metadata("design:type", Object)
-    ], LoginV6Component.prototype, "data", void 0);
-    __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Input"])(),
-        __metadata("design:type", Object)
-    ], LoginV6Component.prototype, "events", void 0);
-    LoginV6Component = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-            selector: 'login-v6',template:/*ion-inline-start:"/Users/andrewhein/Desktop/WestmorelandWorking/src/components/login/login-v6/login-v6.html"*/'<div *ngIf="data!=null">\n<div class="bg-img">\n    <img [src]="data.imgBg" alt="">\n  </div>\n  \n  <div padding class="wrapper-page text-center black-opct-1 block {{data.ani}}">\n    \n    <button ion-button icon-only small color="dark" class="text-grey-3 white-opct button-circle back-page" (click)="onCallbackEvent(\'onDismiss\')">\n      <ion-icon name="ios-close"></ion-icon>\n    </button>\n    \n    <div class="wrapper-flex" padding>\n      <ion-row class="logo-img mgb-50 mgt-50 ani-top-to-bottom">\n        <img class="mg-auto" [src]="data.imgLogo" alt="">\n        <p class="text-grey-3 mgt-0 pdl-15 pdr-15">{{data.txtHead}}</p>\n      </ion-row>\n\n      <div class="wrapper-slide">\n        <div class="full-width">\n          <ion-toolbar no-border-top class="mgb-30 ani-fade-out">\n            <ion-segment [(ngModel)]="type" class="segment-line-deviation text-white stroke-red">\n              <ion-segment-button value="signin" class="fs-18 fw-300 spacing-1">\n                {{data.btnSegmentLogin}}\n              </ion-segment-button>\n              <ion-segment-button value="signup" class="fs-18 fw-300 spacing-1">\n                {{data.btnSegmentSignUp}}\n              </ion-segment-button>\n            </ion-segment>\n          </ion-toolbar>\n\n\n          <div [ngSwitch]="type" class="ani-bottom-to-top">\n            <ion-list *ngSwitchCase="\'signin\'" class="mgb-0">\n              <div>\n                <ion-list class="mgb-5">\n                  <ion-item class="text-white line-1 stroke-white pdl-0">\n                    <ion-input type="email" placeholder="{{data.txtEmail}}" [(ngModel)]="email"></ion-input>\n                  </ion-item>\n                </ion-list>\n                <ion-list>\n                  <ion-item class="text-white line-1 stroke-white pdl-0">\n                    <ion-input type="password" placeholder="{{data.txtPassword}}" [(ngModel)]="password"></ion-input>\n                  </ion-item>\n                </ion-list>\n            \n                <button ion-button round color="light" class="white-opct text-white uppercase fw-600 spacing-1 mgt-20 fs-12" (click)="onCallbackEvent(\'onLogin\')">{{data.btnLogin}}</button>\n                <button ion-button color="light" clear block small class="mgb-10 mgt-35 pull-right text-grey-3" (click)="onCallbackEvent(\'onForgotPassword\')">{{data.btnForgotPassword}}</button>\n              </div>\n            </ion-list>\n\n            <ion-list *ngSwitchCase="\'signup\'" class="mgb-0">\n              <div>\n                <ion-list class="mgb-0">\n                  <ion-item class="text-grey-3 line-1 stroke-grey-3 pdl-0">\n                    <ion-input type="email" placeholder="{{data.txtEmail}}" [(ngModel)]="signUpEmail"></ion-input>\n                  </ion-item>\n                </ion-list>\n                <ion-list class="mgb-0">\n                  <ion-item class="text-grey-3 line-1 stroke-grey-3 pdl-0">\n                    <ion-input type="password" placeholder="{{data.txtPassword}}" [(ngModel)]="signUpPassword"></ion-input>\n                  </ion-item>\n                </ion-list>\n                <ion-list>\n                  <ion-item class="text-grey-3 line-1 stroke-grey-3 pdl-0">\n                    <ion-input type="password" placeholder="{{data.txtConfirmPassword}}" [(ngModel)]="confirmPassword"></ion-input>\n                  </ion-item>\n                </ion-list>\n            \n                <button ion-button round color="light" class="white-opct text-white uppercase fw-600 spacing-1 mgt-20 fs-12" (click)="onCallbackEvent(\'onSignUp\')">{{data.btnSignUp}}</button>\n\n                <ion-row class="block text-center mgt-30">\n                  <button ion-button icon-only clear small color="light" class="text-white pdl-5 pdr-5 fs-14" (click)="onCallbackEvent(\'onFacebookIconClick\')">\n                    <ion-icon name="logo-facebook"></ion-icon>\n                  </button>\n                  <button ion-button icon-only clear small color="light" class="text-white pdl-5 pdr-5 fs-14" (click)="onCallbackEvent(\'onTwitterIconClick\')">\n                    <ion-icon name="logo-twitter">\n                    </ion-icon>\n                  </button>\n                  <button ion-button icon-only clear small color="light" class="text-white pdl-5 pdr-5 fs-14" (click)="onCallbackEvent(\'onGoogleIconClick\')">\n                    <ion-icon name="logo-google"></ion-icon>\n                  </button>\n                  <button ion-button icon-only clear small color="light" class="text-white pdl-5 pdr-5 fs-14" (click)="onCallbackEvent(\'onLinkedInIconClick\')">\n                    <ion-icon name="logo-linkedin"></ion-icon>\n                  </button>\n                </ion-row>\n              </div>\n            </ion-list>\n\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n  </div>'/*ion-inline-end:"/Users/andrewhein/Desktop/WestmorelandWorking/src/components/login/login-v6/login-v6.html"*/
-        }),
-        __metadata("design:paramtypes", [])
-    ], LoginV6Component);
-    return LoginV6Component;
-}());
-
-//# sourceMappingURL=login-v6.js.map
 
 /***/ }),
 

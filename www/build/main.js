@@ -595,11 +595,11 @@ var map = {
 		78
 	],
 	"../components/login/login-v2/login-v2.module": [
-		393,
+		394,
 		77
 	],
 	"../components/login/login-v3/login-v3.module": [
-		394,
+		393,
 		76
 	],
 	"../components/login/login-v4/login-v4.module": [
@@ -735,11 +735,11 @@ var map = {
 		21
 	],
 	"../pages/music/music-list/music-list.module": [
-		428,
+		427,
 		20
 	],
 	"../pages/music/music-player/music-player.module": [
-		427,
+		428,
 		19
 	],
 	"../pages/music/music.module": [
@@ -755,11 +755,11 @@ var map = {
 		3
 	],
 	"../pages/ready-app/facebook/facebook-comment/facebook-comment.module": [
-		432,
+		431,
 		59
 	],
 	"../pages/ready-app/facebook/facebook.module": [
-		431,
+		432,
 		11
 	],
 	"../pages/ready-app/instagram/instagram-comment/instagram-comment.module": [
@@ -771,11 +771,11 @@ var map = {
 		57
 	],
 	"../pages/ready-app/radio/radio.module": [
-		436,
+		435,
 		56
 	],
 	"../pages/ready-app/rss/rss-favorite/rss-favorite.module": [
-		435,
+		436,
 		55
 	],
 	"../pages/ready-app/rss/rss-home/rss-home.module": [
@@ -783,11 +783,11 @@ var map = {
 		54
 	],
 	"../pages/ready-app/rss/rss.module": [
-		439,
+		438,
 		53
 	],
 	"../pages/ready-app/twitter/twitter.module": [
-		438,
+		439,
 		52
 	],
 	"../pages/ready-app/unsplash/unsplash-category-detail/unsplash-category-detail.module": [
@@ -799,11 +799,11 @@ var map = {
 		51
 	],
 	"../pages/ready-app/unsplash/unsplash-favorite/unsplash-favorite.module": [
-		443,
+		442,
 		30
 	],
 	"../pages/ready-app/unsplash/unsplash-home/unsplash-home.module": [
-		442,
+		443,
 		29
 	],
 	"../pages/ready-app/unsplash/unsplash-modal-photo/unsplash-modal-photo.module": [
@@ -887,19 +887,19 @@ var map = {
 		16
 	],
 	"../pages/shop/shop-detail-product/shop-detail-product.module": [
-		465,
+		464,
 		15
 	],
 	"../pages/shop/shop-home/shop-home.module": [
-		464,
+		465,
 		14
 	],
 	"../pages/shop/shop-list-product/shop-list-product.module": [
-		467,
+		466,
 		13
 	],
 	"../pages/shop/shop.module": [
-		466,
+		467,
 		38
 	],
 	"../pages/ui-elements/ui-elements.module": [
@@ -2032,17 +2032,17 @@ var AppModule = (function () {
                 __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["g" /* IonicModule */].forRoot(__WEBPACK_IMPORTED_MODULE_3__app_component__["a" /* MyApp */], {}, {
                     links: [
                         { loadChildren: '../components/login/login-v1/login-v1.module#LoginV1Module', name: 'LoginV1Component', segment: 'login-v1', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../components/login/login-v2/login-v2.module#LoginV2Module', name: 'LoginV2Component', segment: 'login-v2', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../components/login/login-v3/login-v3.module#LoginV3Module', name: 'LoginV3Component', segment: 'login-v3', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../components/login/login-v2/login-v2.module#LoginV2Module', name: 'LoginV2Component', segment: 'login-v2', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../components/login/login-v4/login-v4.module#LoginV4Module', name: 'LoginV4Component', segment: 'login-v4', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../components/login/login-v5/login-v5.module#LoginV5Module', name: 'LoginV5Component', segment: 'login-v5', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../components/login/login-v6/login-v6.module#LoginV6Module', name: 'LoginV6Component', segment: 'login-v6', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../components/login/login-v7/login-v7.module#LoginV7Module', name: 'LoginV7Component', segment: 'login-v7', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../components/register/success-signup/success-signup.module#SuccessSignupModule', name: 'SuccessSignupComponent', segment: 'success-signup', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../components/ui-elements/modal-box/modal-box.module#ModalBoxModule', name: 'ModalBoxComponent', segment: 'modal-box', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../components/ui-elements/modal-basic/modal-basic.module#ModalBasicModule', name: 'ModalBasicComponent', segment: 'modal-basic', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../components/ui-elements/modals/modals.module#ModalsModule', name: 'ModalsComponent', segment: 'modals', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../components/ui-elements/modal-box/modal-box.module#ModalBoxModule', name: 'ModalBoxComponent', segment: 'modal-box', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../components/ui-elements/modal-menu/modal-menu.module#ModalMenuModule', name: 'ModalMenuComponent', segment: 'modal-menu', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../components/ui-elements/modals/modals.module#ModalsModule', name: 'ModalsComponent', segment: 'modals', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../components/ui-elements/popover-main/popover-main.module#PopoverMainModule', name: 'PopoverMainComponent', segment: 'popover-main', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../components/ui-elements/popover/popover.module#PopoverModule', name: 'PopoverComponent', segment: 'popover', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/about/about.module#AboutPageModule', name: 'AboutPage', segment: 'about', priority: 'low', defaultHistory: [] },
@@ -2067,23 +2067,23 @@ var AppModule = (function () {
                         { loadChildren: '../pages/music/music-category/music-category.module#MusicCategoryPageModule', name: 'MusicCategoryPage', segment: 'music-category', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/music/music-favoriest/music-favoriest.module#MusicFavoriestPageModule', name: 'MusicFavoriestPage', segment: 'music-favoriest', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/music/music-home/music-home.module#MusicHomePageModule', name: 'MusicHomePage', segment: 'music-home', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/music/music-player/music-player.module#MusicPlayerPageModule', name: 'MusicPlayerPage', segment: 'music-player', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/music/music-list/music-list.module#MusicListPageModule', name: 'MusicListPage', segment: 'music-list', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/music/music-player/music-player.module#MusicPlayerPageModule', name: 'MusicPlayerPage', segment: 'music-player', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/music/music.module#MusicPageModule', name: 'MusicPage', segment: 'music', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/photo-collection/photo-collection.module#PhotoCollectionPageModule', name: 'PhotoCollectionPage', segment: 'photo-collection', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/ready-app/facebook/facebook.module#FacebookPageModule', name: 'FacebookPage', segment: 'facebook', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/ready-app/facebook/facebook-comment/facebook-comment.module#FacebookCommentPageModule', name: 'FacebookCommentPage', segment: 'facebook-comment', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/ready-app/facebook/facebook.module#FacebookPageModule', name: 'FacebookPage', segment: 'facebook', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/ready-app/instagram/instagram-comment/instagram-comment.module#InstagramCommentPageModule', name: 'InstagramCommentPage', segment: 'instagram-comment', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/ready-app/instagram/instagram.module#InstagramPageModule', name: 'InstagramPage', segment: 'instagram', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/ready-app/rss/rss-favorite/rss-favorite.module#RssFavoritePageModule', name: 'RssFavoritePage', segment: 'rss-favorite', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/ready-app/radio/radio.module#RadioPageModule', name: 'RadioPage', segment: 'radio', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/ready-app/rss/rss-favorite/rss-favorite.module#RssFavoritePageModule', name: 'RssFavoritePage', segment: 'rss-favorite', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/ready-app/rss/rss-home/rss-home.module#RssHomePageModule', name: 'RssHomePage', segment: 'rss-home', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/ready-app/twitter/twitter.module#TwitterPageModule', name: 'TwitterPage', segment: 'twitter', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/ready-app/rss/rss.module#RssPageModule', name: 'RssPage', segment: 'rss', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/ready-app/twitter/twitter.module#TwitterPageModule', name: 'TwitterPage', segment: 'twitter', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/ready-app/unsplash/unsplash-category-detail/unsplash-category-detail.module#UnsplashCategoryDetailPageModule', name: 'UnsplashCategoryDetailPage', segment: 'unsplash-category-detail', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/ready-app/unsplash/unsplash-collection/unsplash-collection.module#UnsplashCollectionPageModule', name: 'UnsplashCollectionPage', segment: 'unsplash-collection', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/ready-app/unsplash/unsplash-home/unsplash-home.module#UnsplashHomePageModule', name: 'UnsplashHomePage', segment: 'unsplash-home', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/ready-app/unsplash/unsplash-favorite/unsplash-favorite.module#UnsplashFavoriestPageModule', name: 'UnsplashFavoritePage', segment: 'unsplash-favorite', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/ready-app/unsplash/unsplash-home/unsplash-home.module#UnsplashHomePageModule', name: 'UnsplashHomePage', segment: 'unsplash-home', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/ready-app/unsplash/unsplash-modal-photo/unsplash-modal-photo.module#UnsplashModalPhotoPageModule', name: 'UnsplashModalPhotoPage', segment: 'unsplash-modal-photo', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/ready-app/unsplash/unsplash-search/unsplash-search.module#UnsplashSearchPageModule', name: 'UnsplashSearchPage', segment: 'unsplash-search', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/ready-app/unsplash/unsplash.module#UnsplashPageModule', name: 'UnsplashPage', segment: 'unsplash', priority: 'low', defaultHistory: [] },
@@ -2104,10 +2104,10 @@ var AppModule = (function () {
                         { loadChildren: '../pages/shop/shop-blog/shop-blog.module#ShopBlogPageModule', name: 'ShopBlogPage', segment: 'shop-blog', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/shop/shop-category/shop-category.module#ShopCategoryPageModule', name: 'ShopCategoryPage', segment: 'shop-category', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/shop/shop-checkout/shop-checkout.module#ShopCheckoutPageModule', name: 'ShopCheckoutPage', segment: 'shop-checkout', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/shop/shop-home/shop-home.module#ShopHomePageModule', name: 'ShopHomePage', segment: 'shop-home', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/shop/shop-detail-product/shop-detail-product.module#ShopDetailProductPageModule', name: 'ShopDetailProductPage', segment: 'shop-detail-product', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/shop/shop.module#ShopPageModule', name: 'ShopPage', segment: 'shop-page', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/shop/shop-home/shop-home.module#ShopHomePageModule', name: 'ShopHomePage', segment: 'shop-home', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/shop/shop-list-product/shop-list-product.module#ShopListProductPageModule', name: 'ShopListProductPage', segment: 'shop-list-product', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/shop/shop.module#ShopPageModule', name: 'ShopPage', segment: 'shop-page', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/ui-elements/ui-elements.module#UiElementsPageModule', name: 'UiElementsPage', segment: 'ui-elements', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/profile/profile.module#ProfilePageModule', name: 'ProfilePage', segment: 'profile', priority: 'low', defaultHistory: [] }
                     ]
