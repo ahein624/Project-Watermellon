@@ -1612,7 +1612,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
   */
 var config = {
     'api_link': 'https://api.instagram.com/v1/',
-    'access_token': '988466415.3a40777.aa1b01b5bb5748c5a878457d0d7e0550',
+    'access_token': '355600265.1677ed0.fc760e8d0cfa49198ffbfd29a72acdc4',
     'limit_post': 10
 };
 var InstagramService = (function () {
@@ -1645,11 +1645,10 @@ var InstagramService = (function () {
     };
     InstagramService = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["Injectable"])(),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_0__angular_common_http__["a" /* HttpClient */],
-            __WEBPACK_IMPORTED_MODULE_2__ionic_native_in_app_browser__["a" /* InAppBrowser */],
-            __WEBPACK_IMPORTED_MODULE_3__ionic_native_social_sharing__["a" /* SocialSharing */]])
+        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_0__angular_common_http__["a" /* HttpClient */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_0__angular_common_http__["a" /* HttpClient */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__ionic_native_in_app_browser__["a" /* InAppBrowser */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__ionic_native_in_app_browser__["a" /* InAppBrowser */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_3__ionic_native_social_sharing__["a" /* SocialSharing */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__ionic_native_social_sharing__["a" /* SocialSharing */]) === "function" && _c || Object])
     ], InstagramService);
     return InstagramService;
+    var _a, _b, _c;
 }());
 
 //# sourceMappingURL=instagram.js.map
