@@ -1,14 +1,14 @@
 webpackJsonp([64],{
 
-/***/ 413:
+/***/ 426:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "FragmentPageModule", function() { return FragmentPageModule; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "MagazinePageModule", function() { return MagazinePageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(38);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__fragment__ = __webpack_require__(523);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__magazine__ = __webpack_require__(759);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -18,34 +18,33 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
-var FragmentPageModule = (function () {
-    function FragmentPageModule() {
+var MagazinePageModule = (function () {
+    function MagazinePageModule() {
     }
-    FragmentPageModule = __decorate([
+    MagazinePageModule = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["NgModule"])({
             declarations: [
-                __WEBPACK_IMPORTED_MODULE_2__fragment__["a" /* FragmentPage */],
+                __WEBPACK_IMPORTED_MODULE_2__magazine__["a" /* MagazinePage */],
             ],
             imports: [
-                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__fragment__["a" /* FragmentPage */]),
+                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__magazine__["a" /* MagazinePage */])
             ],
         })
-    ], FragmentPageModule);
-    return FragmentPageModule;
+    ], MagazinePageModule);
+    return MagazinePageModule;
 }());
 
-//# sourceMappingURL=fragment.module.js.map
+//# sourceMappingURL=magazine.module.js.map
 
 /***/ }),
 
-/***/ 523:
+/***/ 759:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FragmentPage; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MagazinePage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(38);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_loading_service_loading_service__ = __webpack_require__(259);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -57,43 +56,33 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 
 
-
 /**
- * Generated class for the FragmentPage page.
+ * Generated class for the MagazinePage page.
  *
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
  */
-var FragmentPage = (function () {
-    function FragmentPage(navCtrl, navParams, loadingService) {
+var MagazinePage = (function () {
+    function MagazinePage(navCtrl, navParams) {
         this.navCtrl = navCtrl;
         this.navParams = navParams;
-        this.loadingService = loadingService;
-        this.pages = this.navParams.get('pages');
-        this.subPage = this.navParams.get('subPage');
-        console.log(this.subPage);
-        console.log(this.pages);
+        this.magazineHomePage = 'MagazineHomePage';
+        this.magazineBookmarkPage = 'MagazineBookmarkPage';
+        this.magazineCategoryPage = 'MagazineCategoryPage';
     }
-    FragmentPage.prototype.ionViewDidLoad = function () {
-        console.log('ionViewDidLoad FragmentPage');
+    MagazinePage.prototype.ionViewDidLoad = function () {
+        console.log('ionViewDidLoad MagazinePage');
     };
-    FragmentPage.prototype.goTo = function (page) {
-        var that = this;
-        this.loadingService.show();
-        this.navCtrl.push(this.subPage, { 'page': page }).then(function () {
-            that.loadingService.dismiss();
-        });
-    };
-    FragmentPage = __decorate([
+    MagazinePage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-            selector: 'page-fragment',template:/*ion-inline-start:"/Users/andrewhein/Desktop/WestmorelandWorking/src/pages/fragment/fragment.html"*/'<!--\n  Generated template for the FragmentPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<!-- <ion-header>\n\n<ion-navbar>\n	<ion-title class="uppercase">Fragment</ion-title>\n</ion-navbar>\n\n</ion-header>\n -->\n\n\n<ion-header>\n  	<ion-navbar>\n    	<button ion-button menuToggle>\n      		<ion-icon name="menu"></ion-icon>\n    	</button>\n    	<ion-title>Fragment</ion-title>\n  	</ion-navbar>\n</ion-header>\n\n\n\n<ion-content>\n	<ion-list no-lines>\n  		<button ion-item *ngFor="let item of pages" ion-item class="ani-bottom-to-left" (click)="goTo(item)">{{item.title}}</button>\n	</ion-list>\n</ion-content>\n'/*ion-inline-end:"/Users/andrewhein/Desktop/WestmorelandWorking/src/pages/fragment/fragment.html"*/,
+            selector: 'page-magazine',template:/*ion-inline-start:"D:\Visual Studio\Personal\Project-Watermellon\src\pages\magazine\magazine.html"*/'<!--\n\n  Generated template for the MagazinePage page.\n\n\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n\n  Ionic pages and navigation.k\n\n-->\n\n<ion-tabs class="shadow-3 skin-light skin skin-transparent" >\n\n	<ion-tab [root]="magazineHomePage" tabTitle="" tabIcon="md-home"></ion-tab>\n\n	<ion-tab [root]="magazineCategoryPage" tabTitle="" tabIcon="md-list-box"></ion-tab>\n\n	<ion-tab [root]="magazineBookmarkPage" tabTitle="" tabIcon="md-bookmark"></ion-tab>\n\n</ion-tabs>'/*ion-inline-end:"D:\Visual Studio\Personal\Project-Watermellon\src\pages\magazine\magazine.html"*/,
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["n" /* NavParams */], __WEBPACK_IMPORTED_MODULE_2__providers_loading_service_loading_service__["a" /* LoadingService */]])
-    ], FragmentPage);
-    return FragmentPage;
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["n" /* NavParams */]])
+    ], MagazinePage);
+    return MagazinePage;
 }());
 
-//# sourceMappingURL=fragment.js.map
+//# sourceMappingURL=magazine.js.map
 
 /***/ })
 

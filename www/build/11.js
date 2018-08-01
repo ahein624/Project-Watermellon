@@ -1,6 +1,6 @@
 webpackJsonp([11],{
 
-/***/ 432:
+/***/ 437:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -8,8 +8,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "FacebookPageModule", function() { return FacebookPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(38);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__facebook__ = __webpack_require__(572);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__pipes_pipes_module__ = __webpack_require__(472);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__facebook__ = __webpack_require__(794);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__pipes_pipes_module__ = __webpack_require__(504);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -41,14 +41,14 @@ var FacebookPageModule = (function () {
 
 /***/ }),
 
-/***/ 472:
+/***/ 504:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return PipesModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__time_ago_time_ago__ = __webpack_require__(473);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__time_ago_iso_8061_time_ago_iso_8061__ = __webpack_require__(474);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__time_ago_time_ago__ = __webpack_require__(505);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__time_ago_iso_8061_time_ago_iso_8061__ = __webpack_require__(506);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -77,7 +77,7 @@ var PipesModule = (function () {
 
 /***/ }),
 
-/***/ 473:
+/***/ 505:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -131,7 +131,7 @@ var TimeAgoPipe = (function () {
 
 /***/ }),
 
-/***/ 474:
+/***/ 506:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -176,7 +176,7 @@ var TimeAgoIso_8061Pipe = (function () {
 
 /***/ }),
 
-/***/ 572:
+/***/ 794:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -270,7 +270,7 @@ var FacebookPage = (function () {
     };
     FacebookPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-            selector: 'page-facebook',template:/*ion-inline-start:"/Users/andrewhein/Desktop/WestmorelandWorking/src/pages/ready-app/facebook/facebook.html"*/'<!--\n  Generated template for the Facebook page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n<ion-navbar>\n<button ion-button menuToggle>\n  <ion-icon name="menu"></ion-icon>\n</button>\n<ion-title>facebook</ion-title>\n</ion-navbar>\n</ion-header>\n\n<ion-content class="white-1">\n<ion-spinner class="indicator" [ngClass]="spnState"></ion-spinner>\n<ion-card *ngFor="let item of list" class="bdra-5 mgb-10">\n<ion-item>\n<ion-avatar item-start class="mgt-6 mgb-6">\n<img src="{{page.picture.data.url}}">\n</ion-avatar>\n<h2 class="fs-14">{{page.name}}</h2>\n<p class="fs-10 text-grey-4">{{item.updated_time | timeAgo}}</p> \n</ion-item>\n\n<img [src]="item.full_picture"/>\n<ion-card-content>\n<ion-card-title class="pd-0 fs-15 fw-600">{{item.name}}</ion-card-title>\n<p class="mgt-10">{{item.message}}</p>\n</ion-card-content>\n\n<ion-row>\n<ion-col>\n<button ion-button icon-left clear small class="text-black">\n<ion-icon name="thumbs-up"></ion-icon>\n  <div>{{item.likes.summary.total_count}}</div>\n</button>\n</ion-col>\n\n<ion-col center text-center>\n<button ion-button icon-left clear small class="text-black" (click)="fbService.goToComment(item,navCtrl)">\n  <ion-icon name="chatbubbles"></ion-icon>\n  <div>{{item.comments.summary.total_count}}</div>\n</button>\n</ion-col>\n\n<ion-col right text-right>\n<button ion-button icon-left clear small class="text-black" (click)="fbService.doOpen(item)">\n  <ion-icon name="open"></ion-icon>\n</button>\n</ion-col>\n\n<ion-col right text-right>\n<button (click)="fbService.doShare(navCtrl,item)" ion-button icon-left clear small class="text-black">\n  <ion-icon name="share"></ion-icon>\n</button>\n</ion-col>\n\n</ion-row>\n</ion-card>\n\n<ion-infinite-scroll (ionInfinite)="loadMore($event)">\n<ion-infinite-scroll-content></ion-infinite-scroll-content>\n</ion-infinite-scroll>\n</ion-content>\n'/*ion-inline-end:"/Users/andrewhein/Desktop/WestmorelandWorking/src/pages/ready-app/facebook/facebook.html"*/,
+            selector: 'page-facebook',template:/*ion-inline-start:"D:\Visual Studio\Personal\Project-Watermellon\src\pages\ready-app\facebook\facebook.html"*/'<!--\n\n  Generated template for the Facebook page.\n\n\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n-->\n\n<ion-header>\n\n<ion-navbar>\n\n<button ion-button menuToggle>\n\n  <ion-icon name="menu"></ion-icon>\n\n</button>\n\n<ion-title>facebook</ion-title>\n\n</ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content class="white-1">\n\n<ion-spinner class="indicator" [ngClass]="spnState"></ion-spinner>\n\n<ion-card *ngFor="let item of list" class="bdra-5 mgb-10">\n\n<ion-item>\n\n<ion-avatar item-start class="mgt-6 mgb-6">\n\n<img src="{{page.picture.data.url}}">\n\n</ion-avatar>\n\n<h2 class="fs-14">{{page.name}}</h2>\n\n<p class="fs-10 text-grey-4">{{item.updated_time | timeAgo}}</p> \n\n</ion-item>\n\n\n\n<img [src]="item.full_picture"/>\n\n<ion-card-content>\n\n<ion-card-title class="pd-0 fs-15 fw-600">{{item.name}}</ion-card-title>\n\n<p class="mgt-10">{{item.message}}</p>\n\n</ion-card-content>\n\n\n\n<ion-row>\n\n<ion-col>\n\n<button ion-button icon-left clear small class="text-black">\n\n<ion-icon name="thumbs-up"></ion-icon>\n\n  <div>{{item.likes.summary.total_count}}</div>\n\n</button>\n\n</ion-col>\n\n\n\n<ion-col center text-center>\n\n<button ion-button icon-left clear small class="text-black" (click)="fbService.goToComment(item,navCtrl)">\n\n  <ion-icon name="chatbubbles"></ion-icon>\n\n  <div>{{item.comments.summary.total_count}}</div>\n\n</button>\n\n</ion-col>\n\n\n\n<ion-col right text-right>\n\n<button ion-button icon-left clear small class="text-black" (click)="fbService.doOpen(item)">\n\n  <ion-icon name="open"></ion-icon>\n\n</button>\n\n</ion-col>\n\n\n\n<ion-col right text-right>\n\n<button (click)="fbService.doShare(navCtrl,item)" ion-button icon-left clear small class="text-black">\n\n  <ion-icon name="share"></ion-icon>\n\n</button>\n\n</ion-col>\n\n\n\n</ion-row>\n\n</ion-card>\n\n\n\n<ion-infinite-scroll (ionInfinite)="loadMore($event)">\n\n<ion-infinite-scroll-content></ion-infinite-scroll-content>\n\n</ion-infinite-scroll>\n\n</ion-content>\n\n'/*ion-inline-end:"D:\Visual Studio\Personal\Project-Watermellon\src\pages\ready-app\facebook\facebook.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* NavController */],
             __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["n" /* NavParams */],

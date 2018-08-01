@@ -1,14 +1,14 @@
 webpackJsonp([71],{
 
-/***/ 399:
+/***/ 407:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SuccessSignupModule", function() { return SuccessSignupModule; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "BuyTicketsPageModule", function() { return BuyTicketsPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(38);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__success_signup__ = __webpack_require__(483);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__buy_tickets__ = __webpack_require__(708);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -18,37 +18,35 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
-var SuccessSignupModule = (function () {
-    function SuccessSignupModule() {
+var BuyTicketsPageModule = (function () {
+    function BuyTicketsPageModule() {
     }
-    SuccessSignupModule = __decorate([
+    BuyTicketsPageModule = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["NgModule"])({
             declarations: [
-                __WEBPACK_IMPORTED_MODULE_2__success_signup__["a" /* SuccessSignupComponent */],
+                __WEBPACK_IMPORTED_MODULE_2__buy_tickets__["a" /* BuyTicketsPage */],
             ],
             imports: [
-                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__success_signup__["a" /* SuccessSignupComponent */]),
-            ],
-            exports: [
-                __WEBPACK_IMPORTED_MODULE_2__success_signup__["a" /* SuccessSignupComponent */]
+                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__buy_tickets__["a" /* BuyTicketsPage */]),
             ],
             schemas: [__WEBPACK_IMPORTED_MODULE_0__angular_core__["CUSTOM_ELEMENTS_SCHEMA"]]
         })
-    ], SuccessSignupModule);
-    return SuccessSignupModule;
+    ], BuyTicketsPageModule);
+    return BuyTicketsPageModule;
 }());
 
-//# sourceMappingURL=success-signup.module.js.map
+//# sourceMappingURL=buy-tickets.module.js.map
 
 /***/ }),
 
-/***/ 483:
+/***/ 708:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SuccessSignupComponent; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return BuyTicketsPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(38);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_platform_browser__ = __webpack_require__(33);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -60,44 +58,35 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 
 
+
 /**
- * Generated class for the RegisterV3Component component.
+ * Generated class for the BuyTicketsPage page.
  *
- * See https://angular.io/api/core/Component for more info on Angular
- * Components.
+ * See https://ionicframework.com/docs/components/#navigation for more info on
+ * Ionic pages and navigation.
  */
-var SuccessSignupComponent = (function () {
-    function SuccessSignupComponent(viewCtrl) {
-        var _this = this;
-        this.viewCtrl = viewCtrl;
-        this.onCallbackEvent = function (event) {
-            if (_this.events[event]) {
-                _this.events[event]({});
-            }
-        };
-        console.log('Hello SuccessSignupComponent Component');
+// Leaving this existing code incase we need to come back and reference it.
+var BuyTicketsPage = (function () {
+    function BuyTicketsPage(navCtrl, navParams, sanitize) {
+        this.navCtrl = navCtrl;
+        this.navParams = navParams;
+        this.sanitize = sanitize;
+        this.params = {};
+        this.url = sanitize.bypassSecurityTrustResourceUrl("https://westmorelandfair.com/_app/tickets/");
     }
-    SuccessSignupComponent.prototype.dismiss = function () {
-        this.viewCtrl.dismiss();
+    BuyTicketsPage.prototype.ionViewDidLoad = function () {
+        console.log('ionViewDidLoad BuyTicketsPage');
     };
-    __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Input"])(),
-        __metadata("design:type", Object)
-    ], SuccessSignupComponent.prototype, "events", void 0);
-    __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Input"])(),
-        __metadata("design:type", Object)
-    ], SuccessSignupComponent.prototype, "data", void 0);
-    SuccessSignupComponent = __decorate([
+    BuyTicketsPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-            selector: 'success-signup',template:/*ion-inline-start:"/Users/andrewhein/Desktop/WestmorelandWorking/src/components/register/success-signup/success-signup.html"*/'\n<div class="success-signup white" padding>\n  \n  	<div class="wrapper-page">  \n	    <div col-10 class="main-form text-center mg-auto">\n	    	<div class="mgt-50">\n	    		<ion-icon class="text-green fs-100" name="md-checkmark-circle"></ion-icon>\n	    		<h5 class="fw-600 fs-25">Congratulation!</h5>\n	    		<p class="text-grey-3 fs-13">Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>\n	    	</div>\n\n	    	<ion-list class="mgb-10 mgt-50">\n	          	<ion-label class="text-black fs-12 uppercase text-left mgb-10">Active Code</ion-label>\n	          	<ion-item class="fs-13 text-white round black-opct">\n	            	<ion-input type="password" placeholder="000000" [(ngModel)]="password"></ion-input>\n	          	</ion-item>\n	        </ion-list>\n\n	        <button ion-button block round color="dark" class="mgt-20 text-white uppercase spacing-1 shadow-3 pink-vs-red">\n	         	Strat Now\n	        </button>\n	    </div>\n  	</div>\n\n  	<ion-row class="wrapper-top-signup ani-right-to-left">\n    	<button ion-button outline icon-only color="dark" class="mg-auto mgt-30 text-grey-3 stroke-grey-3 stroke-1 button-circle back-page" (click)="dismiss()">\n      		<ion-icon name="ios-close"></ion-icon>\n    	</button>\n  	</ion-row>\n\n</div>\n'/*ion-inline-end:"/Users/andrewhein/Desktop/WestmorelandWorking/src/components/register/success-signup/success-signup.html"*/
+            selector: 'page-buy',template:/*ion-inline-start:"D:\Visual Studio\Personal\Project-Watermellon\src\pages\buy-tickets\buy-tickets.html"*/'<!--\n\n  Generated template for the AboutPage page.\n\n\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n-->\n\n<ion-header class="skin skin-wcf skin-brown">\n\n  <ion-navbar>\n\n  <button ion-button menuToggle>\n\n    <ion-icon name="menu"></ion-icon>\n\n  </button>\n\n  <ion-title>Buy Tickets</ion-title>\n\n  </ion-navbar>\n\n  </ion-header>\n\n\n\n\n\n<ion-content class="no-scroll">\n\n    <iframe height="100%" width="100%" [src]="url"></iframe>\n\n</ion-content>\n\n\n\n\n\n '/*ion-inline-end:"D:\Visual Studio\Personal\Project-Watermellon\src\pages\buy-tickets\buy-tickets.html"*/,
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["s" /* ViewController */]])
-    ], SuccessSignupComponent);
-    return SuccessSignupComponent;
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["n" /* NavParams */], __WEBPACK_IMPORTED_MODULE_2__angular_platform_browser__["DomSanitizer"]])
+    ], BuyTicketsPage);
+    return BuyTicketsPage;
 }());
 
-//# sourceMappingURL=success-signup.js.map
+//# sourceMappingURL=buy-tickets.js.map
 
 /***/ })
 

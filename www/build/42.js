@@ -1,14 +1,14 @@
 webpackJsonp([42],{
 
-/***/ 453:
+/***/ 464:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "WordpressPageModule", function() { return WordpressPageModule; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SettingDashboardPageModule", function() { return SettingDashboardPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(38);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__wordpress__ = __webpack_require__(593);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__setting_dashboard__ = __webpack_require__(890);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -18,33 +18,33 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
-var WordpressPageModule = (function () {
-    function WordpressPageModule() {
+var SettingDashboardPageModule = (function () {
+    function SettingDashboardPageModule() {
     }
-    WordpressPageModule = __decorate([
+    SettingDashboardPageModule = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["NgModule"])({
             declarations: [
-                __WEBPACK_IMPORTED_MODULE_2__wordpress__["a" /* WordpressPage */],
+                __WEBPACK_IMPORTED_MODULE_2__setting_dashboard__["a" /* SettingDashboardPage */],
             ],
             imports: [
-                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__wordpress__["a" /* WordpressPage */]),
+                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__setting_dashboard__["a" /* SettingDashboardPage */]),
             ],
         })
-    ], WordpressPageModule);
-    return WordpressPageModule;
+    ], SettingDashboardPageModule);
+    return SettingDashboardPageModule;
 }());
 
-//# sourceMappingURL=wordpress.module.js.map
+//# sourceMappingURL=setting-dashboard.module.js.map
 
 /***/ }),
 
-/***/ 593:
+/***/ 890:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return WordpressPage; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SettingDashboardPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(38);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__providers_settings_settings__ = __webpack_require__(140);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -57,33 +57,33 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 /**
- * Generated class for the WordpressPage page.
+ * Generated class for the RegisterV1Component component.
  *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
+ * See https://angular.io/api/core/Component for more info on Angular
+ * Components.
  */
-var WordpressPage = (function () {
-    function WordpressPage(navCtrl, navParams) {
-        this.navCtrl = navCtrl;
-        this.navParams = navParams;
-        this.wpHomePage = 'WordpressHomePage';
-        this.wpCategoryPage = 'WordpressCategoryPage';
-        this.wpSearchPage = 'WordpressSearchPage';
-        this.wpFavoritePage = 'WordpressFavoritePage';
+var SettingDashboardPage = (function () {
+    function SettingDashboardPage(settingsProvider) {
+        var _this = this;
+        this.settingsProvider = settingsProvider;
+        this.settings = {};
+        this.settingsProvider.getSettings().then(function (data) {
+            _this.settings = data;
+        });
     }
-    WordpressPage.prototype.ionViewDidLoad = function () {
-        console.log('ionViewDidLoad WordpressPage');
+    SettingDashboardPage.prototype.setDashboard = function () {
+        this.settingsProvider.setDashboard(this.settings.dashboard_type);
     };
-    WordpressPage = __decorate([
+    SettingDashboardPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-            selector: 'page-wordpress',template:/*ion-inline-start:"/Users/andrewhein/Desktop/WestmorelandWorking/src/pages/ready-app/wordpress/wordpress.html"*/'<ion-tabs class="shadow-3 skin skin-light">\n	<ion-tab [root]="wpHomePage" tabTitle="" tabIcon="ios-home"></ion-tab>\n	<ion-tab [root]="wpCategoryPage" tabTitle="" tabIcon="ios-list-box"></ion-tab>\n	<ion-tab [root]="wpSearchPage" tabTitle="" tabIcon="ios-search"></ion-tab>\n	<ion-tab [root]="wpFavoritePage" tabTitle="" tabIcon="ios-heart"></ion-tab>\n</ion-tabs>\n'/*ion-inline-end:"/Users/andrewhein/Desktop/WestmorelandWorking/src/pages/ready-app/wordpress/wordpress.html"*/,
+            selector: 'setting-dashboard',template:/*ion-inline-start:"D:\Visual Studio\Personal\Project-Watermellon\src\pages\settings\setting-dashboard\setting-dashboard.html"*/'<ion-header>\n\n  <ion-navbar>\n\n    <button ion-button menuToggle>\n\n      <ion-icon name="menu"></ion-icon>\n\n    </button>\n\n    <ion-title>Dashboard Setting</ion-title>\n\n  </ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content>\n\n  	\n\n  	<ion-list radio-group [(ngModel)]="settings.dashboard_type" (ionChange)="setDashboard()">\n\n	  <ion-item>\n\n	    <ion-label>Grid</ion-label>\n\n	    <ion-radio  value="1" checked></ion-radio>\n\n	  </ion-item>\n\n	  <ion-item>\n\n	    <ion-label>Categories</ion-label>\n\n	    <ion-radio value="2"></ion-radio>\n\n	  </ion-item>\n\n	  <ion-item>\n\n	    <ion-label>List</ion-label>\n\n	    <ion-radio  value="3"></ion-radio>\n\n	  </ion-item>\n\n	</ion-list>\n\n\n\n</ion-content>\n\n'/*ion-inline-end:"D:\Visual Studio\Personal\Project-Watermellon\src\pages\settings\setting-dashboard\setting-dashboard.html"*/
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["n" /* NavParams */]])
-    ], WordpressPage);
-    return WordpressPage;
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__providers_settings_settings__["a" /* SettingsProvider */]])
+    ], SettingDashboardPage);
+    return SettingDashboardPage;
 }());
 
-//# sourceMappingURL=wordpress.js.map
+//# sourceMappingURL=setting-dashboard.js.map
 
 /***/ })
 

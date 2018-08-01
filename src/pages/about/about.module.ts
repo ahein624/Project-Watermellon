@@ -4,6 +4,7 @@ import { AboutPage } from './about';
 import { AboutV1Module } from '../../components/about/about-v1/about-v1.module';
 import { AboutV2Module } from '../../components/about/about-v2/about-v2.module';
 import { AboutV3Module } from '../../components/about/about-v3/about-v3.module';
+import { AboutWCFModule } from '../../components/about/about-wcf/about-wcf.module';
 
 @NgModule({
   declarations: [
@@ -13,7 +14,8 @@ import { AboutV3Module } from '../../components/about/about-v3/about-v3.module';
     IonicPageModule.forChild(AboutPage),
     AboutV1Module,
     AboutV2Module,
-    AboutV3Module
+    AboutV3Module,
+    AboutWCFModule
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })

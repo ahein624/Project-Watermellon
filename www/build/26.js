@@ -1,6 +1,6 @@
 webpackJsonp([26],{
 
-/***/ 419:
+/***/ 423:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -8,8 +8,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "MagazineCategoryPageModule", function() { return MagazineCategoryPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(38);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__magazine_category__ = __webpack_require__(543);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_magazine_magazine_category_magazine_category_module__ = __webpack_require__(544);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__magazine_category__ = __webpack_require__(752);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_magazine_magazine_category_magazine_category_module__ = __webpack_require__(753);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -41,7 +41,7 @@ var MagazineCategoryPageModule = (function () {
 
 /***/ }),
 
-/***/ 543:
+/***/ 752:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -82,7 +82,7 @@ var MagazineCategoryPage = (function () {
     };
     MagazineCategoryPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-            selector: 'page-magazine-category',template:/*ion-inline-start:"/Users/andrewhein/Desktop/WestmorelandWorking/src/pages/magazine/magazine-category/magazine-category.html"*/'<!--\n  Generated template for the MagazineCategoryPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n\n<ion-header>\n  <ion-toolbar class="pd-0 transparent">\n    <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title class="inline-block"></ion-title>\n  </ion-toolbar>\n</ion-header>\n\n<ion-content>\n	<magazine-category [data]="data" [events]="events"></magazine-category>\n</ion-content>'/*ion-inline-end:"/Users/andrewhein/Desktop/WestmorelandWorking/src/pages/magazine/magazine-category/magazine-category.html"*/,
+            selector: 'page-magazine-category',template:/*ion-inline-start:"D:\Visual Studio\Personal\Project-Watermellon\src\pages\magazine\magazine-category\magazine-category.html"*/'<!--\n\n  Generated template for the MagazineCategoryPage page.\n\n\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n-->\n\n\n\n<ion-header>\n\n  <ion-toolbar class="pd-0 transparent">\n\n    <button ion-button menuToggle>\n\n      <ion-icon name="menu"></ion-icon>\n\n    </button>\n\n    <ion-title class="inline-block"></ion-title>\n\n  </ion-toolbar>\n\n</ion-header>\n\n\n\n<ion-content>\n\n	<magazine-category [data]="data" [events]="events"></magazine-category>\n\n</ion-content>'/*ion-inline-end:"D:\Visual Studio\Personal\Project-Watermellon\src\pages\magazine\magazine-category\magazine-category.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["n" /* NavParams */]])
     ], MagazineCategoryPage);
@@ -93,14 +93,14 @@ var MagazineCategoryPage = (function () {
 
 /***/ }),
 
-/***/ 544:
+/***/ 753:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MagazineCategoryModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(38);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__magazine_category__ = __webpack_require__(545);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__magazine_category__ = __webpack_require__(754);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -134,7 +134,7 @@ var MagazineCategoryModule = (function () {
 
 /***/ }),
 
-/***/ 545:
+/***/ 754:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -176,7 +176,7 @@ var MagazineCategoryComponent = (function () {
     ], MagazineCategoryComponent.prototype, "data", void 0);
     MagazineCategoryComponent = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-            selector: 'magazine-category',template:/*ion-inline-start:"/Users/andrewhein/Desktop/WestmorelandWorking/src/components/magazine/magazine-category/magazine-category.html"*/'\n<div class="white-1">\n  <div class="pst-relative wrapper-categories ani-right-to-left" (click)="onCallbackEvent(\'openList\')">\n    <img src="assets/img/bg10.jpg" alt="">\n    <h3 class="text-white pst-absolute uppercase fw-400 fs-18">Sport</h3>\n  </div>\n  <div class="pst-relative wrapper-categories ani-right-to-left" (click)="onCallbackEvent(\'openList\')">\n    <img src="assets/img/bg8.jpg" alt="">\n    <h3 class="text-white pst-absolute uppercase fw-400 fs-18">Technology</h3>\n  </div>\n  <div class="pst-relative wrapper-categories ani-right-to-left" (click)="onCallbackEvent(\'openList\')">\n    <img src="assets/img/bg9.jpg" alt="">\n    <h3 class="text-white pst-absolute uppercase fw-400 fs-18">Fashion</h3>\n  </div>\n  <div class="pst-relative wrapper-categories ani-right-to-left" (click)="onCallbackEvent(\'openList\')">\n    <img src="assets/img/bg4.jpg" alt="">\n    <h3 class="text-white pst-absolute uppercase fw-400 fs-18">Security</h3>\n  </div>\n  <div class="pst-relative wrapper-categories ani-right-to-left" (click)="onCallbackEvent(\'openList\')">\n    <img src="assets/img/bg15.jpg" alt="">\n    <h3 class="text-white pst-absolute uppercase fw-400 fs-18">BBC</h3>\n  </div>\n  <div class="pst-relative wrapper-categories ani-right-to-left" (click)="onCallbackEvent(\'openList\')">\n    <img src="assets/img/bg12.jpg" alt="">\n    <h3 class="text-white pst-absolute uppercase fw-400 fs-18">Travel</h3>\n  </div>\n  <div class="pst-relative wrapper-categories ani-right-to-left" (click)="onCallbackEvent(\'openList\')">\n    <img src="assets/img/bg5.jpg" alt="">\n    <h3 class="text-white pst-absolute uppercase fw-400 fs-18">Global</h3>\n  </div>\n  <div class="pst-relative wrapper-categories ani-right-to-left" (click)="onCallbackEvent(\'openList\')">\n    <img src="assets/img/bg18.jpg" alt="">\n    <h3 class="text-white pst-absolute uppercase fw-400 fs-18">Life</h3>\n  </div>\n</div>'/*ion-inline-end:"/Users/andrewhein/Desktop/WestmorelandWorking/src/components/magazine/magazine-category/magazine-category.html"*/
+            selector: 'magazine-category',template:/*ion-inline-start:"D:\Visual Studio\Personal\Project-Watermellon\src\components\magazine\magazine-category\magazine-category.html"*/'\n\n<div class="white-1">\n\n  <div class="pst-relative wrapper-categories ani-right-to-left" (click)="onCallbackEvent(\'openList\')">\n\n    <img src="assets/img/bg10.jpg" alt="">\n\n    <h3 class="text-white pst-absolute uppercase fw-400 fs-18">Sport</h3>\n\n  </div>\n\n  <div class="pst-relative wrapper-categories ani-right-to-left" (click)="onCallbackEvent(\'openList\')">\n\n    <img src="assets/img/bg8.jpg" alt="">\n\n    <h3 class="text-white pst-absolute uppercase fw-400 fs-18">Technology</h3>\n\n  </div>\n\n  <div class="pst-relative wrapper-categories ani-right-to-left" (click)="onCallbackEvent(\'openList\')">\n\n    <img src="assets/img/bg9.jpg" alt="">\n\n    <h3 class="text-white pst-absolute uppercase fw-400 fs-18">Fashion</h3>\n\n  </div>\n\n  <div class="pst-relative wrapper-categories ani-right-to-left" (click)="onCallbackEvent(\'openList\')">\n\n    <img src="assets/img/bg4.jpg" alt="">\n\n    <h3 class="text-white pst-absolute uppercase fw-400 fs-18">Security</h3>\n\n  </div>\n\n  <div class="pst-relative wrapper-categories ani-right-to-left" (click)="onCallbackEvent(\'openList\')">\n\n    <img src="assets/img/bg15.jpg" alt="">\n\n    <h3 class="text-white pst-absolute uppercase fw-400 fs-18">BBC</h3>\n\n  </div>\n\n  <div class="pst-relative wrapper-categories ani-right-to-left" (click)="onCallbackEvent(\'openList\')">\n\n    <img src="assets/img/bg12.jpg" alt="">\n\n    <h3 class="text-white pst-absolute uppercase fw-400 fs-18">Travel</h3>\n\n  </div>\n\n  <div class="pst-relative wrapper-categories ani-right-to-left" (click)="onCallbackEvent(\'openList\')">\n\n    <img src="assets/img/bg5.jpg" alt="">\n\n    <h3 class="text-white pst-absolute uppercase fw-400 fs-18">Global</h3>\n\n  </div>\n\n  <div class="pst-relative wrapper-categories ani-right-to-left" (click)="onCallbackEvent(\'openList\')">\n\n    <img src="assets/img/bg18.jpg" alt="">\n\n    <h3 class="text-white pst-absolute uppercase fw-400 fs-18">Life</h3>\n\n  </div>\n\n</div>'/*ion-inline-end:"D:\Visual Studio\Personal\Project-Watermellon\src\components\magazine\magazine-category\magazine-category.html"*/
         }),
         __metadata("design:paramtypes", [])
     ], MagazineCategoryComponent);

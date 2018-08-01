@@ -1,14 +1,14 @@
 webpackJsonp([41],{
 
-/***/ 458:
+/***/ 465:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SettingColorPageModule", function() { return SettingColorPageModule; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SettingSidemenuPageModule", function() { return SettingSidemenuPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(38);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__setting_color__ = __webpack_require__(610);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__setting_sidemenu__ = __webpack_require__(891);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -18,31 +18,31 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
-var SettingColorPageModule = (function () {
-    function SettingColorPageModule() {
+var SettingSidemenuPageModule = (function () {
+    function SettingSidemenuPageModule() {
     }
-    SettingColorPageModule = __decorate([
+    SettingSidemenuPageModule = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["NgModule"])({
             declarations: [
-                __WEBPACK_IMPORTED_MODULE_2__setting_color__["a" /* SettingColorPage */],
+                __WEBPACK_IMPORTED_MODULE_2__setting_sidemenu__["a" /* SettingSidemenuPage */],
             ],
             imports: [
-                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__setting_color__["a" /* SettingColorPage */]),
+                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__setting_sidemenu__["a" /* SettingSidemenuPage */]),
             ],
         })
-    ], SettingColorPageModule);
-    return SettingColorPageModule;
+    ], SettingSidemenuPageModule);
+    return SettingSidemenuPageModule;
 }());
 
-//# sourceMappingURL=setting-color.module.js.map
+//# sourceMappingURL=setting-sidemenu.module.js.map
 
 /***/ }),
 
-/***/ 610:
+/***/ 891:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SettingColorPage; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SettingSidemenuPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(38);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_settings_settings__ = __webpack_require__(140);
@@ -64,38 +64,30 @@ var __metadata = (this && this.__metadata) || function (k, v) {
  * See https://angular.io/api/core/Component for more info on Angular
  * Components.
  */
-var SettingColorPage = (function () {
-    function SettingColorPage(settingsProvider, events) {
-        var _this = this;
+var SettingSidemenuPage = (function () {
+    function SettingSidemenuPage(menu, settingsProvider) {
+        this.menu = menu;
         this.settingsProvider = settingsProvider;
-        this.events = events;
-        this.list = new Array();
-        this.settings = null;
-        this.selected_skin = 1;
-        this.list = this.settingsProvider.getSkins();
-        this.settingsProvider.getSettings().then(function (data) {
-            _this.settings = data;
-            _this.selected_skin = _this.settingsProvider.getIndexOf(_this.settings.skin.main_bg, _this.list);
-        });
+        menu.enable(true);
     }
-    SettingColorPage.prototype.setSkin = function () {
+    SettingSidemenuPage.prototype.open_menu = function (id_menu) {
         var _this = this;
-        this.settingsProvider.setSkin(this.list[this.selected_skin]).then(function (data) {
-            _this.events.publish('settings_change: change', data);
-            _this.settings = data;
+        this.settingsProvider.setMenu(id_menu).then(function (data) {
+            _this.menu.enable(false);
+            _this.menu.enable(true, id_menu);
+            _this.menu.open(id_menu);
         });
     };
-    SettingColorPage = __decorate([
+    SettingSidemenuPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-            selector: 'setting-color',template:/*ion-inline-start:"/Users/andrewhein/Desktop/WestmorelandWorking/src/pages/settings/setting-color/setting-color.html"*/'<ion-header *ngIf="settings!=null"  class="{{settings.skin.main_skin}}">\n  <ion-navbar>\n    <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title>Theme Setting</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content *ngIf="settings!=null" padding class="{{settings.skin.main_bg}}">\n  	<h4 class="mgb-10 {{settings.skin.text_1}}">Setting color</h4>\n  	<h6 class="mgt-5 mgb-20 {{settings.skin.text_2}} fw-400">Choose color you love</h6>\n\n  	<ion-list no-lines class="lst-no-background" radio-group [(ngModel)]="selected_skin" (ionChange)="setSkin()" >\n	    <ion-item *ngFor="let item of list, let i = index" class="pdl-0 fs-13 text-grey-5">\n	      	<ion-label class="{{settings.skin.text_1}}">{{item.title}}</ion-label>\n	      	<ion-radio [value]="i"></ion-radio>\n	    </ion-item>\n  	</ion-list>\n</ion-content>\n'/*ion-inline-end:"/Users/andrewhein/Desktop/WestmorelandWorking/src/pages/settings/setting-color/setting-color.html"*/
+            selector: 'setting-sidemenu',template:/*ion-inline-start:"D:\Visual Studio\Personal\Project-Watermellon\src\pages\settings\setting-sidemenu\setting-sidemenu.html"*/'<ion-header>\n\n  <ion-navbar>\n\n    <button ion-button menuToggle>\n\n      <ion-icon name="menu"></ion-icon>\n\n    </button>\n\n    <ion-title>Sidemenu setting</ion-title>\n\n  </ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content padding>\n\n  \n\n  <button ion-button block round class="lama-vs-coban" (click)="open_menu(\'menu-basic\')">Side Menu Basic</button>\n\n  <button ion-button block round class="indigo" (click)="open_menu(\'menu-avatar\')">Side Menu Avatar</button>\n\n  <button ion-button block round class="pink" (click)="open_menu(\'menu-material\')">Side Menu Material</button>\n\n  <button ion-button block round class="d-purple" (click)="open_menu(\'menu-icon-only\')">Side Menu Only Icon</button>\n\n\n\n</ion-content>\n\n'/*ion-inline-end:"D:\Visual Studio\Personal\Project-Watermellon\src\pages\settings\setting-sidemenu\setting-sidemenu.html"*/
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2__providers_settings_settings__["a" /* SettingsProvider */],
-            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* Events */]])
-    ], SettingColorPage);
-    return SettingColorPage;
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* MenuController */], __WEBPACK_IMPORTED_MODULE_2__providers_settings_settings__["a" /* SettingsProvider */]])
+    ], SettingSidemenuPage);
+    return SettingSidemenuPage;
 }());
 
-//# sourceMappingURL=setting-color.js.map
+//# sourceMappingURL=setting-sidemenu.js.map
 
 /***/ })
 

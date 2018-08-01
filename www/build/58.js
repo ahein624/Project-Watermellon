@@ -1,14 +1,14 @@
 webpackJsonp([58],{
 
-/***/ 433:
+/***/ 440:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "InstagramCommentPageModule", function() { return InstagramCommentPageModule; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "RadioPageModule", function() { return RadioPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(38);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__instagram_comment__ = __webpack_require__(573);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__radio__ = __webpack_require__(797);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -18,34 +18,33 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
-var InstagramCommentPageModule = (function () {
-    function InstagramCommentPageModule() {
+var RadioPageModule = (function () {
+    function RadioPageModule() {
     }
-    InstagramCommentPageModule = __decorate([
+    RadioPageModule = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["NgModule"])({
             declarations: [
-                __WEBPACK_IMPORTED_MODULE_2__instagram_comment__["a" /* InstagramCommentPage */],
+                __WEBPACK_IMPORTED_MODULE_2__radio__["a" /* RadioPage */],
             ],
             imports: [
-                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__instagram_comment__["a" /* InstagramCommentPage */]),
+                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__radio__["a" /* RadioPage */]),
             ],
         })
-    ], InstagramCommentPageModule);
-    return InstagramCommentPageModule;
+    ], RadioPageModule);
+    return RadioPageModule;
 }());
 
-//# sourceMappingURL=instagram-comment.module.js.map
+//# sourceMappingURL=radio.module.js.map
 
 /***/ }),
 
-/***/ 573:
+/***/ 797:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return InstagramCommentPage; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return RadioPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(38);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_instagram_instagram__ = __webpack_require__(261);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -57,44 +56,30 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 
 
-
 /**
- * Generated class for the InstagramCommentPage page.
+ * Generated class for the RadioPage page.
  *
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
  */
-var InstagramCommentPage = (function () {
-    function InstagramCommentPage(navCtrl, navParams, instagramService) {
-        var _this = this;
+var RadioPage = (function () {
+    function RadioPage(navCtrl, navParams) {
         this.navCtrl = navCtrl;
         this.navParams = navParams;
-        this.instagramService = instagramService;
-        this.spnState = 'show';
-        this.item = this.navParams.get('item');
-        this.instagramService.getComments(this.item).subscribe(function (data) {
-            _this.list = new Array();
-            _this.list = data.data;
-            _this.spnState = 'hide';
-        }, function (error) {
-            _this.spnState = 'hide';
-        });
     }
-    InstagramCommentPage.prototype.ionViewDidLoad = function () {
-        console.log('ionViewDidLoad InstagramCommentPage');
+    RadioPage.prototype.ionViewDidLoad = function () {
+        console.log('ionViewDidLoad RadioPage');
     };
-    InstagramCommentPage = __decorate([
+    RadioPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-            selector: 'page-instagram-comment',template:/*ion-inline-start:"/Users/andrewhein/Desktop/WestmorelandWorking/src/pages/ready-app/instagram/instagram-comment/instagram-comment.html"*/'<!--\n  Generated template for the InstagramCommentPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>instagram-comment</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content>\n  <ion-spinner class="indicator" [ngClass]="spnState"></ion-spinner>\n  <ion-list>\n  <ion-item *ngFor="let item of list">\n    <ion-avatar item-start>\n      <img src="{{item.from.profile_picture}}">\n    </ion-avatar>\n    <h2>{{item.from.username}}</h2>\n    <p>{{item.text}}</p>\n  </ion-item>\n </ion-list>\n</ion-content>\n'/*ion-inline-end:"/Users/andrewhein/Desktop/WestmorelandWorking/src/pages/ready-app/instagram/instagram-comment/instagram-comment.html"*/,
+            selector: 'page-radio',template:/*ion-inline-start:"D:\Visual Studio\Personal\Project-Watermellon\src\pages\ready-app\radio\radio.html"*/'<!--\n\n  Generated template for the RadioPage page.\n\n\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n-->\n\n<ion-header>\n\n\n\n  <ion-navbar>\n\n    <ion-title>radio</ion-title>\n\n  </ion-navbar>\n\n\n\n</ion-header>\n\n\n\n\n\n<ion-content padding>\n\n\n\n</ion-content>\n\n'/*ion-inline-end:"D:\Visual Studio\Personal\Project-Watermellon\src\pages\ready-app\radio\radio.html"*/,
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* NavController */],
-            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["n" /* NavParams */],
-            __WEBPACK_IMPORTED_MODULE_2__providers_instagram_instagram__["a" /* InstagramService */]])
-    ], InstagramCommentPage);
-    return InstagramCommentPage;
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["n" /* NavParams */]])
+    ], RadioPage);
+    return RadioPage;
 }());
 
-//# sourceMappingURL=instagram-comment.js.map
+//# sourceMappingURL=radio.js.map
 
 /***/ })
 

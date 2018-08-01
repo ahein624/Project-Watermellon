@@ -50,13 +50,14 @@ const STORAGE_KEY="settings";
   		{ title: 'Orange',                main_bg: 'orange',            text_1: 'text-white',   text_2: 'text-grey-1',   text_3: 'text-grey-2',   text_4: 'text-grey-3', main_skin: 'skin skin-dark skin-orange' },
   		{ title: 'Deep Orange',           main_bg: 'd-orange',          text_1: 'text-white',   text_2: 'text-grey-1',   text_3: 'text-grey-2',   text_4: 'text-grey-3', main_skin: 'skin skin-dark skin-d-orange' },
   		{ title: 'Brown',                 main_bg: 'brown',             text_1: 'text-white',   text_2: 'text-grey-1',   text_3: 'text-grey-2',   text_4: 'text-grey-3', main_skin: 'skin skin-dark skin-brown' },
-  		{ title: 'Blue Grey',             main_bg: 'blue-grey',         text_1: 'text-white',   text_2: 'text-grey-1',   text_3: 'text-grey-2',   text_4: 'text-grey-3', main_skin: 'skin skin-dark skin-blue-grey' }
+		{ title: 'Blue Grey',             main_bg: 'blue-grey',         text_1: 'text-white',   text_2: 'text-grey-1',   text_3: 'text-grey-2',   text_4: 'text-grey-3', main_skin: 'skin skin-dark skin-blue-grey' },
+		{ title: 'Westmoreland County',   main_bg: 'white',             text_1: 'text-black',   text_2: 'text-grey-4',   text_3: 'text-grey-3',   text_4: 'text-grey-2', main_skin: 'skin skin-wcf skin-brown' },
   	]
 
   	settings:any={
-  		 dashboard_type: 2,
-       skin:this.listSkins[2],
-       menu_id:'menu-avatar'
+  		dashboard_type: 1,
+       	skin:this.listSkins[38],
+       	menu_id:'menu-avatar'
   	};
 
   	constructor(public http: HttpClient, public events:Events, public storage:Storage) {

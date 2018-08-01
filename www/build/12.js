@@ -1,4 +1,4 @@
-webpackJsonp([12,70],{
+webpackJsonp([12,76],{
 
 /***/ 391:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -8,7 +8,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ModalBasicModule", function() { return ModalBasicModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(38);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__modal_basic__ = __webpack_require__(475);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__modal_basic__ = __webpack_require__(515);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -50,7 +50,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ModalsModule", function() { return ModalsModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(38);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__modals__ = __webpack_require__(484);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__modals__ = __webpack_require__(551);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__modal_basic_modal_basic_module__ = __webpack_require__(391);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -87,7 +87,7 @@ var ModalsModule = (function () {
 
 /***/ }),
 
-/***/ 475:
+/***/ 515:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -136,7 +136,7 @@ var ModalBasicComponent = (function () {
     ], ModalBasicComponent.prototype, "data", void 0);
     ModalBasicComponent = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-            selector: 'modal-basic',template:/*ion-inline-start:"/Users/andrewhein/Desktop/WestmorelandWorking/src/components/ui-elements/modal-basic/modal-basic.html"*/'<ion-header class="skin-transparent transparent">\n  <ion-toolbar class="skin-transparent">\n    <ion-title>\n      modal_basic\n    </ion-title>\n    <ion-buttons start>\n      <button ion-button icon-only class="circle text-grey-5 button-circle mgr-10 mgl-10" (click)="dismiss()">\n        <ion-icon name="ios-close"></ion-icon>\n      </button>\n    </ion-buttons>\n  </ion-toolbar>\n</ion-header>\n\n<ion-content>    \n  <h4 padding class="mgt-50 mgb-10">modal_box_title</h4>\n  \n  <ion-list>\n    <ion-item>\n      <ion-label>view_all_location</ion-label>\n      <ion-toggle [(ngModel)]="all_local"></ion-toggle>\n    </ion-item>\n\n    <ion-item>\n      <ion-label>county</ion-label>\n      <ion-select [disabled]="all_local ? true : null" [(ngModel)]="county">\n        <ion-option value="null">County 1</ion-option>\n        <ion-option value="null">County 2</ion-option>\n        <ion-option value="null">County 3</ion-option>\n        <ion-option value="null">County 4</ion-option>\n        <ion-option value="null">County 5</ion-option>\n      </ion-select>\n    </ion-item>\n\n    <ion-item>\n      <ion-label>cities</ion-label>\n      <ion-select [disabled]="all_local ? true : null" [(ngModel)]="cities">\n        <ion-option value="null">All cities</ion-option>\n        <ion-option value="null">Cities 1</ion-option>\n        <ion-option value="null">Cities 2</ion-option>\n        <ion-option value="null">Cities 3</ion-option>\n        <ion-option value="null">Cities 4</ion-option>\n        <ion-option value="null">Cities 5</ion-option>\n      </ion-select>\n    </ion-item>\n  </ion-list>\n</ion-content>\n'/*ion-inline-end:"/Users/andrewhein/Desktop/WestmorelandWorking/src/components/ui-elements/modal-basic/modal-basic.html"*/
+            selector: 'modal-basic',template:/*ion-inline-start:"D:\Visual Studio\Personal\Project-Watermellon\src\components\ui-elements\modal-basic\modal-basic.html"*/'<ion-header class="skin-transparent transparent">\n\n  <ion-toolbar class="skin-transparent">\n\n    <ion-title>\n\n      modal_basic\n\n    </ion-title>\n\n    <ion-buttons start>\n\n      <button ion-button icon-only class="circle text-grey-5 button-circle mgr-10 mgl-10" (click)="dismiss()">\n\n        <ion-icon name="ios-close"></ion-icon>\n\n      </button>\n\n    </ion-buttons>\n\n  </ion-toolbar>\n\n</ion-header>\n\n\n\n<ion-content>    \n\n  <h4 padding class="mgt-50 mgb-10">modal_box_title</h4>\n\n  \n\n  <ion-list>\n\n    <ion-item>\n\n      <ion-label>view_all_location</ion-label>\n\n      <ion-toggle [(ngModel)]="all_local"></ion-toggle>\n\n    </ion-item>\n\n\n\n    <ion-item>\n\n      <ion-label>county</ion-label>\n\n      <ion-select [disabled]="all_local ? true : null" [(ngModel)]="county">\n\n        <ion-option value="null">County 1</ion-option>\n\n        <ion-option value="null">County 2</ion-option>\n\n        <ion-option value="null">County 3</ion-option>\n\n        <ion-option value="null">County 4</ion-option>\n\n        <ion-option value="null">County 5</ion-option>\n\n      </ion-select>\n\n    </ion-item>\n\n\n\n    <ion-item>\n\n      <ion-label>cities</ion-label>\n\n      <ion-select [disabled]="all_local ? true : null" [(ngModel)]="cities">\n\n        <ion-option value="null">All cities</ion-option>\n\n        <ion-option value="null">Cities 1</ion-option>\n\n        <ion-option value="null">Cities 2</ion-option>\n\n        <ion-option value="null">Cities 3</ion-option>\n\n        <ion-option value="null">Cities 4</ion-option>\n\n        <ion-option value="null">Cities 5</ion-option>\n\n      </ion-select>\n\n    </ion-item>\n\n  </ion-list>\n\n</ion-content>\n\n'/*ion-inline-end:"D:\Visual Studio\Personal\Project-Watermellon\src\components\ui-elements\modal-basic\modal-basic.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* ModalController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["s" /* ViewController */]])
     ], ModalBasicComponent);
@@ -147,7 +147,7 @@ var ModalBasicComponent = (function () {
 
 /***/ }),
 
-/***/ 484:
+/***/ 551:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -204,7 +204,7 @@ var ModalsComponent = (function () {
     ], ModalsComponent.prototype, "data", void 0);
     ModalsComponent = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-            selector: 'modals',template:/*ion-inline-start:"/Users/andrewhein/Desktop/WestmorelandWorking/src/components/ui-elements/modals/modals.html"*/'<div>\n  \n   <ion-list>\n    <ion-list-header>Hobbits</ion-list-header>\n\n    <a ion-item (click)="openModalBasic()">Show Modal Basic</a>\n    <a ion-item (click)="openModalBox()">Show Modal Box</a>\n    <a ion-item (click)="openModalMenu()">Show Modal Menu</a>\n  </ion-list>\n\n</div>'/*ion-inline-end:"/Users/andrewhein/Desktop/WestmorelandWorking/src/components/ui-elements/modals/modals.html"*/
+            selector: 'modals',template:/*ion-inline-start:"D:\Visual Studio\Personal\Project-Watermellon\src\components\ui-elements\modals\modals.html"*/'<div>\n\n  \n\n   <ion-list>\n\n    <ion-list-header>Hobbits</ion-list-header>\n\n\n\n    <a ion-item (click)="openModalBasic()">Show Modal Basic</a>\n\n    <a ion-item (click)="openModalBox()">Show Modal Box</a>\n\n    <a ion-item (click)="openModalMenu()">Show Modal Menu</a>\n\n  </ion-list>\n\n\n\n</div>'/*ion-inline-end:"D:\Visual Studio\Personal\Project-Watermellon\src\components\ui-elements\modals\modals.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* ModalController */]])
     ], ModalsComponent);

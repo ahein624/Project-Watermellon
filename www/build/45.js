@@ -1,14 +1,14 @@
 webpackJsonp([45],{
 
-/***/ 450:
+/***/ 457:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "WordpressHomePageModule", function() { return WordpressHomePageModule; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "WordpressSearchPageModule", function() { return WordpressSearchPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(38);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__wordpress_home__ = __webpack_require__(590);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__wordpress_search__ = __webpack_require__(814);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -18,31 +18,31 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
-var WordpressHomePageModule = (function () {
-    function WordpressHomePageModule() {
+var WordpressSearchPageModule = (function () {
+    function WordpressSearchPageModule() {
     }
-    WordpressHomePageModule = __decorate([
+    WordpressSearchPageModule = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["NgModule"])({
             declarations: [
-                __WEBPACK_IMPORTED_MODULE_2__wordpress_home__["a" /* WordpressHomePage */],
+                __WEBPACK_IMPORTED_MODULE_2__wordpress_search__["a" /* WordpressSearchPage */],
             ],
             imports: [
-                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__wordpress_home__["a" /* WordpressHomePage */]),
+                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__wordpress_search__["a" /* WordpressSearchPage */]),
             ],
         })
-    ], WordpressHomePageModule);
-    return WordpressHomePageModule;
+    ], WordpressSearchPageModule);
+    return WordpressSearchPageModule;
 }());
 
-//# sourceMappingURL=wordpress-home.module.js.map
+//# sourceMappingURL=wordpress-search.module.js.map
 
 /***/ }),
 
-/***/ 590:
+/***/ 814:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return WordpressHomePage; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return WordpressSearchPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(38);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_wordpress_wordpress__ = __webpack_require__(255);
@@ -59,13 +59,13 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 /**
- * Generated class for the WordpressHomePage page.
+ * Generated class for the WordpressSearchPage page.
  *
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
  */
-var WordpressHomePage = (function () {
-    function WordpressHomePage(navCtrl, navParams, wpService) {
+var WordpressSearchPage = (function () {
+    function WordpressSearchPage(navCtrl, navParams, wpService) {
         this.navCtrl = navCtrl;
         this.navParams = navParams;
         this.wpService = wpService;
@@ -73,13 +73,20 @@ var WordpressHomePage = (function () {
         this.events = {};
         this.page = 0;
         this.per_page = 5;
+        this.query = '';
         this.spnState = 'show';
     }
-    WordpressHomePage.prototype.loadMore = function (infiniteScroll) {
+    WordpressSearchPage.prototype.onInput = function () {
+        this.spnState = 'show';
+        this.page = 0;
+        this.data = [];
+        this.loadMore();
+    };
+    WordpressSearchPage.prototype.loadMore = function (infiniteScroll) {
         var _this = this;
         if (infiniteScroll === void 0) { infiniteScroll = null; }
         this.page += 1;
-        this.wpService.getPosts(this.page, this.per_page).subscribe(function (data) {
+        this.wpService.getPosts(this.page, this.per_page, this.query).subscribe(function (data) {
             var _loop_1 = function () {
                 var post = {
                     id: data[i].id,
@@ -112,10 +119,10 @@ var WordpressHomePage = (function () {
             }
         });
     };
-    WordpressHomePage.prototype.ionViewDidLoad = function () {
+    WordpressSearchPage.prototype.ionViewDidLoad = function () {
         this.loadMore();
     };
-    WordpressHomePage.prototype.ionViewDidEnter = function () {
+    WordpressSearchPage.prototype.ionViewDidEnter = function () {
         var _this = this;
         if (this.data.length != 0) {
             var _loop_2 = function (i) {
@@ -129,18 +136,18 @@ var WordpressHomePage = (function () {
             }
         }
     };
-    WordpressHomePage = __decorate([
+    WordpressSearchPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-            selector: 'page-wordpress-home',template:/*ion-inline-start:"/Users/andrewhein/Desktop/WestmorelandWorking/src/pages/ready-app/wordpress/wordpress-home/wordpress-home.html"*/'<!--\n  Generated template for the WordpressHomePage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n  <ion-navbar>\n    <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title>Home</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content class="white-1">\n<ion-spinner class="indicator" [ngClass]="spnState"></ion-spinner>\n <ion-card *ngFor="let item of data" class="bdra-5 card card-md">\n    <img *ngIf="item.thumb!=null" [src]="item.thumb" (click)="wpService.doReadMore(navCtrl,item)">\n    <ion-card-content class="card-content card-content-md" (click)="wpService.doReadMore(navCtrl,item)">\n      <ion-card-title class="fs-16 fw-600 card-title card-title-md" [innerHTML]="item.title"></ion-card-title>\n      <p class="fs-13" [innerHTML]="item.excerpt"></p>\n    </ion-card-content>\n\n    <ion-row class="row">\n      <ion-col>\n        <button (click)="wpService.doFavorite(item)" ion-button icon-left clear small class="text-black favorite">\n          <ion-icon [name]="item.isFavorite == true ? \'heart\' : \'heart-outline\'"></ion-icon>\n        </button>\n      </ion-col>\n\n      <ion-col center text-center>\n         <button (click)="wpService.doShare(item)" ion-button icon-left clear small class="text-black">\n             <ion-icon name="md-share"></ion-icon>\n        </button>\n      </ion-col>\n\n      <ion-col right text-right>\n        <button (click)="wpService.doOpen(item)" ion-button icon-left clear small class="text-black">\n          <ion-icon name="md-open"></ion-icon>\n        </button>\n      </ion-col>\n      \n      <ion-col right text-right>\n        <button (click)="wpService.doReadMore(navCtrl,item)" ion-button icon-left clear small class="text-black">\n          <ion-icon name="ios-more"></ion-icon>\n        </button>\n      </ion-col>\n\n    </ion-row>\n  </ion-card>\n   <ion-infinite-scroll (ionInfinite)="loadMore($event)">\n     <ion-infinite-scroll-content></ion-infinite-scroll-content>\n   </ion-infinite-scroll>\n</ion-content>\n'/*ion-inline-end:"/Users/andrewhein/Desktop/WestmorelandWorking/src/pages/ready-app/wordpress/wordpress-home/wordpress-home.html"*/,
+            selector: 'page-wordpress-search',template:/*ion-inline-start:"D:\Visual Studio\Personal\Project-Watermellon\src\pages\ready-app\wordpress\wordpress-search\wordpress-search.html"*/'<!--\n\n  Generated template for the WordpressSearchPage page.\n\n\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n-->\n\n<ion-header>\n\n  <ion-navbar>\n\n    <button ion-button menuToggle>\n\n      <ion-icon name="menu"></ion-icon>\n\n    </button>\n\n    <ion-searchbar [(ngModel)]="query" [showCancelButton]="shouldShowCancel" (ionInput)="onInput()" class="light-searchbar round transparent text-white pdl-10 pdr-10"></ion-searchbar>\n\n  </ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content class="white-1">\n\n   <ion-spinner class="indicator" [ngClass]="spnState"></ion-spinner>\n\n   <ion-card *ngFor="let item of data" class="bdra-5 card card-md">\n\n    <img [src]="item.thumb" (click)="wpService.doReadMore(navCtrl,item)">\n\n    <ion-card-content class="card-content card-content-md" (click)="wpService.doReadMore(navCtrl,item)">\n\n      <ion-card-title class="fs-16 fw-600 card-title card-title-md" [innerHTML]="item.title"></ion-card-title>\n\n      <p  [innerHTML]="item.excerpt"></p>\n\n    </ion-card-content>\n\n\n\n    <ion-row class="row">\n\n      <ion-col>\n\n        <button (click)="wpService.doFavorite(item)" ion-button icon-left clear small class="text-grey-5 favorite">\n\n          <ion-icon  [name]="item.isFavorite == true ? \'heart\' : \'heart-outline\'"></ion-icon>\n\n        </button>\n\n      </ion-col>\n\n\n\n      <ion-col center text-center>\n\n         <button (click)="wpService.doShare(item)" ion-button icon-left clear small class="text-grey-5">\n\n             <ion-icon name="md-share"></ion-icon>\n\n        </button>\n\n      </ion-col>\n\n\n\n     <ion-col right text-right>\n\n        <button (click)="wpService.doOpen(item)" ion-button icon-left clear small class="text-grey-5">\n\n          <ion-icon name="md-open"></ion-icon>\n\n        </button>\n\n      </ion-col>\n\n      \n\n      \n\n      <ion-col right text-right>\n\n        <button (click)="wpService.doReadMore(navCtrl,item)" ion-button icon-left clear small class="text-grey-5 fs-20">\n\n          <ion-icon name="ios-more"></ion-icon>\n\n        </button>\n\n      </ion-col>\n\n\n\n    </ion-row>\n\n  </ion-card>\n\n   <ion-infinite-scroll (ionInfinite)="loadMore($event)">\n\n     <ion-infinite-scroll-content></ion-infinite-scroll-content>\n\n   </ion-infinite-scroll>\n\n</ion-content>\n\n'/*ion-inline-end:"D:\Visual Studio\Personal\Project-Watermellon\src\pages\ready-app\wordpress\wordpress-search\wordpress-search.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* NavController */],
             __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["n" /* NavParams */],
             __WEBPACK_IMPORTED_MODULE_2__providers_wordpress_wordpress__["a" /* WordpressService */]])
-    ], WordpressHomePage);
-    return WordpressHomePage;
+    ], WordpressSearchPage);
+    return WordpressSearchPage;
 }());
 
-//# sourceMappingURL=wordpress-home.js.map
+//# sourceMappingURL=wordpress-search.js.map
 
 /***/ })
 

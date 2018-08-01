@@ -14,8 +14,64 @@ import { Injectable } from '@angular/core';
     }
     
     getContent(){
-      return [  
-      {  
+      return [
+        //  Westmoreland County Fair menu.
+        {
+          'title': '',
+          'group': [
+            {  
+              'title':'Home',
+              'page':'HomePage',
+              'icon':'md-home'
+            },
+            {
+              'title': 'Daily Events',
+              'page': 'DailyEventsPage',
+              'icon': 'md-calendar'
+            },
+            {
+              'title': 'Vendors',
+              'page': 'VendorsPage',
+              'icon': 'logo-twitter'
+            },
+            {
+              'title': 'Sponsors',
+              'page': 'SponsorsPage',
+              'icon': 'md-flag'
+            },
+            {
+              'title': 'Directions',
+              'page': 'DirectionsPage',
+              'icon': 'md-map'
+            },
+            {  
+              'title':'Buy Tickets',
+              'page':'BuyTicketsPage',
+              'icon':'logo-twitter'
+            },
+            {  
+              'title':'Facebook',
+              'page':'FacebookPage',
+              'icon':'logo-facebook'
+            },
+            {  
+              'title':'Instagram',
+              'page':'InstagramPage',
+              'icon':'logo-instagram'
+            },
+            {  
+              'title':'About',
+              'page':'AboutPage',
+              'icon':'md-information-circle'
+            },
+            {
+              'title': 'Contact',
+              'page': 'ContactUsPage',
+              'icon': 'md-mail'
+            },
+          ]
+        },
+      /*{  
         'title':'Dashboard',
         'group':[  
         {  
@@ -412,7 +468,7 @@ import { Injectable } from '@angular/core';
           'icon':'md-albums'
         },
         ]
-      }
+      }*/
       ]//end menu list
     }//end getContent
   }

@@ -1,14 +1,14 @@
 webpackJsonp([46],{
 
-/***/ 449:
+/***/ 456:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "WordpressFavoritePageModule", function() { return WordpressFavoritePageModule; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "WordpressPostsPageModule", function() { return WordpressPostsPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(38);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__wordpress_favorite__ = __webpack_require__(589);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__wordpress_posts__ = __webpack_require__(813);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -18,31 +18,31 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
-var WordpressFavoritePageModule = (function () {
-    function WordpressFavoritePageModule() {
+var WordpressPostsPageModule = (function () {
+    function WordpressPostsPageModule() {
     }
-    WordpressFavoritePageModule = __decorate([
+    WordpressPostsPageModule = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["NgModule"])({
             declarations: [
-                __WEBPACK_IMPORTED_MODULE_2__wordpress_favorite__["a" /* WordpressFavoritePage */],
+                __WEBPACK_IMPORTED_MODULE_2__wordpress_posts__["a" /* WordpressPostsPage */],
             ],
             imports: [
-                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__wordpress_favorite__["a" /* WordpressFavoritePage */]),
+                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__wordpress_posts__["a" /* WordpressPostsPage */]),
             ],
         })
-    ], WordpressFavoritePageModule);
-    return WordpressFavoritePageModule;
+    ], WordpressPostsPageModule);
+    return WordpressPostsPageModule;
 }());
 
-//# sourceMappingURL=wordpress-favorite.module.js.map
+//# sourceMappingURL=wordpress-posts.module.js.map
 
 /***/ }),
 
-/***/ 589:
+/***/ 813:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return WordpressFavoritePage; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return WordpressPostsPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(38);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_wordpress_wordpress__ = __webpack_require__(255);
@@ -59,49 +59,90 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 /**
- * Generated class for the WordpressFavoritePage page.
+ * Generated class for the WordpressPostsPage page.
  *
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
  */
-var WordpressFavoritePage = (function () {
-    function WordpressFavoritePage(navCtrl, navParams, wpService) {
+var WordpressPostsPage = (function () {
+    function WordpressPostsPage(navCtrl, navParams, wpService) {
         this.navCtrl = navCtrl;
         this.navParams = navParams;
         this.wpService = wpService;
         this.data = new Array();
+        this.events = {};
+        this.page = 0;
+        this.per_page = 5;
+        this.spnState = 'show';
+        this.categories_id = this.navParams.get('id');
     }
-    WordpressFavoritePage.prototype.ionViewDidEnter = function () {
+    WordpressPostsPage.prototype.loadMore = function (infiniteScroll) {
         var _this = this;
-        this.data = new Array();
-        var that = this;
-        this.wpService.getAllFavorites().then(function (result) {
-            _this.data = result;
+        if (infiniteScroll === void 0) { infiniteScroll = null; }
+        this.page += 1;
+        this.wpService.getPostsByCategories(this.page, this.per_page, this.categories_id).subscribe(function (data) {
+            var _loop_1 = function () {
+                var post = {
+                    id: data[i].id,
+                    title: data[i].title.rendered,
+                    excerpt: data[i].excerpt.rendered,
+                    link: data[i].link,
+                    thumb: null,
+                    isFavorite: false
+                };
+                _this.wpService.getMedia(data[i].featured_media).subscribe(function (media) {
+                    post.thumb = media.source_url;
+                });
+                _this.wpService.isFavorite(data[i]).then(function (result) {
+                    post.isFavorite = result;
+                    _this.data.push(post);
+                });
+            };
+            for (var i = 0; i < data.length; i++) {
+                _loop_1();
+            }
+            ;
+            console.log(_this.data);
+            _this.spnState = 'hide';
+            if (infiniteScroll) {
+                infiniteScroll.complete();
+            }
+        }, function (error) {
+            _this.spnState = 'hide';
+            if (infiniteScroll != null) {
+                infiniteScroll.enable(false);
+            }
         });
     };
-    WordpressFavoritePage.prototype.doFavorite = function (item) {
-        this.wpService.doFavorite(item);
-        var index = this.wpService.getIndexOf(item.id, this.data);
-        if (index != -1) {
-            this.data.splice(index, 1);
+    WordpressPostsPage.prototype.ionViewDidLoad = function () {
+        this.loadMore();
+    };
+    WordpressPostsPage.prototype.ionViewDidEnter = function () {
+        var _this = this;
+        if (this.data.length != 0) {
+            var _loop_2 = function (i) {
+                this_1.wpService.isFavorite(this_1.data[i]).then(function (result) {
+                    _this.data[i].isFavorite = result;
+                });
+            };
+            var this_1 = this;
+            for (var i = 0; i < this.data.length; i++) {
+                _loop_2(i);
+            }
         }
     };
-    WordpressFavoritePage.prototype.doClear = function () {
-        this.wpService.clearAllFavorite();
-        this.data = new Array();
-    };
-    WordpressFavoritePage = __decorate([
+    WordpressPostsPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-            selector: 'page-wordpress-favorite',template:/*ion-inline-start:"/Users/andrewhein/Desktop/WestmorelandWorking/src/pages/ready-app/wordpress/wordpress-favorite/wordpress-favorite.html"*/'<!--\n  Generated template for the WordpressFavoritePage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title>Favorites</ion-title>\n    <ion-buttons right>\n      <button ion-button icon-only (click)="doClear()">\n      <ion-icon class="fs-24 text-grey-5" name="trash">\n      </ion-icon>\n    </button>\n    </ion-buttons>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content class="white-1">\n<ion-card *ngFor="let item of data" class="bdra-5 card card-md">\n    <img *ngIf="item.thumb!=null" [src]="item.thumb" (click)="wpService.doReadMore(navCtrl,item)">\n    <ion-card-content class="card-content card-content-md" (click)="wpService.doReadMore(navCtrl,item)">\n      <ion-card-title class="fs-16 fw-600 card-title card-title-md" [innerHTML]="item.title"></ion-card-title>\n      <p  [innerHTML]="item.excerpt"></p>\n    </ion-card-content>\n\n    <ion-row class="row">\n      <ion-col>\n        <button (click)="doFavorite(item)" ion-button icon-left clear small class="text-grey-5 favorite">\n          <ion-icon  [name]="item.isFavorite == true ? \'heart\' : \'heart-outline\'"></ion-icon>\n        </button>\n      </ion-col>\n\n      <ion-col center text-center>\n         <button (click)="wpService.doShare(item)" ion-button icon-left clear small class="text-grey-5">\n             <ion-icon name="md-share"></ion-icon>\n        </button>\n      </ion-col>\n\n      <ion-col right text-right>\n        <button (click)="wpService.doOpen(item)" ion-button icon-left clear small class="text-grey-5">\n          <ion-icon name="md-open"></ion-icon>\n        </button>\n      </ion-col>\n      \n      <ion-col right text-right>\n        <button (click)="wpService.doReadMore(navCtrl,item)" ion-button icon-left clear small class="text-grey-5 fs-20">\n          <ion-icon name="ios-more"></ion-icon>\n        </button>\n      </ion-col>\n\n    </ion-row>\n  </ion-card>\n</ion-content>\n'/*ion-inline-end:"/Users/andrewhein/Desktop/WestmorelandWorking/src/pages/ready-app/wordpress/wordpress-favorite/wordpress-favorite.html"*/,
+            selector: 'page-wordpress-posts',template:/*ion-inline-start:"D:\Visual Studio\Personal\Project-Watermellon\src\pages\ready-app\wordpress\wordpress-posts\wordpress-posts.html"*/'<!--\n\n  Generated template for the WordpressPostsPage page.\n\n\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n-->\n\n<ion-header>\n\n  <ion-navbar>\n\n    <button ion-button menuToggle>\n\n      <ion-icon name="menu"></ion-icon>\n\n    </button>\n\n    <ion-title>Posts</ion-title>\n\n  </ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content>\n\n <ion-spinner class="indicator" [ngClass]="spnState"></ion-spinner>\n\n <ion-card *ngFor="let item of data" class="bdra-5 card card-md">\n\n    <img *ngIf="item.thumb!=null" [src]="item.thumb" (click)="wpService.doReadMore(navCtrl,item)">\n\n    <ion-card-content class="card-content card-content-md" (click)="wpService.doReadMore(navCtrl,item)">\n\n      <ion-card-title class="fs-16 fw-600 card-title card-title-md" [innerHTML]="item.title"></ion-card-title>\n\n      <p  [innerHTML]="item.excerpt"></p>\n\n    </ion-card-content>\n\n\n\n    <ion-row class="row">\n\n      <ion-col>\n\n        <button (click)="wpService.doFavorite(item)" ion-button icon-left clear small class="text-grey-5 favorite">\n\n          <ion-icon  [name]="item.isFavorite == true ? \'heart\' : \'heart-outline\'"></ion-icon>\n\n        </button>\n\n      </ion-col>\n\n\n\n      <ion-col center text-center>\n\n         <button (click)="wpService.doShare(item)" ion-button icon-left clear small class="text-grey-5">\n\n             <ion-icon name="md-share"></ion-icon>\n\n        </button>\n\n      </ion-col>\n\n\n\n      <ion-col right text-right>\n\n        <button (click)="wpService.doOpen(item)" ion-button icon-left clear small class="text-grey-5">\n\n          <ion-icon name="md-open"></ion-icon>\n\n        </button>\n\n      </ion-col>\n\n      \n\n      <ion-col right text-right>\n\n        <button (click)="wpService.doReadMore(navCtrl,item)" ion-button icon-left clear small class="text-grey-5 fs-20">\n\n          <ion-icon name="ios-more"></ion-icon>\n\n        </button>\n\n      </ion-col>\n\n\n\n    </ion-row>\n\n  </ion-card>\n\n   <ion-infinite-scroll (ionInfinite)="loadMore($event)">\n\n     <ion-infinite-scroll-content></ion-infinite-scroll-content>\n\n   </ion-infinite-scroll>\n\n</ion-content>\n\n'/*ion-inline-end:"D:\Visual Studio\Personal\Project-Watermellon\src\pages\ready-app\wordpress\wordpress-posts\wordpress-posts.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* NavController */],
             __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["n" /* NavParams */],
             __WEBPACK_IMPORTED_MODULE_2__providers_wordpress_wordpress__["a" /* WordpressService */]])
-    ], WordpressFavoritePage);
-    return WordpressFavoritePage;
+    ], WordpressPostsPage);
+    return WordpressPostsPage;
 }());
 
-//# sourceMappingURL=wordpress-favorite.js.map
+//# sourceMappingURL=wordpress-posts.js.map
 
 /***/ })
 

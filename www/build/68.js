@@ -1,14 +1,14 @@
 webpackJsonp([68],{
 
-/***/ 403:
+/***/ 415:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ModalMenuModule", function() { return ModalMenuModule; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "DailyEventsPageModule", function() { return DailyEventsPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(38);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__modal_menu__ = __webpack_require__(489);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__daily_events__ = __webpack_require__(730);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -18,37 +18,35 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
-var ModalMenuModule = (function () {
-    function ModalMenuModule() {
+var DailyEventsPageModule = (function () {
+    function DailyEventsPageModule() {
     }
-    ModalMenuModule = __decorate([
+    DailyEventsPageModule = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["NgModule"])({
             declarations: [
-                __WEBPACK_IMPORTED_MODULE_2__modal_menu__["a" /* ModalMenuComponent */],
+                __WEBPACK_IMPORTED_MODULE_2__daily_events__["a" /* DailyEventsPage */],
             ],
             imports: [
-                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__modal_menu__["a" /* ModalMenuComponent */]),
-            ],
-            exports: [
-                __WEBPACK_IMPORTED_MODULE_2__modal_menu__["a" /* ModalMenuComponent */]
+                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__daily_events__["a" /* DailyEventsPage */]),
             ],
             schemas: [__WEBPACK_IMPORTED_MODULE_0__angular_core__["CUSTOM_ELEMENTS_SCHEMA"]]
         })
-    ], ModalMenuModule);
-    return ModalMenuModule;
+    ], DailyEventsPageModule);
+    return DailyEventsPageModule;
 }());
 
-//# sourceMappingURL=modal-menu.module.js.map
+//# sourceMappingURL=daily-events.module.js.map
 
 /***/ }),
 
-/***/ 489:
+/***/ 730:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ModalMenuComponent; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return DailyEventsPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(38);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_platform_browser__ = __webpack_require__(33);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -60,45 +58,35 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 
 
+
 /**
- * Generated class for the RegisterV1Component component.
+ * Generated class for the DailyEventsPage page.
  *
- * See https://angular.io/api/core/Component for more info on Angular
- * Components.
+ * See https://ionicframework.com/docs/components/#navigation for more info on
+ * Ionic pages and navigation.
  */
-var ModalMenuComponent = (function () {
-    function ModalMenuComponent(modalCtrl, viewCtrl) {
-        var _this = this;
-        this.modalCtrl = modalCtrl;
-        this.viewCtrl = viewCtrl;
-        this.onCallbackEvent = function (event) {
-            if (_this.events[event]) {
-                _this.events[event]();
-            }
-        };
-        console.log('Hello ModalsComponent Component');
+// Leaving this existing code incase we need to come back and reference it.
+var DailyEventsPage = (function () {
+    function DailyEventsPage(navCtrl, navParams, sanitize) {
+        this.navCtrl = navCtrl;
+        this.navParams = navParams;
+        this.sanitize = sanitize;
+        this.params = {};
+        this.url = sanitize.bypassSecurityTrustResourceUrl("https://westmorelandfair.com/_app/daily-events/");
     }
-    ModalMenuComponent.prototype.dismiss = function () {
-        this.viewCtrl.dismiss();
+    DailyEventsPage.prototype.ionViewDidLoad = function () {
+        console.log('ionViewDidLoad DailyEventsPage');
     };
-    __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Input"])(),
-        __metadata("design:type", Object)
-    ], ModalMenuComponent.prototype, "events", void 0);
-    __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Input"])(),
-        __metadata("design:type", Object)
-    ], ModalMenuComponent.prototype, "data", void 0);
-    ModalMenuComponent = __decorate([
+    DailyEventsPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-            selector: 'modal-menu',template:/*ion-inline-start:"/Users/andrewhein/Desktop/WestmorelandWorking/src/components/ui-elements/modal-menu/modal-menu.html"*/'<ion-content padding class="modal-menu black">\n  <ion-row class="main-modal bdra-10">\n    <div class="modal-box-wrapper">\n      \n      <div class="thumb text-center mg-auto mgt-40" col-6>\n        <img src="assets/img/demo11.jpg" alt="">\n      </div>\n      \n      <p class="text-grey-4 text-center">Koodinh Producer</p>\n\n      <ion-list no-lines class="lst-no-background text-white mgt-40">\n        <button class="uppercase spacing-3 fw-600 text-center" ion-item>Home</button> \n        <button class="uppercase spacing-3 fw-600 text-center" ion-item>Product</button>\n        <button class="uppercase spacing-3 fw-600 text-center" ion-item>Profile</button>\n        <button class="uppercase spacing-3 fw-600 text-center" ion-item>Blog</button> \n        <button class="uppercase spacing-3 fw-600 text-center" ion-item>Contact</button> \n      </ion-list>\n\n    </div>\n  </ion-row>\n  \n\n  <ion-footer>\n    <ion-toolbar padding class="transparent text-white shadow-0 text-center">\n      <button ion-button icon-only outline class="stroke-grey-3 button-circle text-grey-3" (click)="dismiss()">\n        <ion-icon name="ios-close"></ion-icon>\n      </button>\n    </ion-toolbar>\n  </ion-footer>\n\n</ion-content>'/*ion-inline-end:"/Users/andrewhein/Desktop/WestmorelandWorking/src/components/ui-elements/modal-menu/modal-menu.html"*/
+            selector: 'page-events',template:/*ion-inline-start:"D:\Visual Studio\Personal\Project-Watermellon\src\pages\daily-events\daily-events.html"*/'<!--\n\n  Generated template for the AboutPage page.\n\n\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n-->\n\n<ion-header class="skin skin-wcf skin-brown">\n\n  <ion-navbar>\n\n  <button ion-button menuToggle>\n\n    <ion-icon name="menu"></ion-icon>\n\n  </button>\n\n  <ion-title>Daily Events</ion-title>\n\n  </ion-navbar>\n\n  </ion-header>\n\n\n\n\n\n<ion-content class="no-scroll">\n\n    <iframe height="100%" width="100%" [src]="url"></iframe>\n\n</ion-content>\n\n\n\n\n\n '/*ion-inline-end:"D:\Visual Studio\Personal\Project-Watermellon\src\pages\daily-events\daily-events.html"*/,
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* ModalController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["s" /* ViewController */]])
-    ], ModalMenuComponent);
-    return ModalMenuComponent;
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["n" /* NavParams */], __WEBPACK_IMPORTED_MODULE_2__angular_platform_browser__["DomSanitizer"]])
+    ], DailyEventsPage);
+    return DailyEventsPage;
 }());
 
-//# sourceMappingURL=modal-menu.js.map
+//# sourceMappingURL=daily-events.js.map
 
 /***/ })
 

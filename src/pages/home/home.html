@@ -13,7 +13,7 @@
 </ion-navbar>
 </ion-header>
 
-<ion-content *ngIf="settings!=null" class="{{settings.skin.main_bg}}">
+<ion-content *ngIf="settings!=null" class="{{settings.skin.main_bg}}" overflow-scroll="true">
 
 <div *ngIf="settings.dashboard_type == 1">
   <div class="wrapper-slide">
@@ -47,9 +47,9 @@
     <h6 class="uppercase fs-13 fw-500 text-grey-4">{{tree.title}}</h6>
     <ion-row class="mgt-10 mgb-20 mgl--5 mgr--5">
     <ion-col col-6 *ngFor="let item of tree.group, let i = index">
-    <div class="shadow-2 white-opct-1 pd-15 text-center" (click)="openPage(item)">
-      <ion-icon class="fs-22 text-grey-5 mgt-10" name="{{item.icon}}"></ion-icon>
-      <h2 class="text-grey-5 fs-12 spacing-1 mg-5 uppercase fw-600 text-ellipsis">{{item.title}}</h2>
+    <div class="brown-opct-1 pd-15 text-center" (click)="openPage(item)">
+      <ion-icon class="fs-48 text-white mgt-10" name="{{item.icon}}"></ion-icon>
+      <h2 class="text-white fs-12 spacing-1 mg-5 uppercase fw-600 text-ellipsis">{{item.title}}</h2>
     </div>
   </ion-col>
 </ion-row>

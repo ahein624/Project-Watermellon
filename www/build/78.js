@@ -1,14 +1,14 @@
 webpackJsonp([78],{
 
-/***/ 392:
+/***/ 398:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "LoginV1Module", function() { return LoginV1Module; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "LoginV7Module", function() { return LoginV7Module; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(38);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__login_v1__ = __webpack_require__(476);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__login_v7__ = __webpack_require__(549);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -18,35 +18,35 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
-var LoginV1Module = (function () {
-    function LoginV1Module() {
+var LoginV7Module = (function () {
+    function LoginV7Module() {
     }
-    LoginV1Module = __decorate([
+    LoginV7Module = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["NgModule"])({
             declarations: [
-                __WEBPACK_IMPORTED_MODULE_2__login_v1__["a" /* LoginV1Component */],
+                __WEBPACK_IMPORTED_MODULE_2__login_v7__["a" /* LoginV7Component */],
             ],
             imports: [
-                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__login_v1__["a" /* LoginV1Component */]),
+                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__login_v7__["a" /* LoginV7Component */]),
             ],
             exports: [
-                __WEBPACK_IMPORTED_MODULE_2__login_v1__["a" /* LoginV1Component */]
+                __WEBPACK_IMPORTED_MODULE_2__login_v7__["a" /* LoginV7Component */]
             ],
             schemas: [__WEBPACK_IMPORTED_MODULE_0__angular_core__["CUSTOM_ELEMENTS_SCHEMA"]]
         })
-    ], LoginV1Module);
-    return LoginV1Module;
+    ], LoginV7Module);
+    return LoginV7Module;
 }());
 
-//# sourceMappingURL=login-v1.module.js.map
+//# sourceMappingURL=login-v7.module.js.map
 
 /***/ }),
 
-/***/ 476:
+/***/ 549:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return LoginV1Component; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return LoginV7Component; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -59,41 +59,51 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 
 /**
- * Generated class for the LoginV1Component component.
+ * Generated class for the LoginV7Component component.
  *
  * See https://angular.io/api/core/Component for more info on Angular
  * Components.
  */
-var LoginV1Component = (function () {
-    function LoginV1Component() {
+var LoginV7Component = (function () {
+    function LoginV7Component() {
         var _this = this;
         this.onCallbackEvent = function (event) {
             if (_this.events[event]) {
                 _this.events[event]({
-                    'username': _this.username,
+                    'email': _this.email,
                     'password': _this.password
                 });
             }
         };
     }
+    LoginV7Component.prototype.next = function () {
+        this.signupSlider.slideNext();
+    };
+    LoginV7Component.prototype.prev = function () {
+        this.signupSlider.slidePrev();
+    };
     __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Input"])(),
         __metadata("design:type", Object)
-    ], LoginV1Component.prototype, "data", void 0);
+    ], LoginV7Component.prototype, "data", void 0);
     __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Input"])(),
         __metadata("design:type", Object)
-    ], LoginV1Component.prototype, "events", void 0);
-    LoginV1Component = __decorate([
+    ], LoginV7Component.prototype, "events", void 0);
+    __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["ViewChild"])('signupSlider'),
+        __metadata("design:type", Object)
+    ], LoginV7Component.prototype, "signupSlider", void 0);
+    LoginV7Component = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-            selector: 'login-v1',template:/*ion-inline-start:"/Users/andrewhein/Desktop/WestmorelandWorking/src/components/login/login-v1/login-v1.html"*/'\n  <div *ngIf="data!=null">\n\n    <div class="wrapper-page text-center {{data.ani}}">\n      <button ion-button outline icon-only small color="dark" class="text-grey-3 stroke-grey-3 stroke-1 button-circle back-page" (click)="onCallbackEvent(\'onDismiss\')">\n        <ion-icon name="ios-close"></ion-icon>\n      </button>\n\n      <div>\n        <ion-row>\n          <h3 class="fs-20 fw-600 text-black mgb-30 mgt--30 spacing-3 pull-left ani-fade-out">{{data.txtHead}}</h3>\n        </ion-row>\n\n        <ion-row class="logo-img mgb-70 pull-left ani-fade-out">\n          <img [src]="data.imgLogo" alt="">\n        </ion-row>\n\n        <ion-list class="ani-right-to-left">\n          <ion-item class="fs-13 text-black line-1 pdl-0 stroke-black">\n            <ion-input type="text" placeholder="{{data.txtUserName}}" [(ngModel)]="username"></ion-input>\n          </ion-item>\n        </ion-list>\n\n        <ion-list class="ani-right-to-left">\n          <ion-item class="fs-13 text-black line-1 pdl-0 stroke-black">\n            <ion-input type="password" placeholder="{{data.txtPassword}}" [(ngModel)]="password"></ion-input>\n          </ion-item>\n        </ion-list>\n\n        <div class="text-center ani-bottom-to-top">\n          <button ion-button block round color="dark" class="mgt-30 text-white uppercase spacing-1 shadow-3 black" (click)="onCallbackEvent(\'onLogin\')">{{data.btnLogin}}</button>\n        </div>\n      </div>\n\n      <button ion-button color="light" clear small class="mgb-20 btn-signup text-grey-5 ani-fade-out" (click)="onCallbackEvent(\'onSignUp\')">{{data.btnSignUp}}</button>\n    </div>\n\n  </div>\n\n\n\n\n\n'/*ion-inline-end:"/Users/andrewhein/Desktop/WestmorelandWorking/src/components/login/login-v1/login-v1.html"*/
+            selector: 'login-v7',template:/*ion-inline-start:"D:\Visual Studio\Personal\Project-Watermellon\src\components\login\login-v7\login-v7.html"*/'<div *ngIf="data!=null">\n\n  <div class="bg-img">\n\n    <img [src]="data.imgBg" alt="">\n\n  </div>\n\n  \n\n  <div class="wrapper-page text-center black-opct block {{data.ani}}">\n\n    <button ion-button icon-only small color="dark" class="text-white white-opct button-circle back-page" (click)="onCallbackEvent(\'onDismiss\')">\n\n      <ion-icon name="ios-close"></ion-icon>\n\n    </button>\n\n    \n\n    <div>\n\n      <ion-row class="logo-img mgb-20 mgt-30 pdt-50 ani-left-to-right">\n\n        <img class="mg-auto" [src]="data.imgLogo" alt="">\n\n      </ion-row>\n\n      \n\n      <ion-slides #signupSlider class="ani-bottom-to-top">\n\n        <ion-slide class="text-white" padding>\n\n          <h4 class="text-left uppercase spacing-1 fw-400">{{data.txtHead1}}</h4>\n\n          <p class="text-left fs-14 text-grey-2">{{data.txtHead2}}</p>\n\n          <button ion-button color="light" clear small class="pull-left mgb-30 text-grey-3" (click)="onCallbackEvent(\'onSignUp\')">{{data.btnSignUp}}</button>\n\n          <ion-list class="mgt-40">\n\n            <ion-item class="text-grey-5 white round">\n\n              <ion-input type="email" placeholder="{{data.txtEmail}}" [(ngModel)]="email"></ion-input>\n\n            </ion-item>\n\n          </ion-list>\n\n          <button ion-button outline (click)="next()" color="light" class="mgt-40 text-amber stroke-2 stroke-amber button-circle uppercase fw-600 spacing-1 fs-14">\n\n            <ion-icon name="ios-arrow-forward-outline"></ion-icon>\n\n          </button>\n\n        </ion-slide>\n\n\n\n        <ion-slide class="text-white" padding>\n\n          <h4 class="text-left uppercase spacing-1 fw-400">{{data.txtHead3}}</h4>\n\n          <p class="text-left fs-14 text-grey-2">{{data.txtHead4}}</p>\n\n          <button ion-button color="light" clear small class="pull-left mgb-30 text-grey-3" (click)="onCallbackEvent(\'onForgotPassword\')">{{data.btnForgotPassword}}</button>\n\n          <ion-list class="mgt-40">\n\n            <ion-item class="text-grey-5 white round">\n\n              <ion-input type="password" placeholder="{{data.txtPassword}}" [(ngModel)]="password"></ion-input>\n\n            </ion-item>\n\n          </ion-list>\n\n          <button ion-button round outline color="light" class="text-amber stroke-2 stroke-amber pull-right uppercase fw-600 spacing-1 fs-12"  (click)="onCallbackEvent(\'onLogin\')">{{data.btnLogin}}</button>\n\n          <button ion-button outline (click)="prev()" color="light" class="mgr-5 text-amber stroke-2 stroke-amber button-circle pull-right uppercase fw-600 spacing-1 fs-14">\n\n            <ion-icon name="ios-arrow-back-outline"></ion-icon>\n\n          </button>\n\n        </ion-slide>\n\n      </ion-slides>\n\n    </div>\n\n  </div>\n\n  </div>\n\n'/*ion-inline-end:"D:\Visual Studio\Personal\Project-Watermellon\src\components\login\login-v7\login-v7.html"*/
         }),
         __metadata("design:paramtypes", [])
-    ], LoginV1Component);
-    return LoginV1Component;
+    ], LoginV7Component);
+    return LoginV7Component;
 }());
 
-//# sourceMappingURL=login-v1.js.map
+//# sourceMappingURL=login-v7.js.map
 
 /***/ })
 

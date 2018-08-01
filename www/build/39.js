@@ -1,14 +1,14 @@
 webpackJsonp([39],{
 
-/***/ 460:
+/***/ 473:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SettingSidemenuPageModule", function() { return SettingSidemenuPageModule; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SponsorsPageModule", function() { return SponsorsPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(38);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__setting_sidemenu__ = __webpack_require__(612);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__sponsors__ = __webpack_require__(911);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -18,34 +18,35 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
-var SettingSidemenuPageModule = (function () {
-    function SettingSidemenuPageModule() {
+var SponsorsPageModule = (function () {
+    function SponsorsPageModule() {
     }
-    SettingSidemenuPageModule = __decorate([
+    SponsorsPageModule = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["NgModule"])({
             declarations: [
-                __WEBPACK_IMPORTED_MODULE_2__setting_sidemenu__["a" /* SettingSidemenuPage */],
+                __WEBPACK_IMPORTED_MODULE_2__sponsors__["a" /* SponsorsPage */],
             ],
             imports: [
-                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__setting_sidemenu__["a" /* SettingSidemenuPage */]),
+                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__sponsors__["a" /* SponsorsPage */]),
             ],
+            schemas: [__WEBPACK_IMPORTED_MODULE_0__angular_core__["CUSTOM_ELEMENTS_SCHEMA"]]
         })
-    ], SettingSidemenuPageModule);
-    return SettingSidemenuPageModule;
+    ], SponsorsPageModule);
+    return SponsorsPageModule;
 }());
 
-//# sourceMappingURL=setting-sidemenu.module.js.map
+//# sourceMappingURL=sponsors.module.js.map
 
 /***/ }),
 
-/***/ 612:
+/***/ 911:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SettingSidemenuPage; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SponsorsPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(38);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_settings_settings__ = __webpack_require__(140);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_platform_browser__ = __webpack_require__(33);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -59,35 +60,33 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 /**
- * Generated class for the RegisterV1Component component.
+ * Generated class for the SponsorsPage page.
  *
- * See https://angular.io/api/core/Component for more info on Angular
- * Components.
+ * See https://ionicframework.com/docs/components/#navigation for more info on
+ * Ionic pages and navigation.
  */
-var SettingSidemenuPage = (function () {
-    function SettingSidemenuPage(menu, settingsProvider) {
-        this.menu = menu;
-        this.settingsProvider = settingsProvider;
-        menu.enable(true);
+// Leaving this existing code incase we need to come back and reference it.
+var SponsorsPage = (function () {
+    function SponsorsPage(navCtrl, navParams, sanitize) {
+        this.navCtrl = navCtrl;
+        this.navParams = navParams;
+        this.sanitize = sanitize;
+        this.params = {};
+        this.url = sanitize.bypassSecurityTrustResourceUrl("https://westmorelandfair.com/_app/daily-events/");
     }
-    SettingSidemenuPage.prototype.open_menu = function (id_menu) {
-        var _this = this;
-        this.settingsProvider.setMenu(id_menu).then(function (data) {
-            _this.menu.enable(false);
-            _this.menu.enable(true, id_menu);
-            _this.menu.open(id_menu);
-        });
+    SponsorsPage.prototype.ionViewDidLoad = function () {
+        console.log('ionViewDidLoad SponsorsPage');
     };
-    SettingSidemenuPage = __decorate([
+    SponsorsPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-            selector: 'setting-sidemenu',template:/*ion-inline-start:"/Users/andrewhein/Desktop/WestmorelandWorking/src/pages/settings/setting-sidemenu/setting-sidemenu.html"*/'<ion-header>\n  <ion-navbar>\n    <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title>Sidemenu setting</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n  \n  <button ion-button block round class="lama-vs-coban" (click)="open_menu(\'menu-basic\')">Side Menu Basic</button>\n  <button ion-button block round class="indigo" (click)="open_menu(\'menu-avatar\')">Side Menu Avatar</button>\n  <button ion-button block round class="pink" (click)="open_menu(\'menu-material\')">Side Menu Material</button>\n  <button ion-button block round class="d-purple" (click)="open_menu(\'menu-icon-only\')">Side Menu Only Icon</button>\n\n</ion-content>\n'/*ion-inline-end:"/Users/andrewhein/Desktop/WestmorelandWorking/src/pages/settings/setting-sidemenu/setting-sidemenu.html"*/
+            selector: 'page-sponsors',template:/*ion-inline-start:"D:\Visual Studio\Personal\Project-Watermellon\src\pages\sponsors\sponsors.html"*/'<!--\n\n  Generated template for the AboutPage page.\n\n\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n-->\n\n<ion-header class="skin skin-wcf skin-brown">\n\n  <ion-navbar>\n\n  <button ion-button menuToggle>\n\n    <ion-icon name="menu"></ion-icon>\n\n  </button>\n\n  <ion-title>Sponsors</ion-title>\n\n  </ion-navbar>\n\n  </ion-header>\n\n\n\n\n\n<ion-content class="no-scroll">\n\n    <iframe height="100%" width="100%" [src]="url"></iframe>\n\n</ion-content>\n\n\n\n\n\n '/*ion-inline-end:"D:\Visual Studio\Personal\Project-Watermellon\src\pages\sponsors\sponsors.html"*/,
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* MenuController */], __WEBPACK_IMPORTED_MODULE_2__providers_settings_settings__["a" /* SettingsProvider */]])
-    ], SettingSidemenuPage);
-    return SettingSidemenuPage;
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["n" /* NavParams */], __WEBPACK_IMPORTED_MODULE_2__angular_platform_browser__["DomSanitizer"]])
+    ], SponsorsPage);
+    return SponsorsPage;
 }());
 
-//# sourceMappingURL=setting-sidemenu.js.map
+//# sourceMappingURL=sponsors.js.map
 
 /***/ })
 

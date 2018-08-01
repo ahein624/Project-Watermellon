@@ -1,14 +1,14 @@
 webpackJsonp([70],{
 
-/***/ 391:
+/***/ 409:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ModalBasicModule", function() { return ModalBasicModule; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ChatPageModule", function() { return ChatPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(38);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__modal_basic__ = __webpack_require__(475);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__chat__ = __webpack_require__(712);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -18,35 +18,31 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
-var ModalBasicModule = (function () {
-    function ModalBasicModule() {
+var ChatPageModule = (function () {
+    function ChatPageModule() {
     }
-    ModalBasicModule = __decorate([
+    ChatPageModule = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["NgModule"])({
             declarations: [
-                __WEBPACK_IMPORTED_MODULE_2__modal_basic__["a" /* ModalBasicComponent */],
+                __WEBPACK_IMPORTED_MODULE_2__chat__["a" /* ChatPage */],
             ],
             imports: [
-                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__modal_basic__["a" /* ModalBasicComponent */]),
+                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__chat__["a" /* ChatPage */]),
             ],
-            exports: [
-                __WEBPACK_IMPORTED_MODULE_2__modal_basic__["a" /* ModalBasicComponent */]
-            ],
-            schemas: [__WEBPACK_IMPORTED_MODULE_0__angular_core__["CUSTOM_ELEMENTS_SCHEMA"]]
         })
-    ], ModalBasicModule);
-    return ModalBasicModule;
+    ], ChatPageModule);
+    return ChatPageModule;
 }());
 
-//# sourceMappingURL=modal-basic.module.js.map
+//# sourceMappingURL=chat.module.js.map
 
 /***/ }),
 
-/***/ 475:
+/***/ 712:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ModalBasicComponent; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ChatPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(38);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -61,44 +57,33 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 /**
- * Generated class for the RegisterV1Component component.
+ * Generated class for the ChatPage page.
  *
- * See https://angular.io/api/core/Component for more info on Angular
- * Components.
+ * See https://ionicframework.com/docs/components/#navigation for more info on
+ * Ionic pages and navigation.
  */
-var ModalBasicComponent = (function () {
-    function ModalBasicComponent(modalCtrl, viewCtrl) {
-        var _this = this;
-        this.modalCtrl = modalCtrl;
-        this.viewCtrl = viewCtrl;
-        this.onCallbackEvent = function (event) {
-            if (_this.events[event]) {
-                _this.events[event]();
-            }
-        };
-        console.log('Hello ModalsComponent Component');
+var ChatPage = (function () {
+    function ChatPage(navCtrl, navParams) {
+        this.navCtrl = navCtrl;
+        this.navParams = navParams;
+        this.listUsersPage = 'ListChatUsersPage';
+        this.listGroupPage = 'ListChatGroupPage';
+        this.listOnlinePage = 'ListChatOnlinePage';
+        this.profilePage = '';
     }
-    ModalBasicComponent.prototype.dismiss = function () {
-        this.viewCtrl.dismiss();
+    ChatPage.prototype.ionViewDidLoad = function () {
+        console.log('ionViewDidLoad ChatPage');
     };
-    __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Input"])(),
-        __metadata("design:type", Object)
-    ], ModalBasicComponent.prototype, "events", void 0);
-    __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Input"])(),
-        __metadata("design:type", Object)
-    ], ModalBasicComponent.prototype, "data", void 0);
-    ModalBasicComponent = __decorate([
+    ChatPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-            selector: 'modal-basic',template:/*ion-inline-start:"/Users/andrewhein/Desktop/WestmorelandWorking/src/components/ui-elements/modal-basic/modal-basic.html"*/'<ion-header class="skin-transparent transparent">\n  <ion-toolbar class="skin-transparent">\n    <ion-title>\n      modal_basic\n    </ion-title>\n    <ion-buttons start>\n      <button ion-button icon-only class="circle text-grey-5 button-circle mgr-10 mgl-10" (click)="dismiss()">\n        <ion-icon name="ios-close"></ion-icon>\n      </button>\n    </ion-buttons>\n  </ion-toolbar>\n</ion-header>\n\n<ion-content>    \n  <h4 padding class="mgt-50 mgb-10">modal_box_title</h4>\n  \n  <ion-list>\n    <ion-item>\n      <ion-label>view_all_location</ion-label>\n      <ion-toggle [(ngModel)]="all_local"></ion-toggle>\n    </ion-item>\n\n    <ion-item>\n      <ion-label>county</ion-label>\n      <ion-select [disabled]="all_local ? true : null" [(ngModel)]="county">\n        <ion-option value="null">County 1</ion-option>\n        <ion-option value="null">County 2</ion-option>\n        <ion-option value="null">County 3</ion-option>\n        <ion-option value="null">County 4</ion-option>\n        <ion-option value="null">County 5</ion-option>\n      </ion-select>\n    </ion-item>\n\n    <ion-item>\n      <ion-label>cities</ion-label>\n      <ion-select [disabled]="all_local ? true : null" [(ngModel)]="cities">\n        <ion-option value="null">All cities</ion-option>\n        <ion-option value="null">Cities 1</ion-option>\n        <ion-option value="null">Cities 2</ion-option>\n        <ion-option value="null">Cities 3</ion-option>\n        <ion-option value="null">Cities 4</ion-option>\n        <ion-option value="null">Cities 5</ion-option>\n      </ion-select>\n    </ion-item>\n  </ion-list>\n</ion-content>\n'/*ion-inline-end:"/Users/andrewhein/Desktop/WestmorelandWorking/src/components/ui-elements/modal-basic/modal-basic.html"*/
+            selector: 'page-chat',template:/*ion-inline-start:"D:\Visual Studio\Personal\Project-Watermellon\src\pages\chat\chat.html"*/'<ion-tabs class="shadow-3 skin-dark skin skin-lama-vs-coban">\n\n	<ion-tab [root]="listUsersPage" tabTitle="" tabIcon="ios-musical-note"></ion-tab>\n\n	<ion-tab [root]="listGroupPage" tabTitle="" tabIcon="ios-barcode"></ion-tab>\n\n	<ion-tab [root]="listOnlinePage" tabTitle="" tabIcon="ios-heart"></ion-tab>\n\n	<ion-tab [root]="profilePage" tabTitle="" tabIcon="ios-contact"></ion-tab>\n\n</ion-tabs>\n\n'/*ion-inline-end:"D:\Visual Studio\Personal\Project-Watermellon\src\pages\chat\chat.html"*/,
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* ModalController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["s" /* ViewController */]])
-    ], ModalBasicComponent);
-    return ModalBasicComponent;
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["n" /* NavParams */]])
+    ], ChatPage);
+    return ChatPage;
 }());
 
-//# sourceMappingURL=modal-basic.js.map
+//# sourceMappingURL=chat.js.map
 
 /***/ })
 

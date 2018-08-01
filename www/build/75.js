@@ -1,14 +1,14 @@
 webpackJsonp([75],{
 
-/***/ 395:
+/***/ 402:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "LoginV4Module", function() { return LoginV4Module; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ModalBoxModule", function() { return ModalBoxModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(38);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__login_v4__ = __webpack_require__(479);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__modal_box__ = __webpack_require__(691);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -18,36 +18,37 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
-var LoginV4Module = (function () {
-    function LoginV4Module() {
+var ModalBoxModule = (function () {
+    function ModalBoxModule() {
     }
-    LoginV4Module = __decorate([
+    ModalBoxModule = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["NgModule"])({
             declarations: [
-                __WEBPACK_IMPORTED_MODULE_2__login_v4__["a" /* LoginV4Component */],
+                __WEBPACK_IMPORTED_MODULE_2__modal_box__["a" /* ModalBoxComponent */],
             ],
             imports: [
-                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__login_v4__["a" /* LoginV4Component */]),
+                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__modal_box__["a" /* ModalBoxComponent */]),
             ],
             exports: [
-                __WEBPACK_IMPORTED_MODULE_2__login_v4__["a" /* LoginV4Component */]
+                __WEBPACK_IMPORTED_MODULE_2__modal_box__["a" /* ModalBoxComponent */]
             ],
             schemas: [__WEBPACK_IMPORTED_MODULE_0__angular_core__["CUSTOM_ELEMENTS_SCHEMA"]]
         })
-    ], LoginV4Module);
-    return LoginV4Module;
+    ], ModalBoxModule);
+    return ModalBoxModule;
 }());
 
-//# sourceMappingURL=login-v4.module.js.map
+//# sourceMappingURL=modal-box.module.js.map
 
 /***/ }),
 
-/***/ 479:
+/***/ 691:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return LoginV4Component; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ModalBoxComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(38);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -58,42 +59,46 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 
+
 /**
- * Generated class for the LoginV4Component component.
+ * Generated class for the RegisterV1Component component.
  *
  * See https://angular.io/api/core/Component for more info on Angular
  * Components.
  */
-var LoginV4Component = (function () {
-    function LoginV4Component() {
+var ModalBoxComponent = (function () {
+    function ModalBoxComponent(modalCtrl, viewCtrl) {
         var _this = this;
+        this.modalCtrl = modalCtrl;
+        this.viewCtrl = viewCtrl;
         this.onCallbackEvent = function (event) {
             if (_this.events[event]) {
-                _this.events[event]({
-                    'username': _this.username,
-                    'password': _this.password
-                });
+                _this.events[event]();
             }
         };
+        console.log('Hello ModalsComponent Component');
     }
+    ModalBoxComponent.prototype.dismiss = function () {
+        this.viewCtrl.dismiss();
+    };
     __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Input"])(),
         __metadata("design:type", Object)
-    ], LoginV4Component.prototype, "data", void 0);
+    ], ModalBoxComponent.prototype, "events", void 0);
     __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Input"])(),
         __metadata("design:type", Object)
-    ], LoginV4Component.prototype, "events", void 0);
-    LoginV4Component = __decorate([
+    ], ModalBoxComponent.prototype, "data", void 0);
+    ModalBoxComponent = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-            selector: 'login-v4',template:/*ion-inline-start:"/Users/andrewhein/Desktop/WestmorelandWorking/src/components/login/login-v4/login-v4.html"*/'<div *ngIf="data!=null">\n  <div class="wrapper-page text-center lama-vs-lama {{data.ani}}">\n    \n    <button ion-button icon-only small color="dark" class="text-white grey-2 back-page" (click)="onCallbackEvent(\'onDismiss\')">\n      <ion-icon name="md-close"></ion-icon>\n    </button>\n    \n    <div class="mgt-0">\n      <ion-row class="logo-img mgb-70 ani-bottom-to-right">\n        <img class="mg-auto" [src]="data.imgLogo" alt="">\n      </ion-row>\n\n      <ion-list>\n        <ion-item class="text-grey-5 grey-1 bdra-20 ani-right-to-left">\n          <ion-input type="text" placeholder="{{data.txtUserName}}" [(ngModel)]="username"></ion-input>\n        </ion-item>\n      </ion-list>\n\n      <ion-list>\n        <ion-item class="text-grey-5 grey-1 bdra-20 ani-right-to-left">\n          <ion-input type="password" placeholder="{{data.txtPassword}}" [(ngModel)]="password"></ion-input>\n        </ion-item>\n      </ion-list>\n      \n      <button ion-button round block color="light" class="blue text-black mgt-25 fw-600 spacing-1 ani-right-to-left" (click)="onCallbackEvent(\'onLogin\')" >{{data.btnLogin}}</button>  \n    </div>\n    \n    <button ion-button color="light" clear small class="btn-signup mgb-15 text-grey-4 ani-top-to-left" (click)="onCallbackEvent(\'onForgotPassword\')">{{data.btnForgotPassword}}</button>\n  </div>\n  </div>'/*ion-inline-end:"/Users/andrewhein/Desktop/WestmorelandWorking/src/components/login/login-v4/login-v4.html"*/
+            selector: 'modal-box',template:/*ion-inline-start:"D:\Visual Studio\Personal\Project-Watermellon\src\components\ui-elements\modal-box\modal-box.html"*/'<ion-content padding class="modal-box">\n\n  <ion-row class="close-modal" (click)="dismiss()"></ion-row>\n\n  <ion-row class="main-modal bdra-10" col-2>\n\n    <div class="modal-box-wrapper">\n\n      \n\n      <h4 class="mgb-10">modal_box_title</h4>\n\n      <h6 class="mgt-5 mgb-20">modal_box_quote</h6>\n\n      \n\n      <ion-list>\n\n        <ion-item>\n\n          <ion-label>view_all_location</ion-label>\n\n          <ion-toggle [(ngModel)]="all_local"></ion-toggle>\n\n        </ion-item>\n\n\n\n        <ion-item>\n\n          <ion-label>county</ion-label>\n\n          <ion-select [disabled]="all_local ? true : null" [(ngModel)]="county">\n\n            <ion-option value="null">County 1</ion-option>\n\n            <ion-option value="null">County 2</ion-option>\n\n            <ion-option value="null">County 3</ion-option>\n\n            <ion-option value="null">County 4</ion-option>\n\n            <ion-option value="null">County 5</ion-option>\n\n          </ion-select>\n\n        </ion-item>\n\n\n\n        <ion-item>\n\n          <ion-label>cities</ion-label>\n\n          <ion-select [disabled]="all_local ? true : null" [(ngModel)]="cities">\n\n            <ion-option value="null">All cities</ion-option>\n\n            <ion-option value="null">Cities 1</ion-option>\n\n            <ion-option value="null">Cities 2</ion-option>\n\n            <ion-option value="null">Cities 3</ion-option>\n\n            <ion-option value="null">Cities 4</ion-option>\n\n            <ion-option value="null">Cities 5</ion-option>\n\n          </ion-select>\n\n        </ion-item>\n\n      </ion-list>\n\n\n\n    </div>\n\n  </ion-row>\n\n</ion-content>'/*ion-inline-end:"D:\Visual Studio\Personal\Project-Watermellon\src\components\ui-elements\modal-box\modal-box.html"*/
         }),
-        __metadata("design:paramtypes", [])
-    ], LoginV4Component);
-    return LoginV4Component;
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* ModalController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["s" /* ViewController */]])
+    ], ModalBoxComponent);
+    return ModalBoxComponent;
 }());
 
-//# sourceMappingURL=login-v4.js.map
+//# sourceMappingURL=modal-box.js.map
 
 /***/ })
 

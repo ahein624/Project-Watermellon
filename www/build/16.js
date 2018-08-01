@@ -1,6 +1,6 @@
 webpackJsonp([16],{
 
-/***/ 463:
+/***/ 468:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -8,8 +8,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ShopCheckoutPageModule", function() { return ShopCheckoutPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(38);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__shop_checkout__ = __webpack_require__(619);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_shop_shop_checkout_shop_checkout_module__ = __webpack_require__(620);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__shop_checkout__ = __webpack_require__(898);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_shop_shop_checkout_shop_checkout_module__ = __webpack_require__(899);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -41,7 +41,7 @@ var ShopCheckoutPageModule = (function () {
 
 /***/ }),
 
-/***/ 619:
+/***/ 898:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -80,7 +80,7 @@ var ShopCheckoutPage = (function () {
     };
     ShopCheckoutPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-            selector: 'page-shop-checkout',template:/*ion-inline-start:"/Users/andrewhein/Desktop/WestmorelandWorking/src/pages/shop/shop-checkout/shop-checkout.html"*/'<!--\n  Generated template for the ShopCategoryPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n\n<ion-header>\n  <ion-navbar>\n    <ion-title class="inline-block">cart shop</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content>\n	<shop-checkout [data]="data" [events]="events"></shop-checkout>\n</ion-content>'/*ion-inline-end:"/Users/andrewhein/Desktop/WestmorelandWorking/src/pages/shop/shop-checkout/shop-checkout.html"*/,
+            selector: 'page-shop-checkout',template:/*ion-inline-start:"D:\Visual Studio\Personal\Project-Watermellon\src\pages\shop\shop-checkout\shop-checkout.html"*/'<!--\n\n  Generated template for the ShopCategoryPage page.\n\n\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n-->\n\n\n\n<ion-header>\n\n  <ion-navbar>\n\n    <ion-title class="inline-block">cart shop</ion-title>\n\n  </ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content>\n\n	<shop-checkout [data]="data" [events]="events"></shop-checkout>\n\n</ion-content>'/*ion-inline-end:"D:\Visual Studio\Personal\Project-Watermellon\src\pages\shop\shop-checkout\shop-checkout.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["n" /* NavParams */]])
     ], ShopCheckoutPage);
@@ -91,14 +91,14 @@ var ShopCheckoutPage = (function () {
 
 /***/ }),
 
-/***/ 620:
+/***/ 899:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ShopCheckoutModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(38);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__shop_checkout__ = __webpack_require__(621);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__shop_checkout__ = __webpack_require__(900);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -132,7 +132,7 @@ var ShopCheckoutModule = (function () {
 
 /***/ }),
 
-/***/ 621:
+/***/ 900:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -174,7 +174,7 @@ var ShopCheckoutComponent = (function () {
     ], ShopCheckoutComponent.prototype, "data", void 0);
     ShopCheckoutComponent = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-            selector: 'shop-checkout',template:/*ion-inline-start:"/Users/andrewhein/Desktop/WestmorelandWorking/src/components/shop/shop-checkout/shop-checkout.html"*/'\n\n<div class="white-1">\n  \n  <ion-list class="lst-no-background">\n    <ion-item-sliding>\n      <ion-item class="white-1">\n        <ion-thumbnail item-start>\n          <img src="assets/img/demo1.jpg">\n        </ion-thumbnail>\n        <h2 class="fs-14 fw-600">My Neighbor Totoro</h2>\n        <p class="fs-12">quantity: x1</p>\n        <p class="mgt-10 fw-600 fs-12 text-black" (click)="detail()">Readmore</p>\n        <ion-note item-end class="fs-13 text-black fw-600">$30.00</ion-note>\n      </ion-item>\n      <ion-item-options>\n        <button ion-button class="pink-vs-red fs-13" icon-start>\n          <ion-icon name="md-trash"></ion-icon>Cancel\n        </button>\n      </ion-item-options>\n    </ion-item-sliding>\n    \n    <ion-item-sliding>\n      <ion-item class="white-1">\n        <ion-thumbnail item-start>\n          <img src="assets/img/demo2.jpg">\n        </ion-thumbnail>\n        <h2 class="fs-14 fw-600">Raiders of the Lost Ark</h2>\n        <p class="fs-12">quantity: x3</p>\n        <p class="mgt-10 fw-600 fs-12 text-black" (click)="detail()">Readmore</p>\n        <ion-note item-end class="fs-13 text-black fw-600">$17.00</ion-note>\n      </ion-item>\n      <ion-item-options>\n        <button ion-button class="pink-vs-red fs-13" icon-start>\n          <ion-icon name="md-trash"></ion-icon>Cancel\n        </button>\n      </ion-item-options>\n    </ion-item-sliding>\n    \n    <ion-item-sliding>\n      <ion-item class="white-1">\n        <ion-thumbnail item-start>\n          <img src="assets/img/demo3.jpg">\n        </ion-thumbnail>\n        <h2 class="fs-14 fw-600">Ghostbusters</h2>\n        <p class="fs-12">quantity: x2</p>\n        <p class="mgt-10 fw-600 fs-12 text-black" (click)="detail()">Readmore</p>\n        <ion-note item-end class="fs-13 text-black fw-600">$2.60</ion-note>\n      </ion-item>\n      <ion-item-options>\n        <button ion-button class="pink-vs-red fs-13" icon-start>\n          <ion-icon name="md-trash"></ion-icon>Cancel\n        </button>\n      </ion-item-options>\n    </ion-item-sliding>\n    \n    <ion-item-sliding>\n      <ion-item class="white-1">\n        <ion-thumbnail item-start>\n          <img src="assets/img/demo5.jpg">\n        </ion-thumbnail>\n        <h2 class="fs-14 fw-600">Batman</h2>\n        <p class="fs-12">quantity: x1</p>\n        <p class="mgt-10 fw-600 fs-12 text-black" (click)="detail()">Readmore</p>\n        <ion-note item-end class="fs-13 text-black fw-600">$19.99</ion-note>\n      </ion-item>\n      <ion-item-options>\n        <button ion-button class="pink-vs-red fs-13" icon-start>\n          <ion-icon name="md-trash"></ion-icon>Cancel\n        </button>\n      </ion-item-options>\n    </ion-item-sliding>\n  </ion-list>\n\n\n\n  <ion-list no-line class="lst-no-background mgt-50">\n    <ion-item>\n      <h2 class="fs-16 fw-600">Total</h2>\n      <ion-note item-end class="fs-16 text-black fw-600">$69.59</ion-note>\n    </ion-item>\n\n    <ion-item>\n      <h2 class="fs-14 fw-600">Tax 10%</h2>\n      <ion-note item-end class="fs-13 text-black fw-600">6.96</ion-note>\n    </ion-item>\n\n    <ion-item>\n      <h2 class="fs-14 fw-600">Transport fee</h2>\n      <ion-note item-end class="fs-13 text-black fw-600">$3.00</ion-note>\n    </ion-item>\n\n    <ion-item>\n      <h2 class="fs-20 fw-600">Payment</h2>\n      <ion-note item-end class="fs-20 text-black fw-600">$79.55</ion-note>\n    </ion-item>\n  </ion-list>\n\n  <div class="text-right mgt-40 mgb-50">\n    <button ion-button round class="black">Clear Cart</button>\n    <button ion-button round class="lama-vs-coban">Oder</button>\n  </div>\n\n\n\n</div>\n'/*ion-inline-end:"/Users/andrewhein/Desktop/WestmorelandWorking/src/components/shop/shop-checkout/shop-checkout.html"*/
+            selector: 'shop-checkout',template:/*ion-inline-start:"D:\Visual Studio\Personal\Project-Watermellon\src\components\shop\shop-checkout\shop-checkout.html"*/'\n\n\n\n<div class="white-1">\n\n  \n\n  <ion-list class="lst-no-background">\n\n    <ion-item-sliding>\n\n      <ion-item class="white-1">\n\n        <ion-thumbnail item-start>\n\n          <img src="assets/img/demo1.jpg">\n\n        </ion-thumbnail>\n\n        <h2 class="fs-14 fw-600">My Neighbor Totoro</h2>\n\n        <p class="fs-12">quantity: x1</p>\n\n        <p class="mgt-10 fw-600 fs-12 text-black" (click)="detail()">Readmore</p>\n\n        <ion-note item-end class="fs-13 text-black fw-600">$30.00</ion-note>\n\n      </ion-item>\n\n      <ion-item-options>\n\n        <button ion-button class="pink-vs-red fs-13" icon-start>\n\n          <ion-icon name="md-trash"></ion-icon>Cancel\n\n        </button>\n\n      </ion-item-options>\n\n    </ion-item-sliding>\n\n    \n\n    <ion-item-sliding>\n\n      <ion-item class="white-1">\n\n        <ion-thumbnail item-start>\n\n          <img src="assets/img/demo2.jpg">\n\n        </ion-thumbnail>\n\n        <h2 class="fs-14 fw-600">Raiders of the Lost Ark</h2>\n\n        <p class="fs-12">quantity: x3</p>\n\n        <p class="mgt-10 fw-600 fs-12 text-black" (click)="detail()">Readmore</p>\n\n        <ion-note item-end class="fs-13 text-black fw-600">$17.00</ion-note>\n\n      </ion-item>\n\n      <ion-item-options>\n\n        <button ion-button class="pink-vs-red fs-13" icon-start>\n\n          <ion-icon name="md-trash"></ion-icon>Cancel\n\n        </button>\n\n      </ion-item-options>\n\n    </ion-item-sliding>\n\n    \n\n    <ion-item-sliding>\n\n      <ion-item class="white-1">\n\n        <ion-thumbnail item-start>\n\n          <img src="assets/img/demo3.jpg">\n\n        </ion-thumbnail>\n\n        <h2 class="fs-14 fw-600">Ghostbusters</h2>\n\n        <p class="fs-12">quantity: x2</p>\n\n        <p class="mgt-10 fw-600 fs-12 text-black" (click)="detail()">Readmore</p>\n\n        <ion-note item-end class="fs-13 text-black fw-600">$2.60</ion-note>\n\n      </ion-item>\n\n      <ion-item-options>\n\n        <button ion-button class="pink-vs-red fs-13" icon-start>\n\n          <ion-icon name="md-trash"></ion-icon>Cancel\n\n        </button>\n\n      </ion-item-options>\n\n    </ion-item-sliding>\n\n    \n\n    <ion-item-sliding>\n\n      <ion-item class="white-1">\n\n        <ion-thumbnail item-start>\n\n          <img src="assets/img/demo5.jpg">\n\n        </ion-thumbnail>\n\n        <h2 class="fs-14 fw-600">Batman</h2>\n\n        <p class="fs-12">quantity: x1</p>\n\n        <p class="mgt-10 fw-600 fs-12 text-black" (click)="detail()">Readmore</p>\n\n        <ion-note item-end class="fs-13 text-black fw-600">$19.99</ion-note>\n\n      </ion-item>\n\n      <ion-item-options>\n\n        <button ion-button class="pink-vs-red fs-13" icon-start>\n\n          <ion-icon name="md-trash"></ion-icon>Cancel\n\n        </button>\n\n      </ion-item-options>\n\n    </ion-item-sliding>\n\n  </ion-list>\n\n\n\n\n\n\n\n  <ion-list no-line class="lst-no-background mgt-50">\n\n    <ion-item>\n\n      <h2 class="fs-16 fw-600">Total</h2>\n\n      <ion-note item-end class="fs-16 text-black fw-600">$69.59</ion-note>\n\n    </ion-item>\n\n\n\n    <ion-item>\n\n      <h2 class="fs-14 fw-600">Tax 10%</h2>\n\n      <ion-note item-end class="fs-13 text-black fw-600">6.96</ion-note>\n\n    </ion-item>\n\n\n\n    <ion-item>\n\n      <h2 class="fs-14 fw-600">Transport fee</h2>\n\n      <ion-note item-end class="fs-13 text-black fw-600">$3.00</ion-note>\n\n    </ion-item>\n\n\n\n    <ion-item>\n\n      <h2 class="fs-20 fw-600">Payment</h2>\n\n      <ion-note item-end class="fs-20 text-black fw-600">$79.55</ion-note>\n\n    </ion-item>\n\n  </ion-list>\n\n\n\n  <div class="text-right mgt-40 mgb-50">\n\n    <button ion-button round class="black">Clear Cart</button>\n\n    <button ion-button round class="lama-vs-coban">Oder</button>\n\n  </div>\n\n\n\n\n\n\n\n</div>\n\n'/*ion-inline-end:"D:\Visual Studio\Personal\Project-Watermellon\src\components\shop\shop-checkout\shop-checkout.html"*/
         }),
         __metadata("design:paramtypes", [])
     ], ShopCheckoutComponent);

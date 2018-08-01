@@ -86,6 +86,10 @@ $white-opct: rgba(255,255,255,0.3);
 $white-opct-1: rgba(255,255,255,0.6);
 $white-opct-2: rgba(255,255,255,0.9);
 
+$brown-opct: rgba(121,85,72,0.3);
+$brown-opct-1: rgba(121,85,72,0.6);
+$brown-opct-2: rgba(121,85,72,0.9);
+
 
 // ==========================
 // ================== general
@@ -263,7 +267,15 @@ $white-opct-2: rgba(255,255,255,0.9);
 .white-opct-2{
 	background: $white-opct-2 !important;
 }
-
+.brown-opct{
+	background: $brown-opct !important;
+}
+.brown-opct-1{
+	background: $brown-opct-1 !important;
+}
+.brown-opct-2{
+	background: $brown-opct-2 !important;
+}
 
 
 
@@ -2285,6 +2297,35 @@ ion-header:after{
 			background: linear-gradient(to bottom right, $lot, $phan) !important; /* Standard syntax */
 		}
 	}
+	&.skin-wcf{
+		.bar-button,
+		.bar-button .button-inner,
+		.toolbar-title,
+		.back-button,
+		.back-button-icon,
+		.tab-button[aria-selected=true] ion-icon{
+			color: $white !important;
+			opacity: 1;
+		}
+		.tab-button ion-icon{
+			color: $white !important;
+			opacity: 0.7;
+			font-size: 24px;
+		}
+		.logo-brand.dark-brand{
+			display: none;
+		}
+		ion-list.lst-menu{
+			ion-list{
+				ion-icon, div, p, b, span, strong, i, label, .label, ion-badge{
+					color: $black !important;
+				}
+			}
+			ion-icon, div, p, b, span, strong, i, label{
+				color: $black !important;
+			}
+		}
+	}
 }
 
 
@@ -2357,6 +2398,13 @@ ion-tabs .tabbar{
 
 .content[fullscreen-no-pdt] .scroll-content{
 	padding-top: 0 !important;
+	height: 100%;
+}
+
+.no-scroll {
+	.scroll-content {
+		overflow-y: hidden;
+	}
 }
 
 
@@ -3719,7 +3767,7 @@ $time: 0.8;
   	margin:auto;
   	&.show{
   		display: block
-  	},
+  	}
   	&.hide{
   		display: none
   	}

@@ -1,14 +1,14 @@
 webpackJsonp([52],{
 
-/***/ 439:
+/***/ 449:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "TwitterPageModule", function() { return TwitterPageModule; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "UnsplashModalPhotoPageModule", function() { return UnsplashModalPhotoPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(38);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__twitter__ = __webpack_require__(579);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__unsplash_modal_photo__ = __webpack_require__(806);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -18,34 +18,34 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
-var TwitterPageModule = (function () {
-    function TwitterPageModule() {
+var UnsplashModalPhotoPageModule = (function () {
+    function UnsplashModalPhotoPageModule() {
     }
-    TwitterPageModule = __decorate([
+    UnsplashModalPhotoPageModule = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["NgModule"])({
             declarations: [
-                __WEBPACK_IMPORTED_MODULE_2__twitter__["a" /* TwitterPage */],
+                __WEBPACK_IMPORTED_MODULE_2__unsplash_modal_photo__["a" /* UnsplashModalPhotoPage */],
             ],
             imports: [
-                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__twitter__["a" /* TwitterPage */]),
+                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__unsplash_modal_photo__["a" /* UnsplashModalPhotoPage */]),
             ],
         })
-    ], TwitterPageModule);
-    return TwitterPageModule;
+    ], UnsplashModalPhotoPageModule);
+    return UnsplashModalPhotoPageModule;
 }());
 
-//# sourceMappingURL=twitter.module.js.map
+//# sourceMappingURL=unsplash-modal-photo.module.js.map
 
 /***/ }),
 
-/***/ 579:
+/***/ 806:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TwitterPage; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return UnsplashModalPhotoPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(38);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_twitter_twitter__ = __webpack_require__(263);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_unsplash_service_unsplash_service__ = __webpack_require__(254);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -59,50 +59,43 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 /**
- * Generated class for the TwitterPage page.
+ * Generated class for the UnsplashModalPhotoPage page.
  *
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
  */
-var TwitterPage = (function () {
-    function TwitterPage(navCtrl, navParams, twitterService) {
+var UnsplashModalPhotoPage = (function () {
+    function UnsplashModalPhotoPage(navCtrl, navParams, unsplashService, viewCtrl) {
+        var _this = this;
         this.navCtrl = navCtrl;
         this.navParams = navParams;
-        this.twitterService = twitterService;
-        this.count = 20;
-        this.max_id = null;
-        this.spnState = 'show';
-        this.list = new Array();
-    }
-    TwitterPage.prototype.loadMore = function (infiniteScroll) {
-        var _this = this;
-        if (infiniteScroll === void 0) { infiniteScroll = null; }
-        this.twitterService.getTweets(this.count, this.max_id).subscribe(function (data) {
-            var tmpData = data.json();
-            console.log(tmpData[0]);
-            _this.max_id = tmpData[tmpData.length - 1].id;
-            _this.list = _this.list.concat(tmpData);
-            if (infiniteScroll) {
-                infiniteScroll.complete();
-            }
-            _this.spnState = 'hide';
+        this.unsplashService = unsplashService;
+        this.viewCtrl = viewCtrl;
+        this.data = {};
+        this.data = this.navParams.get('data');
+        this.unsplashService.isFavorite(this.data).then(function (result) {
+            _this.data.isFavorite = result;
         });
+    }
+    UnsplashModalPhotoPage.prototype.dismiss = function () {
+        this.viewCtrl.dismiss();
     };
-    TwitterPage.prototype.ionViewDidLoad = function () {
-        this.loadMore();
+    UnsplashModalPhotoPage.prototype.ionViewDidLoad = function () {
+        console.log('ionViewDidLoad GalleryModalPage');
     };
-    TwitterPage = __decorate([
+    UnsplashModalPhotoPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-            selector: 'page-twitter',template:/*ion-inline-start:"/Users/andrewhein/Desktop/WestmorelandWorking/src/pages/ready-app/twitter/twitter.html"*/'<!--\n  Generated template for the TwitterPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n<ion-navbar>\n<button ion-button menuToggle>\n  <ion-icon name="menu"></ion-icon>\n</button>\n<ion-title>twitter</ion-title>\n</ion-navbar>\n</ion-header>\n\n<ion-content class="white">\n<ion-spinner class="indicator" [ngClass]="spnState"></ion-spinner>\n<ion-card class="bdra-5" *ngFor="let item of list">\n<ion-item>\n<ion-avatar item-start class="mgt-6 mgb-6">\n<img src="{{item.user.profile_image_url}}">\n</ion-avatar>\n\n<h2 class="fs-14 fw-600 text-grey-5">{{item.user.name}}</h2>\n<p class="fs-10 text-grey-3">{{item.user.created_at}}</p>\n</ion-item> \n\n<span *ngIf="item.entities.media!=undefined">\n  <img src="{{item.entities.media[0].media_url}}">\n</span>\n\n<ion-card-content>\n<p>{{item.text}}</p>\n</ion-card-content>\n\n<ion-row>\n<ion-col>\n<button ion-button icon-left clear small class="text-grey-4 fs-16">\n  <ion-icon name="repeat"></ion-icon>\n  <div>{{item.retweet_count}}</div> \n</button>\n</ion-col>\n\n<ion-col center text-center>\n<button ion-button icon-left clear small class="text-grey-4 fs-16" (click)="twitterService.doShare(item)">\n <ion-icon name="share"></ion-icon>\n</button>\n</ion-col>\n\n<ion-col right text-right>\n<button ion-button icon-left clear small class="text-grey-4 fs-20" (click)="twitterService.doOpen(item)">\n  <ion-icon name="open"></ion-icon>\n</button>\n</ion-col>\n</ion-row>\n</ion-card>\n\n<ion-infinite-scroll (ionInfinite)="loadMore($event)">\n<ion-infinite-scroll-content></ion-infinite-scroll-content>\n</ion-infinite-scroll>\n\n</ion-content>'/*ion-inline-end:"/Users/andrewhein/Desktop/WestmorelandWorking/src/pages/ready-app/twitter/twitter.html"*/,
+            selector: 'page-unsplash-modal-photo',template:/*ion-inline-start:"D:\Visual Studio\Personal\Project-Watermellon\src\pages\ready-app\unsplash\unsplash-modal-photo\unsplash-modal-photo.html"*/'<div fullscreen fullscreen-no-pdt>\n\n	<div class="wrapper-view-img">\n\n		<div class="view-img-detail">\n\n			<img [src]="data.path" alt="">\n\n			<div class="btn-wrapper">\n\n				<button ion-button icon-only small outline class="text-white button-circle mgr-10 mgt-15 stroke stroke-1 stroke-white icon-close" (click)="dismiss()">\n\n					<ion-icon class="" name="ios-close"></ion-icon>\n\n				</button>\n\n\n\n				<button ion-button icon-only small outline class="text-white button-circle mgr-10 mgt-15 stroke stroke-1 stroke-white icon-heart" (click)="unsplashService.doFavorite(data)">\n\n					<ion-icon class="fs-16" name="md-heart-outline" *ngIf="!data.isFavorite"></ion-icon>\n\n					<ion-icon class="fs-16" name="md-heart" *ngIf="data.isFavorite"></ion-icon>\n\n				</button>\n\n\n\n		         <button ion-button icon-only small outline class="text-white button-circle mgr-10 mgt-15 stroke stroke-1 stroke-white icon-heart" (click)="unsplashService.doShare(data)">\n\n					<ion-icon class="fs-16" name="md-share"></ion-icon>\n\n				</button>\n\n\n\n				<button ion-button icon-only small outline class="text-white button-circle mgr-10 mgt-15 stroke stroke-1 stroke-white icon-heart" (click)="unsplashService.doOpen(data)">\n\n					<ion-icon class="fs-16" name="md-open"></ion-icon>\n\n				</button>\n\n\n\n				<button ion-button icon-only small outline class="text-white button-circle mgr-10 mgt-15 stroke stroke-1 stroke-white icon-download" (click)="unsplashService.doDownload(data)">\n\n					<ion-icon class="fs-16" name="md-download" ></ion-icon>\n\n				</button>\n\n			</div>\n\n		    <h5 class="title" [innerHTML]="data.title"></h5>\n\n		</div>\n\n	</div>\n\n</div>\n\n\n\n\n\n'/*ion-inline-end:"D:\Visual Studio\Personal\Project-Watermellon\src\pages\ready-app\unsplash\unsplash-modal-photo\unsplash-modal-photo.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* NavController */],
             __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["n" /* NavParams */],
-            __WEBPACK_IMPORTED_MODULE_2__providers_twitter_twitter__["a" /* TwitterProvider */]])
-    ], TwitterPage);
-    return TwitterPage;
+            __WEBPACK_IMPORTED_MODULE_2__providers_unsplash_service_unsplash_service__["a" /* UnsplashService */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["s" /* ViewController */]])
+    ], UnsplashModalPhotoPage);
+    return UnsplashModalPhotoPage;
 }());
 
-//# sourceMappingURL=twitter.js.map
+//# sourceMappingURL=unsplash-modal-photo.js.map
 
 /***/ })
 

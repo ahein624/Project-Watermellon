@@ -1,14 +1,14 @@
 webpackJsonp([53],{
 
-/***/ 438:
+/***/ 446:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "RssPageModule", function() { return RssPageModule; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "UnsplashCollectionPageModule", function() { return UnsplashCollectionPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(38);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__rss__ = __webpack_require__(578);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__unsplash_collection__ = __webpack_require__(803);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -18,34 +18,34 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
-var RssPageModule = (function () {
-    function RssPageModule() {
+var UnsplashCollectionPageModule = (function () {
+    function UnsplashCollectionPageModule() {
     }
-    RssPageModule = __decorate([
+    UnsplashCollectionPageModule = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["NgModule"])({
             declarations: [
-                __WEBPACK_IMPORTED_MODULE_2__rss__["a" /* RssPage */],
+                __WEBPACK_IMPORTED_MODULE_2__unsplash_collection__["a" /* UnsplashCollectionPage */],
             ],
             imports: [
-                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__rss__["a" /* RssPage */]),
+                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__unsplash_collection__["a" /* UnsplashCollectionPage */]),
             ],
         })
-    ], RssPageModule);
-    return RssPageModule;
+    ], UnsplashCollectionPageModule);
+    return UnsplashCollectionPageModule;
 }());
 
-//# sourceMappingURL=rss.module.js.map
+//# sourceMappingURL=unsplash-collection.module.js.map
 
 /***/ }),
 
-/***/ 578:
+/***/ 803:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return RssPage; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return UnsplashCollectionPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(38);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_rss_service_rss_service__ = __webpack_require__(258);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_unsplash_service_unsplash_service__ = __webpack_require__(254);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -59,38 +59,57 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 /**
- * Generated class for the RssPage page.
+ * Generated class for the UnsplashCollectionPage page.
  *
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
  */
-var RssPage = (function () {
-    function RssPage(navCtrl, rssService, navParams) {
+var UnsplashCollectionPage = (function () {
+    function UnsplashCollectionPage(navCtrl, unsplashService, navParams) {
         this.navCtrl = navCtrl;
-        this.rssService = rssService;
+        this.unsplashService = unsplashService;
         this.navParams = navParams;
+        this.list = new Array();
+        this.page = 0;
+        this.per_page = 20;
+        this.spnState = 'show';
     }
-    RssPage.prototype.ionViewDidLoad = function () {
+    UnsplashCollectionPage.prototype.loadMore = function (infiniteScroll) {
         var _this = this;
-        console.log('ionViewDidLoad RssCategoryPage');
-        this.rssService.getCategory(this.rssService.category).subscribe(function (data) {
-            _this.list_category = new Array();
-            _this.list_category = data;
-            console.log(_this.list_category);
+        if (infiniteScroll === void 0) { infiniteScroll = null; }
+        this.page += 1;
+        this.unsplashService.getCollections(this.page, this.per_page).subscribe(function (data) {
+            _this.list = _this.list.concat(data);
+            if (infiniteScroll) {
+                infiniteScroll.complete();
+            }
+            _this.spnState = 'hide';
+        }, function (error) {
+            if (infiniteScroll != null) {
+                infiniteScroll.enable(false);
+            }
+            _this.spnState = 'hide';
         });
     };
-    RssPage = __decorate([
+    UnsplashCollectionPage.prototype.ionViewDidLoad = function () {
+        this.loadMore();
+    };
+    UnsplashCollectionPage.prototype.detail = function (item) {
+        console.log(item.id);
+        this.navCtrl.push('UnsplashCategoryDetailPage', { id: item.id, collection_name: item.title });
+    };
+    UnsplashCollectionPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-            selector: 'page-rss',template:/*ion-inline-start:"/Users/andrewhein/Desktop/WestmorelandWorking/src/pages/ready-app/rss/rss.html"*/'<!--\n  Generated template for the RssPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n  <ion-navbar>\n    <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title>category</ion-title>\n        <ion-buttons right style="margin-right:10px">\n      <button ion-button icon-only (click)="rssService.goToFavoritePage(navCtrl)">\n      <ion-icon class="fs-24 text-grey-5" name="heart">\n      </ion-icon>\n    </button>\n    </ion-buttons>\n  </ion-navbar>\n</ion-header>\n\n\n<ion-content class="white-1">\n  <ion-list class="lst-no-background">\n    <ion-item  *ngFor="let item of list_category">\n        <button (click)="rssService.goToHomePage(navCtrl,item)" class="fs-15">\n         {{item.title}}\n        </button>\n    </ion-item>\n  </ion-list>\n</ion-content>\n'/*ion-inline-end:"/Users/andrewhein/Desktop/WestmorelandWorking/src/pages/ready-app/rss/rss.html"*/,
+            selector: 'page-unsplash-collection',template:/*ion-inline-start:"D:\Visual Studio\Personal\Project-Watermellon\src\pages\ready-app\unsplash\unsplash-collection\unsplash-collection.html"*/'<!--\n\n  Generated template for the UnsplashCollectionPage page.\n\n\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n-->\n\n<ion-header>\n\n	<ion-navbar>\n\n		<button ion-button menuToggle>\n\n	      <ion-icon name="menu"></ion-icon>\n\n	    </button>\n\n		<ion-title>Collection</ion-title>\n\n	</ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content>\n\n<ion-spinner class="indicator" [ngClass]="spnState"></ion-spinner>\n\n<ion-card *ngFor="let item of list" class="card-img-bg bdra-5 card card-md" (click)=\'detail(item)\'>\n\n<img  *ngIf="item.preview_photos[0]" [src]="item.preview_photos[0].urls.regular">\n\n<img  *ngIf="item.preview_photos.length==0" src="assets/img/bg-material.jpg">\n\n<div class="card-title">{{item.title}}</div>\n\n<div class="card-subtitle">{{item.total_photos}} photos</div>\n\n</ion-card>\n\n   <ion-infinite-scroll (ionInfinite)="loadMore($event)">\n\n     <ion-infinite-scroll-content></ion-infinite-scroll-content>\n\n   </ion-infinite-scroll>\n\n</ion-content>\n\n'/*ion-inline-end:"D:\Visual Studio\Personal\Project-Watermellon\src\pages\ready-app\unsplash\unsplash-collection\unsplash-collection.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* NavController */],
-            __WEBPACK_IMPORTED_MODULE_2__providers_rss_service_rss_service__["a" /* RssService */],
+            __WEBPACK_IMPORTED_MODULE_2__providers_unsplash_service_unsplash_service__["a" /* UnsplashService */],
             __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["n" /* NavParams */]])
-    ], RssPage);
-    return RssPage;
+    ], UnsplashCollectionPage);
+    return UnsplashCollectionPage;
 }());
 
-//# sourceMappingURL=rss.js.map
+//# sourceMappingURL=unsplash-collection.js.map
 
 /***/ })
 
