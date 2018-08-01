@@ -1,14 +1,14 @@
 webpackJsonp([38],{
 
-/***/ 467:
+/***/ 475:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ShopPageModule", function() { return ShopPageModule; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "VendorsPageModule", function() { return VendorsPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(38);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__shop__ = __webpack_require__(631);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__vendors__ = __webpack_require__(957);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -18,33 +18,35 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
-var ShopPageModule = (function () {
-    function ShopPageModule() {
+var VendorsPageModule = (function () {
+    function VendorsPageModule() {
     }
-    ShopPageModule = __decorate([
+    VendorsPageModule = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["NgModule"])({
             declarations: [
-                __WEBPACK_IMPORTED_MODULE_2__shop__["a" /* ShopPage */],
+                __WEBPACK_IMPORTED_MODULE_2__vendors__["a" /* VendorsPage */],
             ],
             imports: [
-                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__shop__["a" /* ShopPage */]),
+                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__vendors__["a" /* VendorsPage */]),
             ],
+            schemas: [__WEBPACK_IMPORTED_MODULE_0__angular_core__["CUSTOM_ELEMENTS_SCHEMA"]]
         })
-    ], ShopPageModule);
-    return ShopPageModule;
+    ], VendorsPageModule);
+    return VendorsPageModule;
 }());
 
-//# sourceMappingURL=shop.module.js.map
+//# sourceMappingURL=vendors.module.js.map
 
 /***/ }),
 
-/***/ 631:
+/***/ 957:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ShopPage; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return VendorsPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(38);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_platform_browser__ = __webpack_require__(33);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -56,43 +58,35 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 
 
+
 /**
- * Generated class for the ShopPage page.
+ * Generated class for the VendorsPage page.
  *
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
  */
-var ShopPage = (function () {
-    function ShopPage(navCtrl, navParams) {
+// Leaving this existing code incase we need to come back and reference it.
+var VendorsPage = (function () {
+    function VendorsPage(navCtrl, navParams, sanitize) {
         this.navCtrl = navCtrl;
         this.navParams = navParams;
-        this.shopBlogPage = 'ShopBlogPage';
-        this.shopCategoryPage = 'ShopCategoryPage';
-        this.shopDetailProductPage = 'ShopDetailProductPage';
-        this.shopHomePage = 'ShopHomePage';
+        this.sanitize = sanitize;
+        this.params = {};
+        this.url = sanitize.bypassSecurityTrustResourceUrl("https://westmorelandfair.com/_app/daily-events/");
     }
-    ShopPage.prototype.ionViewDidLoad = function () {
-        console.log('ionViewDidLoad ShopPage');
+    VendorsPage.prototype.ionViewDidLoad = function () {
+        console.log('ionViewDidLoad VendorsPage');
     };
-    ShopPage.prototype.ionViewDidEnter = function () {
-        this.tabRef.select(0);
-        this.shopHomePage = 'ShopHomePage';
-        //this.tabRef.setTabP
-    };
-    __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["ViewChild"])('tabs'),
-        __metadata("design:type", __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["q" /* Tabs */])
-    ], ShopPage.prototype, "tabRef", void 0);
-    ShopPage = __decorate([
+    VendorsPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-            selector: 'page-shop',template:/*ion-inline-start:"/Users/andrewhein/Desktop/WestmorelandWorking/src/pages/shop/shop.html"*/'<ion-tabs #tabs class="shadow-3 skin-light skin skin-white stroke-top stroke-1 stroke-grey-1">\n	<ion-tab [root]="shopHomePage" tabTitle="" tabIcon="md-home"></ion-tab>\n	<ion-tab [root]="shopCategoryPage" tabTitle="" tabIcon="md-list"></ion-tab>\n	<ion-tab [root]="shopBlogPage" tabTitle="" tabIcon="md-paper"></ion-tab>\n	<ion-tab [root]="tab4Root" tabTitle="" tabIcon="ios-contact"></ion-tab>\n</ion-tabs>\n\n'/*ion-inline-end:"/Users/andrewhein/Desktop/WestmorelandWorking/src/pages/shop/shop.html"*/,
+            selector: 'page-vendors',template:/*ion-inline-start:"/Users/andrewhein/Desktop/WestmorelandWorking/src/pages/vendors/vendors.html"*/'<!--\n  Generated template for the AboutPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header class="skin skin-wcf skin-brown">\n  <ion-navbar>\n  <button ion-button menuToggle>\n    <ion-icon name="menu"></ion-icon>\n  </button>\n  <ion-title>Vendors</ion-title>\n  </ion-navbar>\n  </ion-header>\n\n\n<ion-content class="no-scroll">\n    <iframe height="100%" width="100%" [src]="url"></iframe>\n</ion-content>\n\n\n '/*ion-inline-end:"/Users/andrewhein/Desktop/WestmorelandWorking/src/pages/vendors/vendors.html"*/,
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["n" /* NavParams */]])
-    ], ShopPage);
-    return ShopPage;
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["n" /* NavParams */], __WEBPACK_IMPORTED_MODULE_2__angular_platform_browser__["DomSanitizer"]])
+    ], VendorsPage);
+    return VendorsPage;
 }());
 
-//# sourceMappingURL=shop.js.map
+//# sourceMappingURL=vendors.js.map
 
 /***/ })
 

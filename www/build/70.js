@@ -76,7 +76,7 @@ var ChatPage = (function () {
     };
     ChatPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-            selector: 'page-chat',template:/*ion-inline-start:"D:\Visual Studio\Personal\Project-Watermellon\src\pages\chat\chat.html"*/'<ion-tabs class="shadow-3 skin-dark skin skin-lama-vs-coban">\n\n	<ion-tab [root]="listUsersPage" tabTitle="" tabIcon="ios-musical-note"></ion-tab>\n\n	<ion-tab [root]="listGroupPage" tabTitle="" tabIcon="ios-barcode"></ion-tab>\n\n	<ion-tab [root]="listOnlinePage" tabTitle="" tabIcon="ios-heart"></ion-tab>\n\n	<ion-tab [root]="profilePage" tabTitle="" tabIcon="ios-contact"></ion-tab>\n\n</ion-tabs>\n\n'/*ion-inline-end:"D:\Visual Studio\Personal\Project-Watermellon\src\pages\chat\chat.html"*/,
+            selector: 'page-chat',template:/*ion-inline-start:"/Users/andrewhein/Desktop/WestmorelandWorking/src/pages/chat/chat.html"*/'<ion-tabs class="shadow-3 skin-dark skin skin-lama-vs-coban">\n	<ion-tab [root]="listUsersPage" tabTitle="" tabIcon="ios-musical-note"></ion-tab>\n	<ion-tab [root]="listGroupPage" tabTitle="" tabIcon="ios-barcode"></ion-tab>\n	<ion-tab [root]="listOnlinePage" tabTitle="" tabIcon="ios-heart"></ion-tab>\n	<ion-tab [root]="profilePage" tabTitle="" tabIcon="ios-contact"></ion-tab>\n</ion-tabs>\n'/*ion-inline-end:"/Users/andrewhein/Desktop/WestmorelandWorking/src/pages/chat/chat.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["n" /* NavParams */]])
     ], ChatPage);

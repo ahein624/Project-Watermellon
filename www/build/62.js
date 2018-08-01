@@ -72,7 +72,7 @@ var PhotoCollectionPage = (function () {
     };
     PhotoCollectionPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-            selector: 'page-photo-collection',template:/*ion-inline-start:"D:\Visual Studio\Personal\Project-Watermellon\src\pages\photo-collection\photo-collection.html"*/'<!--\n\n  Generated template for the PhotoCollectionPage page.\n\n\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n-->\n\n<ion-header>\n\n\n\n  <ion-navbar>\n\n    <ion-title>photo-collection</ion-title>\n\n  </ion-navbar>\n\n\n\n</ion-header>\n\n\n\n\n\n<ion-content padding>\n\n\n\n</ion-content>\n\n'/*ion-inline-end:"D:\Visual Studio\Personal\Project-Watermellon\src\pages\photo-collection\photo-collection.html"*/,
+            selector: 'page-photo-collection',template:/*ion-inline-start:"/Users/andrewhein/Desktop/WestmorelandWorking/src/pages/photo-collection/photo-collection.html"*/'<!--\n  Generated template for the PhotoCollectionPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>photo-collection</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n\n</ion-content>\n'/*ion-inline-end:"/Users/andrewhein/Desktop/WestmorelandWorking/src/pages/photo-collection/photo-collection.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["n" /* NavParams */]])
     ], PhotoCollectionPage);

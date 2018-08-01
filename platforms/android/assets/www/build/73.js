@@ -1,14 +1,14 @@
 webpackJsonp([73],{
 
-/***/ 397:
+/***/ 404:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "LoginV6Module", function() { return LoginV6Module; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "PopoverMainModule", function() { return PopoverMainModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(38);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__login_v6__ = __webpack_require__(481);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__popover_main__ = __webpack_require__(693);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -18,36 +18,37 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
-var LoginV6Module = (function () {
-    function LoginV6Module() {
+var PopoverMainModule = (function () {
+    function PopoverMainModule() {
     }
-    LoginV6Module = __decorate([
+    PopoverMainModule = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["NgModule"])({
             declarations: [
-                __WEBPACK_IMPORTED_MODULE_2__login_v6__["a" /* LoginV6Component */],
+                __WEBPACK_IMPORTED_MODULE_2__popover_main__["a" /* PopoverMainComponent */],
             ],
             imports: [
-                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__login_v6__["a" /* LoginV6Component */]),
+                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__popover_main__["a" /* PopoverMainComponent */]),
             ],
             exports: [
-                __WEBPACK_IMPORTED_MODULE_2__login_v6__["a" /* LoginV6Component */]
+                __WEBPACK_IMPORTED_MODULE_2__popover_main__["a" /* PopoverMainComponent */]
             ],
             schemas: [__WEBPACK_IMPORTED_MODULE_0__angular_core__["CUSTOM_ELEMENTS_SCHEMA"]]
         })
-    ], LoginV6Module);
-    return LoginV6Module;
+    ], PopoverMainModule);
+    return PopoverMainModule;
 }());
 
-//# sourceMappingURL=login-v6.module.js.map
+//# sourceMappingURL=popover-main.module.js.map
 
 /***/ }),
 
-/***/ 481:
+/***/ 693:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return LoginV6Component; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return PopoverMainComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(38);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -58,46 +59,83 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 
+
 /**
- * Generated class for the LoginV6Component component.
+ * Generated class for the RegisterV1Component component.
  *
  * See https://angular.io/api/core/Component for more info on Angular
  * Components.
  */
-var LoginV6Component = (function () {
-    function LoginV6Component() {
-        var _this = this;
-        this.type = "signup";
-        this.onCallbackEvent = function (event) {
-            if (_this.events[event]) {
-                _this.events[event]({
-                    'email': _this.email,
-                    'password': _this.password,
-                    'signUpEmail': _this.signUpEmail,
-                    'signUpPassword': _this.signUpPassword,
-                    'confirmPassword': _this.confirmPassword
-                });
-            }
+var PopoverMainComponent = (function () {
+    function PopoverMainComponent(navParams) {
+        this.navParams = navParams;
+        this.colors = {
+            'white': {
+                'bg': 'rgb(255, 255, 255)',
+                'fg': 'rgb(0, 0, 0)'
+            },
+            'tan': {
+                'bg': 'rgb(249, 241, 228)',
+                'fg': 'rgb(0, 0, 0)'
+            },
+            'grey': {
+                'bg': 'rgb(76, 75, 80)',
+                'fg': 'rgb(255, 255, 255)'
+            },
+            'black': {
+                'bg': 'rgb(0, 0, 0)',
+                'fg': 'rgb(255, 255, 255)'
+            },
         };
+        console.log('Hello PopoverMainComponent Component');
     }
-    __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Input"])(),
-        __metadata("design:type", Object)
-    ], LoginV6Component.prototype, "data", void 0);
-    __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Input"])(),
-        __metadata("design:type", Object)
-    ], LoginV6Component.prototype, "events", void 0);
-    LoginV6Component = __decorate([
+    PopoverMainComponent.prototype.ngOnInit = function () {
+        if (this.navParams.data) {
+            this.contentEle = this.navParams.data.contentEle;
+            this.textEle = this.navParams.data.textEle;
+            this.background = this.getColorName(this.contentEle.style.backgroundColor);
+            this.setFontFamily();
+        }
+    };
+    PopoverMainComponent.prototype.getColorName = function (background) {
+        var colorName = 'white';
+        if (!background)
+            return 'white';
+        for (var key in this.colors) {
+            if (this.colors[key].bg == background) {
+                colorName = key;
+            }
+        }
+        return colorName;
+    };
+    PopoverMainComponent.prototype.setFontFamily = function () {
+        if (this.textEle.style.fontFamily) {
+            this.fontFamily = this.textEle.style.fontFamily.replace(/'/g, "");
+        }
+    };
+    PopoverMainComponent.prototype.changeBackground = function (color) {
+        this.background = color;
+        this.contentEle.style.backgroundColor = this.colors[color].bg;
+        this.textEle.style.color = this.colors[color].fg;
+    };
+    PopoverMainComponent.prototype.changeFontSize = function (direction, lh) {
+        this.textEle.style.fontSize = direction;
+        this.textEle.style.lineHeight = lh;
+    };
+    PopoverMainComponent.prototype.changeFontFamily = function () {
+        if (this.fontFamily)
+            this.textEle.style.fontFamily = this.fontFamily;
+    };
+    PopoverMainComponent = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-            selector: 'login-v6',template:/*ion-inline-start:"/Users/andrewhein/Desktop/WestmorelandWorking/src/components/login/login-v6/login-v6.html"*/'<div *ngIf="data!=null">\n<div class="bg-img">\n    <img [src]="data.imgBg" alt="">\n  </div>\n  \n  <div padding class="wrapper-page text-center black-opct-1 block {{data.ani}}">\n    \n    <button ion-button icon-only small color="dark" class="text-grey-3 white-opct button-circle back-page" (click)="onCallbackEvent(\'onDismiss\')">\n      <ion-icon name="ios-close"></ion-icon>\n    </button>\n    \n    <div class="wrapper-flex" padding>\n      <ion-row class="logo-img mgb-50 mgt-50 ani-top-to-bottom">\n        <img class="mg-auto" [src]="data.imgLogo" alt="">\n        <p class="text-grey-3 mgt-0 pdl-15 pdr-15">{{data.txtHead}}</p>\n      </ion-row>\n\n      <div class="wrapper-slide">\n        <div class="full-width">\n          <ion-toolbar no-border-top class="mgb-30 ani-fade-out">\n            <ion-segment [(ngModel)]="type" class="segment-line-deviation text-white stroke-red">\n              <ion-segment-button value="signin" class="fs-18 fw-300 spacing-1">\n                {{data.btnSegmentLogin}}\n              </ion-segment-button>\n              <ion-segment-button value="signup" class="fs-18 fw-300 spacing-1">\n                {{data.btnSegmentSignUp}}\n              </ion-segment-button>\n            </ion-segment>\n          </ion-toolbar>\n\n\n          <div [ngSwitch]="type" class="ani-bottom-to-top">\n            <ion-list *ngSwitchCase="\'signin\'" class="mgb-0">\n              <div>\n                <ion-list class="mgb-5">\n                  <ion-item class="text-white line-1 stroke-white pdl-0">\n                    <ion-input type="email" placeholder="{{data.txtEmail}}" [(ngModel)]="email"></ion-input>\n                  </ion-item>\n                </ion-list>\n                <ion-list>\n                  <ion-item class="text-white line-1 stroke-white pdl-0">\n                    <ion-input type="password" placeholder="{{data.txtPassword}}" [(ngModel)]="password"></ion-input>\n                  </ion-item>\n                </ion-list>\n            \n                <button ion-button round color="light" class="white-opct text-white uppercase fw-600 spacing-1 mgt-20 fs-12" (click)="onCallbackEvent(\'onLogin\')">{{data.btnLogin}}</button>\n                <button ion-button color="light" clear block small class="mgb-10 mgt-35 pull-right text-grey-3" (click)="onCallbackEvent(\'onForgotPassword\')">{{data.btnForgotPassword}}</button>\n              </div>\n            </ion-list>\n\n            <ion-list *ngSwitchCase="\'signup\'" class="mgb-0">\n              <div>\n                <ion-list class="mgb-0">\n                  <ion-item class="text-grey-3 line-1 stroke-grey-3 pdl-0">\n                    <ion-input type="email" placeholder="{{data.txtEmail}}" [(ngModel)]="signUpEmail"></ion-input>\n                  </ion-item>\n                </ion-list>\n                <ion-list class="mgb-0">\n                  <ion-item class="text-grey-3 line-1 stroke-grey-3 pdl-0">\n                    <ion-input type="password" placeholder="{{data.txtPassword}}" [(ngModel)]="signUpPassword"></ion-input>\n                  </ion-item>\n                </ion-list>\n                <ion-list>\n                  <ion-item class="text-grey-3 line-1 stroke-grey-3 pdl-0">\n                    <ion-input type="password" placeholder="{{data.txtConfirmPassword}}" [(ngModel)]="confirmPassword"></ion-input>\n                  </ion-item>\n                </ion-list>\n            \n                <button ion-button round color="light" class="white-opct text-white uppercase fw-600 spacing-1 mgt-20 fs-12" (click)="onCallbackEvent(\'onSignUp\')">{{data.btnSignUp}}</button>\n\n                <ion-row class="block text-center mgt-30">\n                  <button ion-button icon-only clear small color="light" class="text-white pdl-5 pdr-5 fs-14" (click)="onCallbackEvent(\'onFacebookIconClick\')">\n                    <ion-icon name="logo-facebook"></ion-icon>\n                  </button>\n                  <button ion-button icon-only clear small color="light" class="text-white pdl-5 pdr-5 fs-14" (click)="onCallbackEvent(\'onTwitterIconClick\')">\n                    <ion-icon name="logo-twitter">\n                    </ion-icon>\n                  </button>\n                  <button ion-button icon-only clear small color="light" class="text-white pdl-5 pdr-5 fs-14" (click)="onCallbackEvent(\'onGoogleIconClick\')">\n                    <ion-icon name="logo-google"></ion-icon>\n                  </button>\n                  <button ion-button icon-only clear small color="light" class="text-white pdl-5 pdr-5 fs-14" (click)="onCallbackEvent(\'onLinkedInIconClick\')">\n                    <ion-icon name="logo-linkedin"></ion-icon>\n                  </button>\n                </ion-row>\n              </div>\n            </ion-list>\n\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n  </div>'/*ion-inline-end:"/Users/andrewhein/Desktop/WestmorelandWorking/src/components/login/login-v6/login-v6.html"*/
+            selector: 'popover-main',template:/*ion-inline-start:"/Users/andrewhein/Desktop/WestmorelandWorking/src/components/ui-elements/popover-main/popover-main.html"*/'\n\n<ion-content>\n  \n  <ion-list radio-group [(ngModel)]="fontFamily" (ionChange)="changeFontFamily()" class="popover-page">\n    <ion-row>\n      <ion-col>\n        <button (click)="changeFontSize(\'smaller\', \'18px\')" ion-item detail-none class="text-button text-smaller">A</button>\n      </ion-col>\n      <ion-col>\n        <button (click)="changeFontSize(\'larger\', \'24px\')" ion-item detail-none class="text-button text-larger">A</button>\n      </ion-col>\n    </ion-row>\n    <ion-row class="row-dots">\n      <ion-col>\n        <button ion-button="dot" (click)="changeBackground(\'white\')" class="dot-white" [class.selected]="background == \'white\'"></button>\n      </ion-col>\n      <ion-col>\n        <button ion-button="dot" (click)="changeBackground(\'tan\')" class="dot-tan" [class.selected]="background == \'tan\'"></button>\n      </ion-col>\n      <ion-col>\n        <button ion-button="dot" (click)="changeBackground(\'grey\')" class="dot-grey" [class.selected]="background == \'grey\'"></button>\n      </ion-col>\n      <ion-col>\n        <button ion-button="dot" (click)="changeBackground(\'black\')" class="dot-black" [class.selected]="background == \'black\'"></button>\n      </ion-col>\n    </ion-row>\n    <ion-item class="text-helvetica">\n      <ion-label>Helvetica</ion-label>\n      <ion-radio value="Helvetica"></ion-radio>\n    </ion-item>\n    <ion-item class="text-athelas">\n      <ion-label>Athelas</ion-label>\n      <ion-radio value="Athelas"></ion-radio>\n    </ion-item>\n    <ion-item class="text-charter">\n      <ion-label>Charter</ion-label>\n      <ion-radio value="Charter"></ion-radio>\n    </ion-item>\n    <ion-item class="text-iowan">\n      <ion-label>Iowan</ion-label>\n      <ion-radio value="Iowan"></ion-radio>\n    </ion-item>\n    <ion-item class="text-palatino">\n      <ion-label>Palatino</ion-label>\n      <ion-radio value="Palatino"></ion-radio>\n    </ion-item>\n    <ion-item class="text-san-francisco">\n      <ion-label>San Francisco</ion-label>\n      <ion-radio value="San Francisco"></ion-radio>\n    </ion-item>\n    <ion-item class="text-seravek">\n      <ion-label>Seravek</ion-label>\n      <ion-radio value="Seravek"></ion-radio>\n    </ion-item>\n    <ion-item class="text-times-new-roman">\n      <ion-label>Times New Roman</ion-label>\n      <ion-radio value="Times New Roman"></ion-radio>\n    </ion-item>\n  </ion-list>\n\n</ion-content>\n'/*ion-inline-end:"/Users/andrewhein/Desktop/WestmorelandWorking/src/components/ui-elements/popover-main/popover-main.html"*/
         }),
-        __metadata("design:paramtypes", [])
-    ], LoginV6Component);
-    return LoginV6Component;
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["n" /* NavParams */]])
+    ], PopoverMainComponent);
+    return PopoverMainComponent;
 }());
 
-//# sourceMappingURL=login-v6.js.map
+//# sourceMappingURL=popover-main.js.map
 
 /***/ })
 

@@ -1,14 +1,14 @@
 webpackJsonp([62],{
 
-/***/ 423:
+/***/ 434:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "MagazinePageModule", function() { return MagazinePageModule; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "PhotoCollectionPageModule", function() { return PhotoCollectionPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(38);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__magazine__ = __webpack_require__(553);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__photo_collection__ = __webpack_require__(779);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -18,31 +18,31 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
-var MagazinePageModule = (function () {
-    function MagazinePageModule() {
+var PhotoCollectionPageModule = (function () {
+    function PhotoCollectionPageModule() {
     }
-    MagazinePageModule = __decorate([
+    PhotoCollectionPageModule = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["NgModule"])({
             declarations: [
-                __WEBPACK_IMPORTED_MODULE_2__magazine__["a" /* MagazinePage */],
+                __WEBPACK_IMPORTED_MODULE_2__photo_collection__["a" /* PhotoCollectionPage */],
             ],
             imports: [
-                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__magazine__["a" /* MagazinePage */])
+                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__photo_collection__["a" /* PhotoCollectionPage */]),
             ],
         })
-    ], MagazinePageModule);
-    return MagazinePageModule;
+    ], PhotoCollectionPageModule);
+    return PhotoCollectionPageModule;
 }());
 
-//# sourceMappingURL=magazine.module.js.map
+//# sourceMappingURL=photo-collection.module.js.map
 
 /***/ }),
 
-/***/ 553:
+/***/ 779:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MagazinePage; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return PhotoCollectionPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(38);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -57,32 +57,29 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 /**
- * Generated class for the MagazinePage page.
+ * Generated class for the PhotoCollectionPage page.
  *
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
  */
-var MagazinePage = (function () {
-    function MagazinePage(navCtrl, navParams) {
+var PhotoCollectionPage = (function () {
+    function PhotoCollectionPage(navCtrl, navParams) {
         this.navCtrl = navCtrl;
         this.navParams = navParams;
-        this.magazineHomePage = 'MagazineHomePage';
-        this.magazineBookmarkPage = 'MagazineBookmarkPage';
-        this.magazineCategoryPage = 'MagazineCategoryPage';
     }
-    MagazinePage.prototype.ionViewDidLoad = function () {
-        console.log('ionViewDidLoad MagazinePage');
+    PhotoCollectionPage.prototype.ionViewDidLoad = function () {
+        console.log('ionViewDidLoad PhotoCollectionPage');
     };
-    MagazinePage = __decorate([
+    PhotoCollectionPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-            selector: 'page-magazine',template:/*ion-inline-start:"/Users/andrewhein/Desktop/WestmorelandWorking/src/pages/magazine/magazine.html"*/'<!--\n  Generated template for the MagazinePage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.k\n-->\n<ion-tabs class="shadow-3 skin-light skin skin-transparent" >\n	<ion-tab [root]="magazineHomePage" tabTitle="" tabIcon="md-home"></ion-tab>\n	<ion-tab [root]="magazineCategoryPage" tabTitle="" tabIcon="md-list-box"></ion-tab>\n	<ion-tab [root]="magazineBookmarkPage" tabTitle="" tabIcon="md-bookmark"></ion-tab>\n</ion-tabs>'/*ion-inline-end:"/Users/andrewhein/Desktop/WestmorelandWorking/src/pages/magazine/magazine.html"*/,
+            selector: 'page-photo-collection',template:/*ion-inline-start:"/Users/andrewhein/Desktop/WestmorelandWorking/src/pages/photo-collection/photo-collection.html"*/'<!--\n  Generated template for the PhotoCollectionPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>photo-collection</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n\n</ion-content>\n'/*ion-inline-end:"/Users/andrewhein/Desktop/WestmorelandWorking/src/pages/photo-collection/photo-collection.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["n" /* NavParams */]])
-    ], MagazinePage);
-    return MagazinePage;
+    ], PhotoCollectionPage);
+    return PhotoCollectionPage;
 }());
 
-//# sourceMappingURL=magazine.js.map
+//# sourceMappingURL=photo-collection.js.map
 
 /***/ })
 

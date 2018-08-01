@@ -75,7 +75,7 @@ var MusicPage = (function () {
     };
     MusicPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-            selector: 'page-music',template:/*ion-inline-start:"D:\Visual Studio\Personal\Project-Watermellon\src\pages\music\music.html"*/'<ion-tabs class="shadow-3 skin-dark skin skin-transparent">\n\n	<ion-tab [root]="musicHomePage" tabTitle="" tabIcon="ios-musical-note"></ion-tab>\n\n	<ion-tab [root]="musicCategoryPage" tabTitle="" tabIcon="ios-barcode"></ion-tab>\n\n	<ion-tab [root]="musicFavoriestPage" tabTitle="" tabIcon="ios-heart"></ion-tab>\n\n</ion-tabs>\n\n'/*ion-inline-end:"D:\Visual Studio\Personal\Project-Watermellon\src\pages\music\music.html"*/,
+            selector: 'page-music',template:/*ion-inline-start:"/Users/andrewhein/Desktop/WestmorelandWorking/src/pages/music/music.html"*/'<ion-tabs class="shadow-3 skin-dark skin skin-transparent">\n	<ion-tab [root]="musicHomePage" tabTitle="" tabIcon="ios-musical-note"></ion-tab>\n	<ion-tab [root]="musicCategoryPage" tabTitle="" tabIcon="ios-barcode"></ion-tab>\n	<ion-tab [root]="musicFavoriestPage" tabTitle="" tabIcon="ios-heart"></ion-tab>\n</ion-tabs>\n'/*ion-inline-end:"/Users/andrewhein/Desktop/WestmorelandWorking/src/pages/music/music.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["n" /* NavParams */]])
     ], MusicPage);

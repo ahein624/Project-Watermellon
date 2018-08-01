@@ -85,7 +85,7 @@ var ShopPage = (function () {
     ], ShopPage.prototype, "tabRef", void 0);
     ShopPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-            selector: 'page-shop',template:/*ion-inline-start:"D:\Visual Studio\Personal\Project-Watermellon\src\pages\shop\shop.html"*/'<ion-tabs #tabs class="shadow-3 skin-light skin skin-white stroke-top stroke-1 stroke-grey-1">\n\n	<ion-tab [root]="shopHomePage" tabTitle="" tabIcon="md-home"></ion-tab>\n\n	<ion-tab [root]="shopCategoryPage" tabTitle="" tabIcon="md-list"></ion-tab>\n\n	<ion-tab [root]="shopBlogPage" tabTitle="" tabIcon="md-paper"></ion-tab>\n\n	<ion-tab [root]="tab4Root" tabTitle="" tabIcon="ios-contact"></ion-tab>\n\n</ion-tabs>\n\n\n\n'/*ion-inline-end:"D:\Visual Studio\Personal\Project-Watermellon\src\pages\shop\shop.html"*/,
+            selector: 'page-shop',template:/*ion-inline-start:"/Users/andrewhein/Desktop/WestmorelandWorking/src/pages/shop/shop.html"*/'<ion-tabs #tabs class="shadow-3 skin-light skin skin-white stroke-top stroke-1 stroke-grey-1">\n	<ion-tab [root]="shopHomePage" tabTitle="" tabIcon="md-home"></ion-tab>\n	<ion-tab [root]="shopCategoryPage" tabTitle="" tabIcon="md-list"></ion-tab>\n	<ion-tab [root]="shopBlogPage" tabTitle="" tabIcon="md-paper"></ion-tab>\n	<ion-tab [root]="tab4Root" tabTitle="" tabIcon="ios-contact"></ion-tab>\n</ion-tabs>\n\n'/*ion-inline-end:"/Users/andrewhein/Desktop/WestmorelandWorking/src/pages/shop/shop.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["n" /* NavParams */]])
     ], ShopPage);

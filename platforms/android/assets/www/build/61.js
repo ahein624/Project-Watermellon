@@ -1,14 +1,14 @@
 webpackJsonp([61],{
 
-/***/ 429:
+/***/ 436:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "MusicPageModule", function() { return MusicPageModule; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "FacebookCommentPageModule", function() { return FacebookCommentPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(38);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__music__ = __webpack_require__(569);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__facebook_comment__ = __webpack_require__(793);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -18,33 +18,34 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
-var MusicPageModule = (function () {
-    function MusicPageModule() {
+var FacebookCommentPageModule = (function () {
+    function FacebookCommentPageModule() {
     }
-    MusicPageModule = __decorate([
+    FacebookCommentPageModule = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["NgModule"])({
             declarations: [
-                __WEBPACK_IMPORTED_MODULE_2__music__["a" /* MusicPage */],
+                __WEBPACK_IMPORTED_MODULE_2__facebook_comment__["a" /* FacebookCommentPage */],
             ],
             imports: [
-                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__music__["a" /* MusicPage */]),
+                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__facebook_comment__["a" /* FacebookCommentPage */]),
             ],
         })
-    ], MusicPageModule);
-    return MusicPageModule;
+    ], FacebookCommentPageModule);
+    return FacebookCommentPageModule;
 }());
 
-//# sourceMappingURL=music.module.js.map
+//# sourceMappingURL=facebook-comment.module.js.map
 
 /***/ }),
 
-/***/ 569:
+/***/ 793:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MusicPage; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FacebookCommentPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(38);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_facebook_facebook__ = __webpack_require__(260);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -56,33 +57,60 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 
 
+
 /**
- * Generated class for the MusicPage page.
+ * Generated class for the FacebookCommentPage page.
  *
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
  */
-var MusicPage = (function () {
-    function MusicPage(navCtrl, navParams) {
+var FacebookCommentPage = (function () {
+    function FacebookCommentPage(navCtrl, navParams, facebookService) {
         this.navCtrl = navCtrl;
         this.navParams = navParams;
-        this.musicCategoryPage = 'MusicCategoryPage';
-        this.musicHomePage = 'MusicHomePage';
-        this.musicFavoriestPage = 'MusicFavoriestPage';
+        this.facebookService = facebookService;
+        this.next = null;
+        this.spnState = 'show';
+        this.item = this.navParams.get('item');
+        this.list = new Array();
+        this.loadMore();
     }
-    MusicPage.prototype.ionViewDidLoad = function () {
-        console.log('ionViewDidLoad MusicPage');
+    FacebookCommentPage.prototype.loadMore = function (infiniteScroll) {
+        var _this = this;
+        if (infiniteScroll === void 0) { infiniteScroll = null; }
+        this.facebookService.getComments(this.next, this.item).subscribe(function (data) {
+            var tmpData = data.data;
+            _this.next = data.paging.next;
+            _this.list = _this.list.concat(tmpData);
+            if (infiniteScroll) {
+                infiniteScroll.complete();
+            }
+            if (_this.next == undefined) {
+                if (infiniteScroll != null) {
+                    infiniteScroll.enable(false);
+                }
+            }
+            _this.spnState = 'hide';
+        }, function (error) {
+            console.log(error);
+            if (infiniteScroll != null) {
+                infiniteScroll.enable(false);
+            }
+            _this.spnState = 'hide';
+        });
     };
-    MusicPage = __decorate([
+    FacebookCommentPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-            selector: 'page-music',template:/*ion-inline-start:"/Users/andrewhein/Desktop/WestmorelandWorking/src/pages/music/music.html"*/'<ion-tabs class="shadow-3 skin-dark skin skin-transparent">\n	<ion-tab [root]="musicHomePage" tabTitle="" tabIcon="ios-musical-note"></ion-tab>\n	<ion-tab [root]="musicCategoryPage" tabTitle="" tabIcon="ios-barcode"></ion-tab>\n	<ion-tab [root]="musicFavoriestPage" tabTitle="" tabIcon="ios-heart"></ion-tab>\n</ion-tabs>\n'/*ion-inline-end:"/Users/andrewhein/Desktop/WestmorelandWorking/src/pages/music/music.html"*/,
+            selector: 'page-facebook-comment',template:/*ion-inline-start:"/Users/andrewhein/Desktop/WestmorelandWorking/src/pages/ready-app/facebook/facebook-comment/facebook-comment.html"*/'<!--\n  Generated template for the FacebookCommentPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>facebook-comment</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content>\n<ion-spinner class="indicator" [ngClass]="spnState"></ion-spinner>\n<ion-list>\n  <ion-item *ngFor="let item of list">\n    <ion-avatar item-start>\n<!--       <img src="http://graph.facebook.com/{{item.from.id}}/picture?type=square"> -->\n    </ion-avatar>\n<!--     <h2>{{item.from.name}}</h2> -->\n    <p>{{item.message}}</p>\n  </ion-item>\n</ion-list>\n  <ion-infinite-scroll (ionInfinite)="loadMore($event)">\n    <ion-infinite-scroll-content></ion-infinite-scroll-content>\n  </ion-infinite-scroll>\n</ion-content>\n'/*ion-inline-end:"/Users/andrewhein/Desktop/WestmorelandWorking/src/pages/ready-app/facebook/facebook-comment/facebook-comment.html"*/,
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["n" /* NavParams */]])
-    ], MusicPage);
-    return MusicPage;
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* NavController */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["n" /* NavParams */],
+            __WEBPACK_IMPORTED_MODULE_2__providers_facebook_facebook__["a" /* FacebookService */]])
+    ], FacebookCommentPage);
+    return FacebookCommentPage;
 }());
 
-//# sourceMappingURL=music.js.map
+//# sourceMappingURL=facebook-comment.js.map
 
 /***/ })
 

@@ -1,14 +1,14 @@
 webpackJsonp([72],{
 
-/***/ 398:
+/***/ 401:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "LoginV7Module", function() { return LoginV7Module; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "PopoverModule", function() { return PopoverModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(38);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__login_v7__ = __webpack_require__(482);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__popover__ = __webpack_require__(552);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -18,36 +18,37 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
-var LoginV7Module = (function () {
-    function LoginV7Module() {
+var PopoverModule = (function () {
+    function PopoverModule() {
     }
-    LoginV7Module = __decorate([
+    PopoverModule = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["NgModule"])({
             declarations: [
-                __WEBPACK_IMPORTED_MODULE_2__login_v7__["a" /* LoginV7Component */],
+                __WEBPACK_IMPORTED_MODULE_2__popover__["a" /* PopoverComponent */],
             ],
             imports: [
-                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__login_v7__["a" /* LoginV7Component */]),
+                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__popover__["a" /* PopoverComponent */])
             ],
             exports: [
-                __WEBPACK_IMPORTED_MODULE_2__login_v7__["a" /* LoginV7Component */]
+                __WEBPACK_IMPORTED_MODULE_2__popover__["a" /* PopoverComponent */]
             ],
             schemas: [__WEBPACK_IMPORTED_MODULE_0__angular_core__["CUSTOM_ELEMENTS_SCHEMA"]]
         })
-    ], LoginV7Module);
-    return LoginV7Module;
+    ], PopoverModule);
+    return PopoverModule;
 }());
 
-//# sourceMappingURL=login-v7.module.js.map
+//# sourceMappingURL=popover.module.js.map
 
 /***/ }),
 
-/***/ 482:
+/***/ 552:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return LoginV7Component; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return PopoverComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(38);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -58,52 +59,59 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 
+
 /**
- * Generated class for the LoginV7Component component.
+ * Generated class for the RegisterV1Component component.
  *
  * See https://angular.io/api/core/Component for more info on Angular
  * Components.
  */
-var LoginV7Component = (function () {
-    function LoginV7Component() {
+var PopoverComponent = (function () {
+    function PopoverComponent(popoverCtrl) {
         var _this = this;
+        this.popoverCtrl = popoverCtrl;
         this.onCallbackEvent = function (event) {
             if (_this.events[event]) {
-                _this.events[event]({
-                    'email': _this.email,
-                    'password': _this.password
-                });
+                _this.events[event]();
             }
         };
+        console.log('Hello PopoverComponent Component');
     }
-    LoginV7Component.prototype.next = function () {
-        this.signupSlider.slideNext();
+    PopoverComponent.prototype.presentPopover = function (ev) {
+        var popover = this.popoverCtrl.create('PopoverMainComponent', {
+            contentEle: this.content.nativeElement,
+            textEle: this.text.nativeElement
+        });
+        popover.present({
+            ev: ev
+        });
     };
-    LoginV7Component.prototype.prev = function () {
-        this.signupSlider.slidePrev();
-    };
+    __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["ViewChild"])('popoverContent', { read: __WEBPACK_IMPORTED_MODULE_0__angular_core__["ElementRef"] }),
+        __metadata("design:type", __WEBPACK_IMPORTED_MODULE_0__angular_core__["ElementRef"])
+    ], PopoverComponent.prototype, "content", void 0);
+    __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["ViewChild"])('popoverText', { read: __WEBPACK_IMPORTED_MODULE_0__angular_core__["ElementRef"] }),
+        __metadata("design:type", __WEBPACK_IMPORTED_MODULE_0__angular_core__["ElementRef"])
+    ], PopoverComponent.prototype, "text", void 0);
     __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Input"])(),
         __metadata("design:type", Object)
-    ], LoginV7Component.prototype, "data", void 0);
+    ], PopoverComponent.prototype, "events", void 0);
     __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Input"])(),
         __metadata("design:type", Object)
-    ], LoginV7Component.prototype, "events", void 0);
-    __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["ViewChild"])('signupSlider'),
-        __metadata("design:type", Object)
-    ], LoginV7Component.prototype, "signupSlider", void 0);
-    LoginV7Component = __decorate([
+    ], PopoverComponent.prototype, "data", void 0);
+    PopoverComponent = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-            selector: 'login-v7',template:/*ion-inline-start:"/Users/andrewhein/Desktop/WestmorelandWorking/src/components/login/login-v7/login-v7.html"*/'<div *ngIf="data!=null">\n  <div class="bg-img">\n    <img [src]="data.imgBg" alt="">\n  </div>\n  \n  <div class="wrapper-page text-center black-opct block {{data.ani}}">\n    <button ion-button icon-only small color="dark" class="text-white white-opct button-circle back-page" (click)="onCallbackEvent(\'onDismiss\')">\n      <ion-icon name="ios-close"></ion-icon>\n    </button>\n    \n    <div>\n      <ion-row class="logo-img mgb-20 mgt-30 pdt-50 ani-left-to-right">\n        <img class="mg-auto" [src]="data.imgLogo" alt="">\n      </ion-row>\n      \n      <ion-slides #signupSlider class="ani-bottom-to-top">\n        <ion-slide class="text-white" padding>\n          <h4 class="text-left uppercase spacing-1 fw-400">{{data.txtHead1}}</h4>\n          <p class="text-left fs-14 text-grey-2">{{data.txtHead2}}</p>\n          <button ion-button color="light" clear small class="pull-left mgb-30 text-grey-3" (click)="onCallbackEvent(\'onSignUp\')">{{data.btnSignUp}}</button>\n          <ion-list class="mgt-40">\n            <ion-item class="text-grey-5 white round">\n              <ion-input type="email" placeholder="{{data.txtEmail}}" [(ngModel)]="email"></ion-input>\n            </ion-item>\n          </ion-list>\n          <button ion-button outline (click)="next()" color="light" class="mgt-40 text-amber stroke-2 stroke-amber button-circle uppercase fw-600 spacing-1 fs-14">\n            <ion-icon name="ios-arrow-forward-outline"></ion-icon>\n          </button>\n        </ion-slide>\n\n        <ion-slide class="text-white" padding>\n          <h4 class="text-left uppercase spacing-1 fw-400">{{data.txtHead3}}</h4>\n          <p class="text-left fs-14 text-grey-2">{{data.txtHead4}}</p>\n          <button ion-button color="light" clear small class="pull-left mgb-30 text-grey-3" (click)="onCallbackEvent(\'onForgotPassword\')">{{data.btnForgotPassword}}</button>\n          <ion-list class="mgt-40">\n            <ion-item class="text-grey-5 white round">\n              <ion-input type="password" placeholder="{{data.txtPassword}}" [(ngModel)]="password"></ion-input>\n            </ion-item>\n          </ion-list>\n          <button ion-button round outline color="light" class="text-amber stroke-2 stroke-amber pull-right uppercase fw-600 spacing-1 fs-12"  (click)="onCallbackEvent(\'onLogin\')">{{data.btnLogin}}</button>\n          <button ion-button outline (click)="prev()" color="light" class="mgr-5 text-amber stroke-2 stroke-amber button-circle pull-right uppercase fw-600 spacing-1 fs-14">\n            <ion-icon name="ios-arrow-back-outline"></ion-icon>\n          </button>\n        </ion-slide>\n      </ion-slides>\n    </div>\n  </div>\n  </div>\n'/*ion-inline-end:"/Users/andrewhein/Desktop/WestmorelandWorking/src/components/login/login-v7/login-v7.html"*/
+            selector: 'popover',template:/*ion-inline-start:"/Users/andrewhein/Desktop/WestmorelandWorking/src/components/ui-elements/popover/popover.html"*/'\n<ion-header>\n  <ion-navbar>\n    <ion-title>Popover</ion-title>\n    <ion-buttons end>\n      <button ion-button icon-only (click)="presentPopover($event)">\n        <ion-icon name="more"></ion-icon>\n      </button>\n    </ion-buttons>\n  </ion-navbar>\n</ion-header>\n\n<ion-content #popoverContent padding class="popover-page">\n  <div #popoverText class="text-to-change">\n    <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vel ipsum in purus mollis dictum eget vitae purus. Nulla ultrices est odio, a maximus velit pretium ac. Donec vel elementum mi. Proin elementum pulvinar neque, in lacinia nibh tempus auctor. Nam sapien velit, commodo ac nibh a, maximus ullamcorper nunc. Integer luctus tortor dignissim, dictum neque at, scelerisque purus. Vivamus nec erat vel magna posuere euismod. Sed ac augue eu tellus tincidunt fermentum eget sit amet nunc. Donec sit amet mi libero. Cras nunc arcu, ultrices nec sapien eu, convallis posuere libero. Pellentesque vulputate lacus eros, at lobortis lorem egestas et. Vestibulum tempus quam in efficitur lobortis. Maecenas consectetur consequat sem pharetra aliquet. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</div>\n\n    <div>Mauris ac ligula elit. Nulla pulvinar eget leo ut aliquet. Praesent sit amet luctus quam. Nam fringilla iaculis mi, ut maximus mauris molestie feugiat. Curabitur nec scelerisque elit. Nunc eu odio facilisis, tempor enim eget, venenatis sem. Sed vitae lorem vehicula, auctor orci ultrices, finibus mauris. Donec vitae pulvinar diam. Nulla luctus congue quam, sed lacinia arcu dictum a.</div>\n\n    <div>Morbi laoreet magna elit, id dapibus massa varius consequat. Praesent rhoncus nunc quam, eu mollis velit commodo ut. Etiam euismod elit mi, non auctor velit blandit ut. Aenean vitae pulvinar mi, ac pretium tellus. Morbi eu auctor sem, sollicitudin cursus felis. Praesent vestibulum velit sed eros iaculis ornare. Praesent diam diam, pellentesque eget scelerisque sed, bibendum ut risus. Sed sed fermentum sem. Integer vel justo felis. Proin eget quam est. In sit amet ipsum sagittis, convallis ipsum fringilla, interdum ante. Etiam vel tincidunt mauris. Nunc feugiat eros nunc, et vestibulum metus mollis et. Nullam eu viverra velit, id ultrices nisl. Donec non enim elementum, laoreet sapien id, feugiat tellus.</div>\n\n    <div>Sed pellentesque ipsum eget ante hendrerit maximus. Aliquam id venenatis nulla. Nullam in nibh at enim vestibulum ullamcorper. Nam felis dolor, lobortis vel est non, condimentum malesuada nisl. In metus sapien, malesuada at nulla in, pretium aliquam turpis. Quisque elementum purus mi, sed tristique turpis ultricies in. Donec feugiat dolor non ultricies ultricies. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Proin ut purus et diam porta cursus vitae semper mi. Donec fringilla tellus orci. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nunc vitae commodo sem. Duis vehicula quam sit amet imperdiet facilisis. Pellentesque eget dignissim neque, et scelerisque libero. Maecenas molestie metus sed orci cursus, in venenatis justo dapibus.</div>\n\n    <div>Aenean rhoncus urna at interdum blandit. Donec ac massa nec libero vehicula tincidunt. Sed sit amet hendrerit risus. Aliquam vitae vestibulum ipsum, non feugiat orci. Vivamus eu rutrum elit. Nulla dapibus tortor non dignissim pretium. Nulla in luctus turpis. Etiam non mattis tortor, at aliquet ex. Nunc ut ante varius, auctor dui vel, volutpat elit. Nunc laoreet augue sit amet ultrices porta. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Vestibulum pellentesque lobortis est, ut tincidunt ligula mollis sit amet. In porta risus arcu, quis pellentesque dolor mattis non. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;</div>\n  </div>\n</ion-content>\n'/*ion-inline-end:"/Users/andrewhein/Desktop/WestmorelandWorking/src/components/ui-elements/popover/popover.html"*/
         }),
-        __metadata("design:paramtypes", [])
-    ], LoginV7Component);
-    return LoginV7Component;
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["p" /* PopoverController */]])
+    ], PopoverComponent);
+    return PopoverComponent;
 }());
 
-//# sourceMappingURL=login-v7.js.map
+//# sourceMappingURL=popover.js.map
 
 /***/ })
 

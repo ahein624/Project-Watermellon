@@ -1,6 +1,6 @@
 webpackJsonp([64],{
 
-/***/ 426:
+/***/ 427:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -8,7 +8,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "MagazinePageModule", function() { return MagazinePageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(38);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__magazine__ = __webpack_require__(759);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__magazine__ = __webpack_require__(762);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -38,7 +38,7 @@ var MagazinePageModule = (function () {
 
 /***/ }),
 
-/***/ 759:
+/***/ 762:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -75,7 +75,7 @@ var MagazinePage = (function () {
     };
     MagazinePage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-            selector: 'page-magazine',template:/*ion-inline-start:"D:\Visual Studio\Personal\Project-Watermellon\src\pages\magazine\magazine.html"*/'<!--\n\n  Generated template for the MagazinePage page.\n\n\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n\n  Ionic pages and navigation.k\n\n-->\n\n<ion-tabs class="shadow-3 skin-light skin skin-transparent" >\n\n	<ion-tab [root]="magazineHomePage" tabTitle="" tabIcon="md-home"></ion-tab>\n\n	<ion-tab [root]="magazineCategoryPage" tabTitle="" tabIcon="md-list-box"></ion-tab>\n\n	<ion-tab [root]="magazineBookmarkPage" tabTitle="" tabIcon="md-bookmark"></ion-tab>\n\n</ion-tabs>'/*ion-inline-end:"D:\Visual Studio\Personal\Project-Watermellon\src\pages\magazine\magazine.html"*/,
+            selector: 'page-magazine',template:/*ion-inline-start:"/Users/andrewhein/Desktop/WestmorelandWorking/src/pages/magazine/magazine.html"*/'<!--\n  Generated template for the MagazinePage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.k\n-->\n<ion-tabs class="shadow-3 skin-light skin skin-transparent" >\n	<ion-tab [root]="magazineHomePage" tabTitle="" tabIcon="md-home"></ion-tab>\n	<ion-tab [root]="magazineCategoryPage" tabTitle="" tabIcon="md-list-box"></ion-tab>\n	<ion-tab [root]="magazineBookmarkPage" tabTitle="" tabIcon="md-bookmark"></ion-tab>\n</ion-tabs>'/*ion-inline-end:"/Users/andrewhein/Desktop/WestmorelandWorking/src/pages/magazine/magazine.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["n" /* NavParams */]])
     ], MagazinePage);

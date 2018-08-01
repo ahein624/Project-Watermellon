@@ -1,14 +1,14 @@
 webpackJsonp([40],{
 
-/***/ 459:
+/***/ 472:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SettingDashboardPageModule", function() { return SettingDashboardPageModule; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ShopPageModule", function() { return ShopPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(38);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__setting_dashboard__ = __webpack_require__(611);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__shop__ = __webpack_require__(910);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -18,33 +18,33 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
-var SettingDashboardPageModule = (function () {
-    function SettingDashboardPageModule() {
+var ShopPageModule = (function () {
+    function ShopPageModule() {
     }
-    SettingDashboardPageModule = __decorate([
+    ShopPageModule = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["NgModule"])({
             declarations: [
-                __WEBPACK_IMPORTED_MODULE_2__setting_dashboard__["a" /* SettingDashboardPage */],
+                __WEBPACK_IMPORTED_MODULE_2__shop__["a" /* ShopPage */],
             ],
             imports: [
-                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__setting_dashboard__["a" /* SettingDashboardPage */]),
+                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__shop__["a" /* ShopPage */]),
             ],
         })
-    ], SettingDashboardPageModule);
-    return SettingDashboardPageModule;
+    ], ShopPageModule);
+    return ShopPageModule;
 }());
 
-//# sourceMappingURL=setting-dashboard.module.js.map
+//# sourceMappingURL=shop.module.js.map
 
 /***/ }),
 
-/***/ 611:
+/***/ 910:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SettingDashboardPage; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ShopPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__providers_settings_settings__ = __webpack_require__(140);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(38);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -57,33 +57,42 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 /**
- * Generated class for the RegisterV1Component component.
+ * Generated class for the ShopPage page.
  *
- * See https://angular.io/api/core/Component for more info on Angular
- * Components.
+ * See https://ionicframework.com/docs/components/#navigation for more info on
+ * Ionic pages and navigation.
  */
-var SettingDashboardPage = (function () {
-    function SettingDashboardPage(settingsProvider) {
-        var _this = this;
-        this.settingsProvider = settingsProvider;
-        this.settings = {};
-        this.settingsProvider.getSettings().then(function (data) {
-            _this.settings = data;
-        });
+var ShopPage = (function () {
+    function ShopPage(navCtrl, navParams) {
+        this.navCtrl = navCtrl;
+        this.navParams = navParams;
+        this.shopBlogPage = 'ShopBlogPage';
+        this.shopCategoryPage = 'ShopCategoryPage';
+        this.shopDetailProductPage = 'ShopDetailProductPage';
+        this.shopHomePage = 'ShopHomePage';
     }
-    SettingDashboardPage.prototype.setDashboard = function () {
-        this.settingsProvider.setDashboard(this.settings.dashboard_type);
+    ShopPage.prototype.ionViewDidLoad = function () {
+        console.log('ionViewDidLoad ShopPage');
     };
-    SettingDashboardPage = __decorate([
+    ShopPage.prototype.ionViewDidEnter = function () {
+        this.tabRef.select(0);
+        this.shopHomePage = 'ShopHomePage';
+        //this.tabRef.setTabP
+    };
+    __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["ViewChild"])('tabs'),
+        __metadata("design:type", __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["q" /* Tabs */])
+    ], ShopPage.prototype, "tabRef", void 0);
+    ShopPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-            selector: 'setting-dashboard',template:/*ion-inline-start:"/Users/andrewhein/Desktop/WestmorelandWorking/src/pages/settings/setting-dashboard/setting-dashboard.html"*/'<ion-header>\n  <ion-navbar>\n    <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title>Dashboard Setting</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content>\n  	\n  	<ion-list radio-group [(ngModel)]="settings.dashboard_type" (ionChange)="setDashboard()">\n	  <ion-item>\n	    <ion-label>Grid</ion-label>\n	    <ion-radio  value="1" checked></ion-radio>\n	  </ion-item>\n	  <ion-item>\n	    <ion-label>Categories</ion-label>\n	    <ion-radio value="2"></ion-radio>\n	  </ion-item>\n	  <ion-item>\n	    <ion-label>List</ion-label>\n	    <ion-radio  value="3"></ion-radio>\n	  </ion-item>\n	</ion-list>\n\n</ion-content>\n'/*ion-inline-end:"/Users/andrewhein/Desktop/WestmorelandWorking/src/pages/settings/setting-dashboard/setting-dashboard.html"*/
+            selector: 'page-shop',template:/*ion-inline-start:"/Users/andrewhein/Desktop/WestmorelandWorking/src/pages/shop/shop.html"*/'<ion-tabs #tabs class="shadow-3 skin-light skin skin-white stroke-top stroke-1 stroke-grey-1">\n	<ion-tab [root]="shopHomePage" tabTitle="" tabIcon="md-home"></ion-tab>\n	<ion-tab [root]="shopCategoryPage" tabTitle="" tabIcon="md-list"></ion-tab>\n	<ion-tab [root]="shopBlogPage" tabTitle="" tabIcon="md-paper"></ion-tab>\n	<ion-tab [root]="tab4Root" tabTitle="" tabIcon="ios-contact"></ion-tab>\n</ion-tabs>\n\n'/*ion-inline-end:"/Users/andrewhein/Desktop/WestmorelandWorking/src/pages/shop/shop.html"*/,
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__providers_settings_settings__["a" /* SettingsProvider */]])
-    ], SettingDashboardPage);
-    return SettingDashboardPage;
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["n" /* NavParams */]])
+    ], ShopPage);
+    return ShopPage;
 }());
 
-//# sourceMappingURL=setting-dashboard.js.map
+//# sourceMappingURL=shop.js.map
 
 /***/ })
 

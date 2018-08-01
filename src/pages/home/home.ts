@@ -32,7 +32,7 @@ import { MenuProvider } from '../../providers/menu/menu';
  		public menuCtrl:MenuController,
  		public menuProvider:MenuProvider,
  		actions:Events) {
- 		
+
  		this.pages = this.menuProvider.getContent();
  		let that = this;
 

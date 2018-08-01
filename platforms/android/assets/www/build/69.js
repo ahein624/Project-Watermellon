@@ -1,14 +1,14 @@
 webpackJsonp([69],{
 
-/***/ 402:
+/***/ 414:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ModalBoxModule", function() { return ModalBoxModule; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ContactUsPageModule", function() { return ContactUsPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(38);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__modal_box__ = __webpack_require__(488);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__contact_us__ = __webpack_require__(729);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -18,37 +18,35 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
-var ModalBoxModule = (function () {
-    function ModalBoxModule() {
+var ContactUsPageModule = (function () {
+    function ContactUsPageModule() {
     }
-    ModalBoxModule = __decorate([
+    ContactUsPageModule = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["NgModule"])({
             declarations: [
-                __WEBPACK_IMPORTED_MODULE_2__modal_box__["a" /* ModalBoxComponent */],
+                __WEBPACK_IMPORTED_MODULE_2__contact_us__["a" /* ContactUsPage */],
             ],
             imports: [
-                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__modal_box__["a" /* ModalBoxComponent */]),
-            ],
-            exports: [
-                __WEBPACK_IMPORTED_MODULE_2__modal_box__["a" /* ModalBoxComponent */]
+                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__contact_us__["a" /* ContactUsPage */]),
             ],
             schemas: [__WEBPACK_IMPORTED_MODULE_0__angular_core__["CUSTOM_ELEMENTS_SCHEMA"]]
         })
-    ], ModalBoxModule);
-    return ModalBoxModule;
+    ], ContactUsPageModule);
+    return ContactUsPageModule;
 }());
 
-//# sourceMappingURL=modal-box.module.js.map
+//# sourceMappingURL=contact-us.module.js.map
 
 /***/ }),
 
-/***/ 488:
+/***/ 729:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ModalBoxComponent; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ContactUsPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(38);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_platform_browser__ = __webpack_require__(33);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -60,45 +58,35 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 
 
+
 /**
- * Generated class for the RegisterV1Component component.
+ * Generated class for the ContactPage page.
  *
- * See https://angular.io/api/core/Component for more info on Angular
- * Components.
+ * See https://ionicframework.com/docs/components/#navigation for more info on
+ * Ionic pages and navigation.
  */
-var ModalBoxComponent = (function () {
-    function ModalBoxComponent(modalCtrl, viewCtrl) {
-        var _this = this;
-        this.modalCtrl = modalCtrl;
-        this.viewCtrl = viewCtrl;
-        this.onCallbackEvent = function (event) {
-            if (_this.events[event]) {
-                _this.events[event]();
-            }
-        };
-        console.log('Hello ModalsComponent Component');
+// Leaving this existing code incase we need to come back and reference it.
+var ContactUsPage = (function () {
+    function ContactUsPage(navCtrl, navParams, sanitize) {
+        this.navCtrl = navCtrl;
+        this.navParams = navParams;
+        this.sanitize = sanitize;
+        this.params = {};
+        this.url = sanitize.bypassSecurityTrustResourceUrl("https://westmorelandfair.com/_app/contact-us/");
     }
-    ModalBoxComponent.prototype.dismiss = function () {
-        this.viewCtrl.dismiss();
+    ContactUsPage.prototype.ionViewDidLoad = function () {
+        console.log('ionViewDidLoad ContactUsPage');
     };
-    __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Input"])(),
-        __metadata("design:type", Object)
-    ], ModalBoxComponent.prototype, "events", void 0);
-    __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Input"])(),
-        __metadata("design:type", Object)
-    ], ModalBoxComponent.prototype, "data", void 0);
-    ModalBoxComponent = __decorate([
+    ContactUsPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-            selector: 'modal-box',template:/*ion-inline-start:"/Users/andrewhein/Desktop/WestmorelandWorking/src/components/ui-elements/modal-box/modal-box.html"*/'<ion-content padding class="modal-box">\n  <ion-row class="close-modal" (click)="dismiss()"></ion-row>\n  <ion-row class="main-modal bdra-10" col-2>\n    <div class="modal-box-wrapper">\n      \n      <h4 class="mgb-10">modal_box_title</h4>\n      <h6 class="mgt-5 mgb-20">modal_box_quote</h6>\n      \n      <ion-list>\n        <ion-item>\n          <ion-label>view_all_location</ion-label>\n          <ion-toggle [(ngModel)]="all_local"></ion-toggle>\n        </ion-item>\n\n        <ion-item>\n          <ion-label>county</ion-label>\n          <ion-select [disabled]="all_local ? true : null" [(ngModel)]="county">\n            <ion-option value="null">County 1</ion-option>\n            <ion-option value="null">County 2</ion-option>\n            <ion-option value="null">County 3</ion-option>\n            <ion-option value="null">County 4</ion-option>\n            <ion-option value="null">County 5</ion-option>\n          </ion-select>\n        </ion-item>\n\n        <ion-item>\n          <ion-label>cities</ion-label>\n          <ion-select [disabled]="all_local ? true : null" [(ngModel)]="cities">\n            <ion-option value="null">All cities</ion-option>\n            <ion-option value="null">Cities 1</ion-option>\n            <ion-option value="null">Cities 2</ion-option>\n            <ion-option value="null">Cities 3</ion-option>\n            <ion-option value="null">Cities 4</ion-option>\n            <ion-option value="null">Cities 5</ion-option>\n          </ion-select>\n        </ion-item>\n      </ion-list>\n\n    </div>\n  </ion-row>\n</ion-content>'/*ion-inline-end:"/Users/andrewhein/Desktop/WestmorelandWorking/src/components/ui-elements/modal-box/modal-box.html"*/
+            selector: 'page-contact',template:/*ion-inline-start:"/Users/andrewhein/Desktop/WestmorelandWorking/src/pages/contact-us/contact-us.html"*/'<!--\n  Generated template for the AboutPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header class="skin skin-wcf skin-brown">\n  <ion-navbar>\n  <button ion-button menuToggle>\n    <ion-icon name="menu"></ion-icon>\n  </button>\n  <ion-title>Contact</ion-title>\n  </ion-navbar>\n  </ion-header>\n\n\n<ion-content class="no-scroll">\n    <iframe height="100%" width="100%" [src]="url"></iframe>\n</ion-content>\n\n\n '/*ion-inline-end:"/Users/andrewhein/Desktop/WestmorelandWorking/src/pages/contact-us/contact-us.html"*/,
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* ModalController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["s" /* ViewController */]])
-    ], ModalBoxComponent);
-    return ModalBoxComponent;
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["n" /* NavParams */], __WEBPACK_IMPORTED_MODULE_2__angular_platform_browser__["DomSanitizer"]])
+    ], ContactUsPage);
+    return ContactUsPage;
 }());
 
-//# sourceMappingURL=modal-box.js.map
+//# sourceMappingURL=contact-us.js.map
 
 /***/ })
 

@@ -1,6 +1,6 @@
 webpackJsonp([25],{
 
-/***/ 427:
+/***/ 425:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -8,8 +8,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "MagazineHomePageModule", function() { return MagazineHomePageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(38);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__magazine_home__ = __webpack_require__(760);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_magazine_magazine_home_magazine_home_module__ = __webpack_require__(761);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__magazine_home__ = __webpack_require__(756);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_magazine_magazine_home_magazine_home_module__ = __webpack_require__(757);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -41,7 +41,7 @@ var MagazineHomePageModule = (function () {
 
 /***/ }),
 
-/***/ 760:
+/***/ 756:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -83,7 +83,7 @@ var MagazineHomePage = (function () {
     };
     MagazineHomePage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-            selector: 'page-magazine-home',template:/*ion-inline-start:"D:\Visual Studio\Personal\Project-Watermellon\src\pages\magazine\magazine-home\magazine-home.html"*/'<!--\n\n  Generated template for the MagazineListPage page.\n\n\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n-->\n\n\n\n\n\n<ion-header>\n\n  <ion-navbar>\n\n    <ion-toolbar class="pd-0 transparent">\n\n      <button ion-button menuToggle class="text-black">\n\n        <ion-icon name="menu"></ion-icon>\n\n      </button>\n\n      <ion-searchbar class="light-searchbar round transparent text-white" padding></ion-searchbar>\n\n    </ion-toolbar>\n\n  </ion-navbar>\n\n</ion-header>\n\n\n\n\n\n<ion-content class="white">\n\n	<magazine-home [data]="data" [events]="events"></magazine-home>\n\n</ion-content>\n\n\n\n'/*ion-inline-end:"D:\Visual Studio\Personal\Project-Watermellon\src\pages\magazine\magazine-home\magazine-home.html"*/,
+            selector: 'page-magazine-home',template:/*ion-inline-start:"/Users/andrewhein/Desktop/WestmorelandWorking/src/pages/magazine/magazine-home/magazine-home.html"*/'<!--\n  Generated template for the MagazineListPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n\n\n<ion-header>\n  <ion-navbar>\n    <ion-toolbar class="pd-0 transparent">\n      <button ion-button menuToggle class="text-black">\n        <ion-icon name="menu"></ion-icon>\n      </button>\n      <ion-searchbar class="light-searchbar round transparent text-white" padding></ion-searchbar>\n    </ion-toolbar>\n  </ion-navbar>\n</ion-header>\n\n\n<ion-content class="white">\n	<magazine-home [data]="data" [events]="events"></magazine-home>\n</ion-content>\n\n'/*ion-inline-end:"/Users/andrewhein/Desktop/WestmorelandWorking/src/pages/magazine/magazine-home/magazine-home.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["n" /* NavParams */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* ModalController */]])
     ], MagazineHomePage);
@@ -94,14 +94,14 @@ var MagazineHomePage = (function () {
 
 /***/ }),
 
-/***/ 761:
+/***/ 757:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MagazineHomeModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(38);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__magazine_home__ = __webpack_require__(762);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__magazine_home__ = __webpack_require__(758);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -135,7 +135,7 @@ var MagazineHomeModule = (function () {
 
 /***/ }),
 
-/***/ 762:
+/***/ 758:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -177,7 +177,7 @@ var MagazineHomeComponent = (function () {
     ], MagazineHomeComponent.prototype, "data", void 0);
     MagazineHomeComponent = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-            selector: 'magazine-home',template:/*ion-inline-start:"D:\Visual Studio\Personal\Project-Watermellon\src\components\magazine\magazine-home\magazine-home.html"*/'\n\n<div padding class="white-1">\n\n  \n\n  <div class="mgb-30 ani-right-to-left">\n\n    <h2 class="fw-600 fs-30">New Post for You</h2>\n\n    <div class="pink line-decor"></div>\n\n  </div>\n\n  \n\n  <div class="shadow-3 wrapper-news pst-relative mgb-20 ani-bottom-to-left">\n\n    <ion-icon class="left-bookmark" name="ios-bookmark-outline"></ion-icon>\n\n    <ion-row (click)="onCallbackEvent(\'openDetail\')">\n\n      <ion-col col-8 class="pdl-15 pdr-10">\n\n        <h3 class="fw-600 mgt-20 mgb-2">Lorem Ipsum is simply</h3>\n\n        <p class="text-grey-4 mgt-0">Post by Koodinh</p>\n\n        <p class="text-grey-3 fs-12">Tue, Jan 16, 2017</p>\n\n      </ion-col>\n\n      <ion-col col-4 class="pd-0">\n\n        <img src="assets/img/bg3.jpg" alt="">\n\n      </ion-col>\n\n    </ion-row>\n\n  </div>\n\n\n\n  <div class="shadow-3 wrapper-news pst-relative mgb-20 ani-bottom-to-left">\n\n    <ion-icon class="right-bookmark" name="ios-bookmark-outline"></ion-icon>\n\n    <ion-row (click)="onCallbackEvent(\'openDetail\')">\n\n      <ion-col col-4 class="pd-0">\n\n        <img src="assets/img/bg5.jpg" alt="">\n\n      </ion-col>\n\n      <ion-col col-8 class="pdl-15 pdr-10">\n\n        <h3 class="fw-600 mgt-20 mgb-2">Lorem Ipsum is simply</h3>\n\n        <p class="text-grey-4 mgt-0">Post by Koodinh</p>\n\n        <p class="text-grey-3 fs-12">Tue, Jan 16, 2017</p>\n\n      </ion-col>\n\n    </ion-row>\n\n  </div>\n\n\n\n  <div class="shadow-3 wrapper-news pst-relative mgb-20 ani-bottom-to-left">\n\n    <ion-icon class="left-bookmark" name="ios-bookmark-outline"></ion-icon>\n\n    <ion-row (click)="onCallbackEvent(\'openDetail\')">\n\n      <ion-col col-8 class="pdl-15 pdr-10">\n\n        <h3 class="fw-600 mgt-20 mgb-2">Lorem Ipsum is simply</h3>\n\n        <p class="text-grey-4 mgt-0">Post by Koodinh</p>\n\n        <p class="text-grey-3 fs-12">Tue, Jan 16, 2017</p>\n\n      </ion-col>\n\n      <ion-col col-4 class="pd-0">\n\n        <img src="assets/img/bg10.jpg" alt="">\n\n      </ion-col>\n\n    </ion-row>\n\n  </div>\n\n\n\n  <div class="shadow-3 wrapper-news pst-relative mgb-20 ani-bottom-to-left">\n\n    <ion-icon class="right-bookmark" name="ios-bookmark-outline"></ion-icon>\n\n    <ion-row (click)="onCallbackEvent(\'openDetail\')">\n\n      <ion-col col-4 class="pd-0">\n\n        <img src="assets/img/bg14.jpg" alt="">\n\n      </ion-col>\n\n      <ion-col col-8 class="pdl-15 pdr-10">\n\n        <h3 class="fw-600 mgt-20 mgb-2">Lorem Ipsum is simply</h3>\n\n        <p class="text-grey-4 mgt-0">Post by Koodinh</p>\n\n        <p class="text-grey-3 fs-12">Tue, Jan 16, 2017</p>\n\n      </ion-col>\n\n    </ion-row>\n\n  </div>\n\n\n\n  <div class="shadow-3 wrapper-news pst-relative mgb-20 ani-bottom-to-left">\n\n    <ion-icon class="left-bookmark" name="ios-bookmark-outline"></ion-icon>\n\n    <ion-row (click)="onCallbackEvent(\'openDetail\')">\n\n      <ion-col col-8 class="pdl-15 pdr-10">\n\n        <h3 class="fw-600 mgt-20 mgb-2">Lorem Ipsum is simply</h3>\n\n        <p class="text-grey-4 mgt-0">Post by Koodinh</p>\n\n        <p class="text-grey-3 fs-12">Tue, Jan 16, 2017</p>\n\n      </ion-col>\n\n      <ion-col col-4 class="pd-0">\n\n        <img src="assets/img/bg1.jpg" alt="">\n\n      </ion-col>\n\n    </ion-row>\n\n  </div>\n\n\n\n  <div class="shadow-3 wrapper-news pst-relative mgb-20 ani-bottom-to-left">\n\n    <ion-icon class="right-bookmark" name="ios-bookmark-outline"></ion-icon>\n\n    <ion-row (click)="onCallbackEvent(\'openDetail\')">\n\n      <ion-col col-4 class="pd-0">\n\n        <img src="assets/img/bg5.jpg" alt="">\n\n      </ion-col>\n\n      <ion-col col-8 class="pdl-15 pdr-10">\n\n        <h3 class="fw-600 mgt-20 mgb-2">Lorem Ipsum is simply</h3>\n\n        <p class="text-grey-4 mgt-0">Post by Koodinh</p>\n\n        <p class="text-grey-3 fs-12">Tue, Jan 16, 2017</p>\n\n      </ion-col>\n\n    </ion-row>\n\n  </div>\n\n\n\n</div>'/*ion-inline-end:"D:\Visual Studio\Personal\Project-Watermellon\src\components\magazine\magazine-home\magazine-home.html"*/
+            selector: 'magazine-home',template:/*ion-inline-start:"/Users/andrewhein/Desktop/WestmorelandWorking/src/components/magazine/magazine-home/magazine-home.html"*/'\n<div padding class="white-1">\n  \n  <div class="mgb-30 ani-right-to-left">\n    <h2 class="fw-600 fs-30">New Post for You</h2>\n    <div class="pink line-decor"></div>\n  </div>\n  \n  <div class="shadow-3 wrapper-news pst-relative mgb-20 ani-bottom-to-left">\n    <ion-icon class="left-bookmark" name="ios-bookmark-outline"></ion-icon>\n    <ion-row (click)="onCallbackEvent(\'openDetail\')">\n      <ion-col col-8 class="pdl-15 pdr-10">\n        <h3 class="fw-600 mgt-20 mgb-2">Lorem Ipsum is simply</h3>\n        <p class="text-grey-4 mgt-0">Post by Koodinh</p>\n        <p class="text-grey-3 fs-12">Tue, Jan 16, 2017</p>\n      </ion-col>\n      <ion-col col-4 class="pd-0">\n        <img src="assets/img/bg3.jpg" alt="">\n      </ion-col>\n    </ion-row>\n  </div>\n\n  <div class="shadow-3 wrapper-news pst-relative mgb-20 ani-bottom-to-left">\n    <ion-icon class="right-bookmark" name="ios-bookmark-outline"></ion-icon>\n    <ion-row (click)="onCallbackEvent(\'openDetail\')">\n      <ion-col col-4 class="pd-0">\n        <img src="assets/img/bg5.jpg" alt="">\n      </ion-col>\n      <ion-col col-8 class="pdl-15 pdr-10">\n        <h3 class="fw-600 mgt-20 mgb-2">Lorem Ipsum is simply</h3>\n        <p class="text-grey-4 mgt-0">Post by Koodinh</p>\n        <p class="text-grey-3 fs-12">Tue, Jan 16, 2017</p>\n      </ion-col>\n    </ion-row>\n  </div>\n\n  <div class="shadow-3 wrapper-news pst-relative mgb-20 ani-bottom-to-left">\n    <ion-icon class="left-bookmark" name="ios-bookmark-outline"></ion-icon>\n    <ion-row (click)="onCallbackEvent(\'openDetail\')">\n      <ion-col col-8 class="pdl-15 pdr-10">\n        <h3 class="fw-600 mgt-20 mgb-2">Lorem Ipsum is simply</h3>\n        <p class="text-grey-4 mgt-0">Post by Koodinh</p>\n        <p class="text-grey-3 fs-12">Tue, Jan 16, 2017</p>\n      </ion-col>\n      <ion-col col-4 class="pd-0">\n        <img src="assets/img/bg10.jpg" alt="">\n      </ion-col>\n    </ion-row>\n  </div>\n\n  <div class="shadow-3 wrapper-news pst-relative mgb-20 ani-bottom-to-left">\n    <ion-icon class="right-bookmark" name="ios-bookmark-outline"></ion-icon>\n    <ion-row (click)="onCallbackEvent(\'openDetail\')">\n      <ion-col col-4 class="pd-0">\n        <img src="assets/img/bg14.jpg" alt="">\n      </ion-col>\n      <ion-col col-8 class="pdl-15 pdr-10">\n        <h3 class="fw-600 mgt-20 mgb-2">Lorem Ipsum is simply</h3>\n        <p class="text-grey-4 mgt-0">Post by Koodinh</p>\n        <p class="text-grey-3 fs-12">Tue, Jan 16, 2017</p>\n      </ion-col>\n    </ion-row>\n  </div>\n\n  <div class="shadow-3 wrapper-news pst-relative mgb-20 ani-bottom-to-left">\n    <ion-icon class="left-bookmark" name="ios-bookmark-outline"></ion-icon>\n    <ion-row (click)="onCallbackEvent(\'openDetail\')">\n      <ion-col col-8 class="pdl-15 pdr-10">\n        <h3 class="fw-600 mgt-20 mgb-2">Lorem Ipsum is simply</h3>\n        <p class="text-grey-4 mgt-0">Post by Koodinh</p>\n        <p class="text-grey-3 fs-12">Tue, Jan 16, 2017</p>\n      </ion-col>\n      <ion-col col-4 class="pd-0">\n        <img src="assets/img/bg1.jpg" alt="">\n      </ion-col>\n    </ion-row>\n  </div>\n\n  <div class="shadow-3 wrapper-news pst-relative mgb-20 ani-bottom-to-left">\n    <ion-icon class="right-bookmark" name="ios-bookmark-outline"></ion-icon>\n    <ion-row (click)="onCallbackEvent(\'openDetail\')">\n      <ion-col col-4 class="pd-0">\n        <img src="assets/img/bg5.jpg" alt="">\n      </ion-col>\n      <ion-col col-8 class="pdl-15 pdr-10">\n        <h3 class="fw-600 mgt-20 mgb-2">Lorem Ipsum is simply</h3>\n        <p class="text-grey-4 mgt-0">Post by Koodinh</p>\n        <p class="text-grey-3 fs-12">Tue, Jan 16, 2017</p>\n      </ion-col>\n    </ion-row>\n  </div>\n\n</div>'/*ion-inline-end:"/Users/andrewhein/Desktop/WestmorelandWorking/src/components/magazine/magazine-home/magazine-home.html"*/
         }),
         __metadata("design:paramtypes", [])
     ], MagazineHomeComponent);

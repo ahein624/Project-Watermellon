@@ -1,17 +1,18 @@
 webpackJsonp([5],{
 
-/***/ 412:
+/***/ 405:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ComingSoonPageModule", function() { return ComingSoonPageModule; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AboutPageModule", function() { return AboutPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(38);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__coming_soon__ = __webpack_require__(516);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_coming_soon_coming_soon_v1_coming_soon_v1_module__ = __webpack_require__(517);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_coming_soon_coming_soon_v2_coming_soon_v2_module__ = __webpack_require__(519);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__components_coming_soon_coming_soon_v3_coming_soon_v3_module__ = __webpack_require__(521);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__about__ = __webpack_require__(694);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_about_about_v1_about_v1_module__ = __webpack_require__(695);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_about_about_v2_about_v2_module__ = __webpack_require__(697);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__components_about_about_v3_about_v3_module__ = __webpack_require__(699);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__components_about_about_wcf_about_wcf_module__ = __webpack_require__(701);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -24,36 +25,40 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
-var ComingSoonPageModule = (function () {
-    function ComingSoonPageModule() {
+
+var AboutPageModule = (function () {
+    function AboutPageModule() {
     }
-    ComingSoonPageModule = __decorate([
+    AboutPageModule = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["NgModule"])({
             declarations: [
-                __WEBPACK_IMPORTED_MODULE_2__coming_soon__["a" /* ComingSoonPage */],
+                __WEBPACK_IMPORTED_MODULE_2__about__["a" /* AboutPage */],
             ],
             imports: [
-                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__coming_soon__["a" /* ComingSoonPage */]),
-                __WEBPACK_IMPORTED_MODULE_3__components_coming_soon_coming_soon_v1_coming_soon_v1_module__["a" /* ComingSoonV1Module */],
-                __WEBPACK_IMPORTED_MODULE_4__components_coming_soon_coming_soon_v2_coming_soon_v2_module__["a" /* ComingSoonV2Module */],
-                __WEBPACK_IMPORTED_MODULE_5__components_coming_soon_coming_soon_v3_coming_soon_v3_module__["a" /* ComingSoonV3Module */]
+                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__about__["a" /* AboutPage */]),
+                __WEBPACK_IMPORTED_MODULE_3__components_about_about_v1_about_v1_module__["a" /* AboutV1Module */],
+                __WEBPACK_IMPORTED_MODULE_4__components_about_about_v2_about_v2_module__["a" /* AboutV2Module */],
+                __WEBPACK_IMPORTED_MODULE_5__components_about_about_v3_about_v3_module__["a" /* AboutV3Module */],
+                __WEBPACK_IMPORTED_MODULE_6__components_about_about_wcf_about_wcf_module__["a" /* AboutWCFModule */]
             ],
+            schemas: [__WEBPACK_IMPORTED_MODULE_0__angular_core__["CUSTOM_ELEMENTS_SCHEMA"]]
         })
-    ], ComingSoonPageModule);
-    return ComingSoonPageModule;
+    ], AboutPageModule);
+    return AboutPageModule;
 }());
 
-//# sourceMappingURL=coming-soon.module.js.map
+//# sourceMappingURL=about.module.js.map
 
 /***/ }),
 
-/***/ 516:
+/***/ 694:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ComingSoonPage; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AboutPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(38);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_platform_browser__ = __webpack_require__(33);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -65,51 +70,55 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 
 
+
 /**
- * Generated class for the ComingSoonPage page.
+ * Generated class for the AboutPage page.
  *
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
  */
-var ComingSoonPage = (function () {
-    function ComingSoonPage(navCtrl, navParams, modalCtrl) {
+// Leaving this existing code incase we need to come back and reference it.
+var AboutPage = (function () {
+    function AboutPage(navCtrl, navParams, sanitize) {
         this.navCtrl = navCtrl;
         this.navParams = navParams;
-        this.modalCtrl = modalCtrl;
-        this.data = {};
-        this.events = {};
-        this.page = this.navParams.get('page');
-        this.data = {
-            days: 3,
-            hours: 17,
-            minutes: 33,
-            seconds: 25
-        };
+        this.sanitize = sanitize;
+        this.params = {};
+        this.url = {};
+        // Commenting this out due to unneeded.
+        //  this.page=this.navParams.get('page');
+        //  console.log(this.page);
+        //  if(this.page==undefined){
+        //    this.navCtrl.setRoot('HomePage');
+        //  }
+        this.url = sanitize.bypassSecurityTrustResourceUrl("https://westmorelandfair.com/_app/about-us/");
     }
-    ComingSoonPage.prototype.ionViewDidLoad = function () {
-        console.log('ionViewDidLoad ComingSoonPage');
+    AboutPage.prototype.ionViewDidLoad = function () {
+        console.log('ionViewDidLoad AboutPage');
     };
-    ComingSoonPage = __decorate([
+    AboutPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-            selector: 'page-coming-soon',template:/*ion-inline-start:"/Users/andrewhein/Desktop/WestmorelandWorking/src/pages/coming-soon/coming-soon.html"*/'<!--\n  Generated template for the AboutPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n  <ion-navbar>\n    <ion-title>{{page.title}}</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content>\n	<coming-soon-v1 *ngIf="page!=undefined && page.name==1" [data]="data" [events]="events"></coming-soon-v1>\n	<coming-soon-v2 *ngIf="page!=undefined && page.name==2" [events]="events"></coming-soon-v2>\n	<coming-soon-v3 *ngIf="page!=undefined && page.name==3" [events]="events"></coming-soon-v3>\n</ion-content>\n'/*ion-inline-end:"/Users/andrewhein/Desktop/WestmorelandWorking/src/pages/coming-soon/coming-soon.html"*/,
+            selector: 'page-about',template:/*ion-inline-start:"/Users/andrewhein/Desktop/WestmorelandWorking/src/pages/about/about.html"*/'<!--\n  Generated template for the AboutPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header class="skin skin-wcf skin-brown">\n  <ion-navbar>\n  <button ion-button menuToggle>\n    <ion-icon name="menu"></ion-icon>\n  </button>\n  <ion-title>About</ion-title>\n  </ion-navbar>\n  </ion-header>\n\n\n<ion-content claa="no-scroll">\n   <!-- <about-v1  [data]="data" [events]="events"></about-v1>\n\n   <about-v2  *ngIf="page!=undefined && page.name==2" [data]="data" [events]="events"></about-v2>\n   \n   <about-v3  *ngIf="page!=undefined && page.name==3" [data]="data" [events]="events"></about-v3>\n   \n   <about-wcf [data]="data"></about-wcf> -->\n   <iframe height="100%" width="100%" src="https://westmorelandfair.com/_app/about-us/"></iframe>\n</ion-content>\n\n\n '/*ion-inline-end:"/Users/andrewhein/Desktop/WestmorelandWorking/src/pages/about/about.html"*/,
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["n" /* NavParams */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* ModalController */]])
-    ], ComingSoonPage);
-    return ComingSoonPage;
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* NavController */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["n" /* NavParams */],
+            __WEBPACK_IMPORTED_MODULE_2__angular_platform_browser__["DomSanitizer"]])
+    ], AboutPage);
+    return AboutPage;
 }());
 
-//# sourceMappingURL=coming-soon.js.map
+//# sourceMappingURL=about.js.map
 
 /***/ }),
 
-/***/ 517:
+/***/ 695:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ComingSoonV1Module; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AboutV1Module; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(38);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__coming_soon_v1__ = __webpack_require__(518);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__about_v1__ = __webpack_require__(696);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -119,36 +128,37 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
-var ComingSoonV1Module = (function () {
-    function ComingSoonV1Module() {
+var AboutV1Module = (function () {
+    function AboutV1Module() {
     }
-    ComingSoonV1Module = __decorate([
+    AboutV1Module = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["NgModule"])({
             declarations: [
-                __WEBPACK_IMPORTED_MODULE_2__coming_soon_v1__["a" /* ComingSoonV1Component */],
+                __WEBPACK_IMPORTED_MODULE_2__about_v1__["a" /* AboutV1Component */],
             ],
             imports: [
-                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__coming_soon_v1__["a" /* ComingSoonV1Component */]),
+                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__about_v1__["a" /* AboutV1Component */]),
             ],
             exports: [
-                __WEBPACK_IMPORTED_MODULE_2__coming_soon_v1__["a" /* ComingSoonV1Component */]
+                __WEBPACK_IMPORTED_MODULE_2__about_v1__["a" /* AboutV1Component */]
             ],
             schemas: [__WEBPACK_IMPORTED_MODULE_0__angular_core__["CUSTOM_ELEMENTS_SCHEMA"]]
         })
-    ], ComingSoonV1Module);
-    return ComingSoonV1Module;
+    ], AboutV1Module);
+    return AboutV1Module;
 }());
 
-//# sourceMappingURL=coming-soon-v1.module.js.map
+//# sourceMappingURL=about-v1.module.js.map
 
 /***/ }),
 
-/***/ 518:
+/***/ 696:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ComingSoonV1Component; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AboutV1Component; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser__ = __webpack_require__(33);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -159,91 +169,56 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 
+
 /**
- * Generated class for the ComingSoonV1Component component.
+ * Generated class for the AboutV1Component component.
  *
  * See https://angular.io/api/core/Component for more info on Angular
  * Components.
  */
-var ComingSoonV1Component = (function () {
-    function ComingSoonV1Component() {
+var AboutV1Component = (function () {
+    function AboutV1Component(sanitizer) {
         var _this = this;
-        this.running = false;
-        this.timer = null;
+        this.sanitizer = sanitizer;
         this.onCallbackEvent = function (event) {
             if (_this.events[event]) {
-                _this.events[event]();
+                _this.events[event]({
+                    'fullname': _this.fullname,
+                    'email': _this.email,
+                    'message': _this.message
+                });
             }
         };
-        this.val_days = 3;
-        this.val_hours = 17;
-        this.val_minutes = 33;
-        this.val_seconds = 25;
-        this.days = ('0' + this.val_days).slice(-2);
-        this.hours = ('0' + this.val_hours).slice(-2);
-        this.minutes = ('0' + this.val_minutes).slice(-2);
-        this.seconds = ('0' + this.val_seconds).slice(-2);
-        //Use setTimeout to wait for time to load from the server
-        this.count_down();
     }
-    ComingSoonV1Component.prototype.count_down = function () {
-        console.log("a");
-        this.running = true;
-        var thiss = this;
-        this.timer = setInterval(function () {
-            if (thiss.val_seconds > 0) {
-                thiss.val_seconds = thiss.val_seconds - 1;
-            }
-            if (thiss.val_seconds == 0 && thiss.val_minutes > 0) {
-                thiss.val_minutes = thiss.val_minutes - 1;
-                thiss.val_seconds = 59;
-            }
-            if (thiss.val_minutes == 0 && thiss.val_seconds == 0 && thiss.val_hours > 0) {
-                thiss.val_hours = thiss.val_hours - 1;
-                thiss.val_minutes = 59;
-                thiss.val_seconds = 59;
-            }
-            if (thiss.val_hours == 0 && thiss.val_minutes == 0 && thiss.val_seconds == 0 && thiss.val_days > 0) {
-                thiss.val_days = thiss.val_days - 1;
-                thiss.val_hours = 24;
-                thiss.val_minutes = 59;
-                thiss.val_seconds = 59;
-            }
-            thiss.days = ('0' + thiss.val_days).slice(-2);
-            thiss.hours = ('0' + thiss.val_hours).slice(-2);
-            thiss.minutes = ('0' + thiss.val_minutes).slice(-2);
-            thiss.seconds = ('0' + thiss.val_seconds).slice(-2);
-        }, 1000);
-    };
     __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Input"])(),
         __metadata("design:type", Object)
-    ], ComingSoonV1Component.prototype, "data", void 0);
+    ], AboutV1Component.prototype, "data", void 0);
     __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Input"])(),
         __metadata("design:type", Object)
-    ], ComingSoonV1Component.prototype, "events", void 0);
-    ComingSoonV1Component = __decorate([
+    ], AboutV1Component.prototype, "events", void 0);
+    AboutV1Component = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-            selector: 'coming-soon-v1',template:/*ion-inline-start:"/Users/andrewhein/Desktop/WestmorelandWorking/src/components/coming-soon/coming-soon-v1/coming-soon-v1.html"*/'<div *ngIf="data!=null" class="white-1">\n	<div class="bg-img">\n		<img src="assets/img/bg2.jpg" alt="">\n	</div>\n	<div class="wrapper-pst black-opct-1">\n		<div class="top-decor">\n			<img src="assets/img/decor_coming.png" alt="">\n		</div>\n		<div class="wrapper-coming">\n			<div class="time-count mgt-50 ani-bottom-to-top">\n				<p class="text-white text-right fs-14 fw-300 spacing-2 ani-right-to-left">Seconds: {{seconds}}</p>\n				<h2 class="text-white fs-50 fw-600 spacing-1 mgt-10">{{days +\':\'+ hours +\':\'+ minutes}}</h2>\n			</div>\n			<div>\n\n				<ion-list class="ani-bottom-to-top">\n				<ion-item class="text-white white-opct bdra-20">\n				<ion-input type="email" placeholder="{{data.txtUserName}}" [(ngModel)]="email"></ion-input>\n			</ion-item>\n		</ion-list>\n\n		<button ion-button block outline round color="light" class="mgt-20 stroke-2 stroke-white text-white uppercase fw-600 spacing-1 ani-bottom-to-top" (click)="onCallbackEvent(\'onLogin\')">{{data.txtLogin}}</button>\n	</div>\n</div>\n</div>\n</div>\n'/*ion-inline-end:"/Users/andrewhein/Desktop/WestmorelandWorking/src/components/coming-soon/coming-soon-v1/coming-soon-v1.html"*/
+            selector: 'about-v1',template:/*ion-inline-start:"/Users/andrewhein/Desktop/WestmorelandWorking/src/components/about/about-v1/about-v1.html"*/'<div class="white-1 about-v1" *ngIf="data!=null">\n	<div class="map ani-left-to-right">\n		<iframe [src]="sanitizer.bypassSecurityTrustResourceUrl(data.google_map)" width="100%" height="250" frameborder="0" style="border:0" allowfullscreen></iframe>\n	</div>\n\n	<div padding class="ani-right-to-left">\n		<div class="find-us mgt-30">\n			<h4 class="fs-26 fw-600">{{data.label.txtGetInTouch}}</h4>\n			<p class="text-grey-4 mgb-40">{{data.about}}</p>\n			<div class="element-find text-grey-4 mgb-10">\n				<ion-icon class="mgl-10 mgr-20" name="md-pin"></ion-icon>\n				<p class="mgt-0">{{data.address1}}</p>\n			</div>\n			<div class="element-find text-grey-4 mgb-10">\n				<ion-icon class="mgl-10 mgr-20" name="md-call"></ion-icon>\n				<p class="mgt-0">{{data.phone1}}</p>\n			</div>\n			<div class="element-find text-grey-4 mgb-10">\n				<ion-icon class="mgl-10 mgr-20" name="md-mail"></ion-icon>\n				<p class="mgt-0">{{data.email1}}</p>\n			</div>\n			<div class="element-find text-grey-4 mgb-10">\n				<ion-icon class="mgl-10 mgr-20" name="md-time"></ion-icon>\n				<p class="mgt-0">\n					<span class="block mgb-5">{{data.open_time}}</span>\n					<span class="block mgb-5">{{data.close_time}}</span>\n				</p>\n			</div>\n		</div>\n			\n		<div class="social mgt-40 ani-fade-out">\n			<h6>{{data.label.txtFollow}}:</h6>\n			<button ion-button only-icon clear class="text-grey-4">\n				<ion-icon name="logo-facebook"></ion-icon>\n			</button>\n			<button ion-button only-icon clear class="text-grey-4">\n				<ion-icon name="logo-twitter"></ion-icon>\n			</button>\n			<button ion-button only-icon clear class="text-grey-4">\n				<ion-icon name="logo-instagram"></ion-icon>\n			</button>\n			<button ion-button only-icon clear class="text-grey-4">\n				<ion-icon name="logo-google"></ion-icon>\n			</button>\n			<button ion-button only-icon clear class="text-grey-4">\n				<ion-icon name="logo-pinterest"></ion-icon>\n			</button>\n			<button ion-button only-icon clear class="text-grey-4">\n				<ion-icon name="logo-linkedin"></ion-icon>\n			</button>\n			<button ion-button only-icon clear class="text-grey-4">\n				<ion-icon name="logo-dribbble"></ion-icon>\n			</button>\n		</div>\n\n		<div class="form-mess mgt-70 pdb-50 ani-bottom-to-top">\n			<h4 class="fs-26 fw-600">{{data.label.txtSendAMessage}}</h4>\n			<ion-list>\n			    <ion-item class="text-grey-5 grey-1 round">\n			      	<ion-input type="text" placeholder="{{data.label.txtFullName}}" [(ngModel)]="fullname"></ion-input>\n			    </ion-item>\n			</ion-list>\n			<ion-list>\n			    <ion-item class="text-grey-5 grey-1 round">\n			      	<ion-input type="email" placeholder="{{data.label.txtEmail}}" [(ngModel)]="email"></ion-input>\n			    </ion-item>\n			</ion-list>\n			<ion-list>\n			    <ion-item class="text-grey-5 grey-1 bdra-15">\n			      	<ion-textarea type="text" placeholder="{{data.label.txtMessage}}" [(ngModel)]="message"></ion-textarea>\n			    </ion-item>\n			</ion-list>\n			<div class="text-right">\n				<button ion-button round icon-left class="pink text-white mgt-10" (click)="onCallbackEvent(\'onSendMessage\')">\n					<ion-icon class="text-pink" name="send"></ion-icon>\n					{{data.label.txtSend}}\n				</button>\n			</div>\n		</div>\n	</div>\n</div>\n'/*ion-inline-end:"/Users/andrewhein/Desktop/WestmorelandWorking/src/components/about/about-v1/about-v1.html"*/
         }),
-        __metadata("design:paramtypes", [])
-    ], ComingSoonV1Component);
-    return ComingSoonV1Component;
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__angular_platform_browser__["DomSanitizer"]])
+    ], AboutV1Component);
+    return AboutV1Component;
 }());
 
-//# sourceMappingURL=coming-soon-v1.js.map
+//# sourceMappingURL=about-v1.js.map
 
 /***/ }),
 
-/***/ 519:
+/***/ 697:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ComingSoonV2Module; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AboutV2Module; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(38);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__coming_soon_v2__ = __webpack_require__(520);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__about_v2__ = __webpack_require__(698);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -253,36 +228,37 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
-var ComingSoonV2Module = (function () {
-    function ComingSoonV2Module() {
+var AboutV2Module = (function () {
+    function AboutV2Module() {
     }
-    ComingSoonV2Module = __decorate([
+    AboutV2Module = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["NgModule"])({
             declarations: [
-                __WEBPACK_IMPORTED_MODULE_2__coming_soon_v2__["a" /* ComingSoonV2Component */],
+                __WEBPACK_IMPORTED_MODULE_2__about_v2__["a" /* AboutV2Component */],
             ],
             imports: [
-                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__coming_soon_v2__["a" /* ComingSoonV2Component */]),
+                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__about_v2__["a" /* AboutV2Component */]),
             ],
             exports: [
-                __WEBPACK_IMPORTED_MODULE_2__coming_soon_v2__["a" /* ComingSoonV2Component */]
+                __WEBPACK_IMPORTED_MODULE_2__about_v2__["a" /* AboutV2Component */]
             ],
             schemas: [__WEBPACK_IMPORTED_MODULE_0__angular_core__["CUSTOM_ELEMENTS_SCHEMA"]]
         })
-    ], ComingSoonV2Module);
-    return ComingSoonV2Module;
+    ], AboutV2Module);
+    return AboutV2Module;
 }());
 
-//# sourceMappingURL=coming-soon-v2.module.js.map
+//# sourceMappingURL=about-v2.module.js.map
 
 /***/ }),
 
-/***/ 520:
+/***/ 698:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ComingSoonV2Component; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AboutV2Component; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser__ = __webpack_require__(33);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -293,86 +269,56 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 
+
 /**
- * Generated class for the ComingSoonV3Component component.
+ * Generated class for the AboutV2Component component.
  *
  * See https://angular.io/api/core/Component for more info on Angular
  * Components.
  */
-var ComingSoonV2Component = (function () {
-    function ComingSoonV2Component() {
+var AboutV2Component = (function () {
+    function AboutV2Component(sanitizer) {
         var _this = this;
-        this.val_days = 3;
-        this.val_hours = 17;
-        this.val_minutes = 33;
-        this.val_seconds = 25;
+        this.sanitizer = sanitizer;
         this.onCallbackEvent = function (event) {
             if (_this.events[event]) {
-                _this.events[event]();
+                _this.events[event]({
+                    'fullname': _this.fullname,
+                    'email': _this.email,
+                    'message': _this.message
+                });
             }
         };
-        this.days = ('0' + this.val_days).slice(-2);
-        this.hours = ('0' + this.val_hours).slice(-2);
-        this.minutes = ('0' + this.val_minutes).slice(-2);
-        this.seconds = ('0' + this.val_seconds).slice(-2);
-        this.count_down();
     }
-    ComingSoonV2Component.prototype.count_down = function () {
-        var thiss = this;
-        setInterval(function () {
-            if (thiss.val_seconds > 0) {
-                thiss.val_seconds = thiss.val_seconds - 1;
-            }
-            if (thiss.val_seconds == 0 && thiss.val_minutes > 0) {
-                thiss.val_minutes = thiss.val_minutes - 1;
-                thiss.val_seconds = 59;
-            }
-            if (thiss.val_minutes == 0 && thiss.val_seconds == 0 && thiss.val_hours > 0) {
-                thiss.val_hours = thiss.val_hours - 1;
-                thiss.val_minutes = 59;
-                thiss.val_seconds = 59;
-            }
-            if (thiss.val_hours == 0 && thiss.val_minutes == 0 && thiss.val_seconds == 0 && thiss.val_days > 0) {
-                thiss.val_days = thiss.val_days - 1;
-                thiss.val_hours = 24;
-                thiss.val_minutes = 59;
-                thiss.val_seconds = 59;
-            }
-            thiss.days = ('0' + thiss.val_days).slice(-2);
-            thiss.hours = ('0' + thiss.val_hours).slice(-2);
-            thiss.minutes = ('0' + thiss.val_minutes).slice(-2);
-            thiss.seconds = ('0' + thiss.val_seconds).slice(-2);
-        }, 1000);
-    };
     __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Input"])(),
         __metadata("design:type", Object)
-    ], ComingSoonV2Component.prototype, "data", void 0);
+    ], AboutV2Component.prototype, "data", void 0);
     __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Input"])(),
         __metadata("design:type", Object)
-    ], ComingSoonV2Component.prototype, "events", void 0);
-    ComingSoonV2Component = __decorate([
+    ], AboutV2Component.prototype, "events", void 0);
+    AboutV2Component = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-            selector: 'coming-soon-v2',template:/*ion-inline-start:"/Users/andrewhein/Desktop/WestmorelandWorking/src/components/coming-soon/coming-soon-v2/coming-soon-v2.html"*/'<div class="white-1 comingsoon-event">\n  <div class="wrapper-content">\n\n    <div class="wrapper-coming black-opct-1">\n      <div class="bg-img">\n        <img src="assets/img/bg9.jpg" alt="">\n      </div>\n      <div class="main-time text-white text-center black-opct">\n        <h2 class="fs-60 fw-800 mgb-0 spacing-3 ani-bottom-to-top">{{days}}</h2>\n        <p class="mgt-0 spacing-2 fs-13 ani-fade-out">days</p>\n        \n        <h2 class="fs-60 fw-600 mgb-0 spacing-3 ani-bottom-to-top">{{hours}}</h2>\n        <p class="mgt-0 spacing-2 fs-13 ani-fade-out">hours</p>\n\n        <h2 class="fs-60 fw-600 mgb-0 spacing-3 ani-bottom-to-top">{{minutes}}</h2>\n        <p class="mgt-0 spacing-2 fs-13 ani-fade-out">minutes</p>\n\n        <p class="seconds spacing-3">seconds {{seconds}}</p>\n      </div>\n    </div>\n\n    <ion-card class="bdra-0 stroke-bottom stroke-3 stroke-cyan mg-0 full-width main-event ani-bottom-to-top">\n      <ion-row class="wrapper-item-line">\n        <div class="left-time-flex text-center stroke-right stroke-1 stroke-grey-1 pdt-20 pdb-20" col-3>\n          <span class="fw-400 block text-grey-3 uppercase mgb-10">Nov</span>\n          <p class="day fs-24 fw-600 stroke-1 stroke stroke-cyan text-cyan">29</p>\n          <p class="time">\n            <b class="fs-12">11:05 am</b>\n          </p>\n        </div>\n\n        <div class="right-content pd-15 pdr-10" col-9>\n          <h3 class="fs-15 fw-600 mgb-10">Folly words widow one downs few age.</h3>\n          \n          <ion-list no-border no-lines lst-small class="lst-no-background">\n            <ion-item class="text-grey-3 fs-13 pdl-0">\n              <ion-icon name=\'md-pin\' class="fs-16" item-start></ion-icon>\n              2B/324 Thuy Khue, Tay Ho, Ha Noi\n            </ion-item>\n            <ion-item class="text-grey-3 fs-13 pdl-0">\n              <ion-icon name=\'ios-phone-portrait\' class="fs-16" item-start></ion-icon>\n              +84 868 271 095\n            </ion-item>\n          </ion-list>\n\n          <button ion-button small round icon-left outline class="stroke stroke-1 stroke-cyan text-cyan">Note</button>\n          <button ion-button small round icon-left class="text-black grey-2">More</button>\n        </div>\n      </ion-row>\n    </ion-card>\n\n  </div>\n\n</div>\n'/*ion-inline-end:"/Users/andrewhein/Desktop/WestmorelandWorking/src/components/coming-soon/coming-soon-v2/coming-soon-v2.html"*/
+            selector: 'about-v2',template:/*ion-inline-start:"/Users/andrewhein/Desktop/WestmorelandWorking/src/components/about/about-v2/about-v2.html"*/'<div class="black about-v2" *ngIf="data!=null">\n  <div class="top-banner">\n    <img class="ani-fade-out" src="../../assets/img/bg3.jpg" alt="">\n    <div class="slogan black-opct">\n      <span class="text-white stroke stroke-white stroke-3 pd-10 fs-24 fw-600 uppercase ani-top-to-bottom">{{data.label.txtContactUs}}</span>\n    </div>\n  </div>\n\n  <div padding class="find-us text-center mgt-40 ani-left-to-right">\n    <h4 class="fs-18 fw-600 text-orange text-center mgb-40">{{data.label.txtGetInTouch}}</h4>\n    <div class="mgb-40">\n      <ion-icon class="text-orange fs-24" name="ios-phone-portrait"></ion-icon>\n      <p class="text-orange fs-11 uppercase fw-600">{{data.label.txtPhone}}</p>\n      <p class="text-grey-2 mg-5 fs-13">{{data.phone1}}</p>\n      <p class="text-grey-2 mg-5 fs-13">{{data.phone2}}</p>\n    </div>\n    <div class="mgb-40">\n      <ion-icon class="text-orange fs-24" name="ios-pin-outline"></ion-icon>\n      <p class="text-orange fs-11 uppercase fw-600">{{data.label.txtAddress}}</p>\n      <p class="text-grey-2 mg-5 fs-13">{{data.address1}}</p>\n      <p class="text-grey-2 mg-5 fs-13">{{data.address2}}</p>\n    </div>\n    <div class="mgb-40">\n      <ion-icon class="text-orange fs-24" name="ios-mail-outline"></ion-icon>\n      <p class="text-orange fs-11 uppercase fw-600">{{data.label.txtEmail}}</p>\n      <p class="text-grey-2 mg-5 fs-13">{{data.email1}}</p>\n      <p class="text-grey-2 mg-5 fs-13">{{data.email2}}</p>\n    </div>\n  </div>\n\n  <div class="form-mess mgt-20 ani-bottom-to-top">\n    <div class="bg-pst">\n      <img src="assets/img/bg1.jpg">\n    </div>\n    <div padding class="black-opct-1 pdt-50 pdb-50 main-form">\n      <h4 class="fs-18 fw-600 text-white-2 text-center">{{data.label.txtSendAMessage}}</h4>\n      <p class="mgb-50 text-white-2 text-center fs-13">{{data.about}}</p>\n      <ion-list>\n          <ion-item class="text-white-2 white-opct">\n              <ion-input type="text" [(ngModel)]="fullname" placeholder="{{data.label.txtFullName}}"></ion-input>\n          </ion-item>\n      </ion-list>\n      <ion-list>\n          <ion-item class="text-white-2 white-opct">\n              <ion-input type="email" [(ngModel)]="email" placeholder="{{data.label.txtEmail}}"></ion-input>\n          </ion-item>\n      </ion-list>\n      <ion-list>\n          <ion-item class="text-white-2 white-opct">\n              <ion-textarea type="text" [(ngModel)]="message" placeholder="{{data.label.txtMessage}}"></ion-textarea>\n          </ion-item>\n      </ion-list>\n      <div class="text-center">\n        <button ion-button icon-left class="orange text-black mgt-10 bdra-0 fw-600 uppercase spacing-1 fs-12" (click)="onCallbackEvent(\'onSendMessage\')">\n          {{data.label.txtSendMessage}}\n        </button>\n      </div>\n    </div>\n  </div>\n\n  <div padding class="social mgt-40 mgb-30 text-black text-center ani-right-to-left">\n    <h6 class="text-orange">{{data.label.txtFollowWidth}}</h6>\n    <button ion-button only-icon small class="text-black orange">\n      <ion-icon name="logo-facebook"></ion-icon>\n    </button>\n    <button ion-button only-icon small class="text-black orange">\n      <ion-icon name="logo-twitter"></ion-icon>\n    </button>\n    <button ion-button only-icon small class="text-black orange">\n      <ion-icon name="logo-instagram"></ion-icon>\n    </button>\n    <button ion-button only-icon small class="text-black orange">\n      <ion-icon name="logo-google"></ion-icon>\n    </button>\n    <button ion-button only-icon small class="text-black orange">\n      <ion-icon name="logo-linkedin"></ion-icon>\n    </button>\n  </div>\n\n  <div class="map ani-left-to-right">\n    <iframe [src]="sanitizer.bypassSecurityTrustResourceUrl(data.google_map)" width="100%" height="350" frameborder="0" style="border:0" allowfullscreen></iframe>\n  </div>\n\n  <div padding class="logo-brand text-center ani-bottom-to-top">\n    <img src="assets/img/chimera_w.png" alt="">\n    <p class="text-white-2 fs-12 pdl-20 pdr-20">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>\n  </div>\n\n</div>\n'/*ion-inline-end:"/Users/andrewhein/Desktop/WestmorelandWorking/src/components/about/about-v2/about-v2.html"*/
         }),
-        __metadata("design:paramtypes", [])
-    ], ComingSoonV2Component);
-    return ComingSoonV2Component;
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__angular_platform_browser__["DomSanitizer"]])
+    ], AboutV2Component);
+    return AboutV2Component;
 }());
 
-//# sourceMappingURL=coming-soon-v2.js.map
+//# sourceMappingURL=about-v2.js.map
 
 /***/ }),
 
-/***/ 521:
+/***/ 699:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ComingSoonV3Module; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AboutV3Module; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(38);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__coming_soon_v3__ = __webpack_require__(522);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__about_v3__ = __webpack_require__(700);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -382,36 +328,37 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
-var ComingSoonV3Module = (function () {
-    function ComingSoonV3Module() {
+var AboutV3Module = (function () {
+    function AboutV3Module() {
     }
-    ComingSoonV3Module = __decorate([
+    AboutV3Module = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["NgModule"])({
             declarations: [
-                __WEBPACK_IMPORTED_MODULE_2__coming_soon_v3__["a" /* ComingSoonV3Component */],
+                __WEBPACK_IMPORTED_MODULE_2__about_v3__["a" /* AboutV3Component */],
             ],
             imports: [
-                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__coming_soon_v3__["a" /* ComingSoonV3Component */]),
+                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__about_v3__["a" /* AboutV3Component */]),
             ],
             exports: [
-                __WEBPACK_IMPORTED_MODULE_2__coming_soon_v3__["a" /* ComingSoonV3Component */]
+                __WEBPACK_IMPORTED_MODULE_2__about_v3__["a" /* AboutV3Component */]
             ],
             schemas: [__WEBPACK_IMPORTED_MODULE_0__angular_core__["CUSTOM_ELEMENTS_SCHEMA"]]
         })
-    ], ComingSoonV3Module);
-    return ComingSoonV3Module;
+    ], AboutV3Module);
+    return AboutV3Module;
 }());
 
-//# sourceMappingURL=coming-soon-v3.module.js.map
+//# sourceMappingURL=about-v3.module.js.map
 
 /***/ }),
 
-/***/ 522:
+/***/ 700:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ComingSoonV3Component; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AboutV3Component; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser__ = __webpack_require__(33);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -422,92 +369,139 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 
+
 /**
- * Generated class for the ComingSoonV2Component component.
+ * Generated class for the AboutV3Component component.
  *
  * See https://angular.io/api/core/Component for more info on Angular
  * Components.
  */
-var ComingSoonV3Component = (function () {
-    function ComingSoonV3Component() {
+var AboutV3Component = (function () {
+    function AboutV3Component(sanitizer) {
         var _this = this;
-        this.running = false;
-        this.timer = null;
-        this.val_days = 3;
-        this.val_hours = 17;
-        this.val_minutes = 33;
-        this.val_seconds = 25;
+        this.sanitizer = sanitizer;
         this.onCallbackEvent = function (event) {
             if (_this.events[event]) {
-                _this.events[event]();
+                _this.events[event]({
+                    'fullname': _this.fullname,
+                    'email': _this.email,
+                    'message': _this.message
+                });
             }
         };
-        this.days = ('0' + this.val_days).slice(-2);
-        this.hours = ('0' + this.val_hours).slice(-2);
-        this.minutes = ('0' + this.val_minutes).slice(-2);
-        this.seconds = ('0' + this.val_seconds).slice(-2);
-        this.count_down();
     }
-    ComingSoonV3Component.prototype.count_down = function () {
-        this.running = true;
-        var thiss = this;
-        this.timer = setInterval(function () {
-            if (thiss.val_seconds > 0) {
-                thiss.val_seconds = thiss.val_seconds - 1;
-            }
-            if (thiss.val_seconds == 0 && thiss.val_minutes > 0) {
-                thiss.val_minutes = thiss.val_minutes - 1;
-                thiss.val_seconds = 59;
-            }
-            if (thiss.val_minutes == 0 && thiss.val_seconds == 0 && thiss.val_hours > 0) {
-                thiss.val_hours = thiss.val_hours - 1;
-                thiss.val_minutes = 59;
-                thiss.val_seconds = 59;
-            }
-            if (thiss.val_hours == 0 && thiss.val_minutes == 0 && thiss.val_seconds == 0 && thiss.val_days > 0) {
-                thiss.val_days = thiss.val_days - 1;
-                thiss.val_hours = 24;
-                thiss.val_minutes = 59;
-                thiss.val_seconds = 59;
-            }
-            thiss.days = ('0' + thiss.val_days).slice(-2);
-            thiss.hours = ('0' + thiss.val_hours).slice(-2);
-            thiss.minutes = ('0' + thiss.val_minutes).slice(-2);
-            thiss.seconds = ('0' + thiss.val_seconds).slice(-2);
-        }, 1000);
-    };
-    ComingSoonV3Component.prototype.play = function () {
-        if (this.running == true) {
-            clearInterval(this.timer);
-            this.running = false;
-        }
-        else {
-            this.count_down();
-        }
-    };
-    ComingSoonV3Component.prototype.restart = function () {
-        clearInterval(this.timer);
-        this.running = false;
-        this.constructor();
-    };
     __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Input"])(),
         __metadata("design:type", Object)
-    ], ComingSoonV3Component.prototype, "data", void 0);
+    ], AboutV3Component.prototype, "data", void 0);
     __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Input"])(),
         __metadata("design:type", Object)
-    ], ComingSoonV3Component.prototype, "events", void 0);
-    ComingSoonV3Component = __decorate([
+    ], AboutV3Component.prototype, "events", void 0);
+    AboutV3Component = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-            selector: 'coming-soon-v3',template:/*ion-inline-start:"/Users/andrewhein/Desktop/WestmorelandWorking/src/components/coming-soon/coming-soon-v3/coming-soon-v3.html"*/'<div class="white-1 blog-detail">\n  <ion-card class="bdra-5 blue shadow-2 ani-bottom-to-left">\n    <ion-card-content>\n      <div class="">\n        <h2 class="fw-600 fs-30 text-center pdt-20 pdb-20 text-white">{{days +\':\'+ hours +\':\'+ minutes +\':\'+ seconds}}</h2>\n      </div>\n    </ion-card-content>\n  </ion-card>\n  \n  <ion-card class="bdra-0 stroke-bottom stroke-red stroke-3 ani-bottom-to-left">\n    <ion-card-content>\n      <div class="">\n        <h2 class="fw-600 fs-30 text-center pdt-20 pdb-20 text-red">{{days +\':\'+ hours +\':\'+ minutes +\':\'+ seconds}}</h2>\n      </div>\n\n      <ion-row>\n        <ion-col>\n          <button ion-button icon-left clear class="text-black" (click)="restart()">\n            <ion-icon name="md-refresh"></ion-icon>\n            <div>Restar</div>\n          </button>\n        </ion-col>\n        <ion-col center text-center>\n          <button ion-button icon-left clear class="text-black" (click)="play()" *ngIf="running == false">\n            <ion-icon name="ios-play"></ion-icon>\n            <div>Play</div>\n          </button>\n          <button ion-button icon-left clear class="text-black" (click)="play()" *ngIf="running == true">\n            <ion-icon name="ios-pause"></ion-icon>\n            <div>Pause</div>\n          </button>\n        </ion-col>\n      </ion-row>\n    </ion-card-content>\n  </ion-card>\n\n  <ion-card class="bdra-5 comingsoon-card-img pst-relative ani-bottom-to-left">\n    <img src="assets/img/bg5.jpg" alt="">\n    <ion-card-content class="black-opct-1">\n      <div class="wrapper-time text-center">\n        <span class="inline-block white-opct text-white bdra-5 time-element mg-5 fs-20 fw-600 pd-15">{{days}}</span>\n        <span class="inline-block white-opct text-white bdra-5 time-element mg-5 fs-20 fw-600 pd-15">{{hours}}</span>\n        <span class="inline-block white-opct text-white bdra-5 time-element mg-5 fs-20 fw-600 pd-15">{{minutes}}</span>\n        <span class="inline-block white-opct text-white bdra-5 time-element mg-5 fs-20 fw-600 pd-15">{{seconds}}</span>\n      </div>\n      <ion-row class="mgt-20">\n        <ion-col center text-center>\n          <button ion-button icon-left round small class="text-white white-opct" (click)="restart()">\n            <ion-icon name="md-refresh"></ion-icon>\n            <div>Restar</div>\n          </button>\n        </ion-col>\n\n        <ion-col center text-center>\n          <button ion-button icon-left round small class="text-white white-opct" (click)="play()" *ngIf="running == false">\n            <ion-icon name="ios-pause"></ion-icon>\n            <div>Play</div>\n          </button>\n          <button ion-button icon-left round small class="text-white white-opct" (click)="play()" *ngIf="running == true">\n            <ion-icon name="ios-pause"></ion-icon>\n            <div>Pause</div>\n          </button>\n        </ion-col>\n      </ion-row>\n    </ion-card-content>\n  </ion-card>\n\n</div>\n'/*ion-inline-end:"/Users/andrewhein/Desktop/WestmorelandWorking/src/components/coming-soon/coming-soon-v3/coming-soon-v3.html"*/
+            selector: 'about-v3',template:/*ion-inline-start:"/Users/andrewhein/Desktop/WestmorelandWorking/src/components/about/about-v3/about-v3.html"*/'<div padding class="white-1 about-v3" *ngIf="data!=null">	\n	<div class="banner">\n		<div class="pst-relative mgl-20" col-9>\n			<img class="ani-top-to-right" src="assets/img/bg14.jpg" alt="">\n			<div class="decor transparent stroke stroke-grey-2 ani-bottom-to-left"></div>\n		</div>\n		<h2 class="fw-800 fs-40 uppercase text-grey-3 text-right pdt-10 pdr-20 ani-left-to-right">{{data.label.txtContact}}</h2>\n	</div>\n\n	<div class="mgb-30 mgt-40 ani-bottom-to-top">\n		<h4 class="fs-20 fw-600 mgb-25">{{data.label.txtAboutUs}}</h4>\n		<p class="text-grey-4 fs-13 mgt-0 mgb-0 pdl-20">{{data.address1}}</p>\n		<p class="text-grey-4 fs-13 mgt-0 mgb-0 pdl-20">Call Us: {{data.phone1}}</p>\n		<p class="text-grey-4 fs-13 mgt-0 mgb-0 pdl-20">{{data.txtWorkingTime}}</p>\n		<p class="text-grey-4 fs-13 mgt-0 mgb-0 pdl-20">{{data.workingTime}}</p>\n	</div>\n\n	<div class="row map ani-right-to-left">\n		<div class="mgl-40" col-9>\n			<iframe [src]="sanitizer.bypassSecurityTrustResourceUrl(data.google_map)" width="100%" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>\n		</div>\n	</div>\n	\n	<ion-row class="mgt-50 ani-top-to-bottom">\n		<h2 class="fw-600">Just say hi!</h2>\n		<p class="text-grey-4 fs-13 pdl-20">{{data.about}}</p>\n	</ion-row>\n  	\n  	<div padding class="bdra-10 mgt-20 pdb-30 pdt-25 shadow-3 pst-relative white ani-fade-out">\n    	<ion-list>\n		    <ion-item class="text-grey-4 stroke stroke-2 stroke-grey-3">\n		      	<ion-input type="text" [(ngModel)]="fullname" placeholder="{{data.label.txtFullName}}"></ion-input>\n		    </ion-item>\n		</ion-list>\n		<ion-list>\n		    <ion-item class="text-grey-4 stroke stroke-2 stroke-grey-3">\n		      	<ion-input type="text" [(ngModel)]="email" placeholder="{{data.label.txtEmail}}"></ion-input>\n		    </ion-item>\n		</ion-list>\n		<ion-list>\n		    <ion-item class="text-grey-4 stroke stroke-2 stroke-grey-3">\n		      	<ion-input type="text" [(ngModel)]="message" placeholder="{{data.label.txtMessage}}"></ion-input>\n		    </ion-item>\n		</ion-list>\n		<button ion-button icon-right round class="btn-send black text-white shadow-3" (click)="onCallbackEvent(\'onSendMessage\')">{{data.label.txtSend}} <ion-icon class="fs-28" name="ios-send-outline"></ion-icon></button>\n  	</div>\n\n  	<div class="pdl-30 mgt-50 mgb-30 ani-left-to-right">\n  		<button ion-button icon-only class="button-circle grey-3 text-white"><ion-icon class="fs-20" name="logo-facebook"></ion-icon></button>\n  		<button ion-button icon-only class="button-circle grey-3 text-white"><ion-icon class="fs-20" name="logo-linkedin"></ion-icon></button>\n  		<button ion-button icon-only class="button-circle grey-3 text-white"><ion-icon class="fs-20" name="logo-twitter"></ion-icon></button>\n  	</div>\n</div>'/*ion-inline-end:"/Users/andrewhein/Desktop/WestmorelandWorking/src/components/about/about-v3/about-v3.html"*/
         }),
-        __metadata("design:paramtypes", [])
-    ], ComingSoonV3Component);
-    return ComingSoonV3Component;
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__angular_platform_browser__["DomSanitizer"]])
+    ], AboutV3Component);
+    return AboutV3Component;
 }());
 
-//# sourceMappingURL=coming-soon-v3.js.map
+//# sourceMappingURL=about-v3.js.map
+
+/***/ }),
+
+/***/ 701:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AboutWCFModule; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(38);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__about_wcf__ = __webpack_require__(702);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+
+
+var AboutWCFModule = (function () {
+    function AboutWCFModule() {
+    }
+    AboutWCFModule = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["NgModule"])({
+            declarations: [
+                __WEBPACK_IMPORTED_MODULE_2__about_wcf__["a" /* AboutWCFComponent */],
+            ],
+            imports: [
+                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__about_wcf__["a" /* AboutWCFComponent */]),
+            ],
+            exports: [
+                __WEBPACK_IMPORTED_MODULE_2__about_wcf__["a" /* AboutWCFComponent */]
+            ],
+            schemas: [__WEBPACK_IMPORTED_MODULE_0__angular_core__["CUSTOM_ELEMENTS_SCHEMA"]]
+        })
+    ], AboutWCFModule);
+    return AboutWCFModule;
+}());
+
+//# sourceMappingURL=about-wcf.module.js.map
+
+/***/ }),
+
+/***/ 702:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AboutWCFComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser__ = __webpack_require__(33);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+var AboutWCFComponent = (function () {
+    function AboutWCFComponent(sanitizer) {
+        var _this = this;
+        this.sanitizer = sanitizer;
+        this.onCallbackEvent = function (event) {
+            if (_this.events[event]) {
+                _this.events[event]({
+                    'fullname': _this.fullname,
+                    'email': _this.email,
+                    'message': _this.message
+                });
+            }
+        };
+    }
+    __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Input"])(),
+        __metadata("design:type", Object)
+    ], AboutWCFComponent.prototype, "data", void 0);
+    __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Input"])(),
+        __metadata("design:type", Object)
+    ], AboutWCFComponent.prototype, "events", void 0);
+    AboutWCFComponent = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+            selector: 'about-wcf',template:/*ion-inline-start:"/Users/andrewhein/Desktop/WestmorelandWorking/src/components/about/about-wcf/about-wcf.html"*/'<iframe [src]="sanitizer.bypassSecurityTrustResourceUrl(data.wcf_url)" frameborder="0" style="border:0; width: 100%; height: 100%;" allowfullscreen></iframe>\n'/*ion-inline-end:"/Users/andrewhein/Desktop/WestmorelandWorking/src/components/about/about-wcf/about-wcf.html"*/
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__angular_platform_browser__["DomSanitizer"]])
+    ], AboutWCFComponent);
+    return AboutWCFComponent;
+}());
+
+//# sourceMappingURL=about-wcf.js.map
 
 /***/ })
 

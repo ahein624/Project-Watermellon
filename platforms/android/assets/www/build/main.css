@@ -5040,7 +5040,7 @@ ion-input :focus {
 * {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  -webkit-tap-highlight-color: transparent;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   -webkit-tap-highlight-color: transparent;
   -webkit-touch-callout: none;
 }
@@ -18861,23 +18861,23 @@ button.swiper-pagination-bullet {
 }
 
 .swiper-container-3d .swiper-slide-shadow-left {
-  background-image: -webkit-gradient(linear, right top, left top, from(rgba(0, 0, 0, 0.5)), to(transparent));
-  background-image: linear-gradient(to left, rgba(0, 0, 0, 0.5), transparent);
+  background-image: -webkit-gradient(linear, right top, left top, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0)));
+  background-image: linear-gradient(to left, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
 }
 
 .swiper-container-3d .swiper-slide-shadow-right {
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.5)), to(transparent));
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), transparent);
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0)));
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
 }
 
 .swiper-container-3d .swiper-slide-shadow-top {
-  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.5)), to(transparent));
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.5), transparent);
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0)));
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
 }
 
 .swiper-container-3d .swiper-slide-shadow-bottom {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(transparent));
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), transparent);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0)));
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
 }
 
 .swiper-container-coverflow .swiper-wrapper,
@@ -25913,6 +25913,18 @@ ion-navbar.toolbar {
   background: rgba(255, 255, 255, 0.9) !important;
 }
 
+.brown-opct {
+  background: rgba(121, 85, 72, 0.3) !important;
+}
+
+.brown-opct-1 {
+  background: rgba(121, 85, 72, 0.6) !important;
+}
+
+.brown-opct-2 {
+  background: rgba(121, 85, 72, 0.9) !important;
+}
+
 .shadow-0 {
   -webkit-box-shadow: none !important;
   box-shadow: none !important;
@@ -28491,6 +28503,34 @@ ion-header:after {
   /* Standard syntax */
 }
 
+.skin.skin-wcf .bar-button,
+.skin.skin-wcf .bar-button .button-inner,
+.skin.skin-wcf .toolbar-title,
+.skin.skin-wcf .back-button,
+.skin.skin-wcf .back-button-icon,
+.skin.skin-wcf .tab-button[aria-selected=true] ion-icon {
+  color: #fff !important;
+  opacity: 1;
+}
+
+.skin.skin-wcf .tab-button ion-icon {
+  color: #fff !important;
+  opacity: 0.7;
+  font-size: 24px;
+}
+
+.skin.skin-wcf .logo-brand.dark-brand {
+  display: none;
+}
+
+.skin.skin-wcf ion-list.lst-menu ion-list ion-icon, .skin.skin-wcf ion-list.lst-menu ion-list div, .skin.skin-wcf ion-list.lst-menu ion-list p, .skin.skin-wcf ion-list.lst-menu ion-list b, .skin.skin-wcf ion-list.lst-menu ion-list span, .skin.skin-wcf ion-list.lst-menu ion-list strong, .skin.skin-wcf ion-list.lst-menu ion-list i, .skin.skin-wcf ion-list.lst-menu ion-list label, .skin.skin-wcf ion-list.lst-menu ion-list .label, .skin.skin-wcf ion-list.lst-menu ion-list ion-badge {
+  color: #212121 !important;
+}
+
+.skin.skin-wcf ion-list.lst-menu ion-icon, .skin.skin-wcf ion-list.lst-menu div, .skin.skin-wcf ion-list.lst-menu p, .skin.skin-wcf ion-list.lst-menu b, .skin.skin-wcf ion-list.lst-menu span, .skin.skin-wcf ion-list.lst-menu strong, .skin.skin-wcf ion-list.lst-menu i, .skin.skin-wcf ion-list.lst-menu label {
+  color: #212121 !important;
+}
+
 ion-menu.skin ion-header.header .toolbar-background {
   background: none !important;
   border: none;
@@ -28561,6 +28601,11 @@ ion-tabs .tabbar {
 
 .content[fullscreen-no-pdt] .scroll-content {
   padding-top: 0 !important;
+  height: 100%;
+}
+
+.no-scroll .scroll-content {
+  overflow-y: hidden;
 }
 
 .dropdown {
@@ -32927,7 +32972,7 @@ ion-footer:before, ion-footer:after {
   display: block;
 }
 
-.indicator, .indicator.hide {
+.indicator.hide {
   display: none;
 }
 
@@ -33051,6 +33096,18 @@ about-v3 .btn-send {
   position: absolute;
   bottom: -20px;
   right: 15px;
+}
+
+about-wcf .about-wcf .find-us .element-find {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  vertical-align: middle;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
 }
 
 blog-timeline .line-time {
@@ -35226,6 +35283,10 @@ popover-main .text-times-new-roman {
 .popover-page .row-dots,
 .popover-page .dot {
   border-width: 0.55px;
+}
+
+.wcf_bg {
+  background-image: url(../assets/img/bg@3x.png);
 }
 
 page-unsplash-category-detail .photo-by {
