@@ -16,9 +16,9 @@ const STORAGE_KEY="rss_favorites";
   @Injectable()
   export class RssService{
     public category:any=[
-      { 
-        'title':'World',
-        'link':'http://rss.nytimes.com/services/xml/rss/nyt/Americas.xml'
+      {
+        'title':'Events',
+        'link':'https://westmorelandfair.com/feed/?post_type=ai1ec_event'
       },
       {
         'title':'Arts',
@@ -144,7 +144,7 @@ const STORAGE_KEY="rss_favorites";
     doShare(item){
        this.socialSharing.share(item.title, item.description, null, item.link);
     }
-    
+
     goToFavoritePage(navCtrl){
       navCtrl.push('RssFavoritePage');
     }

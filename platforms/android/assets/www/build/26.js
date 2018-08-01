@@ -1,6 +1,6 @@
 webpackJsonp([26],{
 
-/***/ 419:
+/***/ 418:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -8,8 +8,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "MagazineCategoryPageModule", function() { return MagazineCategoryPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(38);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__magazine_category__ = __webpack_require__(543);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_magazine_magazine_category_magazine_category_module__ = __webpack_require__(544);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__magazine_category__ = __webpack_require__(540);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_magazine_magazine_category_magazine_category_module__ = __webpack_require__(541);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -41,7 +41,7 @@ var MagazineCategoryPageModule = (function () {
 
 /***/ }),
 
-/***/ 543:
+/***/ 540:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -93,14 +93,14 @@ var MagazineCategoryPage = (function () {
 
 /***/ }),
 
-/***/ 544:
+/***/ 541:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MagazineCategoryModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(38);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__magazine_category__ = __webpack_require__(545);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__magazine_category__ = __webpack_require__(542);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -134,7 +134,7 @@ var MagazineCategoryModule = (function () {
 
 /***/ }),
 
-/***/ 545:
+/***/ 542:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";

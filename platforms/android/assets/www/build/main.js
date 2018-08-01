@@ -699,11 +699,11 @@ var map = {
 		2
 	],
 	"../pages/magazine/magazine-bookmark/magazine-bookmark.module": [
-		418,
+		419,
 		27
 	],
 	"../pages/magazine/magazine-category/magazine-category.module": [
-		419,
+		418,
 		26
 	],
 	"../pages/magazine/magazine-detail/magazine-detail.module": [
@@ -2058,8 +2058,8 @@ var AppModule = (function () {
                         { loadChildren: '../pages/gallery/gallery.module#GalleryPageModule', name: 'GalleryPage', segment: 'gallery', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/home/home.module#HomePageModule', name: 'HomePage', segment: 'home', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/login/login.module#LoginPageModule', name: 'LoginPage', segment: 'login', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/magazine/magazine-bookmark/magazine-bookmark.module#MagazineBookmarkPageModule', name: 'MagazineBookmarkPage', segment: 'magazine-bookmark', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/magazine/magazine-category/magazine-category.module#MagazineCategoryPageModule', name: 'MagazineCategoryPage', segment: 'magazine-category', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/magazine/magazine-bookmark/magazine-bookmark.module#MagazineBookmarkPageModule', name: 'MagazineBookmarkPage', segment: 'magazine-bookmark', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/magazine/magazine-detail/magazine-detail.module#MagazineDetailPageModule', name: 'MagazineDetailPage', segment: 'magazine-detail', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/magazine/magazine-home/magazine-home.module#MagazineHomePageModule', name: 'MagazineHomePage', segment: 'magazine-home', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/magazine/magazine-list/magazine-list.module#MagazineListPageModule', name: 'MagazineListPage', segment: 'magazine-list', priority: 'low', defaultHistory: [] },

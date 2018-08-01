@@ -11,7 +11,7 @@ import { SocialSharing } from '@ionic-native/social-sharing';
   */
   const config={
     'api_link':'https://api.instagram.com/v1/',
-    'access_token':'988466415.3a40777.aa1b01b5bb5748c5a878457d0d7e0550',
+    'access_token':'355600265.1677ed0.fc760e8d0cfa49198ffbfd29a72acdc4',
     'limit_post':10
   }
   @Injectable()
