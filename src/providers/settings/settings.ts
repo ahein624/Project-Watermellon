@@ -57,7 +57,7 @@ const STORAGE_KEY="settings";
   	settings:any={
   		dashboard_type: 1,
        	skin:this.listSkins[38],
-       	menu_id:'menu-avatar'
+       	menu_id:'menu-basic'
   	};
 
   	constructor(public http: HttpClient, public events:Events, public storage:Storage) {

@@ -28503,6 +28503,10 @@ ion-header:after {
   /* Standard syntax */
 }
 
+.skin.skin-wcf.menu {
+  background-color: #795548;
+}
+
 .skin.skin-wcf .bar-button,
 .skin.skin-wcf .bar-button .button-inner,
 .skin.skin-wcf .toolbar-title,
@@ -28524,11 +28528,11 @@ ion-header:after {
 }
 
 .skin.skin-wcf ion-list.lst-menu ion-list ion-icon, .skin.skin-wcf ion-list.lst-menu ion-list div, .skin.skin-wcf ion-list.lst-menu ion-list p, .skin.skin-wcf ion-list.lst-menu ion-list b, .skin.skin-wcf ion-list.lst-menu ion-list span, .skin.skin-wcf ion-list.lst-menu ion-list strong, .skin.skin-wcf ion-list.lst-menu ion-list i, .skin.skin-wcf ion-list.lst-menu ion-list label, .skin.skin-wcf ion-list.lst-menu ion-list .label, .skin.skin-wcf ion-list.lst-menu ion-list ion-badge {
-  color: #212121 !important;
+  color: #fff !important;
 }
 
 .skin.skin-wcf ion-list.lst-menu ion-icon, .skin.skin-wcf ion-list.lst-menu div, .skin.skin-wcf ion-list.lst-menu p, .skin.skin-wcf ion-list.lst-menu b, .skin.skin-wcf ion-list.lst-menu span, .skin.skin-wcf ion-list.lst-menu strong, .skin.skin-wcf ion-list.lst-menu i, .skin.skin-wcf ion-list.lst-menu label {
-  color: #212121 !important;
+  color: #fff !important;
 }
 
 ion-menu.skin ion-header.header .toolbar-background {

@@ -1,7 +1,7 @@
 <div *ngIf="settings!=null">
 
 <ion-split-pane when="md">
-  <ion-menu class="{{settings.skin.main_skin}}" [content]="content" id="menu-material">
+  <!-- <ion-menu class="{{settings.skin.main_skin}}" [content]="content" id="menu-material">
     <ion-content class="{{settings.skin.main_bg}}">
       <div class="info-user mgb-30 pdt-5 pdb-5 pdb-10">
         <div class="bg-img"><img src="assets/img/bg-material.jpg" alt=""></div>
@@ -54,29 +54,33 @@
               </button>
             </ion-row>
           </ion-list>
-        </span> -->
+        </span> 
 
       </ion-list>
     </ion-content>
-  </ion-menu>
+  </ion-menu> -->
 
 
   <ion-menu class="" [content]="content" id="menu-basic">
-    <ion-header class="{{settings.skin.main_skin}}">
+    <!-- <ion-header class="{{settings.skin.main_skin}}">
       <ion-toolbar>
         <ion-title>
           <img class="logo-brand light-brand" src="assets/img/chimera_w.png" alt="">
           <img class="logo-brand dark-brand" src="assets/img/chimera_b.png" alt="">
         </ion-title>
       </ion-toolbar>
-    </ion-header>
+    </ion-header> -->
 
-    <ion-content class="{{settings.skin.main_bg}}">
+    <ion-content class="{{settings.skin.main_skin}} menu">
       <ion-list no-lines class="lst-menu">
-        <span *ngFor="let item of pages" class="{{settings.skin.text_1}}">
-          <ion-item class="transparent uppercase mgt-20 fs-14 fw-400 spacing-1">
-            {{item.title}}
-          </ion-item>
+        <!-- If we don't want a home button in the main menu, comment the following ion-item-group block -->
+        <ion-item-group submenu>
+          <button submenu-item menuClose ion-item icon-left class="transparent" (click)="openPage({ 'title': 'Home', 'page': 'HomePage', 'icon': 'md-home'})">
+            <ion-icon name="md-home" item-left></ion-icon>
+            Home
+          </button>
+        </ion-item-group>
+        <span *ngFor="let item of pages" class="{{settings.skin.text_4">
           <ion-item-group submenu>
             <button submenu-item menuClose ion-item icon-left *ngFor="let sub of item.group" class="transparent" (click)="openPage(sub)">
               <ion-icon name={{sub.icon}} item-left></ion-icon>

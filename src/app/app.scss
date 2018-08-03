@@ -2298,6 +2298,9 @@ ion-header:after{
 		}
 	}
 	&.skin-wcf{
+		&.menu {
+			background-color: $brown;
+		}
 		.bar-button,
 		.bar-button .button-inner,
 		.toolbar-title,
@@ -2318,11 +2321,11 @@ ion-header:after{
 		ion-list.lst-menu{
 			ion-list{
 				ion-icon, div, p, b, span, strong, i, label, .label, ion-badge{
-					color: $black !important;
+					color: $white !important;
 				}
 			}
 			ion-icon, div, p, b, span, strong, i, label{
-				color: $black !important;
+				color: $white !important;
 			}
 		}
 	}
