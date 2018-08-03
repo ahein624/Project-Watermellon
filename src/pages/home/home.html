@@ -15,31 +15,9 @@
 
 <ion-content *ngIf="settings!=null" class="skin-brown" overflow-scroll="true">
 
-<div *ngIf="settings.dashboard_type == 1">
+<div *ngIf="settings.dashboard_type == 1" class="wcf_bg">
   <div class="wrapper-slide">
-    <div class="wrapper-slide-pagination">
-      <ion-slides autoplay="3000" loop="true" speed="1000" pager="false" class="height-auto" #slide>
-      <ion-slide>
-      <img src="assets/img/home1.jpg" alt="">
-    </ion-slide>
-
-    <ion-slide>
-    <img src="assets/img/home2.jpg" alt="">
-  </ion-slide>
-
-  <ion-slide>
-  <img src="assets/img/home3.jpg" alt="">
-</ion-slide>
-</ion-slides>
-<div class="btn-pagination">
-  <button ion-button clear class="button-circle text-white pull-right" (click)="slide_next()">
-    <ion-icon class="fs-26" name="ios-arrow-dropright"></ion-icon>
-  </button>
-  <button ion-button clear class="button-circle text-white pull-left" (click)="slide_prev()">
-    <ion-icon class="fs-26" name="ios-arrow-dropleft"></ion-icon>
-  </button>
-</div>
-</div>
+    <ion-img style="width: 100%; height: 100px; background:transparent;" src="../../assets/img/logo.svg"></ion-img>
 </div>
 
 <div padding>

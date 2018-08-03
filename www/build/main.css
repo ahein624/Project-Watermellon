@@ -25777,6 +25777,10 @@ ion-navbar.toolbar {
   /* Standard syntax */
 }
 
+.wood {
+  background: url(../assets/img/ng.png);
+}
+
 .transparent {
   background: transparent !important;
 }

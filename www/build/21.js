@@ -76,7 +76,7 @@ var WordpressPage = (function () {
     };
     WordpressPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-            selector: 'page-wordpress',template:/*ion-inline-start:"D:\Visual Studio\Personal\Project-Watermellon\src\pages\ready-app\wordpress\wordpress.html"*/'<ion-tabs class="shadow-3 skin skin-light">\n\n	<ion-tab [root]="wpHomePage" tabTitle="" tabIcon="ios-home"></ion-tab>\n\n	<ion-tab [root]="wpCategoryPage" tabTitle="" tabIcon="ios-list-box"></ion-tab>\n\n	<ion-tab [root]="wpSearchPage" tabTitle="" tabIcon="ios-search"></ion-tab>\n\n	<ion-tab [root]="wpFavoritePage" tabTitle="" tabIcon="ios-heart"></ion-tab>\n\n</ion-tabs>\n\n'/*ion-inline-end:"D:\Visual Studio\Personal\Project-Watermellon\src\pages\ready-app\wordpress\wordpress.html"*/,
+            selector: 'page-wordpress',template:/*ion-inline-start:"/Volumes/TUBBY/Dev/Project-Watermellon/src/pages/ready-app/wordpress/wordpress.html"*/'<ion-tabs class="shadow-3 skin skin-light">\n	<ion-tab [root]="wpHomePage" tabTitle="" tabIcon="ios-home"></ion-tab>\n	<ion-tab [root]="wpCategoryPage" tabTitle="" tabIcon="ios-list-box"></ion-tab>\n	<ion-tab [root]="wpSearchPage" tabTitle="" tabIcon="ios-search"></ion-tab>\n	<ion-tab [root]="wpFavoritePage" tabTitle="" tabIcon="ios-heart"></ion-tab>\n</ion-tabs>\n'/*ion-inline-end:"/Volumes/TUBBY/Dev/Project-Watermellon/src/pages/ready-app/wordpress/wordpress.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["n" /* NavParams */]])
     ], WordpressPage);

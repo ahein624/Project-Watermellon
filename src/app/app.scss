@@ -20,9 +20,9 @@
 
 
 
-// ======================= 
+// =======================
 // ======================= varible
-// ======================= 
+// =======================
 
 $transparent: transparent;
 
@@ -63,7 +63,7 @@ $datroi: #a1e3e2;
 $tim: #957eed;
 
 $lanon: #cef9c0;
-$hong: #fcb7be; 
+$hong: #fcb7be;
 
 $lot: #eaf8f8;
 $phan: #faecfd;
@@ -161,7 +161,9 @@ $brown-opct-2: rgba(121,85,72,0.9);
 	background: linear-gradient(to bottom right, $lot, $phan) !important; /* Standard syntax */
 }
 
-
+.wood{
+	background: url(../assets/img/ng.png);
+}
 
 
 
@@ -2344,7 +2346,7 @@ ion-header{
 		min-height: 44px;
 		&.toolbar-md, &.toolbar-wp{
 			padding: 0;
-		} 
+		}
 		.toolbar-background{
 			background: inherit !important;
 			border: none;
@@ -3056,7 +3058,7 @@ ion-list{
 		button{
 			background: none;
 			.item-inner{
-				background-image: none !important;	
+				background-image: none !important;
 			}
 		}
 	}
@@ -3276,8 +3278,8 @@ ion-slides{
 		}
 	}
 }
-.segment-ios, 
-.segment-md, 
+.segment-ios,
+.segment-md,
 .segment-wp{
 	.segment-button{
 		opacity: 1;
@@ -3706,58 +3708,58 @@ $time: 0.8;
 
 @for $i from 1 through 30 {
     .ani-left-to-right:nth-child(#{$i}){
-		animation-name: left-to-right;	
+		animation-name: left-to-right;
 		animation-timing-function: linear;
 		animation-direction: alternate;
 		animation-duration: #{$time}s;
 	}
 	.ani-right-to-left:nth-child(#{$i}){
-		animation-name: right-to-left;	
+		animation-name: right-to-left;
 		animation-timing-function: linear;
 		animation-direction: alternate;
 		animation-duration: #{$time}s;
 	}
 	.ani-top-to-bottom:nth-child(#{$i}){
-		animation-name: top-to-bottom;	
+		animation-name: top-to-bottom;
 		animation-timing-function: linear;
 		animation-direction: alternate;
 		animation-duration: #{$time}s;
 	}
 	.ani-top-to-left:nth-child(#{$i}){
-		animation-name: top-to-left;	
+		animation-name: top-to-left;
 		animation-timing-function: linear;
 		animation-direction: alternate;
 		animation-duration: #{$time}s;
 	}
 	.ani-top-to-right:nth-child(#{$i}){
-		animation-name: top-to-right;	
+		animation-name: top-to-right;
 		animation-timing-function: linear;
 		animation-direction: alternate;
 		animation-duration: #{$time}s;
 	}
 	.ani-bottom-to-top:nth-child(#{$i}){
-		animation-name: bottom-to-top;	
+		animation-name: bottom-to-top;
 		animation-timing-function: linear;
 		animation-direction: alternate;
 		animation-duration: #{$time}s;
 	}
 	.ani-bottom-to-left:nth-child(#{$i}){
-		animation-name: bottom-to-left;	
+		animation-name: bottom-to-left;
 		animation-timing-function: linear;
 		animation-direction: alternate;
 		animation-duration: #{$time}s;
 	}
 	.ani-bottom-to-right:nth-child(#{$i}){
-		animation-name: bottom-to-right;	
+		animation-name: bottom-to-right;
 		animation-timing-function: linear;
 		animation-direction: alternate;
 		animation-duration: #{$time}s;
 	}
-	
+
     $time: ($time + 0.05);
 
     @if($time > 1.3){
-		$time: 0.8;	
+		$time: 0.8;
 	}
 }
 

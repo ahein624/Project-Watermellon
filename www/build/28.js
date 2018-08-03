@@ -1,6 +1,6 @@
 webpackJsonp([28],{
 
-/***/ 431:
+/***/ 441:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -8,7 +8,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "UnsplashPageModule", function() { return UnsplashPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(38);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__unsplash__ = __webpack_require__(729);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__unsplash__ = __webpack_require__(739);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -38,7 +38,7 @@ var UnsplashPageModule = (function () {
 
 /***/ }),
 
-/***/ 729:
+/***/ 739:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -76,7 +76,7 @@ var UnsplashPage = (function () {
     };
     UnsplashPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-            selector: 'page-unsplash',template:/*ion-inline-start:"D:\Visual Studio\Personal\Project-Watermellon\src\pages\ready-app\unsplash\unsplash.html"*/'<ion-tabs class="shadow-3 skin skin-light">\n\n	<ion-tab [root]="unsplashHomePage" tabTitle="" tabIcon="ios-home"></ion-tab>\n\n	<ion-tab [root]="unsplashCollectionPage" tabTitle="" tabIcon="ios-list-box"></ion-tab>\n\n	<ion-tab [root]="unsplashSearchPage" tabTitle="" tabIcon="ios-search"></ion-tab>\n\n	<ion-tab [root]="unsplashFavoritePage" tabTitle="" tabIcon="ios-heart"></ion-tab>\n\n</ion-tabs>\n\n'/*ion-inline-end:"D:\Visual Studio\Personal\Project-Watermellon\src\pages\ready-app\unsplash\unsplash.html"*/,
+            selector: 'page-unsplash',template:/*ion-inline-start:"/Volumes/TUBBY/Dev/Project-Watermellon/src/pages/ready-app/unsplash/unsplash.html"*/'<ion-tabs class="shadow-3 skin skin-light">\n	<ion-tab [root]="unsplashHomePage" tabTitle="" tabIcon="ios-home"></ion-tab>\n	<ion-tab [root]="unsplashCollectionPage" tabTitle="" tabIcon="ios-list-box"></ion-tab>\n	<ion-tab [root]="unsplashSearchPage" tabTitle="" tabIcon="ios-search"></ion-tab>\n	<ion-tab [root]="unsplashFavoritePage" tabTitle="" tabIcon="ios-heart"></ion-tab>\n</ion-tabs>\n'/*ion-inline-end:"/Volumes/TUBBY/Dev/Project-Watermellon/src/pages/ready-app/unsplash/unsplash.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* NavController */],
             __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["n" /* NavParams */],
