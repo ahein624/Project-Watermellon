@@ -43,17 +43,26 @@
 </div>
 
 <div padding>
-  <div *ngFor="let tree of pages" class="mgt-20 mgb-40">
-    <h6 class="uppercase fs-13 fw-500 text-grey-4">{{tree.title}}</h6>
-    <ion-row class="mgt-10 mgb-20 mgl--5 mgr--5">
-    <ion-col col-6 *ngFor="let item of tree.group, let i = index">
-    <div class="brown-opct-1 pd-15 text-center" (click)="openPage(item)">
-      <ion-icon class="fs-48 text-white mgt-10" name="{{item.icon}}"></ion-icon>
-      <h2 class="text-white fs-12 spacing-1 mg-5 uppercase fw-600 text-ellipsis">{{item.title}}</h2>
+  <div class="mgt-40 mgb-40">
+    <div *ngFor="let tree of pages">
+      <ion-row class="mgt-10 mgb-5 mgl--5 mgr--5" *ngIf="tree.title == 'OnePerRow'">
+          <ion-col col-12 *ngFor="let item of tree.group, let i = index">
+            <div class="brown-opct-1 pd-15 text-center" (click)="openPage(item)">
+              <ion-icon class="fs-48 text-white mgt-10" name="{{item.icon}}"></ion-icon>
+              <h2 class="text-white fs-12 spacing-1 mg-5 uppercase fw-600 text-ellipsis">{{item.title}}</h2>
+            </div>
+          </ion-col>
+        </ion-row>
+      <ion-row class="mgt-5 mgb-20 mgl--5 mgr--5" *ngIf="tree.title == 'TwoPerRow'">
+        <ion-col col-6 *ngFor="let item of tree.group, let i = index">
+          <div class="brown-opct-1 pd-15 text-center" (click)="openPage(item)">
+            <ion-icon class="fs-48 text-white mgt-10" name="{{item.icon}}"></ion-icon>
+            <h2 class="text-white fs-12 spacing-1 mg-5 uppercase fw-600 text-ellipsis">{{item.title}}</h2>
+          </div>
+        </ion-col>
+      </ion-row>
     </div>
-  </ion-col>
-</ion-row>
-</div>
+  </div>
 </div>
 
 </div>

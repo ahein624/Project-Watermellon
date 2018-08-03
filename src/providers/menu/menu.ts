@@ -15,20 +15,20 @@ import { Injectable } from '@angular/core';
     
     getContent(){
       return [
-        //  Westmoreland County Fair menu.
+        //  Westmoreland County Fair menu.        
         {
-          'title': '',
-          'group': [
-            {  
-              'title':'Home',
-              'page':'HomePage',
-              'icon':'md-home'
-            },
+          'title':'OnePerRow',
+          'group':[
             {
               'title': 'Daily Events',
               'page': 'DailyEventsPage',
               'icon': 'md-calendar'
             },
+          ]
+        },
+        {
+          'title': 'TwoPerRow',
+          'group': [
             {
               'title': 'Vendors',
               'page': 'VendorsPage',

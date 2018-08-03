@@ -1,14 +1,14 @@
 webpackJsonp([57],{
 
-/***/ 441:
+/***/ 395:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "RssFavoritePageModule", function() { return RssFavoritePageModule; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "LoginV1Module", function() { return LoginV1Module; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(38);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__rss_favorite__ = __webpack_require__(798);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__login_v1__ = __webpack_require__(655);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -18,34 +18,36 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
-var RssFavoritePageModule = (function () {
-    function RssFavoritePageModule() {
+var LoginV1Module = (function () {
+    function LoginV1Module() {
     }
-    RssFavoritePageModule = __decorate([
+    LoginV1Module = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["NgModule"])({
             declarations: [
-                __WEBPACK_IMPORTED_MODULE_2__rss_favorite__["a" /* RssFavoritePage */],
+                __WEBPACK_IMPORTED_MODULE_2__login_v1__["a" /* LoginV1Component */],
             ],
             imports: [
-                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__rss_favorite__["a" /* RssFavoritePage */]),
+                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__login_v1__["a" /* LoginV1Component */]),
             ],
+            exports: [
+                __WEBPACK_IMPORTED_MODULE_2__login_v1__["a" /* LoginV1Component */]
+            ],
+            schemas: [__WEBPACK_IMPORTED_MODULE_0__angular_core__["CUSTOM_ELEMENTS_SCHEMA"]]
         })
-    ], RssFavoritePageModule);
-    return RssFavoritePageModule;
+    ], LoginV1Module);
+    return LoginV1Module;
 }());
 
-//# sourceMappingURL=rss-favorite.module.js.map
+//# sourceMappingURL=login-v1.module.js.map
 
 /***/ }),
 
-/***/ 798:
+/***/ 655:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return RssFavoritePage; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return LoginV1Component; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(38);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_rss_service_rss_service__ = __webpack_require__(258);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -56,52 +58,42 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 
-
-
 /**
- * Generated class for the RssFavoritePage page.
+ * Generated class for the LoginV1Component component.
  *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
+ * See https://angular.io/api/core/Component for more info on Angular
+ * Components.
  */
-var RssFavoritePage = (function () {
-    function RssFavoritePage(navCtrl, navParams, rssService) {
-        this.navCtrl = navCtrl;
-        this.navParams = navParams;
-        this.rssService = rssService;
-        this.data = new Array();
-    }
-    RssFavoritePage.prototype.ionViewDidEnter = function () {
+var LoginV1Component = (function () {
+    function LoginV1Component() {
         var _this = this;
-        this.data = new Array();
-        this.rssService.getAllFavorites().then(function (result) {
-            _this.data = result;
-            console.log(_this.data);
-        });
-    };
-    RssFavoritePage.prototype.doFavorite = function (item) {
-        this.rssService.doFavorite(item);
-        var index = this.rssService.getIndexOf(item.link, this.data);
-        if (index != -1) {
-            this.data.splice(index, 1);
-        }
-    };
-    RssFavoritePage.prototype.doClear = function () {
-        this.rssService.clearAllFavorite();
-        this.data = new Array();
-    };
-    RssFavoritePage = __decorate([
+        this.onCallbackEvent = function (event) {
+            if (_this.events[event]) {
+                _this.events[event]({
+                    'username': _this.username,
+                    'password': _this.password
+                });
+            }
+        };
+    }
+    __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Input"])(),
+        __metadata("design:type", Object)
+    ], LoginV1Component.prototype, "data", void 0);
+    __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Input"])(),
+        __metadata("design:type", Object)
+    ], LoginV1Component.prototype, "events", void 0);
+    LoginV1Component = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-            selector: 'page-rss-favorite',template:/*ion-inline-start:"/Users/andrewhein/Desktop/WestmorelandWorking/src/pages/ready-app/rss/rss-favorite/rss-favorite.html"*/'<!--\n  Generated template for the RssFavoritePage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>rss-favorite</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content>\n	<ion-card class="bdra-5 card card-ios" *ngFor="let item of data">\n    <span *ngIf="item[\'media:content\']!=undefined">\n        <img [src]="item[\'media:content\'][\'$\'][\'url\']">\n    </span>\n\n    <ion-card-content class="card-content card-content-ios">\n      <ion-card-title class="fs-18 card-title card-title-ios">{{item.title}}</ion-card-title>\n      <p>{{item.description}}</p>\n    </ion-card-content>\n\n    <ion-row class="row">\n      <ion-col>\n        <button (click)="doFavorite(item)" ion-button icon-left clear small class="text-black favorite">\n          <ion-icon  [name]="item.isFavorite == true ? \'heart\' : \'heart-outline\'"></ion-icon>\n        </button>\n      </ion-col>\n\n      <ion-col center text-center>\n         <button (click)="rssService.doShare(item)" ion-button icon-left clear small class="text-black">\n             <ion-icon name="share"></ion-icon>\n        </button>\n      </ion-col>\n\n      <ion-col right text-right>\n        <button (click)="rssService.doOpen(item)" ion-button icon-left clear small class="text-black">\n          <ion-icon name="open"></ion-icon>\n        </button>\n      </ion-col>\n\n    </ion-row>\n  </ion-card>\n</ion-content>\n'/*ion-inline-end:"/Users/andrewhein/Desktop/WestmorelandWorking/src/pages/ready-app/rss/rss-favorite/rss-favorite.html"*/,
+            selector: 'login-v1',template:/*ion-inline-start:"D:\Visual Studio\Personal\Project-Watermellon\src\components\login\login-v1\login-v1.html"*/'\n\n  <div *ngIf="data!=null">\n\n\n\n    <div class="wrapper-page text-center {{data.ani}}">\n\n      <button ion-button outline icon-only small color="dark" class="text-grey-3 stroke-grey-3 stroke-1 button-circle back-page" (click)="onCallbackEvent(\'onDismiss\')">\n\n        <ion-icon name="ios-close"></ion-icon>\n\n      </button>\n\n\n\n      <div>\n\n        <ion-row>\n\n          <h3 class="fs-20 fw-600 text-black mgb-30 mgt--30 spacing-3 pull-left ani-fade-out">{{data.txtHead}}</h3>\n\n        </ion-row>\n\n\n\n        <ion-row class="logo-img mgb-70 pull-left ani-fade-out">\n\n          <img [src]="data.imgLogo" alt="">\n\n        </ion-row>\n\n\n\n        <ion-list class="ani-right-to-left">\n\n          <ion-item class="fs-13 text-black line-1 pdl-0 stroke-black">\n\n            <ion-input type="text" placeholder="{{data.txtUserName}}" [(ngModel)]="username"></ion-input>\n\n          </ion-item>\n\n        </ion-list>\n\n\n\n        <ion-list class="ani-right-to-left">\n\n          <ion-item class="fs-13 text-black line-1 pdl-0 stroke-black">\n\n            <ion-input type="password" placeholder="{{data.txtPassword}}" [(ngModel)]="password"></ion-input>\n\n          </ion-item>\n\n        </ion-list>\n\n\n\n        <div class="text-center ani-bottom-to-top">\n\n          <button ion-button block round color="dark" class="mgt-30 text-white uppercase spacing-1 shadow-3 black" (click)="onCallbackEvent(\'onLogin\')">{{data.btnLogin}}</button>\n\n        </div>\n\n      </div>\n\n\n\n      <button ion-button color="light" clear small class="mgb-20 btn-signup text-grey-5 ani-fade-out" (click)="onCallbackEvent(\'onSignUp\')">{{data.btnSignUp}}</button>\n\n    </div>\n\n\n\n  </div>\n\n\n\n\n\n\n\n\n\n\n\n'/*ion-inline-end:"D:\Visual Studio\Personal\Project-Watermellon\src\components\login\login-v1\login-v1.html"*/
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* NavController */],
-            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["n" /* NavParams */],
-            __WEBPACK_IMPORTED_MODULE_2__providers_rss_service_rss_service__["a" /* RssService */]])
-    ], RssFavoritePage);
-    return RssFavoritePage;
+        __metadata("design:paramtypes", [])
+    ], LoginV1Component);
+    return LoginV1Component;
 }());
 
-//# sourceMappingURL=rss-favorite.js.map
+//# sourceMappingURL=login-v1.js.map
 
 /***/ })
 

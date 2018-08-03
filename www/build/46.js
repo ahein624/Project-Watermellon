@@ -1,14 +1,14 @@
 webpackJsonp([46],{
 
-/***/ 456:
+/***/ 404:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "WordpressPostsPageModule", function() { return WordpressPostsPageModule; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "PopoverMainModule", function() { return PopoverMainModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(38);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__wordpress_posts__ = __webpack_require__(813);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__popover_main__ = __webpack_require__(664);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -18,34 +18,37 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
-var WordpressPostsPageModule = (function () {
-    function WordpressPostsPageModule() {
+var PopoverMainModule = (function () {
+    function PopoverMainModule() {
     }
-    WordpressPostsPageModule = __decorate([
+    PopoverMainModule = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["NgModule"])({
             declarations: [
-                __WEBPACK_IMPORTED_MODULE_2__wordpress_posts__["a" /* WordpressPostsPage */],
+                __WEBPACK_IMPORTED_MODULE_2__popover_main__["a" /* PopoverMainComponent */],
             ],
             imports: [
-                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__wordpress_posts__["a" /* WordpressPostsPage */]),
+                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__popover_main__["a" /* PopoverMainComponent */]),
             ],
+            exports: [
+                __WEBPACK_IMPORTED_MODULE_2__popover_main__["a" /* PopoverMainComponent */]
+            ],
+            schemas: [__WEBPACK_IMPORTED_MODULE_0__angular_core__["CUSTOM_ELEMENTS_SCHEMA"]]
         })
-    ], WordpressPostsPageModule);
-    return WordpressPostsPageModule;
+    ], PopoverMainModule);
+    return PopoverMainModule;
 }());
 
-//# sourceMappingURL=wordpress-posts.module.js.map
+//# sourceMappingURL=popover-main.module.js.map
 
 /***/ }),
 
-/***/ 813:
+/***/ 664:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return WordpressPostsPage; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return PopoverMainComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(38);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_wordpress_wordpress__ = __webpack_require__(255);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -57,92 +60,82 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 
 
-
 /**
- * Generated class for the WordpressPostsPage page.
+ * Generated class for the RegisterV1Component component.
  *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
+ * See https://angular.io/api/core/Component for more info on Angular
+ * Components.
  */
-var WordpressPostsPage = (function () {
-    function WordpressPostsPage(navCtrl, navParams, wpService) {
-        this.navCtrl = navCtrl;
+var PopoverMainComponent = (function () {
+    function PopoverMainComponent(navParams) {
         this.navParams = navParams;
-        this.wpService = wpService;
-        this.data = new Array();
-        this.events = {};
-        this.page = 0;
-        this.per_page = 5;
-        this.spnState = 'show';
-        this.categories_id = this.navParams.get('id');
+        this.colors = {
+            'white': {
+                'bg': 'rgb(255, 255, 255)',
+                'fg': 'rgb(0, 0, 0)'
+            },
+            'tan': {
+                'bg': 'rgb(249, 241, 228)',
+                'fg': 'rgb(0, 0, 0)'
+            },
+            'grey': {
+                'bg': 'rgb(76, 75, 80)',
+                'fg': 'rgb(255, 255, 255)'
+            },
+            'black': {
+                'bg': 'rgb(0, 0, 0)',
+                'fg': 'rgb(255, 255, 255)'
+            },
+        };
+        console.log('Hello PopoverMainComponent Component');
     }
-    WordpressPostsPage.prototype.loadMore = function (infiniteScroll) {
-        var _this = this;
-        if (infiniteScroll === void 0) { infiniteScroll = null; }
-        this.page += 1;
-        this.wpService.getPostsByCategories(this.page, this.per_page, this.categories_id).subscribe(function (data) {
-            var _loop_1 = function () {
-                var post = {
-                    id: data[i].id,
-                    title: data[i].title.rendered,
-                    excerpt: data[i].excerpt.rendered,
-                    link: data[i].link,
-                    thumb: null,
-                    isFavorite: false
-                };
-                _this.wpService.getMedia(data[i].featured_media).subscribe(function (media) {
-                    post.thumb = media.source_url;
-                });
-                _this.wpService.isFavorite(data[i]).then(function (result) {
-                    post.isFavorite = result;
-                    _this.data.push(post);
-                });
-            };
-            for (var i = 0; i < data.length; i++) {
-                _loop_1();
-            }
-            ;
-            console.log(_this.data);
-            _this.spnState = 'hide';
-            if (infiniteScroll) {
-                infiniteScroll.complete();
-            }
-        }, function (error) {
-            _this.spnState = 'hide';
-            if (infiniteScroll != null) {
-                infiniteScroll.enable(false);
-            }
-        });
-    };
-    WordpressPostsPage.prototype.ionViewDidLoad = function () {
-        this.loadMore();
-    };
-    WordpressPostsPage.prototype.ionViewDidEnter = function () {
-        var _this = this;
-        if (this.data.length != 0) {
-            var _loop_2 = function (i) {
-                this_1.wpService.isFavorite(this_1.data[i]).then(function (result) {
-                    _this.data[i].isFavorite = result;
-                });
-            };
-            var this_1 = this;
-            for (var i = 0; i < this.data.length; i++) {
-                _loop_2(i);
-            }
+    PopoverMainComponent.prototype.ngOnInit = function () {
+        if (this.navParams.data) {
+            this.contentEle = this.navParams.data.contentEle;
+            this.textEle = this.navParams.data.textEle;
+            this.background = this.getColorName(this.contentEle.style.backgroundColor);
+            this.setFontFamily();
         }
     };
-    WordpressPostsPage = __decorate([
+    PopoverMainComponent.prototype.getColorName = function (background) {
+        var colorName = 'white';
+        if (!background)
+            return 'white';
+        for (var key in this.colors) {
+            if (this.colors[key].bg == background) {
+                colorName = key;
+            }
+        }
+        return colorName;
+    };
+    PopoverMainComponent.prototype.setFontFamily = function () {
+        if (this.textEle.style.fontFamily) {
+            this.fontFamily = this.textEle.style.fontFamily.replace(/'/g, "");
+        }
+    };
+    PopoverMainComponent.prototype.changeBackground = function (color) {
+        this.background = color;
+        this.contentEle.style.backgroundColor = this.colors[color].bg;
+        this.textEle.style.color = this.colors[color].fg;
+    };
+    PopoverMainComponent.prototype.changeFontSize = function (direction, lh) {
+        this.textEle.style.fontSize = direction;
+        this.textEle.style.lineHeight = lh;
+    };
+    PopoverMainComponent.prototype.changeFontFamily = function () {
+        if (this.fontFamily)
+            this.textEle.style.fontFamily = this.fontFamily;
+    };
+    PopoverMainComponent = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-            selector: 'page-wordpress-posts',template:/*ion-inline-start:"/Users/andrewhein/Desktop/WestmorelandWorking/src/pages/ready-app/wordpress/wordpress-posts/wordpress-posts.html"*/'<!--\n  Generated template for the WordpressPostsPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n  <ion-navbar>\n    <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title>Posts</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content>\n <ion-spinner class="indicator" [ngClass]="spnState"></ion-spinner>\n <ion-card *ngFor="let item of data" class="bdra-5 card card-md">\n    <img *ngIf="item.thumb!=null" [src]="item.thumb" (click)="wpService.doReadMore(navCtrl,item)">\n    <ion-card-content class="card-content card-content-md" (click)="wpService.doReadMore(navCtrl,item)">\n      <ion-card-title class="fs-16 fw-600 card-title card-title-md" [innerHTML]="item.title"></ion-card-title>\n      <p  [innerHTML]="item.excerpt"></p>\n    </ion-card-content>\n\n    <ion-row class="row">\n      <ion-col>\n        <button (click)="wpService.doFavorite(item)" ion-button icon-left clear small class="text-grey-5 favorite">\n          <ion-icon  [name]="item.isFavorite == true ? \'heart\' : \'heart-outline\'"></ion-icon>\n        </button>\n      </ion-col>\n\n      <ion-col center text-center>\n         <button (click)="wpService.doShare(item)" ion-button icon-left clear small class="text-grey-5">\n             <ion-icon name="md-share"></ion-icon>\n        </button>\n      </ion-col>\n\n      <ion-col right text-right>\n        <button (click)="wpService.doOpen(item)" ion-button icon-left clear small class="text-grey-5">\n          <ion-icon name="md-open"></ion-icon>\n        </button>\n      </ion-col>\n      \n      <ion-col right text-right>\n        <button (click)="wpService.doReadMore(navCtrl,item)" ion-button icon-left clear small class="text-grey-5 fs-20">\n          <ion-icon name="ios-more"></ion-icon>\n        </button>\n      </ion-col>\n\n    </ion-row>\n  </ion-card>\n   <ion-infinite-scroll (ionInfinite)="loadMore($event)">\n     <ion-infinite-scroll-content></ion-infinite-scroll-content>\n   </ion-infinite-scroll>\n</ion-content>\n'/*ion-inline-end:"/Users/andrewhein/Desktop/WestmorelandWorking/src/pages/ready-app/wordpress/wordpress-posts/wordpress-posts.html"*/,
+            selector: 'popover-main',template:/*ion-inline-start:"D:\Visual Studio\Personal\Project-Watermellon\src\components\ui-elements\popover-main\popover-main.html"*/'\n\n\n\n<ion-content>\n\n  \n\n  <ion-list radio-group [(ngModel)]="fontFamily" (ionChange)="changeFontFamily()" class="popover-page">\n\n    <ion-row>\n\n      <ion-col>\n\n        <button (click)="changeFontSize(\'smaller\', \'18px\')" ion-item detail-none class="text-button text-smaller">A</button>\n\n      </ion-col>\n\n      <ion-col>\n\n        <button (click)="changeFontSize(\'larger\', \'24px\')" ion-item detail-none class="text-button text-larger">A</button>\n\n      </ion-col>\n\n    </ion-row>\n\n    <ion-row class="row-dots">\n\n      <ion-col>\n\n        <button ion-button="dot" (click)="changeBackground(\'white\')" class="dot-white" [class.selected]="background == \'white\'"></button>\n\n      </ion-col>\n\n      <ion-col>\n\n        <button ion-button="dot" (click)="changeBackground(\'tan\')" class="dot-tan" [class.selected]="background == \'tan\'"></button>\n\n      </ion-col>\n\n      <ion-col>\n\n        <button ion-button="dot" (click)="changeBackground(\'grey\')" class="dot-grey" [class.selected]="background == \'grey\'"></button>\n\n      </ion-col>\n\n      <ion-col>\n\n        <button ion-button="dot" (click)="changeBackground(\'black\')" class="dot-black" [class.selected]="background == \'black\'"></button>\n\n      </ion-col>\n\n    </ion-row>\n\n    <ion-item class="text-helvetica">\n\n      <ion-label>Helvetica</ion-label>\n\n      <ion-radio value="Helvetica"></ion-radio>\n\n    </ion-item>\n\n    <ion-item class="text-athelas">\n\n      <ion-label>Athelas</ion-label>\n\n      <ion-radio value="Athelas"></ion-radio>\n\n    </ion-item>\n\n    <ion-item class="text-charter">\n\n      <ion-label>Charter</ion-label>\n\n      <ion-radio value="Charter"></ion-radio>\n\n    </ion-item>\n\n    <ion-item class="text-iowan">\n\n      <ion-label>Iowan</ion-label>\n\n      <ion-radio value="Iowan"></ion-radio>\n\n    </ion-item>\n\n    <ion-item class="text-palatino">\n\n      <ion-label>Palatino</ion-label>\n\n      <ion-radio value="Palatino"></ion-radio>\n\n    </ion-item>\n\n    <ion-item class="text-san-francisco">\n\n      <ion-label>San Francisco</ion-label>\n\n      <ion-radio value="San Francisco"></ion-radio>\n\n    </ion-item>\n\n    <ion-item class="text-seravek">\n\n      <ion-label>Seravek</ion-label>\n\n      <ion-radio value="Seravek"></ion-radio>\n\n    </ion-item>\n\n    <ion-item class="text-times-new-roman">\n\n      <ion-label>Times New Roman</ion-label>\n\n      <ion-radio value="Times New Roman"></ion-radio>\n\n    </ion-item>\n\n  </ion-list>\n\n\n\n</ion-content>\n\n'/*ion-inline-end:"D:\Visual Studio\Personal\Project-Watermellon\src\components\ui-elements\popover-main\popover-main.html"*/
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* NavController */],
-            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["n" /* NavParams */],
-            __WEBPACK_IMPORTED_MODULE_2__providers_wordpress_wordpress__["a" /* WordpressService */]])
-    ], WordpressPostsPage);
-    return WordpressPostsPage;
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["n" /* NavParams */]])
+    ], PopoverMainComponent);
+    return PopoverMainComponent;
 }());
 
-//# sourceMappingURL=wordpress-posts.js.map
+//# sourceMappingURL=popover-main.js.map
 
 /***/ })
 

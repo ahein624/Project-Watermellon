@@ -1,15 +1,14 @@
 webpackJsonp([24],{
 
-/***/ 426:
+/***/ 435:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "MagazineListPageModule", function() { return MagazineListPageModule; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "WordpressHomePageModule", function() { return WordpressHomePageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(38);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__magazine_list__ = __webpack_require__(759);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_magazine_magazine_list_magazine_list_module__ = __webpack_require__(760);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__wordpress_home__ = __webpack_require__(733);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -19,35 +18,34 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
-
-var MagazineListPageModule = (function () {
-    function MagazineListPageModule() {
+var WordpressHomePageModule = (function () {
+    function WordpressHomePageModule() {
     }
-    MagazineListPageModule = __decorate([
+    WordpressHomePageModule = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["NgModule"])({
             declarations: [
-                __WEBPACK_IMPORTED_MODULE_2__magazine_list__["a" /* MagazineListPage */],
+                __WEBPACK_IMPORTED_MODULE_2__wordpress_home__["a" /* WordpressHomePage */],
             ],
             imports: [
-                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__magazine_list__["a" /* MagazineListPage */]),
-                __WEBPACK_IMPORTED_MODULE_3__components_magazine_magazine_list_magazine_list_module__["a" /* MagazineListModule */]
+                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__wordpress_home__["a" /* WordpressHomePage */]),
             ],
         })
-    ], MagazineListPageModule);
-    return MagazineListPageModule;
+    ], WordpressHomePageModule);
+    return WordpressHomePageModule;
 }());
 
-//# sourceMappingURL=magazine-list.module.js.map
+//# sourceMappingURL=wordpress-home.module.js.map
 
 /***/ }),
 
-/***/ 759:
+/***/ 733:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MagazineListPage; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return WordpressHomePage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(38);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_wordpress_wordpress__ = __webpack_require__(255);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -59,129 +57,90 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 
 
+
 /**
- * Generated class for the MagazineListPage page.
+ * Generated class for the WordpressHomePage page.
  *
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
  */
-var MagazineListPage = (function () {
-    function MagazineListPage(navCtrl, navParams) {
+var WordpressHomePage = (function () {
+    function WordpressHomePage(navCtrl, navParams, wpService) {
         this.navCtrl = navCtrl;
         this.navParams = navParams;
-        this.data = {};
+        this.wpService = wpService;
+        this.data = new Array();
         this.events = {};
-        this.events.openDetail = function (item) {
-            navCtrl.push('MagazineDetailPage');
-        };
+        this.page = 0;
+        this.per_page = 5;
+        this.spnState = 'show';
     }
-    MagazineListPage.prototype.ionViewDidLoad = function () {
-        console.log('ionViewDidLoad MagazineListPage');
-    };
-    MagazineListPage = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-            selector: 'page-magazine-list',template:/*ion-inline-start:"/Users/andrewhein/Desktop/WestmorelandWorking/src/pages/magazine/magazine-list/magazine-list.html"*/'<!--\n  Generated template for the MagazineListPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n\n\n<ion-header>\n  <ion-navbar>\n    <ion-toolbar class="pd-0 transparent">\n      <button ion-button menuToggle class="text-white">\n        <ion-icon name="menu"></ion-icon>\n      </button>\n      <ion-searchbar class="light-searchbar round transparent text-white" padding></ion-searchbar>\n    </ion-toolbar>\n  </ion-navbar>\n</ion-header>\n\n\n<ion-content class="white">\n	<magazine-list [data]="data" [events]="events"></magazine-list>\n</ion-content>\n\n'/*ion-inline-end:"/Users/andrewhein/Desktop/WestmorelandWorking/src/pages/magazine/magazine-list/magazine-list.html"*/,
-        }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["n" /* NavParams */]])
-    ], MagazineListPage);
-    return MagazineListPage;
-}());
-
-//# sourceMappingURL=magazine-list.js.map
-
-/***/ }),
-
-/***/ 760:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MagazineListModule; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(38);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__magazine_list__ = __webpack_require__(761);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-
-
-
-var MagazineListModule = (function () {
-    function MagazineListModule() {
-    }
-    MagazineListModule = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["NgModule"])({
-            declarations: [
-                __WEBPACK_IMPORTED_MODULE_2__magazine_list__["a" /* MagazineListComponent */],
-            ],
-            imports: [
-                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__magazine_list__["a" /* MagazineListComponent */]),
-            ],
-            exports: [
-                __WEBPACK_IMPORTED_MODULE_2__magazine_list__["a" /* MagazineListComponent */]
-            ],
-            schemas: [__WEBPACK_IMPORTED_MODULE_0__angular_core__["CUSTOM_ELEMENTS_SCHEMA"]]
-        })
-    ], MagazineListModule);
-    return MagazineListModule;
-}());
-
-//# sourceMappingURL=magazine-list.module.js.map
-
-/***/ }),
-
-/***/ 761:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MagazineListComponent; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-/**
- * Generated class for the MagazineListComponent component.
- *
- * See https://angular.io/api/core/Component for more info on Angular
- * Components.
- */
-var MagazineListComponent = (function () {
-    function MagazineListComponent() {
+    WordpressHomePage.prototype.loadMore = function (infiniteScroll) {
         var _this = this;
-        this.onCallbackEvent = function (event) {
-            if (_this.events[event]) {
-                _this.events[event]();
+        if (infiniteScroll === void 0) { infiniteScroll = null; }
+        this.page += 1;
+        this.wpService.getPosts(this.page, this.per_page).subscribe(function (data) {
+            var _loop_1 = function () {
+                var post = {
+                    id: data[i].id,
+                    title: data[i].title.rendered,
+                    excerpt: data[i].excerpt.rendered,
+                    link: data[i].link,
+                    thumb: null,
+                    isFavorite: false
+                };
+                _this.wpService.getMedia(data[i].featured_media).subscribe(function (media) {
+                    post.thumb = media.source_url;
+                });
+                _this.wpService.isFavorite(data[i]).then(function (result) {
+                    post.isFavorite = result;
+                    _this.data.push(post);
+                });
+            };
+            for (var i = 0; i < data.length; i++) {
+                _loop_1();
             }
-        };
-        console.log('Hello MagazineListComponent Component');
-    }
-    __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Input"])(),
-        __metadata("design:type", Object)
-    ], MagazineListComponent.prototype, "events", void 0);
-    __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Input"])(),
-        __metadata("design:type", Object)
-    ], MagazineListComponent.prototype, "data", void 0);
-    MagazineListComponent = __decorate([
+            ;
+            _this.spnState = 'hide';
+            if (infiniteScroll) {
+                infiniteScroll.complete();
+            }
+        }, function (error) {
+            _this.spnState = 'hide';
+            if (infiniteScroll != null) {
+                infiniteScroll.enable(false);
+            }
+        });
+    };
+    WordpressHomePage.prototype.ionViewDidLoad = function () {
+        this.loadMore();
+    };
+    WordpressHomePage.prototype.ionViewDidEnter = function () {
+        var _this = this;
+        if (this.data.length != 0) {
+            var _loop_2 = function (i) {
+                this_1.wpService.isFavorite(this_1.data[i]).then(function (result) {
+                    _this.data[i].isFavorite = result;
+                });
+            };
+            var this_1 = this;
+            for (var i = 0; i < this.data.length; i++) {
+                _loop_2(i);
+            }
+        }
+    };
+    WordpressHomePage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-            selector: 'magazine-list',template:/*ion-inline-start:"/Users/andrewhein/Desktop/WestmorelandWorking/src/components/magazine/magazine-list/magazine-list.html"*/'\n<div padding class="white-1">\n\n  <div class="white shadow-3 mgb-20 ani-bottom-to-top">\n    <div class="pd-15" (click)="onCallbackEvent(\'openDetail\')">\n      <h2 class="">Lorem Impsum</h2>\n      <p class="">posted at JAN 15, 2018</p>\n      <p class="text-grey-4">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy</p>\n    </div>\n    <div (click)="onCallbackEvent(\'openDetail\')">\n      <img src="assets/img/bg12.jpg" alt="">\n    </div>\n    <ion-row class="pd-10 pdb-20">\n      <ion-col col-4 text-left class="text-grey-4">\n        <ion-icon name="md-eye"></ion-icon>100\n      </ion-col>\n      <ion-col col-4 text-center class="text-grey-4">\n        <ion-icon name="ios-chatbubbles-outline"></ion-icon> 40\n      </ion-col>\n      <ion-col col-4 text-right class="text-grey-4">\n        <ion-icon name="md-share"></ion-icon> 2\n      </ion-col>\n    </ion-row>\n  </div>\n\n  <div class="white shadow-3 mgb-20 ani-bottom-to-top">\n    <div class="pd-15" (click)="onCallbackEvent(\'openDetail\')">\n      <h2 class="">Lorem Impsum</h2>\n      <p class="">posted at JAN 15, 2018</p>\n      <p class="text-grey-4">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy</p>\n    </div>\n    <div (click)="onCallbackEvent(\'openDetail\')">\n      <img src="assets/img/bg19.jpg" alt="">\n    </div>\n    <ion-row class="pd-10 pdb-20">\n      <ion-col col-4 text-left class="text-grey-4">\n        <ion-icon name="md-eye"></ion-icon>100\n      </ion-col>\n      <ion-col col-4 text-center class="text-grey-4">\n        <ion-icon name="ios-chatbubbles-outline"></ion-icon> 40\n      </ion-col>\n      <ion-col col-4 text-right class="text-grey-4">\n        <ion-icon name="md-share"></ion-icon> 2\n      </ion-col>\n    </ion-row>\n  </div>\n\n  <div class="white shadow-3 mgb-20 ani-bottom-to-top">\n    <div class="pd-15" (click)="onCallbackEvent(\'openDetail\')">\n      <h2 class="">Lorem Impsum</h2>\n      <p class="">posted at JAN 15, 2018</p>\n      <p class="text-grey-4">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy</p>\n    </div>\n    <div (click)="onCallbackEvent(\'openDetail\')">\n      <img src="assets/img/bg11.jpg" alt="">\n    </div>\n    <ion-row class="pd-10 pdb-20">\n      <ion-col col-4 text-left class="text-grey-4">\n        <ion-icon name="md-eye"></ion-icon>100\n      </ion-col>\n      <ion-col col-4 text-center class="text-grey-4">\n        <ion-icon name="ios-chatbubbles-outline"></ion-icon> 40\n      </ion-col>\n      <ion-col col-4 text-right class="text-grey-4">\n        <ion-icon name="md-share"></ion-icon> 2\n      </ion-col>\n    </ion-row>\n  </div>\n\n  <div class="white shadow-3 mgb-20 ani-bottom-to-top">\n    <div class="pd-15" (click)="onCallbackEvent(\'openDetail\')">\n      <h2 class="">Lorem Impsum</h2>\n      <p class="">posted at JAN 15, 2018</p>\n      <p class="text-grey-4">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy</p>\n    </div>\n    <div (click)="onCallbackEvent(\'openDetail\')">\n      <img src="assets/img/bg16.jpg" alt="">\n    </div>\n    <ion-row class="pd-10 pdb-20">\n      <ion-col col-4 text-left class="text-grey-4">\n        <ion-icon name="md-eye"></ion-icon>100\n      </ion-col>\n      <ion-col col-4 text-center class="text-grey-4">\n        <ion-icon name="ios-chatbubbles-outline"></ion-icon> 40\n      </ion-col>\n      <ion-col col-4 text-right class="text-grey-4">\n        <ion-icon name="md-share"></ion-icon> 2\n      </ion-col>\n    </ion-row>\n  </div>\n\n  <div class="white shadow-3 mgb-20 ani-bottom-to-top">\n    <div class="pd-15" (click)="onCallbackEvent(\'openDetail\')">\n      <h2 class="">Lorem Impsum</h2>\n      <p class="">posted at JAN 15, 2018</p>\n      <p class="text-grey-4">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy</p>\n    </div>\n    <div (click)="onCallbackEvent(\'openDetail\')">\n      <img src="assets/img/bg17.jpg" alt="">\n    </div>\n    <ion-row class="pd-10 pdb-20">\n      <ion-col col-4 text-left class="text-grey-4">\n        <ion-icon name="md-eye"></ion-icon>100\n      </ion-col>\n      <ion-col col-4 text-center class="text-grey-4">\n        <ion-icon name="ios-chatbubbles-outline"></ion-icon> 40\n      </ion-col>\n      <ion-col col-4 text-right class="text-grey-4">\n        <ion-icon name="md-share"></ion-icon> 2\n      </ion-col>\n    </ion-row>\n  </div>\n\n  <div class="white shadow-3 mgb-20 ani-bottom-to-top">\n    <div class="pd-15" (click)="onCallbackEvent(\'openDetail\')">\n      <h2 class="">Lorem Impsum</h2>\n      <p class="">posted at JAN 15, 2018</p>\n      <p class="text-grey-4">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy</p>\n    </div>\n    <div (click)="onCallbackEvent(\'openDetail\')">\n      <img src="assets/img/bg13.jpg" alt="">\n    </div>\n    <ion-row class="pd-10 pdb-20">\n      <ion-col col-4 text-left class="text-grey-4">\n        <ion-icon name="md-eye"></ion-icon>100\n      </ion-col>\n      <ion-col col-4 text-center class="text-grey-4">\n        <ion-icon name="ios-chatbubbles-outline"></ion-icon> 40\n      </ion-col>\n      <ion-col col-4 text-right class="text-grey-4">\n        <ion-icon name="md-share"></ion-icon> 2\n      </ion-col>\n    </ion-row>\n  </div>\n\n</div>'/*ion-inline-end:"/Users/andrewhein/Desktop/WestmorelandWorking/src/components/magazine/magazine-list/magazine-list.html"*/
+            selector: 'page-wordpress-home',template:/*ion-inline-start:"D:\Visual Studio\Personal\Project-Watermellon\src\pages\ready-app\wordpress\wordpress-home\wordpress-home.html"*/'<!--\n\n  Generated template for the WordpressHomePage page.\n\n\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n-->\n\n<ion-header>\n\n  <ion-navbar>\n\n    <button ion-button menuToggle>\n\n      <ion-icon name="menu"></ion-icon>\n\n    </button>\n\n    <ion-title>Home</ion-title>\n\n  </ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content class="white-1">\n\n<ion-spinner class="indicator" [ngClass]="spnState"></ion-spinner>\n\n <ion-card *ngFor="let item of data" class="bdra-5 card card-md">\n\n    <img *ngIf="item.thumb!=null" [src]="item.thumb" (click)="wpService.doReadMore(navCtrl,item)">\n\n    <ion-card-content class="card-content card-content-md" (click)="wpService.doReadMore(navCtrl,item)">\n\n      <ion-card-title class="fs-16 fw-600 card-title card-title-md" [innerHTML]="item.title"></ion-card-title>\n\n      <p class="fs-13" [innerHTML]="item.excerpt"></p>\n\n    </ion-card-content>\n\n\n\n    <ion-row class="row">\n\n      <ion-col>\n\n        <button (click)="wpService.doFavorite(item)" ion-button icon-left clear small class="text-black favorite">\n\n          <ion-icon [name]="item.isFavorite == true ? \'heart\' : \'heart-outline\'"></ion-icon>\n\n        </button>\n\n      </ion-col>\n\n\n\n      <ion-col center text-center>\n\n         <button (click)="wpService.doShare(item)" ion-button icon-left clear small class="text-black">\n\n             <ion-icon name="md-share"></ion-icon>\n\n        </button>\n\n      </ion-col>\n\n\n\n      <ion-col right text-right>\n\n        <button (click)="wpService.doOpen(item)" ion-button icon-left clear small class="text-black">\n\n          <ion-icon name="md-open"></ion-icon>\n\n        </button>\n\n      </ion-col>\n\n      \n\n      <ion-col right text-right>\n\n        <button (click)="wpService.doReadMore(navCtrl,item)" ion-button icon-left clear small class="text-black">\n\n          <ion-icon name="ios-more"></ion-icon>\n\n        </button>\n\n      </ion-col>\n\n\n\n    </ion-row>\n\n  </ion-card>\n\n   <ion-infinite-scroll (ionInfinite)="loadMore($event)">\n\n     <ion-infinite-scroll-content></ion-infinite-scroll-content>\n\n   </ion-infinite-scroll>\n\n</ion-content>\n\n'/*ion-inline-end:"D:\Visual Studio\Personal\Project-Watermellon\src\pages\ready-app\wordpress\wordpress-home\wordpress-home.html"*/,
         }),
-        __metadata("design:paramtypes", [])
-    ], MagazineListComponent);
-    return MagazineListComponent;
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* NavController */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["n" /* NavParams */],
+            __WEBPACK_IMPORTED_MODULE_2__providers_wordpress_wordpress__["a" /* WordpressService */]])
+    ], WordpressHomePage);
+    return WordpressHomePage;
 }());
 
-//# sourceMappingURL=magazine-list.js.map
+//# sourceMappingURL=wordpress-home.js.map
 
 /***/ })
 

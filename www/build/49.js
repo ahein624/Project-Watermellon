@@ -1,14 +1,14 @@
 webpackJsonp([49],{
 
-/***/ 453:
+/***/ 391:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "WordpressDetailPageModule", function() { return WordpressDetailPageModule; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ModalBasicModule", function() { return ModalBasicModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(38);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__wordpress_detail__ = __webpack_require__(810);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__modal_basic__ = __webpack_require__(488);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -18,34 +18,37 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
-var WordpressDetailPageModule = (function () {
-    function WordpressDetailPageModule() {
+var ModalBasicModule = (function () {
+    function ModalBasicModule() {
     }
-    WordpressDetailPageModule = __decorate([
+    ModalBasicModule = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["NgModule"])({
             declarations: [
-                __WEBPACK_IMPORTED_MODULE_2__wordpress_detail__["a" /* WordpressDetailPage */],
+                __WEBPACK_IMPORTED_MODULE_2__modal_basic__["a" /* ModalBasicComponent */],
             ],
             imports: [
-                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__wordpress_detail__["a" /* WordpressDetailPage */]),
+                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__modal_basic__["a" /* ModalBasicComponent */]),
             ],
+            exports: [
+                __WEBPACK_IMPORTED_MODULE_2__modal_basic__["a" /* ModalBasicComponent */]
+            ],
+            schemas: [__WEBPACK_IMPORTED_MODULE_0__angular_core__["CUSTOM_ELEMENTS_SCHEMA"]]
         })
-    ], WordpressDetailPageModule);
-    return WordpressDetailPageModule;
+    ], ModalBasicModule);
+    return ModalBasicModule;
 }());
 
-//# sourceMappingURL=wordpress-detail.module.js.map
+//# sourceMappingURL=modal-basic.module.js.map
 
 /***/ }),
 
-/***/ 810:
+/***/ 488:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return WordpressDetailPage; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ModalBasicComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(38);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_wordpress_wordpress__ = __webpack_require__(255);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -57,89 +60,45 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 
 
-
 /**
- * Generated class for the WordpressDetailPage page.
+ * Generated class for the RegisterV1Component component.
  *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
+ * See https://angular.io/api/core/Component for more info on Angular
+ * Components.
  */
-var WordpressDetailPage = (function () {
-    function WordpressDetailPage(navCtrl, navParams, wpService) {
+var ModalBasicComponent = (function () {
+    function ModalBasicComponent(modalCtrl, viewCtrl) {
         var _this = this;
-        this.navCtrl = navCtrl;
-        this.navParams = navParams;
-        this.wpService = wpService;
-        this.post_id = null;
-        this.post = null;
-        this.comments = new Array();
-        this.page = 0;
-        this.per_page = 20;
-        this.spnState = 'show';
-        this.favorite_post = {};
-        this.post_id = this.navParams.get('id');
-        if (this.post_id != null) {
-            this.wpService.getPost(this.post_id).subscribe(function (data) {
-                _this.post = data;
-                _this.favorite_post = {
-                    id: data.id,
-                    title: data.title.rendered,
-                    excerpt: data.excerpt.rendered,
-                    link: data.link,
-                    thumb: null,
-                    isFavorite: false
-                };
-                _this.wpService.getMedia(data.featured_media).subscribe(function (media) {
-                    _this.favorite_post.thumb = media.source_url;
-                });
-                _this.wpService.isFavorite(_this.favorite_post).then(function (result) {
-                    _this.favorite_post.isFavorite = result;
-                    console.log(_this.favorite_post);
-                });
-                _this.spnState = 'hide';
-            });
-        }
-        else {
-            this.spnState = 'hide';
-        }
+        this.modalCtrl = modalCtrl;
+        this.viewCtrl = viewCtrl;
+        this.onCallbackEvent = function (event) {
+            if (_this.events[event]) {
+                _this.events[event]();
+            }
+        };
+        console.log('Hello ModalsComponent Component');
     }
-    WordpressDetailPage.prototype.loadComment = function () {
-        var _this = this;
-        this.page += 1;
-        this.wpService.getComments(this.page, this.per_page, this.post_id).subscribe(function (data) {
-            _this.comments = _this.comments.concat(data);
-        });
+    ModalBasicComponent.prototype.dismiss = function () {
+        this.viewCtrl.dismiss();
     };
-    WordpressDetailPage.prototype.ionViewDidLoad = function () {
-        this.loadComment();
-    };
-    WordpressDetailPage.prototype.favorite = function (item) {
-        var _this = this;
-        this.wpService.isFavorite(item).then(function (result) {
-            if (result == false) {
-                item.isFavorite = true;
-                _this.wpService.favorite(item);
-            }
-            else {
-                item.isFavorite = false;
-                _this.wpService.unFavorite(item);
-            }
-        });
-    };
-    WordpressDetailPage.prototype.share = function (item) {
-    };
-    WordpressDetailPage = __decorate([
+    __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Input"])(),
+        __metadata("design:type", Object)
+    ], ModalBasicComponent.prototype, "events", void 0);
+    __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Input"])(),
+        __metadata("design:type", Object)
+    ], ModalBasicComponent.prototype, "data", void 0);
+    ModalBasicComponent = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-            selector: 'page-wordpress-detail',template:/*ion-inline-start:"/Users/andrewhein/Desktop/WestmorelandWorking/src/pages/ready-app/wordpress/wordpress-detail/wordpress-detail.html"*/'<!--\n  Generated template for the WordpressDetailPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n  <ion-navbar>\n    <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    \n    <ion-title>Detail</ion-title>\n\n    <ion-buttons right>\n      <button ion-button icon-only small (click)="wpService.doFavorite(favorite_post)" >\n          <ion-icon class="fs-18" [name]="favorite_post.isFavorite == true ? \'heart\' : \'heart-outline\'"></ion-icon>\n      </button>\n\n      <button ion-button icon-only small (click)="wpService.doShare(post)">\n          <ion-icon class="fs-18" name="md-share"></ion-icon>\n      </button>\n\n      <button ion-button icon-only small (click)="wpService.doOpen(post)">\n          <ion-icon class="fs-18" name="md-open"></ion-icon>\n      </button>\n\n    </ion-buttons>\n  </ion-navbar>\n</ion-header>\n\n<ion-content class="white-1">\n <ion-spinner class="indicator" [ngClass]="spnState"></ion-spinner> \n <div *ngIf="post!=null" padding class="">\n\n      <ion-card-title class="fs-18 fw-600 uppercase card-title card-title-md" [innerHTML]="post.title.rendered"></ion-card-title>\n      <p class="text-grey-4" [innerHTML]="post.content.rendered"></p>\n\n    <ion-row class="row" *ngIf="comments.length!=0">\n    <ion-list class="lst-no-background list list-md">\n      <ion-item *ngFor="let item of comments">\n        <ion-avatar item-start>\n          <img [src]="item.author_avatar_urls[\'24\']">\n        </ion-avatar>\n        <h2>{{item.author_name}}</h2>\n        <p [innerHTML]="item.content.rendered"></p>\n        <ion-note item-end>3:43 pm</ion-note>\n      </ion-item>\n     </ion-list>\n    <button ion-button block round class="indigo" (click)="loadComment()">Load More</button>\n    </ion-row> \n  </div>\n</ion-content>\n'/*ion-inline-end:"/Users/andrewhein/Desktop/WestmorelandWorking/src/pages/ready-app/wordpress/wordpress-detail/wordpress-detail.html"*/,
+            selector: 'modal-basic',template:/*ion-inline-start:"D:\Visual Studio\Personal\Project-Watermellon\src\components\ui-elements\modal-basic\modal-basic.html"*/'<ion-header class="skin-transparent transparent">\n\n  <ion-toolbar class="skin-transparent">\n\n    <ion-title>\n\n      modal_basic\n\n    </ion-title>\n\n    <ion-buttons start>\n\n      <button ion-button icon-only class="circle text-grey-5 button-circle mgr-10 mgl-10" (click)="dismiss()">\n\n        <ion-icon name="ios-close"></ion-icon>\n\n      </button>\n\n    </ion-buttons>\n\n  </ion-toolbar>\n\n</ion-header>\n\n\n\n<ion-content>    \n\n  <h4 padding class="mgt-50 mgb-10">modal_box_title</h4>\n\n  \n\n  <ion-list>\n\n    <ion-item>\n\n      <ion-label>view_all_location</ion-label>\n\n      <ion-toggle [(ngModel)]="all_local"></ion-toggle>\n\n    </ion-item>\n\n\n\n    <ion-item>\n\n      <ion-label>county</ion-label>\n\n      <ion-select [disabled]="all_local ? true : null" [(ngModel)]="county">\n\n        <ion-option value="null">County 1</ion-option>\n\n        <ion-option value="null">County 2</ion-option>\n\n        <ion-option value="null">County 3</ion-option>\n\n        <ion-option value="null">County 4</ion-option>\n\n        <ion-option value="null">County 5</ion-option>\n\n      </ion-select>\n\n    </ion-item>\n\n\n\n    <ion-item>\n\n      <ion-label>cities</ion-label>\n\n      <ion-select [disabled]="all_local ? true : null" [(ngModel)]="cities">\n\n        <ion-option value="null">All cities</ion-option>\n\n        <ion-option value="null">Cities 1</ion-option>\n\n        <ion-option value="null">Cities 2</ion-option>\n\n        <ion-option value="null">Cities 3</ion-option>\n\n        <ion-option value="null">Cities 4</ion-option>\n\n        <ion-option value="null">Cities 5</ion-option>\n\n      </ion-select>\n\n    </ion-item>\n\n  </ion-list>\n\n</ion-content>\n\n'/*ion-inline-end:"D:\Visual Studio\Personal\Project-Watermellon\src\components\ui-elements\modal-basic\modal-basic.html"*/
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* NavController */],
-            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["n" /* NavParams */],
-            __WEBPACK_IMPORTED_MODULE_2__providers_wordpress_wordpress__["a" /* WordpressService */]])
-    ], WordpressDetailPage);
-    return WordpressDetailPage;
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* ModalController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["r" /* ViewController */]])
+    ], ModalBasicComponent);
+    return ModalBasicComponent;
 }());
 
-//# sourceMappingURL=wordpress-detail.js.map
+//# sourceMappingURL=modal-basic.js.map
 
 /***/ })
 

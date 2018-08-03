@@ -1,4 +1,4 @@
-webpackJsonp([85],{
+webpackJsonp([58],{
 
 /***/ 140:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -159,20 +159,20 @@ var MenuProvider = (function () {
     }
     MenuProvider.prototype.getContent = function () {
         return [
-            //  Westmoreland County Fair menu.
+            //  Westmoreland County Fair menu.        
             {
-                'title': '',
+                'title': 'OnePerRow',
                 'group': [
-                    {
-                        'title': 'Home',
-                        'page': 'HomePage',
-                        'icon': 'md-home'
-                    },
                     {
                         'title': 'Daily Events',
                         'page': 'DailyEventsPage',
                         'icon': 'md-calendar'
                     },
+                ]
+            },
+            {
+                'title': 'TwoPerRow',
+                'group': [
                     {
                         'title': 'Vendors',
                         'page': 'VendorsPage',
@@ -219,9 +219,10 @@ var MenuProvider = (function () {
     }; //end getContent
     MenuProvider = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["Injectable"])(),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_0__angular_common_http__["a" /* HttpClient */]])
+        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_0__angular_common_http__["a" /* HttpClient */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_0__angular_common_http__["a" /* HttpClient */]) === "function" && _a || Object])
     ], MenuProvider);
     return MenuProvider;
+    var _a;
 }());
 
 //# sourceMappingURL=menu.js.map
@@ -250,344 +251,236 @@ webpackEmptyAsyncContext.id = 154;
 
 var map = {
 	"../components/login/login-v1/login-v1.module": [
-		392,
-		84
+		395,
+		57
 	],
 	"../components/login/login-v2/login-v2.module": [
-		393,
-		83
+		397,
+		56
 	],
 	"../components/login/login-v3/login-v3.module": [
-		394,
-		82
+		396,
+		55
 	],
 	"../components/login/login-v4/login-v4.module": [
-		395,
-		81
+		399,
+		54
 	],
 	"../components/login/login-v5/login-v5.module": [
-		396,
-		80
+		398,
+		53
 	],
 	"../components/login/login-v6/login-v6.module": [
-		397,
-		79
+		400,
+		52
 	],
 	"../components/login/login-v7/login-v7.module": [
-		398,
-		78
+		401,
+		51
 	],
 	"../components/register/success-signup/success-signup.module": [
-		399,
-		77
+		392,
+		50
 	],
 	"../components/ui-elements/modal-basic/modal-basic.module": [
 		391,
-		76
+		49
 	],
 	"../components/ui-elements/modal-box/modal-box.module": [
 		402,
-		75
+		48
 	],
 	"../components/ui-elements/modal-menu/modal-menu.module": [
 		403,
-		74
+		47
 	],
 	"../components/ui-elements/modals/modals.module": [
-		400,
-		12
+		393,
+		10
 	],
 	"../components/ui-elements/popover-main/popover-main.module": [
 		404,
-		73
+		46
 	],
 	"../components/ui-elements/popover/popover.module": [
-		401,
-		72
+		394,
+		45
 	],
 	"../pages/about/about.module": [
 		405,
-		5
-	],
-	"../pages/blog/blog.module": [
-		406,
-		7
-	],
-	"../pages/buy-tickets/buy-tickets.module": [
-		407,
-		71
-	],
-	"../pages/chat/chat-conversation/chat-conversation.module": [
-		408,
-		36
-	],
-	"../pages/chat/chat.module": [
-		409,
-		70
-	],
-	"../pages/chat/list-chat-group/list-chat-group.module": [
-		410,
-		35
-	],
-	"../pages/chat/list-chat-online/list-chat-online.module": [
-		411,
-		34
-	],
-	"../pages/chat/list-chat-users/list-chat-users.module": [
-		412,
-		33
-	],
-	"../pages/coming-soon/coming-soon.module": [
-		413,
-		6
-	],
-	"../pages/contact-us/contact-us.module": [
-		414,
-		69
-	],
-	"../pages/daily-events/daily-events.module": [
-		415,
-		68
-	],
-	"../pages/directions/directions.module": [
-		416,
-		67
-	],
-	"../pages/fragment/fragment.module": [
-		417,
-		66
-	],
-	"../pages/gallery/gallery-modal/gallery-modal.module": [
-		418,
-		32
-	],
-	"../pages/gallery/gallery.module": [
-		419,
 		4
 	],
-	"../pages/home/home.module": [
-		420,
-		65
-	],
-	"../pages/login/login.module": [
-		421,
-		2
-	],
-	"../pages/magazine/magazine-bookmark/magazine-bookmark.module": [
-		422,
-		27
-	],
-	"../pages/magazine/magazine-category/magazine-category.module": [
-		423,
-		26
-	],
-	"../pages/magazine/magazine-detail/magazine-detail.module": [
-		424,
-		37
-	],
-	"../pages/magazine/magazine-home/magazine-home.module": [
-		425,
-		25
-	],
-	"../pages/magazine/magazine-list/magazine-list.module": [
-		426,
-		24
-	],
-	"../pages/magazine/magazine.module": [
-		427,
-		64
-	],
-	"../pages/music/music-category/music-category.module": [
-		428,
-		23
-	],
-	"../pages/music/music-favoriest/music-favoriest.module": [
-		429,
-		22
-	],
-	"../pages/music/music-home/music-home.module": [
-		430,
-		21
-	],
-	"../pages/music/music-list/music-list.module": [
-		431,
-		20
-	],
-	"../pages/music/music-player/music-player.module": [
-		432,
-		19
-	],
-	"../pages/music/music.module": [
-		433,
-		63
-	],
-	"../pages/photo-collection/photo-collection.module": [
-		434,
-		62
-	],
-	"../pages/profile/profile.module": [
-		435,
-		3
-	],
-	"../pages/ready-app/facebook/facebook-comment/facebook-comment.module": [
-		436,
-		61
-	],
-	"../pages/ready-app/facebook/facebook.module": [
-		437,
-		11
-	],
-	"../pages/ready-app/instagram/instagram-comment/instagram-comment.module": [
-		438,
-		60
-	],
-	"../pages/ready-app/instagram/instagram.module": [
-		439,
-		59
-	],
-	"../pages/ready-app/radio/radio.module": [
-		440,
-		58
-	],
-	"../pages/ready-app/rss/rss-favorite/rss-favorite.module": [
-		441,
-		57
-	],
-	"../pages/ready-app/rss/rss-home/rss-home.module": [
-		442,
-		56
-	],
-	"../pages/ready-app/rss/rss.module": [
-		443,
-		55
-	],
-	"../pages/ready-app/twitter/twitter.module": [
-		444,
-		54
-	],
-	"../pages/ready-app/unsplash/unsplash-category-detail/unsplash-category-detail.module": [
-		445,
-		31
-	],
-	"../pages/ready-app/unsplash/unsplash-collection/unsplash-collection.module": [
-		446,
-		53
-	],
-	"../pages/ready-app/unsplash/unsplash-favorite/unsplash-favorite.module": [
-		447,
-		30
-	],
-	"../pages/ready-app/unsplash/unsplash-home/unsplash-home.module": [
-		448,
-		29
-	],
-	"../pages/ready-app/unsplash/unsplash-modal-photo/unsplash-modal-photo.module": [
-		449,
-		52
-	],
-	"../pages/ready-app/unsplash/unsplash-search/unsplash-search.module": [
-		450,
-		28
-	],
-	"../pages/ready-app/unsplash/unsplash.module": [
-		451,
-		51
-	],
-	"../pages/ready-app/wordpress/wordpress-category/wordpress-category.module": [
-		452,
-		50
-	],
-	"../pages/ready-app/wordpress/wordpress-detail/wordpress-detail.module": [
-		453,
-		49
-	],
-	"../pages/ready-app/wordpress/wordpress-favorite/wordpress-favorite.module": [
-		454,
-		48
-	],
-	"../pages/ready-app/wordpress/wordpress-home/wordpress-home.module": [
-		455,
-		47
-	],
-	"../pages/ready-app/wordpress/wordpress-posts/wordpress-posts.module": [
-		456,
-		46
-	],
-	"../pages/ready-app/wordpress/wordpress-search/wordpress-search.module": [
-		457,
-		45
-	],
-	"../pages/ready-app/wordpress/wordpress.module": [
-		458,
+	"../pages/buy-tickets/buy-tickets.module": [
+		406,
 		44
 	],
-	"../pages/ready-app/youtube/youtube-detail/youtube-detail.module": [
-		459,
-		10
+	"../pages/coming-soon/coming-soon.module": [
+		407,
+		5
 	],
-	"../pages/ready-app/youtube/youtube-favorite/youtube-favorite.module": [
-		460,
+	"../pages/contact-us/contact-us.module": [
+		408,
+		43
+	],
+	"../pages/daily-events/daily-events.module": [
+		410,
+		42
+	],
+	"../pages/directions/directions.module": [
+		409,
+		41
+	],
+	"../pages/fragment/fragment.module": [
+		411,
+		40
+	],
+	"../pages/gallery/gallery-modal/gallery-modal.module": [
+		412,
+		15
+	],
+	"../pages/gallery/gallery.module": [
+		413,
+		3
+	],
+	"../pages/home/home.module": [
+		414,
+		39
+	],
+	"../pages/profile/profile.module": [
+		415,
+		2
+	],
+	"../pages/ready-app/facebook/facebook-comment/facebook-comment.module": [
+		416,
+		38
+	],
+	"../pages/ready-app/facebook/facebook.module": [
+		417,
 		9
 	],
-	"../pages/ready-app/youtube/youtube.module": [
-		461,
+	"../pages/ready-app/instagram/instagram-comment/instagram-comment.module": [
+		418,
+		37
+	],
+	"../pages/ready-app/instagram/instagram.module": [
+		419,
+		36
+	],
+	"../pages/ready-app/radio/radio.module": [
+		420,
+		35
+	],
+	"../pages/ready-app/rss/rss-favorite/rss-favorite.module": [
+		421,
+		34
+	],
+	"../pages/ready-app/rss/rss-home/rss-home.module": [
+		422,
+		33
+	],
+	"../pages/ready-app/rss/rss.module": [
+		423,
+		32
+	],
+	"../pages/ready-app/twitter/twitter.module": [
+		424,
+		31
+	],
+	"../pages/ready-app/unsplash/unsplash-category-detail/unsplash-category-detail.module": [
+		425,
+		14
+	],
+	"../pages/ready-app/unsplash/unsplash-collection/unsplash-collection.module": [
+		426,
+		30
+	],
+	"../pages/ready-app/unsplash/unsplash-favorite/unsplash-favorite.module": [
+		429,
+		13
+	],
+	"../pages/ready-app/unsplash/unsplash-home/unsplash-home.module": [
+		427,
+		12
+	],
+	"../pages/ready-app/unsplash/unsplash-modal-photo/unsplash-modal-photo.module": [
+		428,
+		29
+	],
+	"../pages/ready-app/unsplash/unsplash-search/unsplash-search.module": [
+		430,
+		11
+	],
+	"../pages/ready-app/unsplash/unsplash.module": [
+		431,
+		28
+	],
+	"../pages/ready-app/wordpress/wordpress-category/wordpress-category.module": [
+		432,
+		27
+	],
+	"../pages/ready-app/wordpress/wordpress-detail/wordpress-detail.module": [
+		433,
+		26
+	],
+	"../pages/ready-app/wordpress/wordpress-favorite/wordpress-favorite.module": [
+		434,
+		25
+	],
+	"../pages/ready-app/wordpress/wordpress-home/wordpress-home.module": [
+		435,
+		24
+	],
+	"../pages/ready-app/wordpress/wordpress-posts/wordpress-posts.module": [
+		437,
+		23
+	],
+	"../pages/ready-app/wordpress/wordpress-search/wordpress-search.module": [
+		436,
+		22
+	],
+	"../pages/ready-app/wordpress/wordpress.module": [
+		438,
+		21
+	],
+	"../pages/ready-app/youtube/youtube-detail/youtube-detail.module": [
+		439,
 		8
 	],
+	"../pages/ready-app/youtube/youtube-favorite/youtube-favorite.module": [
+		440,
+		7
+	],
+	"../pages/ready-app/youtube/youtube.module": [
+		441,
+		6
+	],
 	"../pages/register/register.module": [
-		462,
+		443,
 		0
 	],
 	"../pages/settings/setting-color/setting-color.module": [
-		463,
-		43
+		442,
+		20
 	],
 	"../pages/settings/setting-dashboard/setting-dashboard.module": [
-		464,
-		42
+		444,
+		19
 	],
 	"../pages/settings/setting-sidemenu/setting-sidemenu.module": [
-		465,
-		41
-	],
-	"../pages/shop/shop-blog/shop-blog.module": [
-		466,
+		445,
 		18
 	],
-	"../pages/shop/shop-category/shop-category.module": [
-		467,
+	"../pages/sponsors/sponsors.module": [
+		447,
 		17
 	],
-	"../pages/shop/shop-checkout/shop-checkout.module": [
-		468,
-		16
-	],
-	"../pages/shop/shop-detail-product/shop-detail-product.module": [
-		469,
-		15
-	],
-	"../pages/shop/shop-home/shop-home.module": [
-		470,
-		14
-	],
-	"../pages/shop/shop-list-product/shop-list-product.module": [
-		471,
-		13
-	],
-	"../pages/shop/shop.module": [
-		472,
-		40
-	],
-	"../pages/sponsors/sponsors.module": [
-		473,
-		39
-	],
 	"../pages/ui-elements/ui-elements.module": [
-		474,
+		446,
 		1
 	],
 	"../pages/vendors/vendors.module": [
-		475,
-		38
+		448,
+		16
 	]
 };
 function webpackAsyncContext(req) {
@@ -913,52 +806,6 @@ var WordpressService = (function () {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ToastService; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(38);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-/*
-  Generated class for the ToastServiceProvider provider.
-
-  See https://angular.io/guide/dependency-injection for more info on providers
-  and Angular DI.
-*/
-var ToastService = (function () {
-    function ToastService(toastCtrl) {
-        this.toastCtrl = toastCtrl;
-    }
-    ToastService.prototype.presentToast = function (message) {
-        var toast = this.toastCtrl.create({
-            'message': message,
-            'duration': 100
-        });
-        toast.present();
-    };
-    ToastService = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Injectable"])(),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["r" /* ToastController */]])
-    ], ToastService);
-    return ToastService;
-}());
-
-//# sourceMappingURL=toast-service.js.map
-
-/***/ }),
-
-/***/ 258:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return RssService; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_common_http__ = __webpack_require__(18);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
@@ -1133,7 +980,7 @@ var RssService = (function () {
 
 /***/ }),
 
-/***/ 259:
+/***/ 258:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1178,6 +1025,52 @@ var LoadingService = (function () {
 }());
 
 //# sourceMappingURL=loading-service.js.map
+
+/***/ }),
+
+/***/ 259:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ToastService; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(38);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+/*
+  Generated class for the ToastServiceProvider provider.
+
+  See https://angular.io/guide/dependency-injection for more info on providers
+  and Angular DI.
+*/
+var ToastService = (function () {
+    function ToastService(toastCtrl) {
+        this.toastCtrl = toastCtrl;
+    }
+    ToastService.prototype.presentToast = function (message) {
+        var toast = this.toastCtrl.create({
+            'message': message,
+            'duration': 100
+        });
+        toast.present();
+    };
+    ToastService = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Injectable"])(),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["q" /* ToastController */]])
+    ], ToastService);
+    return ToastService;
+}());
+
+//# sourceMappingURL=toast-service.js.map
 
 /***/ }),
 
@@ -1629,8 +1522,8 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__ngx_translate_http_loader__ = __webpack_require__(387);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__ionic_native_firebase__ = __webpack_require__(389);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__providers_menu_menu__ = __webpack_require__(142);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__providers_toast_service_toast_service__ = __webpack_require__(257);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_24__providers_loading_service_loading_service__ = __webpack_require__(259);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__providers_toast_service_toast_service__ = __webpack_require__(259);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_24__providers_loading_service_loading_service__ = __webpack_require__(258);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_25__providers_helper_helper__ = __webpack_require__(390);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_26_ng2_twitter__ = __webpack_require__(210);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_27__providers_facebook_facebook__ = __webpack_require__(260);
@@ -1638,7 +1531,7 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_29__providers_twitter_twitter__ = __webpack_require__(263);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_30__providers_unsplash_service_unsplash_service__ = __webpack_require__(254);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_31__providers_wordpress_wordpress__ = __webpack_require__(255);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_32__providers_rss_service_rss_service__ = __webpack_require__(258);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_32__providers_rss_service_rss_service__ = __webpack_require__(257);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_33__providers_youtube_service_youtube_service__ = __webpack_require__(262);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_34__providers_settings_settings__ = __webpack_require__(140);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -1715,49 +1608,29 @@ var AppModule = (function () {
                 __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["g" /* IonicModule */].forRoot(__WEBPACK_IMPORTED_MODULE_3__app_component__["a" /* MyApp */], {}, {
                     links: [
                         { loadChildren: '../components/login/login-v1/login-v1.module#LoginV1Module', name: 'LoginV1Component', segment: 'login-v1', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../components/login/login-v2/login-v2.module#LoginV2Module', name: 'LoginV2Component', segment: 'login-v2', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../components/login/login-v3/login-v3.module#LoginV3Module', name: 'LoginV3Component', segment: 'login-v3', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../components/login/login-v4/login-v4.module#LoginV4Module', name: 'LoginV4Component', segment: 'login-v4', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../components/login/login-v2/login-v2.module#LoginV2Module', name: 'LoginV2Component', segment: 'login-v2', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../components/login/login-v5/login-v5.module#LoginV5Module', name: 'LoginV5Component', segment: 'login-v5', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../components/login/login-v4/login-v4.module#LoginV4Module', name: 'LoginV4Component', segment: 'login-v4', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../components/login/login-v6/login-v6.module#LoginV6Module', name: 'LoginV6Component', segment: 'login-v6', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../components/login/login-v7/login-v7.module#LoginV7Module', name: 'LoginV7Component', segment: 'login-v7', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../components/register/success-signup/success-signup.module#SuccessSignupModule', name: 'SuccessSignupComponent', segment: 'success-signup', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../components/ui-elements/modal-basic/modal-basic.module#ModalBasicModule', name: 'ModalBasicComponent', segment: 'modal-basic', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../components/ui-elements/modal-box/modal-box.module#ModalBoxModule', name: 'ModalBoxComponent', segment: 'modal-box', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../components/ui-elements/modal-menu/modal-menu.module#ModalMenuModule', name: 'ModalMenuComponent', segment: 'modal-menu', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../components/ui-elements/modals/modals.module#ModalsModule', name: 'ModalsComponent', segment: 'modals', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../components/ui-elements/modal-menu/modal-menu.module#ModalMenuModule', name: 'ModalMenuComponent', segment: 'modal-menu', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../components/ui-elements/popover-main/popover-main.module#PopoverMainModule', name: 'PopoverMainComponent', segment: 'popover-main', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../components/ui-elements/popover/popover.module#PopoverModule', name: 'PopoverComponent', segment: 'popover', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/about/about.module#AboutPageModule', name: 'AboutPage', segment: 'about', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/blog/blog.module#BlogPageModule', name: 'BlogPage', segment: 'blog', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/buy-tickets/buy-tickets.module#BuyTicketsPageModule', name: 'BuyTicketsPage', segment: 'buy-tickets', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/chat/chat-conversation/chat-conversation.module#ChatConversationPageModule', name: 'ChatConversationPage', segment: 'chat-conversation', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/chat/chat.module#ChatPageModule', name: 'ChatPage', segment: 'chat', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/chat/list-chat-group/list-chat-group.module#ListChatGroupPageModule', name: 'ListChatGroupPage', segment: 'list-chat-group', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/chat/list-chat-online/list-chat-online.module#ListChatOnlinePageModule', name: 'ListChatOnlinePage', segment: 'list-chat-online', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/chat/list-chat-users/list-chat-users.module#ListChatUsersPageModule', name: 'ListChatUsersPage', segment: 'list-chat-users', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/coming-soon/coming-soon.module#ComingSoonPageModule', name: 'ComingSoonPage', segment: 'coming-soon', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/contact-us/contact-us.module#ContactUsPageModule', name: 'ContactUsPage', segment: 'contact-us', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/daily-events/daily-events.module#DailyEventsPageModule', name: 'DailyEventsPage', segment: 'daily-events', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/directions/directions.module#DirectionsPageModule', name: 'DirectionsPage', segment: 'directions', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/daily-events/daily-events.module#DailyEventsPageModule', name: 'DailyEventsPage', segment: 'daily-events', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/fragment/fragment.module#FragmentPageModule', name: 'FragmentPage', segment: 'fragment', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/gallery/gallery-modal/gallery-modal.module#GalleryModalPageModule', name: 'GalleryModalPage', segment: 'gallery-modal', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/gallery/gallery.module#GalleryPageModule', name: 'GalleryPage', segment: 'gallery', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/home/home.module#HomePageModule', name: 'HomePage', segment: 'home', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/login/login.module#LoginPageModule', name: 'LoginPage', segment: 'login', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/magazine/magazine-bookmark/magazine-bookmark.module#MagazineBookmarkPageModule', name: 'MagazineBookmarkPage', segment: 'magazine-bookmark', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/magazine/magazine-category/magazine-category.module#MagazineCategoryPageModule', name: 'MagazineCategoryPage', segment: 'magazine-category', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/magazine/magazine-detail/magazine-detail.module#MagazineDetailPageModule', name: 'MagazineDetailPage', segment: 'magazine-detail', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/magazine/magazine-home/magazine-home.module#MagazineHomePageModule', name: 'MagazineHomePage', segment: 'magazine-home', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/magazine/magazine-list/magazine-list.module#MagazineListPageModule', name: 'MagazineListPage', segment: 'magazine-list', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/magazine/magazine.module#MagazinePageModule', name: 'MagazinePage', segment: 'magazine-page', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/music/music-category/music-category.module#MusicCategoryPageModule', name: 'MusicCategoryPage', segment: 'music-category', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/music/music-favoriest/music-favoriest.module#MusicFavoriestPageModule', name: 'MusicFavoriestPage', segment: 'music-favoriest', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/music/music-home/music-home.module#MusicHomePageModule', name: 'MusicHomePage', segment: 'music-home', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/music/music-list/music-list.module#MusicListPageModule', name: 'MusicListPage', segment: 'music-list', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/music/music-player/music-player.module#MusicPlayerPageModule', name: 'MusicPlayerPage', segment: 'music-player', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/music/music.module#MusicPageModule', name: 'MusicPage', segment: 'music', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/photo-collection/photo-collection.module#PhotoCollectionPageModule', name: 'PhotoCollectionPage', segment: 'photo-collection', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/profile/profile.module#ProfilePageModule', name: 'ProfilePage', segment: 'profile', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/ready-app/facebook/facebook-comment/facebook-comment.module#FacebookCommentPageModule', name: 'FacebookCommentPage', segment: 'facebook-comment', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/ready-app/facebook/facebook.module#FacebookPageModule', name: 'FacebookPage', segment: 'facebook', priority: 'low', defaultHistory: [] },
@@ -1770,34 +1643,27 @@ var AppModule = (function () {
                         { loadChildren: '../pages/ready-app/twitter/twitter.module#TwitterPageModule', name: 'TwitterPage', segment: 'twitter', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/ready-app/unsplash/unsplash-category-detail/unsplash-category-detail.module#UnsplashCategoryDetailPageModule', name: 'UnsplashCategoryDetailPage', segment: 'unsplash-category-detail', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/ready-app/unsplash/unsplash-collection/unsplash-collection.module#UnsplashCollectionPageModule', name: 'UnsplashCollectionPage', segment: 'unsplash-collection', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/ready-app/unsplash/unsplash-favorite/unsplash-favorite.module#UnsplashFavoriestPageModule', name: 'UnsplashFavoritePage', segment: 'unsplash-favorite', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/ready-app/unsplash/unsplash-home/unsplash-home.module#UnsplashHomePageModule', name: 'UnsplashHomePage', segment: 'unsplash-home', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/ready-app/unsplash/unsplash-modal-photo/unsplash-modal-photo.module#UnsplashModalPhotoPageModule', name: 'UnsplashModalPhotoPage', segment: 'unsplash-modal-photo', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/ready-app/unsplash/unsplash-favorite/unsplash-favorite.module#UnsplashFavoriestPageModule', name: 'UnsplashFavoritePage', segment: 'unsplash-favorite', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/ready-app/unsplash/unsplash-search/unsplash-search.module#UnsplashSearchPageModule', name: 'UnsplashSearchPage', segment: 'unsplash-search', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/ready-app/unsplash/unsplash.module#UnsplashPageModule', name: 'UnsplashPage', segment: 'unsplash', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/ready-app/wordpress/wordpress-category/wordpress-category.module#WordpressCategoryPageModule', name: 'WordpressCategoryPage', segment: 'wordpress-category', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/ready-app/wordpress/wordpress-detail/wordpress-detail.module#WordpressDetailPageModule', name: 'WordpressDetailPage', segment: 'wordpress-detail', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/ready-app/wordpress/wordpress-favorite/wordpress-favorite.module#WordpressFavoritePageModule', name: 'WordpressFavoritePage', segment: 'wordpress-favorite', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/ready-app/wordpress/wordpress-home/wordpress-home.module#WordpressHomePageModule', name: 'WordpressHomePage', segment: 'wordpress-home', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/ready-app/wordpress/wordpress-posts/wordpress-posts.module#WordpressPostsPageModule', name: 'WordpressPostsPage', segment: 'wordpress-posts', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/ready-app/wordpress/wordpress-search/wordpress-search.module#WordpressSearchPageModule', name: 'WordpressSearchPage', segment: 'wordpress-search', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/ready-app/wordpress/wordpress-posts/wordpress-posts.module#WordpressPostsPageModule', name: 'WordpressPostsPage', segment: 'wordpress-posts', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/ready-app/wordpress/wordpress.module#WordpressPageModule', name: 'WordpressPage', segment: 'wordpress', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/ready-app/youtube/youtube-detail/youtube-detail.module#YoutubeDetailPageModule', name: 'YoutubeDetailPage', segment: 'youtube-detail', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/ready-app/youtube/youtube-favorite/youtube-favorite.module#YoutubeFavoritePageModule', name: 'YoutubeFavoritePage', segment: 'youtube-favorite', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/ready-app/youtube/youtube.module#YoutubePageModule', name: 'YoutubePage', segment: 'youtube', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/register/register.module#RegisterPageModule', name: 'RegisterPage', segment: 'register', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/settings/setting-color/setting-color.module#SettingColorPageModule', name: 'SettingColorPage', segment: 'setting-color', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/register/register.module#RegisterPageModule', name: 'RegisterPage', segment: 'register', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/settings/setting-dashboard/setting-dashboard.module#SettingDashboardPageModule', name: 'SettingDashboardPage', segment: 'setting-dashboard', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/settings/setting-sidemenu/setting-sidemenu.module#SettingSidemenuPageModule', name: 'SettingSidemenuPage', segment: 'setting-sidemenu', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/shop/shop-blog/shop-blog.module#ShopBlogPageModule', name: 'ShopBlogPage', segment: 'shop-blog', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/shop/shop-category/shop-category.module#ShopCategoryPageModule', name: 'ShopCategoryPage', segment: 'shop-category', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/shop/shop-checkout/shop-checkout.module#ShopCheckoutPageModule', name: 'ShopCheckoutPage', segment: 'shop-checkout', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/shop/shop-detail-product/shop-detail-product.module#ShopDetailProductPageModule', name: 'ShopDetailProductPage', segment: 'shop-detail-product', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/shop/shop-home/shop-home.module#ShopHomePageModule', name: 'ShopHomePage', segment: 'shop-home', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/shop/shop-list-product/shop-list-product.module#ShopListProductPageModule', name: 'ShopListProductPage', segment: 'shop-list-product', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/shop/shop.module#ShopPageModule', name: 'ShopPage', segment: 'shop-page', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/sponsors/sponsors.module#SponsorsPageModule', name: 'SponsorsPage', segment: 'sponsors', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/ui-elements/ui-elements.module#UiElementsPageModule', name: 'UiElementsPage', segment: 'ui-elements', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/sponsors/sponsors.module#SponsorsPageModule', name: 'SponsorsPage', segment: 'sponsors', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/vendors/vendors.module#VendorsPageModule', name: 'VendorsPage', segment: 'vendors', priority: 'low', defaultHistory: [] }
                     ]
                 }),
@@ -1950,7 +1816,7 @@ var MyApp = (function () {
         __metadata("design:type", __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* Nav */])
     ], MyApp.prototype, "nav", void 0);
     MyApp = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({template:/*ion-inline-start:"/Users/andrewhein/Desktop/WestmorelandWorking/src/app/app.html"*/'<div *ngIf="settings!=null">\n\n<ion-split-pane when="md">\n  <ion-menu class="{{settings.skin.main_skin}}" [content]="content" id="menu-material">\n    <ion-content class="{{settings.skin.main_bg}}">\n      <div class="info-user mgb-30 pdt-5 pdb-5 pdb-10">\n        <div class="bg-img"><img src="assets/img/bg-material.jpg" alt=""></div>\n        <div class="wrapper-avt pd-10">\n          <div class="main-avt mg-5 pull-left shadow-1"><img src="assets/img/avt1.jpg" alt=""></div>\n          <div class="sub-avt mg-5 pull-right shadow-1"><img src="assets/img/avt2.jpg" alt=""></div>\n          <div class="sub-avt mg-5 pull-right shadow-1"><img src="assets/img/avt3.jpg" alt=""></div>\n        </div>\n      </div>\n\n      <ion-list no-lines class="lst-menu">\n        <span *ngFor="let item of pages" class="{{settings.skin.text_1}}">\n          <ion-item class="transparent uppercase mgt-20 fs-14 fw-400 spacing-1">\n            {{item.title}}\n          </ion-item>\n          <button menuClose="menu-material" ion-item icon-left *ngFor="let sub of item.group" class="transparent fw-500" (click)="openPage(sub)">\n            <ion-icon name="{{sub.icon}}" item-left></ion-icon>\n            {{sub.title}}\n          </button>\n        </span>\n\n        <!-- <span class="{{settings.skin.text_1}}">\n          <ion-item class="transparent uppercase mgt-20 fs-14 fw-400 spacing-1">\n            Level Menu\n          </ion-item>\n          <ion-list class="tree mgb-0">\n            <ion-item icon-left class="btn-open-more transparent">\n              <ion-label ion-left><ion-icon class="mgr-15 pdr-5 text-center" name="ios-stats"></ion-icon>Level Collapse</ion-label>\n              <ion-checkbox [(ngModel)]="show_drop" class="hidden-checkbox" color="dark"></ion-checkbox>\n            </ion-item>\n\n            <ion-row class="dropdown" [ngClass]="{\'active\' : (show_drop == true)}">\n              <button ion-item small class="transparent fs-14">\n                <ion-icon name="md-radio-button-off" class="fs-8 text-center pdr-5 mgl-35 mgr-5"></ion-icon>\n                Drink\n              </button>\n              <button ion-item small class="transparent fs-14">\n                <ion-icon name="md-radio-button-off" class="fs-8 text-center pdr-5 mgl-35 mgr-5"></ion-icon>\n                Fast food\n                <ion-badge item-end color="dark" class="fs-12 white-opct {{settings.skin.text_1}} bdra-5">3</ion-badge>\n              </button>\n              <button ion-item small class="transparent fs-14">\n                <ion-icon name="md-radio-button-off" class="fs-8 text-center pdr-5 mgl-35 mgr-5"></ion-icon>\n                Extra\n              </button>\n              <button ion-item small class="transparent fs-14">\n                <ion-icon name="md-radio-button-off" class="fs-8 text-center pdr-5 mgl-35 mgr-5"></ion-icon>\n                Cake\n                <ion-badge item-end color="dark" class="fs-12 white-opct {{settings.skin.text_1}} bdra-5">2</ion-badge>\n              </button>\n            </ion-row>\n          </ion-list>\n        </span> -->\n\n      </ion-list>\n    </ion-content>\n  </ion-menu>\n\n\n  <ion-menu class="" [content]="content" id="menu-basic">\n    <ion-header class="{{settings.skin.main_skin}}">\n      <ion-toolbar>\n        <ion-title>\n          <img class="logo-brand light-brand" src="assets/img/chimera_w.png" alt="">\n          <img class="logo-brand dark-brand" src="assets/img/chimera_b.png" alt="">\n        </ion-title>\n      </ion-toolbar>\n    </ion-header>\n\n    <ion-content class="{{settings.skin.main_bg}}">\n      <ion-list no-lines class="lst-menu">\n        <span *ngFor="let item of pages" class="{{settings.skin.text_1}}">\n          <ion-item class="transparent uppercase mgt-20 fs-14 fw-400 spacing-1">\n            {{item.title}}\n          </ion-item>\n          <ion-item-group submenu>\n            <button submenu-item menuClose ion-item icon-left *ngFor="let sub of item.group" class="transparent" (click)="openPage(sub)">\n              <ion-icon name={{sub.icon}} item-left></ion-icon>\n              {{sub.title}}\n            </button>\n          </ion-item-group>\n        </span>\n\n\n        <!-- <span class="{{settings.skin.text_1}}">\n          <ion-item class="transparent uppercase mgt-20 fs-14 fw-400 spacing-1">\n            Level Menu\n          </ion-item>\n          <ion-list class="tree mgb-0">\n            <ion-item icon-left class="btn-open-more transparent">\n              <ion-label ion-left class="text-white-1"><ion-icon class="mgr-15 pdr-5 text-center" name="ios-stats"></ion-icon>Level Collapse</ion-label>\n              <ion-checkbox [(ngModel)]="show_drop" class="hidden-checkbox" color="dark"></ion-checkbox>\n            </ion-item>\n            <ion-list class="tree mgb-0">\n              <ion-item icon-left class="btn-open-more transparent">\n                <ion-label ion-left><ion-icon class="mgr-15 pdr-5 text-center" name="ios-stats"></ion-icon>Level Collapse</ion-label>\n                <ion-checkbox [(ngModel)]="show_drop" class="hidden-checkbox" color="dark"></ion-checkbox>\n              </ion-item>\n\n              <ion-row class="dropdown" [ngClass]="{\'active\' : (show_drop == true)}">\n                <button ion-item small class="transparent fs-14">\n                  <ion-icon name="md-radio-button-off" class="fs-8 text-center pdr-5 mgl-35 mgr-5"></ion-icon>\n                  Drink\n                </button>\n                <button ion-item small class="transparent fs-14">\n                  <ion-icon name="md-radio-button-off" class="fs-8 text-center pdr-5 mgl-35 mgr-5"></ion-icon>\n                  Fast food\n                  <ion-badge item-end color="dark" class="fs-12 white-opct {{settings.skin.text_1}} bdra-5">3</ion-badge>\n                </button>\n                <button ion-item small class="transparent fs-14">\n                  <ion-icon name="md-radio-button-off" class="fs-8 text-center pdr-5 mgl-35 mgr-5"></ion-icon>\n                  Extra\n                </button>\n                <button ion-item small class="transparent fs-14">\n                  <ion-icon name="md-radio-button-off" class="fs-8 text-center pdr-5 mgl-35 mgr-5"></ion-icon>\n                  Cake\n                  <ion-badge item-end color="dark" class="fs-12 white-opct {{settings.skin.text_1}} bdra-5">2</ion-badge>\n                </button>\n              </ion-row>\n            </ion-list>\n          </ion-list>\n        </span> -->\n      </ion-list>\n    </ion-content>\n  </ion-menu>\n\n\n  <ion-menu class="{{settings.skin.main_skin}}" [content]="content" id="menu-avatar">\n\n    <ion-content class="{{settings.skin.main_bg}}">\n\n      <div class="info-user mgb-30 pdt-50 pdb-20 black-opct">\n        <button ion-button clear only-icon small class="user-setting text-grey-1"><ion-icon name="ios-settings"></ion-icon></button>\n        <div class="bg-img"><img src="assets/img/bg9.jpg" alt=""></div>\n        <div class="wrapper-avt mgl-15 mgr-10">\n          <img src="assets/img/avt1.jpg" alt="">\n        </div>\n        <div class="main-info">\n          <h2 class="user-name fs-20 fw-600 mg-0 text-white">Koodinh</h2>\n          <button ion-button clear small class="pd-0 mg-0 text-left text-grey-1">koodinh@gmail.com</button>\n        </div>\n      </div>\n\n      <ion-list no-lines class="lst-menu">\n        <span *ngFor="let item of pages" class="{{settings.skin.text_1}}">\n          <ion-item class="transparent uppercase mgt-20 fs-14 fw-400 spacing-1">\n            {{item.title}}\n          </ion-item>\n\n          <button menuClose="menu-avatar" ion-item icon-left *ngFor="let sub of item.group" class="transparent" (click)="openPage(sub)">\n            <ion-icon name="{{sub.icon}}" item-left></ion-icon>\n            {{sub.title}}\n          </button>\n        </span>\n\n        <!-- <span class="{{settings.skin.text_1}}">\n          <ion-item class="transparent uppercase mgt-20 fs-14 fw-400 spacing-1">\n            Level Menu\n          </ion-item>\n          <ion-list class="tree mgb-0">\n            <ion-item icon-left class="btn-open-more transparent">\n              <ion-label ion-left><ion-icon class="mgr-15 pdr-5 text-center" name="ios-stats"></ion-icon>Level Collapse</ion-label>\n              <ion-checkbox [(ngModel)]="show_drop" class="hidden-checkbox" color="dark"></ion-checkbox>\n            </ion-item>\n\n            <ion-row class="dropdown" [ngClass]="{\'active\' : (show_drop == true)}">\n              <button ion-item small class="transparent fs-14">\n                <ion-icon name="md-radio-button-off" class="fs-8 text-center pdr-5 mgl-35 mgr-5"></ion-icon>\n                Drink\n              </button>\n              <button ion-item small class="transparent fs-14">\n                <ion-icon name="md-radio-button-off" class="fs-8 text-center pdr-5 mgl-35 mgr-5"></ion-icon>\n                Fast food\n                <ion-badge item-end color="dark" class="fs-12 white-opct {{settings.skin.text_1}} bdra-5">3</ion-badge>\n              </button>\n              <button ion-item small class="transparent fs-14">\n                <ion-icon name="md-radio-button-off" class="fs-8 text-center pdr-5 mgl-35 mgr-5"></ion-icon>\n                Extra\n              </button>\n              <button ion-item small class="transparent fs-14">\n                <ion-icon name="md-radio-button-off" class="fs-8 text-center pdr-5 mgl-35 mgr-5"></ion-icon>\n                Cake\n                <ion-badge item-end color="dark" class="fs-12 white-opct {{settings.skin.text_1}} bdra-5">2</ion-badge>\n              </button>\n            </ion-row>\n          </ion-list>\n        </span> -->\n\n      </ion-list>\n    </ion-content>\n  </ion-menu>\n\n\n\n  <ion-menu class="{{settings.skin.main_skin}}" small menu-small-width [content]="content" id="menu-icon-only">\n    <ion-header>\n      <ion-toolbar>\n        <ion-title>\n          <h1 class="text-center {{settings.skin.text_1}}">C</h1>\n        </ion-title>\n      </ion-toolbar>\n    </ion-header>\n\n    <ion-content class="{{settings.skin.main_bg}}">\n\n      <div class="user-avt">\n        <img src="assets/img/avt2.jpg" alt="">\n      </div>\n\n      <ion-list no-lines class="lst-menu">\n        <span *ngFor="let item of pages" class="{{settings.skin.text_1}}">\n          <button menuClose="menu-material" ion-button block icon-only *ngFor="let sub of item.group" class="transparent" (click)="openPage(sub)">\n            <ion-icon name="{{sub.icon}}" class="fs-20" item-left></ion-icon>\n          </button>\n        </span>\n      </ion-list>\n    </ion-content>\n  </ion-menu>\n\n\n  <ion-nav [root]="rootPage" #content main swipeBackEnabled="true"></ion-nav>\n</ion-split-pane>\n</div>\n'/*ion-inline-end:"/Users/andrewhein/Desktop/WestmorelandWorking/src/app/app.html"*/,
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({template:/*ion-inline-start:"D:\Visual Studio\Personal\Project-Watermellon\src\app\app.html"*/'<div *ngIf="settings!=null">\n\n\n\n<ion-split-pane when="md">\n\n  <ion-menu class="{{settings.skin.main_skin}}" [content]="content" id="menu-material">\n\n    <ion-content class="{{settings.skin.main_bg}}">\n\n      <div class="info-user mgb-30 pdt-5 pdb-5 pdb-10">\n\n        <div class="bg-img"><img src="assets/img/bg-material.jpg" alt=""></div>\n\n        <div class="wrapper-avt pd-10">\n\n          <div class="main-avt mg-5 pull-left shadow-1"><img src="assets/img/avt1.jpg" alt=""></div>\n\n          <div class="sub-avt mg-5 pull-right shadow-1"><img src="assets/img/avt2.jpg" alt=""></div>\n\n          <div class="sub-avt mg-5 pull-right shadow-1"><img src="assets/img/avt3.jpg" alt=""></div>\n\n        </div>\n\n      </div>\n\n\n\n      <ion-list no-lines class="lst-menu">\n\n        <span *ngFor="let item of pages" class="{{settings.skin.text_1}}">\n\n          <ion-item class="transparent uppercase mgt-20 fs-14 fw-400 spacing-1">\n\n            {{item.title}}\n\n          </ion-item>\n\n          <button menuClose="menu-material" ion-item icon-left *ngFor="let sub of item.group" class="transparent fw-500" (click)="openPage(sub)">\n\n            <ion-icon name="{{sub.icon}}" item-left></ion-icon>\n\n            {{sub.title}}\n\n          </button>\n\n        </span>\n\n\n\n        <!-- <span class="{{settings.skin.text_1}}">\n\n          <ion-item class="transparent uppercase mgt-20 fs-14 fw-400 spacing-1">\n\n            Level Menu\n\n          </ion-item>\n\n          <ion-list class="tree mgb-0">\n\n            <ion-item icon-left class="btn-open-more transparent">\n\n              <ion-label ion-left><ion-icon class="mgr-15 pdr-5 text-center" name="ios-stats"></ion-icon>Level Collapse</ion-label>\n\n              <ion-checkbox [(ngModel)]="show_drop" class="hidden-checkbox" color="dark"></ion-checkbox>\n\n            </ion-item>\n\n\n\n            <ion-row class="dropdown" [ngClass]="{\'active\' : (show_drop == true)}">\n\n              <button ion-item small class="transparent fs-14">\n\n                <ion-icon name="md-radio-button-off" class="fs-8 text-center pdr-5 mgl-35 mgr-5"></ion-icon>\n\n                Drink\n\n              </button>\n\n              <button ion-item small class="transparent fs-14">\n\n                <ion-icon name="md-radio-button-off" class="fs-8 text-center pdr-5 mgl-35 mgr-5"></ion-icon>\n\n                Fast food\n\n                <ion-badge item-end color="dark" class="fs-12 white-opct {{settings.skin.text_1}} bdra-5">3</ion-badge>\n\n              </button>\n\n              <button ion-item small class="transparent fs-14">\n\n                <ion-icon name="md-radio-button-off" class="fs-8 text-center pdr-5 mgl-35 mgr-5"></ion-icon>\n\n                Extra\n\n              </button>\n\n              <button ion-item small class="transparent fs-14">\n\n                <ion-icon name="md-radio-button-off" class="fs-8 text-center pdr-5 mgl-35 mgr-5"></ion-icon>\n\n                Cake\n\n                <ion-badge item-end color="dark" class="fs-12 white-opct {{settings.skin.text_1}} bdra-5">2</ion-badge>\n\n              </button>\n\n            </ion-row>\n\n          </ion-list>\n\n        </span> -->\n\n\n\n      </ion-list>\n\n    </ion-content>\n\n  </ion-menu>\n\n\n\n\n\n  <ion-menu class="" [content]="content" id="menu-basic">\n\n    <ion-header class="{{settings.skin.main_skin}}">\n\n      <ion-toolbar>\n\n        <ion-title>\n\n          <img class="logo-brand light-brand" src="assets/img/chimera_w.png" alt="">\n\n          <img class="logo-brand dark-brand" src="assets/img/chimera_b.png" alt="">\n\n        </ion-title>\n\n      </ion-toolbar>\n\n    </ion-header>\n\n\n\n    <ion-content class="{{settings.skin.main_bg}}">\n\n      <ion-list no-lines class="lst-menu">\n\n        <span *ngFor="let item of pages" class="{{settings.skin.text_1}}">\n\n          <ion-item class="transparent uppercase mgt-20 fs-14 fw-400 spacing-1">\n\n            {{item.title}}\n\n          </ion-item>\n\n          <ion-item-group submenu>\n\n            <button submenu-item menuClose ion-item icon-left *ngFor="let sub of item.group" class="transparent" (click)="openPage(sub)">\n\n              <ion-icon name={{sub.icon}} item-left></ion-icon>\n\n              {{sub.title}}\n\n            </button>\n\n          </ion-item-group>\n\n        </span>\n\n\n\n\n\n        <!-- <span class="{{settings.skin.text_1}}">\n\n          <ion-item class="transparent uppercase mgt-20 fs-14 fw-400 spacing-1">\n\n            Level Menu\n\n          </ion-item>\n\n          <ion-list class="tree mgb-0">\n\n            <ion-item icon-left class="btn-open-more transparent">\n\n              <ion-label ion-left class="text-white-1"><ion-icon class="mgr-15 pdr-5 text-center" name="ios-stats"></ion-icon>Level Collapse</ion-label>\n\n              <ion-checkbox [(ngModel)]="show_drop" class="hidden-checkbox" color="dark"></ion-checkbox>\n\n            </ion-item>\n\n            <ion-list class="tree mgb-0">\n\n              <ion-item icon-left class="btn-open-more transparent">\n\n                <ion-label ion-left><ion-icon class="mgr-15 pdr-5 text-center" name="ios-stats"></ion-icon>Level Collapse</ion-label>\n\n                <ion-checkbox [(ngModel)]="show_drop" class="hidden-checkbox" color="dark"></ion-checkbox>\n\n              </ion-item>\n\n\n\n              <ion-row class="dropdown" [ngClass]="{\'active\' : (show_drop == true)}">\n\n                <button ion-item small class="transparent fs-14">\n\n                  <ion-icon name="md-radio-button-off" class="fs-8 text-center pdr-5 mgl-35 mgr-5"></ion-icon>\n\n                  Drink\n\n                </button>\n\n                <button ion-item small class="transparent fs-14">\n\n                  <ion-icon name="md-radio-button-off" class="fs-8 text-center pdr-5 mgl-35 mgr-5"></ion-icon>\n\n                  Fast food\n\n                  <ion-badge item-end color="dark" class="fs-12 white-opct {{settings.skin.text_1}} bdra-5">3</ion-badge>\n\n                </button>\n\n                <button ion-item small class="transparent fs-14">\n\n                  <ion-icon name="md-radio-button-off" class="fs-8 text-center pdr-5 mgl-35 mgr-5"></ion-icon>\n\n                  Extra\n\n                </button>\n\n                <button ion-item small class="transparent fs-14">\n\n                  <ion-icon name="md-radio-button-off" class="fs-8 text-center pdr-5 mgl-35 mgr-5"></ion-icon>\n\n                  Cake\n\n                  <ion-badge item-end color="dark" class="fs-12 white-opct {{settings.skin.text_1}} bdra-5">2</ion-badge>\n\n                </button>\n\n              </ion-row>\n\n            </ion-list>\n\n          </ion-list>\n\n        </span> -->\n\n      </ion-list>\n\n    </ion-content>\n\n  </ion-menu>\n\n\n\n\n\n  <ion-menu class="{{settings.skin.main_skin}}" [content]="content" id="menu-avatar">\n\n\n\n    <ion-content class="{{settings.skin.main_bg}}">\n\n\n\n      <div class="info-user mgb-30 pdt-50 pdb-20 black-opct">\n\n        <button ion-button clear only-icon small class="user-setting text-grey-1"><ion-icon name="ios-settings"></ion-icon></button>\n\n        <div class="bg-img"><img src="assets/img/bg9.jpg" alt=""></div>\n\n        <div class="wrapper-avt mgl-15 mgr-10">\n\n          <img src="assets/img/avt1.jpg" alt="">\n\n        </div>\n\n        <div class="main-info">\n\n          <h2 class="user-name fs-20 fw-600 mg-0 text-white">Koodinh</h2>\n\n          <button ion-button clear small class="pd-0 mg-0 text-left text-grey-1">koodinh@gmail.com</button>\n\n        </div>\n\n      </div>\n\n\n\n      <ion-list no-lines class="lst-menu">\n\n        <span *ngFor="let item of pages" class="{{settings.skin.text_1}}">\n\n          <ion-item class="transparent uppercase mgt-20 fs-14 fw-400 spacing-1">\n\n            {{item.title}}\n\n          </ion-item>\n\n\n\n          <button menuClose="menu-avatar" ion-item icon-left *ngFor="let sub of item.group" class="transparent" (click)="openPage(sub)">\n\n            <ion-icon name="{{sub.icon}}" item-left></ion-icon>\n\n            {{sub.title}}\n\n          </button>\n\n        </span>\n\n\n\n        <!-- <span class="{{settings.skin.text_1}}">\n\n          <ion-item class="transparent uppercase mgt-20 fs-14 fw-400 spacing-1">\n\n            Level Menu\n\n          </ion-item>\n\n          <ion-list class="tree mgb-0">\n\n            <ion-item icon-left class="btn-open-more transparent">\n\n              <ion-label ion-left><ion-icon class="mgr-15 pdr-5 text-center" name="ios-stats"></ion-icon>Level Collapse</ion-label>\n\n              <ion-checkbox [(ngModel)]="show_drop" class="hidden-checkbox" color="dark"></ion-checkbox>\n\n            </ion-item>\n\n\n\n            <ion-row class="dropdown" [ngClass]="{\'active\' : (show_drop == true)}">\n\n              <button ion-item small class="transparent fs-14">\n\n                <ion-icon name="md-radio-button-off" class="fs-8 text-center pdr-5 mgl-35 mgr-5"></ion-icon>\n\n                Drink\n\n              </button>\n\n              <button ion-item small class="transparent fs-14">\n\n                <ion-icon name="md-radio-button-off" class="fs-8 text-center pdr-5 mgl-35 mgr-5"></ion-icon>\n\n                Fast food\n\n                <ion-badge item-end color="dark" class="fs-12 white-opct {{settings.skin.text_1}} bdra-5">3</ion-badge>\n\n              </button>\n\n              <button ion-item small class="transparent fs-14">\n\n                <ion-icon name="md-radio-button-off" class="fs-8 text-center pdr-5 mgl-35 mgr-5"></ion-icon>\n\n                Extra\n\n              </button>\n\n              <button ion-item small class="transparent fs-14">\n\n                <ion-icon name="md-radio-button-off" class="fs-8 text-center pdr-5 mgl-35 mgr-5"></ion-icon>\n\n                Cake\n\n                <ion-badge item-end color="dark" class="fs-12 white-opct {{settings.skin.text_1}} bdra-5">2</ion-badge>\n\n              </button>\n\n            </ion-row>\n\n          </ion-list>\n\n        </span> -->\n\n\n\n      </ion-list>\n\n    </ion-content>\n\n  </ion-menu>\n\n\n\n\n\n\n\n  <ion-menu class="{{settings.skin.main_skin}}" small menu-small-width [content]="content" id="menu-icon-only">\n\n    <ion-header>\n\n      <ion-toolbar>\n\n        <ion-title>\n\n          <h1 class="text-center {{settings.skin.text_1}}">C</h1>\n\n        </ion-title>\n\n      </ion-toolbar>\n\n    </ion-header>\n\n\n\n    <ion-content class="{{settings.skin.main_bg}}">\n\n\n\n      <div class="user-avt">\n\n        <img src="assets/img/avt2.jpg" alt="">\n\n      </div>\n\n\n\n      <ion-list no-lines class="lst-menu">\n\n        <span *ngFor="let item of pages" class="{{settings.skin.text_1}}">\n\n          <button menuClose="menu-material" ion-button block icon-only *ngFor="let sub of item.group" class="transparent" (click)="openPage(sub)">\n\n            <ion-icon name="{{sub.icon}}" class="fs-20" item-left></ion-icon>\n\n          </button>\n\n        </span>\n\n      </ion-list>\n\n    </ion-content>\n\n  </ion-menu>\n\n\n\n\n\n  <ion-nav [root]="rootPage" #content main swipeBackEnabled="true"></ion-nav>\n\n</ion-split-pane>\n\n</div>\n\n'/*ion-inline-end:"D:\Visual Studio\Personal\Project-Watermellon\src\app\app.html"*/,
             providers: [__WEBPACK_IMPORTED_MODULE_5__providers_menu_menu__["a" /* MenuProvider */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* Events */]]
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["o" /* Platform */],

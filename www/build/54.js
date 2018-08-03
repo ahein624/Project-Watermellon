@@ -1,14 +1,14 @@
 webpackJsonp([54],{
 
-/***/ 444:
+/***/ 399:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "TwitterPageModule", function() { return TwitterPageModule; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "LoginV4Module", function() { return LoginV4Module; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(38);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__twitter__ = __webpack_require__(801);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__login_v4__ = __webpack_require__(659);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -18,34 +18,36 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
-var TwitterPageModule = (function () {
-    function TwitterPageModule() {
+var LoginV4Module = (function () {
+    function LoginV4Module() {
     }
-    TwitterPageModule = __decorate([
+    LoginV4Module = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["NgModule"])({
             declarations: [
-                __WEBPACK_IMPORTED_MODULE_2__twitter__["a" /* TwitterPage */],
+                __WEBPACK_IMPORTED_MODULE_2__login_v4__["a" /* LoginV4Component */],
             ],
             imports: [
-                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__twitter__["a" /* TwitterPage */]),
+                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__login_v4__["a" /* LoginV4Component */]),
             ],
+            exports: [
+                __WEBPACK_IMPORTED_MODULE_2__login_v4__["a" /* LoginV4Component */]
+            ],
+            schemas: [__WEBPACK_IMPORTED_MODULE_0__angular_core__["CUSTOM_ELEMENTS_SCHEMA"]]
         })
-    ], TwitterPageModule);
-    return TwitterPageModule;
+    ], LoginV4Module);
+    return LoginV4Module;
 }());
 
-//# sourceMappingURL=twitter.module.js.map
+//# sourceMappingURL=login-v4.module.js.map
 
 /***/ }),
 
-/***/ 801:
+/***/ 659:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TwitterPage; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return LoginV4Component; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(38);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_twitter_twitter__ = __webpack_require__(263);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -56,53 +58,42 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 
-
-
 /**
- * Generated class for the TwitterPage page.
+ * Generated class for the LoginV4Component component.
  *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
+ * See https://angular.io/api/core/Component for more info on Angular
+ * Components.
  */
-var TwitterPage = (function () {
-    function TwitterPage(navCtrl, navParams, twitterService) {
-        this.navCtrl = navCtrl;
-        this.navParams = navParams;
-        this.twitterService = twitterService;
-        this.count = 20;
-        this.max_id = null;
-        this.spnState = 'show';
-        this.list = new Array();
-    }
-    TwitterPage.prototype.loadMore = function (infiniteScroll) {
+var LoginV4Component = (function () {
+    function LoginV4Component() {
         var _this = this;
-        if (infiniteScroll === void 0) { infiniteScroll = null; }
-        this.twitterService.getTweets(this.count, this.max_id).subscribe(function (data) {
-            var tmpData = data.json();
-            console.log(tmpData[0]);
-            _this.max_id = tmpData[tmpData.length - 1].id;
-            _this.list = _this.list.concat(tmpData);
-            if (infiniteScroll) {
-                infiniteScroll.complete();
+        this.onCallbackEvent = function (event) {
+            if (_this.events[event]) {
+                _this.events[event]({
+                    'username': _this.username,
+                    'password': _this.password
+                });
             }
-            _this.spnState = 'hide';
-        });
-    };
-    TwitterPage.prototype.ionViewDidLoad = function () {
-        this.loadMore();
-    };
-    TwitterPage = __decorate([
+        };
+    }
+    __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Input"])(),
+        __metadata("design:type", Object)
+    ], LoginV4Component.prototype, "data", void 0);
+    __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Input"])(),
+        __metadata("design:type", Object)
+    ], LoginV4Component.prototype, "events", void 0);
+    LoginV4Component = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-            selector: 'page-twitter',template:/*ion-inline-start:"/Users/andrewhein/Desktop/WestmorelandWorking/src/pages/ready-app/twitter/twitter.html"*/'<!--\n  Generated template for the TwitterPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n<ion-navbar>\n<button ion-button menuToggle>\n  <ion-icon name="menu"></ion-icon>\n</button>\n<ion-title>twitter</ion-title>\n</ion-navbar>\n</ion-header>\n\n<ion-content class="white">\n<ion-spinner class="indicator" [ngClass]="spnState"></ion-spinner>\n<ion-card class="bdra-5" *ngFor="let item of list">\n<ion-item>\n<ion-avatar item-start class="mgt-6 mgb-6">\n<img src="{{item.user.profile_image_url}}">\n</ion-avatar>\n\n<h2 class="fs-14 fw-600 text-grey-5">{{item.user.name}}</h2>\n<p class="fs-10 text-grey-3">{{item.user.created_at}}</p>\n</ion-item> \n\n<span *ngIf="item.entities.media!=undefined">\n  <img src="{{item.entities.media[0].media_url}}">\n</span>\n\n<ion-card-content>\n<p>{{item.text}}</p>\n</ion-card-content>\n\n<ion-row>\n<ion-col>\n<button ion-button icon-left clear small class="text-grey-4 fs-16">\n  <ion-icon name="repeat"></ion-icon>\n  <div>{{item.retweet_count}}</div> \n</button>\n</ion-col>\n\n<ion-col center text-center>\n<button ion-button icon-left clear small class="text-grey-4 fs-16" (click)="twitterService.doShare(item)">\n <ion-icon name="share"></ion-icon>\n</button>\n</ion-col>\n\n<ion-col right text-right>\n<button ion-button icon-left clear small class="text-grey-4 fs-20" (click)="twitterService.doOpen(item)">\n  <ion-icon name="open"></ion-icon>\n</button>\n</ion-col>\n</ion-row>\n</ion-card>\n\n<ion-infinite-scroll (ionInfinite)="loadMore($event)">\n<ion-infinite-scroll-content></ion-infinite-scroll-content>\n</ion-infinite-scroll>\n\n</ion-content>'/*ion-inline-end:"/Users/andrewhein/Desktop/WestmorelandWorking/src/pages/ready-app/twitter/twitter.html"*/,
+            selector: 'login-v4',template:/*ion-inline-start:"D:\Visual Studio\Personal\Project-Watermellon\src\components\login\login-v4\login-v4.html"*/'<div *ngIf="data!=null">\n\n  <div class="wrapper-page text-center lama-vs-lama {{data.ani}}">\n\n    \n\n    <button ion-button icon-only small color="dark" class="text-white grey-2 back-page" (click)="onCallbackEvent(\'onDismiss\')">\n\n      <ion-icon name="md-close"></ion-icon>\n\n    </button>\n\n    \n\n    <div class="mgt-0">\n\n      <ion-row class="logo-img mgb-70 ani-bottom-to-right">\n\n        <img class="mg-auto" [src]="data.imgLogo" alt="">\n\n      </ion-row>\n\n\n\n      <ion-list>\n\n        <ion-item class="text-grey-5 grey-1 bdra-20 ani-right-to-left">\n\n          <ion-input type="text" placeholder="{{data.txtUserName}}" [(ngModel)]="username"></ion-input>\n\n        </ion-item>\n\n      </ion-list>\n\n\n\n      <ion-list>\n\n        <ion-item class="text-grey-5 grey-1 bdra-20 ani-right-to-left">\n\n          <ion-input type="password" placeholder="{{data.txtPassword}}" [(ngModel)]="password"></ion-input>\n\n        </ion-item>\n\n      </ion-list>\n\n      \n\n      <button ion-button round block color="light" class="blue text-black mgt-25 fw-600 spacing-1 ani-right-to-left" (click)="onCallbackEvent(\'onLogin\')" >{{data.btnLogin}}</button>  \n\n    </div>\n\n    \n\n    <button ion-button color="light" clear small class="btn-signup mgb-15 text-grey-4 ani-top-to-left" (click)="onCallbackEvent(\'onForgotPassword\')">{{data.btnForgotPassword}}</button>\n\n  </div>\n\n  </div>'/*ion-inline-end:"D:\Visual Studio\Personal\Project-Watermellon\src\components\login\login-v4\login-v4.html"*/
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* NavController */],
-            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["n" /* NavParams */],
-            __WEBPACK_IMPORTED_MODULE_2__providers_twitter_twitter__["a" /* TwitterProvider */]])
-    ], TwitterPage);
-    return TwitterPage;
+        __metadata("design:paramtypes", [])
+    ], LoginV4Component);
+    return LoginV4Component;
 }());
 
-//# sourceMappingURL=twitter.js.map
+//# sourceMappingURL=login-v4.js.map
 
 /***/ })
 

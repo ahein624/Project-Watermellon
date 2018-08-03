@@ -1,14 +1,14 @@
 webpackJsonp([50],{
 
-/***/ 452:
+/***/ 392:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "WordpressCategoryPageModule", function() { return WordpressCategoryPageModule; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SuccessSignupModule", function() { return SuccessSignupModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(38);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__wordpress_category__ = __webpack_require__(809);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__success_signup__ = __webpack_require__(516);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -18,34 +18,37 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
-var WordpressCategoryPageModule = (function () {
-    function WordpressCategoryPageModule() {
+var SuccessSignupModule = (function () {
+    function SuccessSignupModule() {
     }
-    WordpressCategoryPageModule = __decorate([
+    SuccessSignupModule = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["NgModule"])({
             declarations: [
-                __WEBPACK_IMPORTED_MODULE_2__wordpress_category__["a" /* WordpressCategoryPage */],
+                __WEBPACK_IMPORTED_MODULE_2__success_signup__["a" /* SuccessSignupComponent */],
             ],
             imports: [
-                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__wordpress_category__["a" /* WordpressCategoryPage */]),
+                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__success_signup__["a" /* SuccessSignupComponent */]),
             ],
+            exports: [
+                __WEBPACK_IMPORTED_MODULE_2__success_signup__["a" /* SuccessSignupComponent */]
+            ],
+            schemas: [__WEBPACK_IMPORTED_MODULE_0__angular_core__["CUSTOM_ELEMENTS_SCHEMA"]]
         })
-    ], WordpressCategoryPageModule);
-    return WordpressCategoryPageModule;
+    ], SuccessSignupModule);
+    return SuccessSignupModule;
 }());
 
-//# sourceMappingURL=wordpress-category.module.js.map
+//# sourceMappingURL=success-signup.module.js.map
 
 /***/ }),
 
-/***/ 809:
+/***/ 516:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return WordpressCategoryPage; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SuccessSignupComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(38);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_wordpress_wordpress__ = __webpack_require__(255);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -57,56 +60,44 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 
 
-
 /**
- * Generated class for the WordpressCategoryPage page.
+ * Generated class for the RegisterV3Component component.
  *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
+ * See https://angular.io/api/core/Component for more info on Angular
+ * Components.
  */
-var WordpressCategoryPage = (function () {
-    function WordpressCategoryPage(navCtrl, navParams, wpService) {
-        this.navCtrl = navCtrl;
-        this.navParams = navParams;
-        this.wpService = wpService;
-        this.data = new Array();
-        this.events = {};
-        this.page = 0;
-        this.per_page = 15;
-        this.spnState = 'show';
-    }
-    WordpressCategoryPage.prototype.loadMore = function (infiniteScroll) {
+var SuccessSignupComponent = (function () {
+    function SuccessSignupComponent(viewCtrl) {
         var _this = this;
-        if (infiniteScroll === void 0) { infiniteScroll = null; }
-        this.page += 1;
-        this.wpService.getCategorys(this.page, this.per_page).subscribe(function (data) {
-            _this.data = _this.data.concat(data);
-            _this.spnState = 'hide';
-            if (infiniteScroll) {
-                infiniteScroll.complete();
+        this.viewCtrl = viewCtrl;
+        this.onCallbackEvent = function (event) {
+            if (_this.events[event]) {
+                _this.events[event]({});
             }
-        }, function (error) {
-            _this.spnState = 'hide';
-            if (infiniteScroll != null) {
-                infiniteScroll.enable(false);
-            }
-        });
+        };
+        console.log('Hello SuccessSignupComponent Component');
+    }
+    SuccessSignupComponent.prototype.dismiss = function () {
+        this.viewCtrl.dismiss();
     };
-    WordpressCategoryPage.prototype.ionViewDidLoad = function () {
-        this.loadMore();
-    };
-    WordpressCategoryPage = __decorate([
+    __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Input"])(),
+        __metadata("design:type", Object)
+    ], SuccessSignupComponent.prototype, "events", void 0);
+    __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Input"])(),
+        __metadata("design:type", Object)
+    ], SuccessSignupComponent.prototype, "data", void 0);
+    SuccessSignupComponent = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-            selector: 'page-wordpress-category',template:/*ion-inline-start:"/Users/andrewhein/Desktop/WestmorelandWorking/src/pages/ready-app/wordpress/wordpress-category/wordpress-category.html"*/'<!--\n  Generated template for the WordpressCategoryPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title>Category</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content class="white-1">\n  <ion-spinner class="indicator" [ngClass]="spnState"></ion-spinner>\n    <ion-card *ngFor="let item of data"  class="bdra-5 card card-md" (click)="wpService.goToPosts(navCtrl,item)">\n      <ion-card-header class="fs-13 fw-600 uppercase card-header card-header-md" [innerHTML]="item.name"></ion-card-header>\n      <ion-card-content class="card-content card-content-md">\n        <p class="text-grey-4 fs-13" [innerHTML]="item.description"></p>\n      </ion-card-content>\n  </ion-card>\n\n  <ion-infinite-scroll (ionInfinite)="loadMore($event)">\n  <ion-infinite-scroll-content></ion-infinite-scroll-content>\n  </ion-infinite-scroll>\n\n</ion-content>\n'/*ion-inline-end:"/Users/andrewhein/Desktop/WestmorelandWorking/src/pages/ready-app/wordpress/wordpress-category/wordpress-category.html"*/,
+            selector: 'success-signup',template:/*ion-inline-start:"D:\Visual Studio\Personal\Project-Watermellon\src\components\register\success-signup\success-signup.html"*/'\n\n<div class="success-signup white" padding>\n\n  \n\n  	<div class="wrapper-page">  \n\n	    <div col-10 class="main-form text-center mg-auto">\n\n	    	<div class="mgt-50">\n\n	    		<ion-icon class="text-green fs-100" name="md-checkmark-circle"></ion-icon>\n\n	    		<h5 class="fw-600 fs-25">Congratulation!</h5>\n\n	    		<p class="text-grey-3 fs-13">Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>\n\n	    	</div>\n\n\n\n	    	<ion-list class="mgb-10 mgt-50">\n\n	          	<ion-label class="text-black fs-12 uppercase text-left mgb-10">Active Code</ion-label>\n\n	          	<ion-item class="fs-13 text-white round black-opct">\n\n	            	<ion-input type="password" placeholder="000000" [(ngModel)]="password"></ion-input>\n\n	          	</ion-item>\n\n	        </ion-list>\n\n\n\n	        <button ion-button block round color="dark" class="mgt-20 text-white uppercase spacing-1 shadow-3 pink-vs-red">\n\n	         	Strat Now\n\n	        </button>\n\n	    </div>\n\n  	</div>\n\n\n\n  	<ion-row class="wrapper-top-signup ani-right-to-left">\n\n    	<button ion-button outline icon-only color="dark" class="mg-auto mgt-30 text-grey-3 stroke-grey-3 stroke-1 button-circle back-page" (click)="dismiss()">\n\n      		<ion-icon name="ios-close"></ion-icon>\n\n    	</button>\n\n  	</ion-row>\n\n\n\n</div>\n\n'/*ion-inline-end:"D:\Visual Studio\Personal\Project-Watermellon\src\components\register\success-signup\success-signup.html"*/
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* NavController */],
-            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["n" /* NavParams */],
-            __WEBPACK_IMPORTED_MODULE_2__providers_wordpress_wordpress__["a" /* WordpressService */]])
-    ], WordpressCategoryPage);
-    return WordpressCategoryPage;
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["r" /* ViewController */]])
+    ], SuccessSignupComponent);
+    return SuccessSignupComponent;
 }());
 
-//# sourceMappingURL=wordpress-category.js.map
+//# sourceMappingURL=success-signup.js.map
 
 /***/ })
 
