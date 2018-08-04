@@ -159,7 +159,7 @@ var MenuProvider = (function () {
     }
     MenuProvider.prototype.getContent = function () {
         return [
-            //  Westmoreland County Fair menu.        
+            //  Westmoreland County Fair menu.
             {
                 'title': 'OnePerRow',
                 'group': [
@@ -176,12 +176,12 @@ var MenuProvider = (function () {
                     {
                         'title': 'Vendors',
                         'page': 'VendorsPage',
-                        'icon': 'logo-twitter'
+                        'icon': 'md-basket'
                     },
                     {
                         'title': 'Sponsors',
                         'page': 'SponsorsPage',
-                        'icon': 'md-flag'
+                        'icon': 'md-ribbon'
                     },
                     {
                         'title': 'Directions',
@@ -191,7 +191,7 @@ var MenuProvider = (function () {
                     {
                         'title': 'Buy Tickets',
                         'page': 'BuyTicketsPage',
-                        'icon': 'logo-twitter'
+                        'icon': 'md-pricetags'
                     },
                     {
                         'title': 'Facebook',
@@ -219,9 +219,10 @@ var MenuProvider = (function () {
     }; //end getContent
     MenuProvider = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["Injectable"])(),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_0__angular_common_http__["a" /* HttpClient */]])
+        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_0__angular_common_http__["a" /* HttpClient */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_0__angular_common_http__["a" /* HttpClient */]) === "function" && _a || Object])
     ], MenuProvider);
     return MenuProvider;
+    var _a;
 }());
 
 //# sourceMappingURL=menu.js.map
@@ -1516,7 +1517,6 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__ionic_native_status_bar__ = __webpack_require__(251);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__ionic_native_splash_screen__ = __webpack_require__(252);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_18_angular2_masonry__ = __webpack_require__(256);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18_angular2_masonry___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_18_angular2_masonry__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__ngx_translate_core__ = __webpack_require__(379);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__ngx_translate_http_loader__ = __webpack_require__(387);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__ionic_native_firebase__ = __webpack_require__(389);
@@ -1673,7 +1673,7 @@ var AppModule = (function () {
                         deps: [__WEBPACK_IMPORTED_MODULE_4__angular_http__["b" /* Http */]]
                     }
                 }),
-                __WEBPACK_IMPORTED_MODULE_18_angular2_masonry__["MasonryModule"]
+                __WEBPACK_IMPORTED_MODULE_18_angular2_masonry__["a" /* MasonryModule */]
             ],
             bootstrap: [__WEBPACK_IMPORTED_MODULE_2_ionic_angular__["e" /* IonicApp */]],
             entryComponents: [

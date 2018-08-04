@@ -25781,12 +25781,28 @@ ion-navbar.toolbar {
   background: url(../assets/img/ng.png);
 }
 
+.negSpace {
+  margin-bottom: -20px;
+}
+
+.brownBackground {
+  background: #795548;
+}
+
+.whiteText {
+  color: white !important;
+}
+
 .transparent {
   background: transparent !important;
 }
 
 .black {
   background: #212121 !important;
+}
+
+.blackText {
+  color: #212121 !important;
 }
 
 .white {

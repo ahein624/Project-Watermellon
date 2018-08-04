@@ -165,13 +165,23 @@ $brown-opct-2: rgba(121,85,72,0.9);
 	background: url(../assets/img/ng.png);
 }
 
-
-
+.negSpace{
+	margin-bottom: -20px;
+}
+.brownBackground{
+	background: $brown;
+}
+.whiteText{
+	color: white!important;
+}
 .transparent{
 	background: transparent !important;
 }
 .black {
 	background: $black !important;
+}
+.blackText{
+	color: $black !important;
 }
 .white {
 	background: $white !important;

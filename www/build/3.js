@@ -437,7 +437,6 @@ var ShotsGalleryComponent = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(38);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__masonry_gallery__ = __webpack_require__(695);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_angular2_masonry__ = __webpack_require__(256);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_angular2_masonry___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_angular2_masonry__);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -458,7 +457,7 @@ var MasonryGalleryModule = (function () {
             ],
             imports: [
                 __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__masonry_gallery__["a" /* MasonryGalleryComponent */]),
-                __WEBPACK_IMPORTED_MODULE_3_angular2_masonry__["MasonryModule"]
+                __WEBPACK_IMPORTED_MODULE_3_angular2_masonry__["a" /* MasonryModule */]
             ],
             exports: [
                 __WEBPACK_IMPORTED_MODULE_2__masonry_gallery__["a" /* MasonryGalleryComponent */]
