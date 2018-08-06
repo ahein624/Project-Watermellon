@@ -84,7 +84,7 @@ var GalleryModalPage = (function () {
     };
     GalleryModalPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-            selector: 'page-gallery-modal',template:/*ion-inline-start:"/Volumes/TUBBY/Dev/Project-Watermellon/src/pages/gallery/gallery-modal/gallery-modal.html"*/'<gallery-modal class="black-opct-1" [data]="data" [events]="events"></gallery-modal>\n'/*ion-inline-end:"/Volumes/TUBBY/Dev/Project-Watermellon/src/pages/gallery/gallery-modal/gallery-modal.html"*/,
+            selector: 'page-gallery-modal',template:/*ion-inline-start:"/Users/andrewhein/Documents/GitHub/Project-Watermellon/src/pages/gallery/gallery-modal/gallery-modal.html"*/'<gallery-modal class="black-opct-1" [data]="data" [events]="events"></gallery-modal>\n'/*ion-inline-end:"/Users/andrewhein/Documents/GitHub/Project-Watermellon/src/pages/gallery/gallery-modal/gallery-modal.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["n" /* NavParams */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["r" /* ViewController */]])
     ], GalleryModalPage);
@@ -181,7 +181,7 @@ var GalleryModalComponent = (function () {
     ], GalleryModalComponent.prototype, "events", void 0);
     GalleryModalComponent = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-            selector: 'gallery-modal',template:/*ion-inline-start:"/Volumes/TUBBY/Dev/Project-Watermellon/src/components/gallery/gallery-modal/gallery-modal.html"*/'<div fullscreen fullscreen-no-pdt>\n  <div class="wrapper-view-img">\n    <div class="view-img-detail">\n      <img [src]="data.path" alt="">\n      <button ion-button icon-only small outline class="text-white button-circle mgr-10 mgt-15 stroke stroke-1 stroke-white" (click)="onCallbackEvent(\'onDismiss\')">\n        <ion-icon name="ios-close"></ion-icon>\n      </button>\n    </div>\n  </div>\n</div>\n'/*ion-inline-end:"/Volumes/TUBBY/Dev/Project-Watermellon/src/components/gallery/gallery-modal/gallery-modal.html"*/
+            selector: 'gallery-modal',template:/*ion-inline-start:"/Users/andrewhein/Documents/GitHub/Project-Watermellon/src/components/gallery/gallery-modal/gallery-modal.html"*/'<div fullscreen fullscreen-no-pdt>\n  <div class="wrapper-view-img">\n    <div class="view-img-detail">\n      <img [src]="data.path" alt="">\n      <button ion-button icon-only small outline class="text-white button-circle mgr-10 mgt-15 stroke stroke-1 stroke-white" (click)="onCallbackEvent(\'onDismiss\')">\n        <ion-icon name="ios-close"></ion-icon>\n      </button>\n    </div>\n  </div>\n</div>\n'/*ion-inline-end:"/Users/andrewhein/Documents/GitHub/Project-Watermellon/src/components/gallery/gallery-modal/gallery-modal.html"*/
         }),
         __metadata("design:paramtypes", [])
     ], GalleryModalComponent);

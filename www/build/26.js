@@ -1,6 +1,6 @@
 webpackJsonp([26],{
 
-/***/ 448:
+/***/ 433:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -8,7 +8,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "WordpressDetailPageModule", function() { return WordpressDetailPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(38);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__wordpress_detail__ = __webpack_require__(859);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__wordpress_detail__ = __webpack_require__(731);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -38,7 +38,7 @@ var WordpressDetailPageModule = (function () {
 
 /***/ }),
 
-/***/ 859:
+/***/ 731:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -130,7 +130,7 @@ var WordpressDetailPage = (function () {
     };
     WordpressDetailPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-            selector: 'page-wordpress-detail',template:/*ion-inline-start:"/Volumes/TUBBY/Dev/Project-Watermellon/src/pages/ready-app/wordpress/wordpress-detail/wordpress-detail.html"*/'<!--\n  Generated template for the WordpressDetailPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n  <ion-navbar>\n    <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    \n    <ion-title>Detail</ion-title>\n\n    <ion-buttons right>\n      <button ion-button icon-only small (click)="wpService.doFavorite(favorite_post)" >\n          <ion-icon class="fs-18" [name]="favorite_post.isFavorite == true ? \'heart\' : \'heart-outline\'"></ion-icon>\n      </button>\n\n      <button ion-button icon-only small (click)="wpService.doShare(post)">\n          <ion-icon class="fs-18" name="md-share"></ion-icon>\n      </button>\n\n      <button ion-button icon-only small (click)="wpService.doOpen(post)">\n          <ion-icon class="fs-18" name="md-open"></ion-icon>\n      </button>\n\n    </ion-buttons>\n  </ion-navbar>\n</ion-header>\n\n<ion-content class="white-1">\n <ion-spinner class="indicator" [ngClass]="spnState"></ion-spinner> \n <div *ngIf="post!=null" padding class="">\n\n      <ion-card-title class="fs-18 fw-600 uppercase card-title card-title-md" [innerHTML]="post.title.rendered"></ion-card-title>\n      <p class="text-grey-4" [innerHTML]="post.content.rendered"></p>\n\n    <ion-row class="row" *ngIf="comments.length!=0">\n    <ion-list class="lst-no-background list list-md">\n      <ion-item *ngFor="let item of comments">\n        <ion-avatar item-start>\n          <img [src]="item.author_avatar_urls[\'24\']">\n        </ion-avatar>\n        <h2>{{item.author_name}}</h2>\n        <p [innerHTML]="item.content.rendered"></p>\n        <ion-note item-end>3:43 pm</ion-note>\n      </ion-item>\n     </ion-list>\n    <button ion-button block round class="indigo" (click)="loadComment()">Load More</button>\n    </ion-row> \n  </div>\n</ion-content>\n'/*ion-inline-end:"/Volumes/TUBBY/Dev/Project-Watermellon/src/pages/ready-app/wordpress/wordpress-detail/wordpress-detail.html"*/,
+            selector: 'page-wordpress-detail',template:/*ion-inline-start:"/Users/andrewhein/Documents/GitHub/Project-Watermellon/src/pages/ready-app/wordpress/wordpress-detail/wordpress-detail.html"*/'<!--\n  Generated template for the WordpressDetailPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n  <ion-navbar>\n    <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    \n    <ion-title>Detail</ion-title>\n\n    <ion-buttons right>\n      <button ion-button icon-only small (click)="wpService.doFavorite(favorite_post)" >\n          <ion-icon class="fs-18" [name]="favorite_post.isFavorite == true ? \'heart\' : \'heart-outline\'"></ion-icon>\n      </button>\n\n      <button ion-button icon-only small (click)="wpService.doShare(post)">\n          <ion-icon class="fs-18" name="md-share"></ion-icon>\n      </button>\n\n      <button ion-button icon-only small (click)="wpService.doOpen(post)">\n          <ion-icon class="fs-18" name="md-open"></ion-icon>\n      </button>\n\n    </ion-buttons>\n  </ion-navbar>\n</ion-header>\n\n<ion-content class="white-1">\n <ion-spinner class="indicator" [ngClass]="spnState"></ion-spinner> \n <div *ngIf="post!=null" padding class="">\n\n      <ion-card-title class="fs-18 fw-600 uppercase card-title card-title-md" [innerHTML]="post.title.rendered"></ion-card-title>\n      <p class="text-grey-4" [innerHTML]="post.content.rendered"></p>\n\n    <ion-row class="row" *ngIf="comments.length!=0">\n    <ion-list class="lst-no-background list list-md">\n      <ion-item *ngFor="let item of comments">\n        <ion-avatar item-start>\n          <img [src]="item.author_avatar_urls[\'24\']">\n        </ion-avatar>\n        <h2>{{item.author_name}}</h2>\n        <p [innerHTML]="item.content.rendered"></p>\n        <ion-note item-end>3:43 pm</ion-note>\n      </ion-item>\n     </ion-list>\n    <button ion-button block round class="indigo" (click)="loadComment()">Load More</button>\n    </ion-row> \n  </div>\n</ion-content>\n'/*ion-inline-end:"/Users/andrewhein/Documents/GitHub/Project-Watermellon/src/pages/ready-app/wordpress/wordpress-detail/wordpress-detail.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* NavController */],
             __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["n" /* NavParams */],

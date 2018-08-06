@@ -1,6 +1,6 @@
 webpackJsonp([7],{
 
-/***/ 439:
+/***/ 440:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -8,7 +8,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "YoutubeFavoritePageModule", function() { return YoutubeFavoritePageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(38);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__youtube_favorite__ = __webpack_require__(737);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__youtube_favorite__ = __webpack_require__(738);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__pipes_pipes_module__ = __webpack_require__(477);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -176,7 +176,7 @@ var TimeAgoIso_8061Pipe = (function () {
 
 /***/ }),
 
-/***/ 737:
+/***/ 738:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -230,7 +230,7 @@ var YoutubeFavoritePage = (function () {
     };
     YoutubeFavoritePage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-            selector: 'page-youtube-favorite',template:/*ion-inline-start:"/Volumes/TUBBY/Dev/Project-Watermellon/src/pages/ready-app/youtube/youtube-favorite/youtube-favorite.html"*/'<!--\n  Generated template for the YoutubeFavoritePage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>youtubeFavorite</ion-title>\n     <ion-buttons right>\n      <button ion-button icon-only (click)="doClear()">\n      <ion-icon class="fs-24 text-grey-5" name="trash">\n      </ion-icon>\n    </button>\n    </ion-buttons>\n  </ion-navbar>\n</ion-header>\n\n\n<ion-content>\n <ion-card *ngFor="let item of data" class="bdra-5 card card-md" >\n    <img [src]="item.snippet.thumbnails.medium.url" (click)="ytService.doReadMore(item,navCtrl)">\n    <ion-card-content class="card-content card-content-md" (click)="ytService.doReadMore(item,navCtrl)">\n      <ion-card-title class="fs-18 card-title card-title-md" [innerHTML]="item.snippet.title"></ion-card-title>\n      <p class="text-grey fs-12">{{item.snippet.publishedAt | timeAgoIso_8061}}</p>\n    </ion-card-content>\n\n    <ion-row class="row">\n      <ion-col>\n        <button (click)="doFavorite(item)" ion-button icon-left clear small class="text-black favorite">\n          <ion-icon  [name]="item.isFavorite == true ? \'heart\' : \'heart-outline\'"></ion-icon>\n        </button>\n      </ion-col>\n\n      <ion-col center text-center>\n         <button (click)="ytService.doShare(item)" ion-button icon-left clear small class="text-black">\n             <ion-icon name="share"></ion-icon>\n        </button>\n      </ion-col>\n\n      <ion-col right text-right>\n        <button (click)="ytService.doOpen(item)" ion-button icon-left clear small class="text-black">\n          <ion-icon name="open"></ion-icon>\n        </button>\n      </ion-col>\n      \n    </ion-row>\n  </ion-card>\n\n</ion-content>\n'/*ion-inline-end:"/Volumes/TUBBY/Dev/Project-Watermellon/src/pages/ready-app/youtube/youtube-favorite/youtube-favorite.html"*/,
+            selector: 'page-youtube-favorite',template:/*ion-inline-start:"/Users/andrewhein/Documents/GitHub/Project-Watermellon/src/pages/ready-app/youtube/youtube-favorite/youtube-favorite.html"*/'<!--\n  Generated template for the YoutubeFavoritePage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>youtubeFavorite</ion-title>\n     <ion-buttons right>\n      <button ion-button icon-only (click)="doClear()">\n      <ion-icon class="fs-24 text-grey-5" name="trash">\n      </ion-icon>\n    </button>\n    </ion-buttons>\n  </ion-navbar>\n</ion-header>\n\n\n<ion-content>\n <ion-card *ngFor="let item of data" class="bdra-5 card card-md" >\n    <img [src]="item.snippet.thumbnails.medium.url" (click)="ytService.doReadMore(item,navCtrl)">\n    <ion-card-content class="card-content card-content-md" (click)="ytService.doReadMore(item,navCtrl)">\n      <ion-card-title class="fs-18 card-title card-title-md" [innerHTML]="item.snippet.title"></ion-card-title>\n      <p class="text-grey fs-12">{{item.snippet.publishedAt | timeAgoIso_8061}}</p>\n    </ion-card-content>\n\n    <ion-row class="row">\n      <ion-col>\n        <button (click)="doFavorite(item)" ion-button icon-left clear small class="text-black favorite">\n          <ion-icon  [name]="item.isFavorite == true ? \'heart\' : \'heart-outline\'"></ion-icon>\n        </button>\n      </ion-col>\n\n      <ion-col center text-center>\n         <button (click)="ytService.doShare(item)" ion-button icon-left clear small class="text-black">\n             <ion-icon name="share"></ion-icon>\n        </button>\n      </ion-col>\n\n      <ion-col right text-right>\n        <button (click)="ytService.doOpen(item)" ion-button icon-left clear small class="text-black">\n          <ion-icon name="open"></ion-icon>\n        </button>\n      </ion-col>\n      \n    </ion-row>\n  </ion-card>\n\n</ion-content>\n'/*ion-inline-end:"/Users/andrewhein/Documents/GitHub/Project-Watermellon/src/pages/ready-app/youtube/youtube-favorite/youtube-favorite.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* NavController */],
             __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["n" /* NavParams */],

@@ -88,7 +88,8 @@ var SuccessSignupModule = (function () {
 /* 438 */,
 /* 439 */,
 /* 440 */,
-/* 441 */
+/* 441 */,
+/* 442 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -96,13 +97,13 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "RegisterPageModule", function() { return RegisterPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(38);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__register__ = __webpack_require__(739);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_register_register_v1_register_v1_module__ = __webpack_require__(797);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_register_register_v2_register_v2_module__ = __webpack_require__(799);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__components_register_register_v3_register_v3_module__ = __webpack_require__(801);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__components_register_register_v4_register_v4_module__ = __webpack_require__(803);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__components_register_register_v5_register_v5_module__ = __webpack_require__(805);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__components_register_register_v6_register_v6_module__ = __webpack_require__(807);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__register__ = __webpack_require__(740);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_register_register_v1_register_v1_module__ = __webpack_require__(798);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_register_register_v2_register_v2_module__ = __webpack_require__(800);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__components_register_register_v3_register_v3_module__ = __webpack_require__(802);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__components_register_register_v4_register_v4_module__ = __webpack_require__(804);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__components_register_register_v5_register_v5_module__ = __webpack_require__(806);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__components_register_register_v6_register_v6_module__ = __webpack_require__(808);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__components_register_success_signup_success_signup_module__ = __webpack_require__(392);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -146,7 +147,6 @@ var RegisterPageModule = (function () {
 //# sourceMappingURL=register.module.js.map
 
 /***/ }),
-/* 442 */,
 /* 443 */,
 /* 444 */,
 /* 445 */,
@@ -809,7 +809,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
         if (v !== undefined) module.exports = v;
     }
     else if (true) {
-        !(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__, exports, __webpack_require__(0), __webpack_require__(457), __webpack_require__(741), __webpack_require__(450)], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
+        !(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__, exports, __webpack_require__(0), __webpack_require__(457), __webpack_require__(742), __webpack_require__(450)], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
 				__WEBPACK_AMD_DEFINE_RESULT__ = (typeof __WEBPACK_AMD_DEFINE_FACTORY__ === 'function' ?
 				(__WEBPACK_AMD_DEFINE_FACTORY__.apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__)) : __WEBPACK_AMD_DEFINE_FACTORY__),
 				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
@@ -2471,7 +2471,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
         if (v !== undefined) module.exports = v;
     }
     else if (true) {
-        !(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__, exports, __webpack_require__(0), __webpack_require__(33), __webpack_require__(489), __webpack_require__(449), __webpack_require__(473), __webpack_require__(480), __webpack_require__(451), __webpack_require__(742), __webpack_require__(744), __webpack_require__(745)], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
+        !(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__, exports, __webpack_require__(0), __webpack_require__(33), __webpack_require__(489), __webpack_require__(449), __webpack_require__(473), __webpack_require__(480), __webpack_require__(451), __webpack_require__(743), __webpack_require__(745), __webpack_require__(746)], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
 				__WEBPACK_AMD_DEFINE_RESULT__ = (typeof __WEBPACK_AMD_DEFINE_FACTORY__ === 'function' ?
 				(__WEBPACK_AMD_DEFINE_FACTORY__.apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__)) : __WEBPACK_AMD_DEFINE_FACTORY__),
 				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
@@ -9820,7 +9820,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
         if (v !== undefined) module.exports = v;
     }
     else if (true) {
-        !(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__, exports, __webpack_require__(0), __webpack_require__(473), __webpack_require__(473), __webpack_require__(450), __webpack_require__(453), __webpack_require__(452), __webpack_require__(474), __webpack_require__(462), __webpack_require__(747)], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
+        !(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__, exports, __webpack_require__(0), __webpack_require__(473), __webpack_require__(473), __webpack_require__(450), __webpack_require__(453), __webpack_require__(452), __webpack_require__(474), __webpack_require__(462), __webpack_require__(748)], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
 				__WEBPACK_AMD_DEFINE_RESULT__ = (typeof __WEBPACK_AMD_DEFINE_FACTORY__ === 'function' ?
 				(__WEBPACK_AMD_DEFINE_FACTORY__.apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__)) : __WEBPACK_AMD_DEFINE_FACTORY__),
 				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
@@ -10865,7 +10865,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
         if (v !== undefined) module.exports = v;
     }
     else if (true) {
-        !(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__, exports, __webpack_require__(450), __webpack_require__(748), __webpack_require__(457), __webpack_require__(475)], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
+        !(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__, exports, __webpack_require__(450), __webpack_require__(749), __webpack_require__(457), __webpack_require__(475)], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
 				__WEBPACK_AMD_DEFINE_RESULT__ = (typeof __WEBPACK_AMD_DEFINE_FACTORY__ === 'function' ?
 				(__WEBPACK_AMD_DEFINE_FACTORY__.apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__)) : __WEBPACK_AMD_DEFINE_FACTORY__),
 				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
@@ -13052,7 +13052,7 @@ var SuccessSignupComponent = (function () {
     ], SuccessSignupComponent.prototype, "data", void 0);
     SuccessSignupComponent = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-            selector: 'success-signup',template:/*ion-inline-start:"/Volumes/TUBBY/Dev/Project-Watermellon/src/components/register/success-signup/success-signup.html"*/'\n<div class="success-signup white" padding>\n  \n  	<div class="wrapper-page">  \n	    <div col-10 class="main-form text-center mg-auto">\n	    	<div class="mgt-50">\n	    		<ion-icon class="text-green fs-100" name="md-checkmark-circle"></ion-icon>\n	    		<h5 class="fw-600 fs-25">Congratulation!</h5>\n	    		<p class="text-grey-3 fs-13">Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>\n	    	</div>\n\n	    	<ion-list class="mgb-10 mgt-50">\n	          	<ion-label class="text-black fs-12 uppercase text-left mgb-10">Active Code</ion-label>\n	          	<ion-item class="fs-13 text-white round black-opct">\n	            	<ion-input type="password" placeholder="000000" [(ngModel)]="password"></ion-input>\n	          	</ion-item>\n	        </ion-list>\n\n	        <button ion-button block round color="dark" class="mgt-20 text-white uppercase spacing-1 shadow-3 pink-vs-red">\n	         	Strat Now\n	        </button>\n	    </div>\n  	</div>\n\n  	<ion-row class="wrapper-top-signup ani-right-to-left">\n    	<button ion-button outline icon-only color="dark" class="mg-auto mgt-30 text-grey-3 stroke-grey-3 stroke-1 button-circle back-page" (click)="dismiss()">\n      		<ion-icon name="ios-close"></ion-icon>\n    	</button>\n  	</ion-row>\n\n</div>\n'/*ion-inline-end:"/Volumes/TUBBY/Dev/Project-Watermellon/src/components/register/success-signup/success-signup.html"*/
+            selector: 'success-signup',template:/*ion-inline-start:"/Users/andrewhein/Documents/GitHub/Project-Watermellon/src/components/register/success-signup/success-signup.html"*/'\n<div class="success-signup white" padding>\n  \n  	<div class="wrapper-page">  \n	    <div col-10 class="main-form text-center mg-auto">\n	    	<div class="mgt-50">\n	    		<ion-icon class="text-green fs-100" name="md-checkmark-circle"></ion-icon>\n	    		<h5 class="fw-600 fs-25">Congratulation!</h5>\n	    		<p class="text-grey-3 fs-13">Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>\n	    	</div>\n\n	    	<ion-list class="mgb-10 mgt-50">\n	          	<ion-label class="text-black fs-12 uppercase text-left mgb-10">Active Code</ion-label>\n	          	<ion-item class="fs-13 text-white round black-opct">\n	            	<ion-input type="password" placeholder="000000" [(ngModel)]="password"></ion-input>\n	          	</ion-item>\n	        </ion-list>\n\n	        <button ion-button block round color="dark" class="mgt-20 text-white uppercase spacing-1 shadow-3 pink-vs-red">\n	         	Strat Now\n	        </button>\n	    </div>\n  	</div>\n\n  	<ion-row class="wrapper-top-signup ani-right-to-left">\n    	<button ion-button outline icon-only color="dark" class="mg-auto mgt-30 text-grey-3 stroke-grey-3 stroke-1 button-circle back-page" (click)="dismiss()">\n      		<ion-icon name="ios-close"></ion-icon>\n    	</button>\n  	</ion-row>\n\n</div>\n'/*ion-inline-end:"/Users/andrewhein/Documents/GitHub/Project-Watermellon/src/components/register/success-signup/success-signup.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["r" /* ViewController */]])
     ], SuccessSignupComponent);
@@ -13369,7 +13369,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
         if (v !== undefined) module.exports = v;
     }
     else if (true) {
-        !(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__, exports, __webpack_require__(522), __webpack_require__(749), __webpack_require__(450), __webpack_require__(453)], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
+        !(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__, exports, __webpack_require__(522), __webpack_require__(750), __webpack_require__(450), __webpack_require__(453)], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
 				__WEBPACK_AMD_DEFINE_RESULT__ = (typeof __WEBPACK_AMD_DEFINE_FACTORY__ === 'function' ?
 				(__WEBPACK_AMD_DEFINE_FACTORY__.apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__)) : __WEBPACK_AMD_DEFINE_FACTORY__),
 				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
@@ -13645,7 +13645,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
         if (v !== undefined) module.exports = v;
     }
     else if (true) {
-        !(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__, exports, __webpack_require__(524), __webpack_require__(750), __webpack_require__(450), __webpack_require__(453)], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
+        !(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__, exports, __webpack_require__(524), __webpack_require__(751), __webpack_require__(450), __webpack_require__(453)], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
 				__WEBPACK_AMD_DEFINE_RESULT__ = (typeof __WEBPACK_AMD_DEFINE_FACTORY__ === 'function' ?
 				(__WEBPACK_AMD_DEFINE_FACTORY__.apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__)) : __WEBPACK_AMD_DEFINE_FACTORY__),
 				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
@@ -14486,7 +14486,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
         if (v !== undefined) module.exports = v;
     }
     else if (true) {
-        !(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__, exports, __webpack_require__(0), __webpack_require__(472), __webpack_require__(456), __webpack_require__(450), __webpack_require__(758), __webpack_require__(451)], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
+        !(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__, exports, __webpack_require__(0), __webpack_require__(472), __webpack_require__(456), __webpack_require__(450), __webpack_require__(759), __webpack_require__(451)], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
 				__WEBPACK_AMD_DEFINE_RESULT__ = (typeof __WEBPACK_AMD_DEFINE_FACTORY__ === 'function' ?
 				(__WEBPACK_AMD_DEFINE_FACTORY__.apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__)) : __WEBPACK_AMD_DEFINE_FACTORY__),
 				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
@@ -15078,7 +15078,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
         if (v !== undefined) module.exports = v;
     }
     else if (true) {
-        !(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__, exports, __webpack_require__(0), __webpack_require__(450), __webpack_require__(449), __webpack_require__(456), __webpack_require__(492), __webpack_require__(763), __webpack_require__(451), __webpack_require__(457), __webpack_require__(475)], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
+        !(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__, exports, __webpack_require__(0), __webpack_require__(450), __webpack_require__(449), __webpack_require__(456), __webpack_require__(492), __webpack_require__(764), __webpack_require__(451), __webpack_require__(457), __webpack_require__(475)], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
 				__WEBPACK_AMD_DEFINE_RESULT__ = (typeof __WEBPACK_AMD_DEFINE_FACTORY__ === 'function' ?
 				(__WEBPACK_AMD_DEFINE_FACTORY__.apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__)) : __WEBPACK_AMD_DEFINE_FACTORY__),
 				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
@@ -16124,7 +16124,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
         if (v !== undefined) module.exports = v;
     }
     else if (true) {
-        !(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__, exports, __webpack_require__(0), __webpack_require__(449), __webpack_require__(456), __webpack_require__(455), __webpack_require__(452), __webpack_require__(450), __webpack_require__(767), __webpack_require__(451)], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
+        !(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__, exports, __webpack_require__(0), __webpack_require__(449), __webpack_require__(456), __webpack_require__(455), __webpack_require__(452), __webpack_require__(450), __webpack_require__(768), __webpack_require__(451)], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
 				__WEBPACK_AMD_DEFINE_RESULT__ = (typeof __WEBPACK_AMD_DEFINE_FACTORY__ === 'function' ?
 				(__WEBPACK_AMD_DEFINE_FACTORY__.apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__)) : __WEBPACK_AMD_DEFINE_FACTORY__),
 				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
@@ -17205,7 +17205,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
         if (v !== undefined) module.exports = v;
     }
     else if (true) {
-        !(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__, exports, __webpack_require__(606), __webpack_require__(776)], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
+        !(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__, exports, __webpack_require__(606), __webpack_require__(777)], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
 				__WEBPACK_AMD_DEFINE_RESULT__ = (typeof __WEBPACK_AMD_DEFINE_FACTORY__ === 'function' ?
 				(__WEBPACK_AMD_DEFINE_FACTORY__.apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__)) : __WEBPACK_AMD_DEFINE_FACTORY__),
 				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
@@ -18404,7 +18404,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
         if (v !== undefined) module.exports = v;
     }
     else if (true) {
-        !(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__, exports, __webpack_require__(0), __webpack_require__(449), __webpack_require__(780), __webpack_require__(452), __webpack_require__(450), __webpack_require__(783), __webpack_require__(632), __webpack_require__(451), __webpack_require__(510), __webpack_require__(558), __webpack_require__(453)], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
+        !(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__, exports, __webpack_require__(0), __webpack_require__(449), __webpack_require__(781), __webpack_require__(452), __webpack_require__(450), __webpack_require__(784), __webpack_require__(632), __webpack_require__(451), __webpack_require__(510), __webpack_require__(558), __webpack_require__(453)], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
 				__WEBPACK_AMD_DEFINE_RESULT__ = (typeof __WEBPACK_AMD_DEFINE_FACTORY__ === 'function' ?
 				(__WEBPACK_AMD_DEFINE_FACTORY__.apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__)) : __WEBPACK_AMD_DEFINE_FACTORY__),
 				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
@@ -19405,7 +19405,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
         if (v !== undefined) module.exports = v;
     }
     else if (true) {
-        !(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__, exports, __webpack_require__(460), __webpack_require__(631), __webpack_require__(511), __webpack_require__(512), __webpack_require__(782), __webpack_require__(558)], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
+        !(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__, exports, __webpack_require__(460), __webpack_require__(631), __webpack_require__(511), __webpack_require__(512), __webpack_require__(783), __webpack_require__(558)], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
 				__WEBPACK_AMD_DEFINE_RESULT__ = (typeof __WEBPACK_AMD_DEFINE_FACTORY__ === 'function' ?
 				(__WEBPACK_AMD_DEFINE_FACTORY__.apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__)) : __WEBPACK_AMD_DEFINE_FACTORY__),
 				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
@@ -19557,7 +19557,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
         if (v !== undefined) module.exports = v;
     }
     else if (true) {
-        !(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__, exports, __webpack_require__(781), __webpack_require__(460), __webpack_require__(557)], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
+        !(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__, exports, __webpack_require__(782), __webpack_require__(460), __webpack_require__(557)], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
 				__WEBPACK_AMD_DEFINE_RESULT__ = (typeof __WEBPACK_AMD_DEFINE_FACTORY__ === 'function' ?
 				(__WEBPACK_AMD_DEFINE_FACTORY__.apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__)) : __WEBPACK_AMD_DEFINE_FACTORY__),
 				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
@@ -23076,7 +23076,7 @@ var __assign = (this && this.__assign) || Object.assign || function(t) {
         if (v !== undefined) module.exports = v;
     }
     else if (true) {
-        !(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__, exports, __webpack_require__(0), __webpack_require__(19), __webpack_require__(449), __webpack_require__(529), __webpack_require__(467), __webpack_require__(476), __webpack_require__(468), __webpack_require__(450), __webpack_require__(762)], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
+        !(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__, exports, __webpack_require__(0), __webpack_require__(19), __webpack_require__(449), __webpack_require__(529), __webpack_require__(467), __webpack_require__(476), __webpack_require__(468), __webpack_require__(450), __webpack_require__(763)], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
 				__WEBPACK_AMD_DEFINE_RESULT__ = (typeof __WEBPACK_AMD_DEFINE_FACTORY__ === 'function' ?
 				(__WEBPACK_AMD_DEFINE_FACTORY__.apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__)) : __WEBPACK_AMD_DEFINE_FACTORY__),
 				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
@@ -23859,7 +23859,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
         if (v !== undefined) module.exports = v;
     }
     else if (true) {
-        !(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__, exports, __webpack_require__(0), __webpack_require__(450), __webpack_require__(530), __webpack_require__(764), __webpack_require__(453)], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
+        !(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__, exports, __webpack_require__(0), __webpack_require__(450), __webpack_require__(530), __webpack_require__(765), __webpack_require__(453)], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
 				__WEBPACK_AMD_DEFINE_RESULT__ = (typeof __WEBPACK_AMD_DEFINE_FACTORY__ === 'function' ?
 				(__WEBPACK_AMD_DEFINE_FACTORY__.apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__)) : __WEBPACK_AMD_DEFINE_FACTORY__),
 				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
@@ -26787,7 +26787,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
         if (v !== undefined) module.exports = v;
     }
     else if (true) {
-        !(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__, exports, __webpack_require__(450), __webpack_require__(489), __webpack_require__(539), __webpack_require__(768), __webpack_require__(453)], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
+        !(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__, exports, __webpack_require__(450), __webpack_require__(489), __webpack_require__(539), __webpack_require__(769), __webpack_require__(453)], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
 				__WEBPACK_AMD_DEFINE_RESULT__ = (typeof __WEBPACK_AMD_DEFINE_FACTORY__ === 'function' ?
 				(__WEBPACK_AMD_DEFINE_FACTORY__.apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__)) : __WEBPACK_AMD_DEFINE_FACTORY__),
 				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
@@ -27055,7 +27055,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
         if (v !== undefined) module.exports = v;
     }
     else if (true) {
-        !(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__, exports, __webpack_require__(0), __webpack_require__(454), __webpack_require__(525), __webpack_require__(449), __webpack_require__(472), __webpack_require__(456), __webpack_require__(455), __webpack_require__(450), __webpack_require__(491), __webpack_require__(769), __webpack_require__(480), __webpack_require__(540), __webpack_require__(451), __webpack_require__(475), __webpack_require__(496)], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
+        !(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__, exports, __webpack_require__(0), __webpack_require__(454), __webpack_require__(525), __webpack_require__(449), __webpack_require__(472), __webpack_require__(456), __webpack_require__(455), __webpack_require__(450), __webpack_require__(491), __webpack_require__(770), __webpack_require__(480), __webpack_require__(540), __webpack_require__(451), __webpack_require__(475), __webpack_require__(496)], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
 				__WEBPACK_AMD_DEFINE_RESULT__ = (typeof __WEBPACK_AMD_DEFINE_FACTORY__ === 'function' ?
 				(__WEBPACK_AMD_DEFINE_FACTORY__.apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__)) : __WEBPACK_AMD_DEFINE_FACTORY__),
 				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
@@ -28051,7 +28051,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
         if (v !== undefined) module.exports = v;
     }
     else if (true) {
-        !(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__, exports, __webpack_require__(606), __webpack_require__(772)], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
+        !(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__, exports, __webpack_require__(606), __webpack_require__(773)], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
 				__WEBPACK_AMD_DEFINE_RESULT__ = (typeof __WEBPACK_AMD_DEFINE_FACTORY__ === 'function' ?
 				(__WEBPACK_AMD_DEFINE_FACTORY__.apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__)) : __WEBPACK_AMD_DEFINE_FACTORY__),
 				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
@@ -32610,7 +32610,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
         if (v !== undefined) module.exports = v;
     }
     else if (true) {
-        !(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__, exports, __webpack_require__(450), __webpack_require__(489), __webpack_require__(561), __webpack_require__(785), __webpack_require__(453)], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
+        !(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__, exports, __webpack_require__(450), __webpack_require__(489), __webpack_require__(561), __webpack_require__(786), __webpack_require__(453)], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
 				__WEBPACK_AMD_DEFINE_RESULT__ = (typeof __WEBPACK_AMD_DEFINE_FACTORY__ === 'function' ?
 				(__WEBPACK_AMD_DEFINE_FACTORY__.apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__)) : __WEBPACK_AMD_DEFINE_FACTORY__),
 				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
@@ -32854,7 +32854,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
         if (v !== undefined) module.exports = v;
     }
     else if (true) {
-        !(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__, exports, __webpack_require__(0), __webpack_require__(19), __webpack_require__(449), __webpack_require__(456), __webpack_require__(467), __webpack_require__(455), __webpack_require__(492), __webpack_require__(450), __webpack_require__(476), __webpack_require__(468), __webpack_require__(471), __webpack_require__(451), __webpack_require__(786)], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
+        !(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__, exports, __webpack_require__(0), __webpack_require__(19), __webpack_require__(449), __webpack_require__(456), __webpack_require__(467), __webpack_require__(455), __webpack_require__(492), __webpack_require__(450), __webpack_require__(476), __webpack_require__(468), __webpack_require__(471), __webpack_require__(451), __webpack_require__(787)], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
 				__WEBPACK_AMD_DEFINE_RESULT__ = (typeof __WEBPACK_AMD_DEFINE_FACTORY__ === 'function' ?
 				(__WEBPACK_AMD_DEFINE_FACTORY__.apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__)) : __WEBPACK_AMD_DEFINE_FACTORY__),
 				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
@@ -33583,7 +33583,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
         if (v !== undefined) module.exports = v;
     }
     else if (true) {
-        !(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__, exports, __webpack_require__(0), __webpack_require__(789), __webpack_require__(449), __webpack_require__(472), __webpack_require__(456), __webpack_require__(450), __webpack_require__(451), __webpack_require__(453), __webpack_require__(564), __webpack_require__(562), __webpack_require__(563)], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
+        !(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__, exports, __webpack_require__(0), __webpack_require__(790), __webpack_require__(449), __webpack_require__(472), __webpack_require__(456), __webpack_require__(450), __webpack_require__(451), __webpack_require__(453), __webpack_require__(564), __webpack_require__(562), __webpack_require__(563)], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
 				__WEBPACK_AMD_DEFINE_RESULT__ = (typeof __WEBPACK_AMD_DEFINE_FACTORY__ === 'function' ?
 				(__WEBPACK_AMD_DEFINE_FACTORY__.apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__)) : __WEBPACK_AMD_DEFINE_FACTORY__),
 				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
@@ -34337,7 +34337,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
         if (v !== undefined) module.exports = v;
     }
     else if (true) {
-        !(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__, exports, __webpack_require__(0), __webpack_require__(648), __webpack_require__(454), __webpack_require__(449), __webpack_require__(456), __webpack_require__(455), __webpack_require__(451), __webpack_require__(457), __webpack_require__(569), __webpack_require__(791), __webpack_require__(475)], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
+        !(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__, exports, __webpack_require__(0), __webpack_require__(648), __webpack_require__(454), __webpack_require__(449), __webpack_require__(456), __webpack_require__(455), __webpack_require__(451), __webpack_require__(457), __webpack_require__(569), __webpack_require__(792), __webpack_require__(475)], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
 				__WEBPACK_AMD_DEFINE_RESULT__ = (typeof __WEBPACK_AMD_DEFINE_FACTORY__ === 'function' ?
 				(__WEBPACK_AMD_DEFINE_FACTORY__.apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__)) : __WEBPACK_AMD_DEFINE_FACTORY__),
 				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
@@ -35627,13 +35627,14 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
 /* 736 */,
 /* 737 */,
 /* 738 */,
-/* 739 */
+/* 739 */,
+/* 740 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return RegisterPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular_umd__ = __webpack_require__(740);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular_umd__ = __webpack_require__(741);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular_umd___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_ionic_angular_umd__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_toast_service_toast_service__ = __webpack_require__(259);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -35826,7 +35827,7 @@ var RegisterPage = (function () {
     };
     RegisterPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-            selector: 'page-register',template:/*ion-inline-start:"/Volumes/TUBBY/Dev/Project-Watermellon/src/pages/register/register.html"*/'<!--\n  Generated template for the RegisterPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n\n<ion-content *ngIf="page!=undefined && page.name==1">\n	<register-v1 [data]="data[0]" [events]="events[0]"></register-v1>\n</ion-content>\n\n<ion-content class="lot-vs-phan" *ngIf="page!=undefined && page.name==2">\n	<register-v2 [data]="data[1]" [events]="events[1]"></register-v2>\n</ion-content>\n\n<ion-content *ngIf="page!=undefined && page.name==3">\n	<register-v3 [data]="data[2]" [events]="events[2]"></register-v3>\n</ion-content>\n\n<ion-content *ngIf="page!=undefined && page.name==4">\n	<register-v4 [data]="data[3]" [events]="events[3]"></register-v4>\n</ion-content>\n\n<ion-content class="black" *ngIf="page!=undefined && page.name==5">\n	<register-v5 [data]="data[4]" [events]="events[4]"></register-v5>\n</ion-content>\n\n<ion-content *ngIf="page!=undefined && page.name==6">\n	<register-v6 [data]="data[5]" [events]="events[5]"></register-v6>\n</ion-content>\n'/*ion-inline-end:"/Volumes/TUBBY/Dev/Project-Watermellon/src/pages/register/register.html"*/,
+            selector: 'page-register',template:/*ion-inline-start:"/Users/andrewhein/Documents/GitHub/Project-Watermellon/src/pages/register/register.html"*/'<!--\n  Generated template for the RegisterPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n\n<ion-content *ngIf="page!=undefined && page.name==1">\n	<register-v1 [data]="data[0]" [events]="events[0]"></register-v1>\n</ion-content>\n\n<ion-content class="lot-vs-phan" *ngIf="page!=undefined && page.name==2">\n	<register-v2 [data]="data[1]" [events]="events[1]"></register-v2>\n</ion-content>\n\n<ion-content *ngIf="page!=undefined && page.name==3">\n	<register-v3 [data]="data[2]" [events]="events[2]"></register-v3>\n</ion-content>\n\n<ion-content *ngIf="page!=undefined && page.name==4">\n	<register-v4 [data]="data[3]" [events]="events[3]"></register-v4>\n</ion-content>\n\n<ion-content class="black" *ngIf="page!=undefined && page.name==5">\n	<register-v5 [data]="data[4]" [events]="events[4]"></register-v5>\n</ion-content>\n\n<ion-content *ngIf="page!=undefined && page.name==6">\n	<register-v6 [data]="data[5]" [events]="events[5]"></register-v6>\n</ion-content>\n'/*ion-inline-end:"/Users/andrewhein/Documents/GitHub/Project-Watermellon/src/pages/register/register.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular_umd__["NavController"], __WEBPACK_IMPORTED_MODULE_1_ionic_angular_umd__["NavParams"], __WEBPACK_IMPORTED_MODULE_1_ionic_angular_umd__["ModalController"], __WEBPACK_IMPORTED_MODULE_2__providers_toast_service_toast_service__["a" /* ToastService */]])
     ], RegisterPage);
@@ -35836,7 +35837,7 @@ var RegisterPage = (function () {
 //# sourceMappingURL=register.js.map
 
 /***/ }),
-/* 740 */
+/* 741 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;(function (factory) {
@@ -35845,7 +35846,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
         if (v !== undefined) module.exports = v;
     }
     else if (true) {
-        !(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__, exports, __webpack_require__(519), __webpack_require__(480), __webpack_require__(521), __webpack_require__(570), __webpack_require__(522), __webpack_require__(523), __webpack_require__(571), __webpack_require__(524), __webpack_require__(454), __webpack_require__(572), __webpack_require__(525), __webpack_require__(573), __webpack_require__(490), __webpack_require__(574), __webpack_require__(575), __webpack_require__(576), __webpack_require__(577), __webpack_require__(578), __webpack_require__(582), __webpack_require__(472), __webpack_require__(583), __webpack_require__(508), __webpack_require__(585), __webpack_require__(533), __webpack_require__(586), __webpack_require__(587), __webpack_require__(588), __webpack_require__(452), __webpack_require__(526), __webpack_require__(589), __webpack_require__(535), __webpack_require__(591), __webpack_require__(592), __webpack_require__(468), __webpack_require__(593), __webpack_require__(594), __webpack_require__(595), __webpack_require__(536), __webpack_require__(528), __webpack_require__(596), __webpack_require__(598), __webpack_require__(527), __webpack_require__(537), __webpack_require__(538), __webpack_require__(599), __webpack_require__(600), __webpack_require__(539), __webpack_require__(601), __webpack_require__(602), __webpack_require__(603), __webpack_require__(771), __webpack_require__(605), __webpack_require__(541), __webpack_require__(609), __webpack_require__(540), __webpack_require__(543), __webpack_require__(610), __webpack_require__(544), __webpack_require__(611), __webpack_require__(612), __webpack_require__(545), __webpack_require__(584), __webpack_require__(530), __webpack_require__(531), __webpack_require__(529), __webpack_require__(546), __webpack_require__(547), __webpack_require__(654), __webpack_require__(613), __webpack_require__(548), __webpack_require__(615), __webpack_require__(617), __webpack_require__(549), __webpack_require__(619), __webpack_require__(620), __webpack_require__(621), __webpack_require__(622), __webpack_require__(550), __webpack_require__(624), __webpack_require__(551), __webpack_require__(626), __webpack_require__(553), __webpack_require__(627), __webpack_require__(628), __webpack_require__(554), __webpack_require__(633), __webpack_require__(496), __webpack_require__(634), __webpack_require__(635), __webpack_require__(560), __webpack_require__(559), __webpack_require__(636), __webpack_require__(561), __webpack_require__(637), __webpack_require__(638), __webpack_require__(640), __webpack_require__(641), __webpack_require__(515), __webpack_require__(642), __webpack_require__(643), __webpack_require__(497), __webpack_require__(644), __webpack_require__(645), __webpack_require__(562), __webpack_require__(563), __webpack_require__(564), __webpack_require__(646), __webpack_require__(449), __webpack_require__(456), __webpack_require__(451), __webpack_require__(492), __webpack_require__(463), __webpack_require__(790), __webpack_require__(474), __webpack_require__(501), __webpack_require__(462), __webpack_require__(473), __webpack_require__(647), __webpack_require__(504), __webpack_require__(453), __webpack_require__(502), __webpack_require__(792), __webpack_require__(520), __webpack_require__(568), __webpack_require__(455), __webpack_require__(650), __webpack_require__(794), __webpack_require__(491), __webpack_require__(467), __webpack_require__(450), __webpack_require__(458), __webpack_require__(486), __webpack_require__(482), __webpack_require__(651), __webpack_require__(652), __webpack_require__(653), __webpack_require__(795)], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
+        !(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__, exports, __webpack_require__(519), __webpack_require__(480), __webpack_require__(521), __webpack_require__(570), __webpack_require__(522), __webpack_require__(523), __webpack_require__(571), __webpack_require__(524), __webpack_require__(454), __webpack_require__(572), __webpack_require__(525), __webpack_require__(573), __webpack_require__(490), __webpack_require__(574), __webpack_require__(575), __webpack_require__(576), __webpack_require__(577), __webpack_require__(578), __webpack_require__(582), __webpack_require__(472), __webpack_require__(583), __webpack_require__(508), __webpack_require__(585), __webpack_require__(533), __webpack_require__(586), __webpack_require__(587), __webpack_require__(588), __webpack_require__(452), __webpack_require__(526), __webpack_require__(589), __webpack_require__(535), __webpack_require__(591), __webpack_require__(592), __webpack_require__(468), __webpack_require__(593), __webpack_require__(594), __webpack_require__(595), __webpack_require__(536), __webpack_require__(528), __webpack_require__(596), __webpack_require__(598), __webpack_require__(527), __webpack_require__(537), __webpack_require__(538), __webpack_require__(599), __webpack_require__(600), __webpack_require__(539), __webpack_require__(601), __webpack_require__(602), __webpack_require__(603), __webpack_require__(772), __webpack_require__(605), __webpack_require__(541), __webpack_require__(609), __webpack_require__(540), __webpack_require__(543), __webpack_require__(610), __webpack_require__(544), __webpack_require__(611), __webpack_require__(612), __webpack_require__(545), __webpack_require__(584), __webpack_require__(530), __webpack_require__(531), __webpack_require__(529), __webpack_require__(546), __webpack_require__(547), __webpack_require__(654), __webpack_require__(613), __webpack_require__(548), __webpack_require__(615), __webpack_require__(617), __webpack_require__(549), __webpack_require__(619), __webpack_require__(620), __webpack_require__(621), __webpack_require__(622), __webpack_require__(550), __webpack_require__(624), __webpack_require__(551), __webpack_require__(626), __webpack_require__(553), __webpack_require__(627), __webpack_require__(628), __webpack_require__(554), __webpack_require__(633), __webpack_require__(496), __webpack_require__(634), __webpack_require__(635), __webpack_require__(560), __webpack_require__(559), __webpack_require__(636), __webpack_require__(561), __webpack_require__(637), __webpack_require__(638), __webpack_require__(640), __webpack_require__(641), __webpack_require__(515), __webpack_require__(642), __webpack_require__(643), __webpack_require__(497), __webpack_require__(644), __webpack_require__(645), __webpack_require__(562), __webpack_require__(563), __webpack_require__(564), __webpack_require__(646), __webpack_require__(449), __webpack_require__(456), __webpack_require__(451), __webpack_require__(492), __webpack_require__(463), __webpack_require__(791), __webpack_require__(474), __webpack_require__(501), __webpack_require__(462), __webpack_require__(473), __webpack_require__(647), __webpack_require__(504), __webpack_require__(453), __webpack_require__(502), __webpack_require__(793), __webpack_require__(520), __webpack_require__(568), __webpack_require__(455), __webpack_require__(650), __webpack_require__(795), __webpack_require__(491), __webpack_require__(467), __webpack_require__(450), __webpack_require__(458), __webpack_require__(486), __webpack_require__(482), __webpack_require__(651), __webpack_require__(652), __webpack_require__(653), __webpack_require__(796)], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
 				__WEBPACK_AMD_DEFINE_RESULT__ = (typeof __WEBPACK_AMD_DEFINE_FACTORY__ === 'function' ?
 				(__WEBPACK_AMD_DEFINE_FACTORY__.apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__)) : __WEBPACK_AMD_DEFINE_FACTORY__),
 				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
@@ -36160,7 +36161,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
 //# sourceMappingURL=index.js.map
 
 /***/ }),
-/* 741 */
+/* 742 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;(function (factory) {
@@ -36210,7 +36211,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
 //# sourceMappingURL=query-params.js.map
 
 /***/ }),
-/* 742 */
+/* 743 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;var __extends = (this && this.__extends) || (function () {
@@ -36402,7 +36403,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
 //# sourceMappingURL=transition-ios.js.map
 
 /***/ }),
-/* 743 */
+/* 744 */
 /***/ (function(module, exports) {
 
 function webpackEmptyContext(req) {
@@ -36411,10 +36412,10 @@ function webpackEmptyContext(req) {
 webpackEmptyContext.keys = function() { return []; };
 webpackEmptyContext.resolve = webpackEmptyContext;
 module.exports = webpackEmptyContext;
-webpackEmptyContext.id = 743;
+webpackEmptyContext.id = 744;
 
 /***/ }),
-/* 744 */
+/* 745 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;var __extends = (this && this.__extends) || (function () {
@@ -36501,7 +36502,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
 //# sourceMappingURL=transition-md.js.map
 
 /***/ }),
-/* 745 */
+/* 746 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;var __extends = (this && this.__extends) || (function () {
@@ -36587,7 +36588,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
 //# sourceMappingURL=transition-wp.js.map
 
 /***/ }),
-/* 746 */
+/* 747 */
 /***/ (function(module, exports) {
 
 function webpackEmptyContext(req) {
@@ -36596,10 +36597,10 @@ function webpackEmptyContext(req) {
 webpackEmptyContext.keys = function() { return []; };
 webpackEmptyContext.resolve = webpackEmptyContext;
 module.exports = webpackEmptyContext;
-webpackEmptyContext.id = 746;
+webpackEmptyContext.id = 747;
 
 /***/ }),
-/* 747 */
+/* 748 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;var __extends = (this && this.__extends) || (function () {
@@ -36683,7 +36684,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
 //# sourceMappingURL=swipe-back.js.map
 
 /***/ }),
-/* 748 */
+/* 749 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;(function (factory) {
@@ -36756,7 +36757,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
 //# sourceMappingURL=recognizers.js.map
 
 /***/ }),
-/* 749 */
+/* 750 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;var __extends = (this && this.__extends) || (function () {
@@ -36885,7 +36886,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
 //# sourceMappingURL=action-sheet-transitions.js.map
 
 /***/ }),
-/* 750 */
+/* 751 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;var __extends = (this && this.__extends) || (function () {
@@ -37041,18 +37042,6 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
 //# sourceMappingURL=alert-transitions.js.map
 
 /***/ }),
-/* 751 */
-/***/ (function(module, exports) {
-
-function webpackEmptyContext(req) {
-	throw new Error("Cannot find module '" + req + "'.");
-}
-webpackEmptyContext.keys = function() { return []; };
-webpackEmptyContext.resolve = webpackEmptyContext;
-module.exports = webpackEmptyContext;
-webpackEmptyContext.id = 751;
-
-/***/ }),
 /* 752 */
 /***/ (function(module, exports) {
 
@@ -37126,6 +37115,18 @@ webpackEmptyContext.id = 757;
 
 /***/ }),
 /* 758 */
+/***/ (function(module, exports) {
+
+function webpackEmptyContext(req) {
+	throw new Error("Cannot find module '" + req + "'.");
+}
+webpackEmptyContext.keys = function() { return []; };
+webpackEmptyContext.resolve = webpackEmptyContext;
+module.exports = webpackEmptyContext;
+webpackEmptyContext.id = 758;
+
+/***/ }),
+/* 759 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;(function (factory) {
@@ -37288,18 +37289,6 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
 //# sourceMappingURL=item-reorder-gesture.js.map
 
 /***/ }),
-/* 759 */
-/***/ (function(module, exports) {
-
-function webpackEmptyContext(req) {
-	throw new Error("Cannot find module '" + req + "'.");
-}
-webpackEmptyContext.keys = function() { return []; };
-webpackEmptyContext.resolve = webpackEmptyContext;
-module.exports = webpackEmptyContext;
-webpackEmptyContext.id = 759;
-
-/***/ }),
 /* 760 */
 /***/ (function(module, exports) {
 
@@ -37325,6 +37314,18 @@ webpackEmptyContext.id = 761;
 
 /***/ }),
 /* 762 */
+/***/ (function(module, exports) {
+
+function webpackEmptyContext(req) {
+	throw new Error("Cannot find module '" + req + "'.");
+}
+webpackEmptyContext.keys = function() { return []; };
+webpackEmptyContext.resolve = webpackEmptyContext;
+module.exports = webpackEmptyContext;
+webpackEmptyContext.id = 762;
+
+/***/ }),
+/* 763 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;(function (factory) {
@@ -37789,7 +37790,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
 //# sourceMappingURL=datetime-util.js.map
 
 /***/ }),
-/* 763 */
+/* 764 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;(function (factory) {
@@ -37814,7 +37815,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
 //# sourceMappingURL=picker-options.js.map
 
 /***/ }),
-/* 764 */
+/* 765 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;var __extends = (this && this.__extends) || (function () {
@@ -37882,18 +37883,6 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
 //# sourceMappingURL=picker-transitions.js.map
 
 /***/ }),
-/* 765 */
-/***/ (function(module, exports) {
-
-function webpackEmptyContext(req) {
-	throw new Error("Cannot find module '" + req + "'.");
-}
-webpackEmptyContext.keys = function() { return []; };
-webpackEmptyContext.resolve = webpackEmptyContext;
-module.exports = webpackEmptyContext;
-webpackEmptyContext.id = 765;
-
-/***/ }),
 /* 766 */
 /***/ (function(module, exports) {
 
@@ -37907,6 +37896,18 @@ webpackEmptyContext.id = 766;
 
 /***/ }),
 /* 767 */
+/***/ (function(module, exports) {
+
+function webpackEmptyContext(req) {
+	throw new Error("Cannot find module '" + req + "'.");
+}
+webpackEmptyContext.keys = function() { return []; };
+webpackEmptyContext.resolve = webpackEmptyContext;
+module.exports = webpackEmptyContext;
+webpackEmptyContext.id = 767;
+
+/***/ }),
+/* 768 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;var __extends = (this && this.__extends) || (function () {
@@ -38038,7 +38039,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
 //# sourceMappingURL=item-sliding-gesture.js.map
 
 /***/ }),
-/* 768 */
+/* 769 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;var __extends = (this && this.__extends) || (function () {
@@ -38194,7 +38195,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
 //# sourceMappingURL=loading-transitions.js.map
 
 /***/ }),
-/* 769 */
+/* 770 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;var __extends = (this && this.__extends) || (function () {
@@ -38314,7 +38315,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
 //# sourceMappingURL=menu-gestures.js.map
 
 /***/ }),
-/* 770 */
+/* 771 */
 /***/ (function(module, exports) {
 
 function webpackEmptyContext(req) {
@@ -38323,10 +38324,10 @@ function webpackEmptyContext(req) {
 webpackEmptyContext.keys = function() { return []; };
 webpackEmptyContext.resolve = webpackEmptyContext;
 module.exports = webpackEmptyContext;
-webpackEmptyContext.id = 770;
+webpackEmptyContext.id = 771;
 
 /***/ }),
-/* 771 */
+/* 772 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;var __extends = (this && this.__extends) || (function () {
@@ -38504,7 +38505,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
 //# sourceMappingURL=menu-types.js.map
 
 /***/ }),
-/* 772 */
+/* 773 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;var __extends = (this && this.__extends) || (function () {
@@ -38523,7 +38524,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
         if (v !== undefined) module.exports = v;
     }
     else if (true) {
-        !(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__, exports, __webpack_require__(450), __webpack_require__(489), __webpack_require__(541), __webpack_require__(773), __webpack_require__(453)], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
+        !(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__, exports, __webpack_require__(450), __webpack_require__(489), __webpack_require__(541), __webpack_require__(774), __webpack_require__(453)], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
 				__WEBPACK_AMD_DEFINE_RESULT__ = (typeof __WEBPACK_AMD_DEFINE_FACTORY__ === 'function' ?
 				(__WEBPACK_AMD_DEFINE_FACTORY__.apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__)) : __WEBPACK_AMD_DEFINE_FACTORY__),
 				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
@@ -38597,7 +38598,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
 //# sourceMappingURL=modal-impl.js.map
 
 /***/ }),
-/* 773 */
+/* 774 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;var __extends = (this && this.__extends) || (function () {
@@ -38728,18 +38729,6 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
 //# sourceMappingURL=modal-transitions.js.map
 
 /***/ }),
-/* 774 */
-/***/ (function(module, exports) {
-
-function webpackEmptyContext(req) {
-	throw new Error("Cannot find module '" + req + "'.");
-}
-webpackEmptyContext.keys = function() { return []; };
-webpackEmptyContext.resolve = webpackEmptyContext;
-module.exports = webpackEmptyContext;
-webpackEmptyContext.id = 774;
-
-/***/ }),
 /* 775 */
 /***/ (function(module, exports) {
 
@@ -38753,6 +38742,18 @@ webpackEmptyContext.id = 775;
 
 /***/ }),
 /* 776 */
+/***/ (function(module, exports) {
+
+function webpackEmptyContext(req) {
+	throw new Error("Cannot find module '" + req + "'.");
+}
+webpackEmptyContext.keys = function() { return []; };
+webpackEmptyContext.resolve = webpackEmptyContext;
+module.exports = webpackEmptyContext;
+webpackEmptyContext.id = 776;
+
+/***/ }),
+/* 777 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;var __extends = (this && this.__extends) || (function () {
@@ -38771,7 +38772,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
         if (v !== undefined) module.exports = v;
     }
     else if (true) {
-        !(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__, exports, __webpack_require__(450), __webpack_require__(547), __webpack_require__(777), __webpack_require__(453)], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
+        !(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__, exports, __webpack_require__(450), __webpack_require__(547), __webpack_require__(778), __webpack_require__(453)], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
 				__WEBPACK_AMD_DEFINE_RESULT__ = (typeof __WEBPACK_AMD_DEFINE_FACTORY__ === 'function' ?
 				(__WEBPACK_AMD_DEFINE_FACTORY__.apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__)) : __WEBPACK_AMD_DEFINE_FACTORY__),
 				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
@@ -38829,7 +38830,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
 //# sourceMappingURL=popover-impl.js.map
 
 /***/ }),
-/* 777 */
+/* 778 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;var __extends = (this && this.__extends) || (function () {
@@ -39110,18 +39111,6 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
 //# sourceMappingURL=popover-transitions.js.map
 
 /***/ }),
-/* 778 */
-/***/ (function(module, exports) {
-
-function webpackEmptyContext(req) {
-	throw new Error("Cannot find module '" + req + "'.");
-}
-webpackEmptyContext.keys = function() { return []; };
-webpackEmptyContext.resolve = webpackEmptyContext;
-module.exports = webpackEmptyContext;
-webpackEmptyContext.id = 778;
-
-/***/ }),
 /* 779 */
 /***/ (function(module, exports) {
 
@@ -39135,6 +39124,18 @@ webpackEmptyContext.id = 779;
 
 /***/ }),
 /* 780 */
+/***/ (function(module, exports) {
+
+function webpackEmptyContext(req) {
+	throw new Error("Cannot find module '" + req + "'.");
+}
+webpackEmptyContext.keys = function() { return []; };
+webpackEmptyContext.resolve = webpackEmptyContext;
+module.exports = webpackEmptyContext;
+webpackEmptyContext.id = 780;
+
+/***/ }),
+/* 781 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;(function (factory) {
@@ -39253,7 +39254,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
 //# sourceMappingURL=swiper-keyboard.js.map
 
 /***/ }),
-/* 781 */
+/* 782 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;(function (factory) {
@@ -39363,7 +39364,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
 //# sourceMappingURL=swiper-a11y.js.map
 
 /***/ }),
-/* 782 */
+/* 783 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;(function (factory) {
@@ -39499,7 +39500,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
 //# sourceMappingURL=swiper-controller.js.map
 
 /***/ }),
-/* 783 */
+/* 784 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;(function (factory) {
@@ -40272,7 +40273,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
 //# sourceMappingURL=swiper-events.js.map
 
 /***/ }),
-/* 784 */
+/* 785 */
 /***/ (function(module, exports) {
 
 function webpackEmptyContext(req) {
@@ -40281,10 +40282,10 @@ function webpackEmptyContext(req) {
 webpackEmptyContext.keys = function() { return []; };
 webpackEmptyContext.resolve = webpackEmptyContext;
 module.exports = webpackEmptyContext;
-webpackEmptyContext.id = 784;
+webpackEmptyContext.id = 785;
 
 /***/ }),
-/* 785 */
+/* 786 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;var __extends = (this && this.__extends) || (function () {
@@ -40516,7 +40517,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
 //# sourceMappingURL=toast-transitions.js.map
 
 /***/ }),
-/* 786 */
+/* 787 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;var __extends = (this && this.__extends) || (function () {
@@ -40586,18 +40587,6 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
 //# sourceMappingURL=toggle-gesture.js.map
 
 /***/ }),
-/* 787 */
-/***/ (function(module, exports) {
-
-function webpackEmptyContext(req) {
-	throw new Error("Cannot find module '" + req + "'.");
-}
-webpackEmptyContext.keys = function() { return []; };
-webpackEmptyContext.resolve = webpackEmptyContext;
-module.exports = webpackEmptyContext;
-webpackEmptyContext.id = 787;
-
-/***/ }),
 /* 788 */
 /***/ (function(module, exports) {
 
@@ -40611,6 +40600,18 @@ webpackEmptyContext.id = 788;
 
 /***/ }),
 /* 789 */
+/***/ (function(module, exports) {
+
+function webpackEmptyContext(req) {
+	throw new Error("Cannot find module '" + req + "'.");
+}
+webpackEmptyContext.keys = function() { return []; };
+webpackEmptyContext.resolve = webpackEmptyContext;
+module.exports = webpackEmptyContext;
+webpackEmptyContext.id = 789;
+
+/***/ }),
+/* 790 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;(function (factory) {
@@ -41173,7 +41174,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
 //# sourceMappingURL=virtual-util.js.map
 
 /***/ }),
-/* 790 */
+/* 791 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;(function (factory) {
@@ -41474,7 +41475,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
 //# sourceMappingURL=ionic-page.js.map
 
 /***/ }),
-/* 791 */
+/* 792 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;(function (factory) {
@@ -41605,7 +41606,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
 //# sourceMappingURL=ripple.js.map
 
 /***/ }),
-/* 792 */
+/* 793 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;(function (factory) {
@@ -41614,7 +41615,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
         if (v !== undefined) module.exports = v;
     }
     else if (true) {
-        !(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__, exports, __webpack_require__(450), __webpack_require__(793)], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
+        !(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__, exports, __webpack_require__(450), __webpack_require__(794)], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
 				__WEBPACK_AMD_DEFINE_RESULT__ = (typeof __WEBPACK_AMD_DEFINE_FACTORY__ === 'function' ?
 				(__WEBPACK_AMD_DEFINE_FACTORY__.apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__)) : __WEBPACK_AMD_DEFINE_FACTORY__),
 				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
@@ -41691,7 +41692,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
 //# sourceMappingURL=gesture.js.map
 
 /***/ }),
-/* 793 */
+/* 794 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/* tslint:disable */
@@ -43858,7 +43859,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
 //# sourceMappingURL=hammer.js.map
 
 /***/ }),
-/* 794 */
+/* 795 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;var __extends = (this && this.__extends) || (function () {
@@ -43953,7 +43954,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
 //# sourceMappingURL=ionic-error-handler.js.map
 
 /***/ }),
-/* 795 */
+/* 796 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;(function (factory) {
@@ -43962,7 +43963,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
         if (v !== undefined) module.exports = v;
     }
     else if (true) {
-        !(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__, exports, __webpack_require__(0), __webpack_require__(43), __webpack_require__(33), __webpack_require__(19), __webpack_require__(43), __webpack_require__(454), __webpack_require__(519), __webpack_require__(449), __webpack_require__(463), __webpack_require__(456), __webpack_require__(650), __webpack_require__(467), __webpack_require__(455), __webpack_require__(653), __webpack_require__(492), __webpack_require__(491), __webpack_require__(542), __webpack_require__(607), __webpack_require__(451), __webpack_require__(651), __webpack_require__(647), __webpack_require__(652), __webpack_require__(503), __webpack_require__(504), __webpack_require__(522), __webpack_require__(570), __webpack_require__(524), __webpack_require__(571), __webpack_require__(796), __webpack_require__(519), __webpack_require__(567), __webpack_require__(572), __webpack_require__(525), __webpack_require__(573), __webpack_require__(490), __webpack_require__(574), __webpack_require__(575), __webpack_require__(576), __webpack_require__(577), __webpack_require__(578), __webpack_require__(582), __webpack_require__(472), __webpack_require__(583), __webpack_require__(508), __webpack_require__(585), __webpack_require__(533), __webpack_require__(586), __webpack_require__(587), __webpack_require__(588), __webpack_require__(526), __webpack_require__(589), __webpack_require__(535), __webpack_require__(591), __webpack_require__(592), __webpack_require__(468), __webpack_require__(593), __webpack_require__(594), __webpack_require__(595), __webpack_require__(536), __webpack_require__(528), __webpack_require__(596), __webpack_require__(598), __webpack_require__(527), __webpack_require__(537), __webpack_require__(538), __webpack_require__(539), __webpack_require__(600), __webpack_require__(601), __webpack_require__(602), __webpack_require__(480), __webpack_require__(603), __webpack_require__(541), __webpack_require__(609), __webpack_require__(540), __webpack_require__(543), __webpack_require__(610), __webpack_require__(544), __webpack_require__(611), __webpack_require__(612), __webpack_require__(545), __webpack_require__(530), __webpack_require__(531), __webpack_require__(529), __webpack_require__(547), __webpack_require__(654), __webpack_require__(613), __webpack_require__(548), __webpack_require__(615), __webpack_require__(617), __webpack_require__(549), __webpack_require__(619), __webpack_require__(620), __webpack_require__(621), __webpack_require__(622), __webpack_require__(624), __webpack_require__(551), __webpack_require__(550), __webpack_require__(626), __webpack_require__(627), __webpack_require__(628), __webpack_require__(554), __webpack_require__(633), __webpack_require__(496), __webpack_require__(634), __webpack_require__(635), __webpack_require__(560), __webpack_require__(559), __webpack_require__(644), __webpack_require__(561), __webpack_require__(637), __webpack_require__(638), __webpack_require__(640), __webpack_require__(641), __webpack_require__(515), __webpack_require__(642), __webpack_require__(643), __webpack_require__(497), __webpack_require__(645), __webpack_require__(562), __webpack_require__(563), __webpack_require__(564), __webpack_require__(646)], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
+        !(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__, exports, __webpack_require__(0), __webpack_require__(43), __webpack_require__(33), __webpack_require__(19), __webpack_require__(43), __webpack_require__(454), __webpack_require__(519), __webpack_require__(449), __webpack_require__(463), __webpack_require__(456), __webpack_require__(650), __webpack_require__(467), __webpack_require__(455), __webpack_require__(653), __webpack_require__(492), __webpack_require__(491), __webpack_require__(542), __webpack_require__(607), __webpack_require__(451), __webpack_require__(651), __webpack_require__(647), __webpack_require__(652), __webpack_require__(503), __webpack_require__(504), __webpack_require__(522), __webpack_require__(570), __webpack_require__(524), __webpack_require__(571), __webpack_require__(797), __webpack_require__(519), __webpack_require__(567), __webpack_require__(572), __webpack_require__(525), __webpack_require__(573), __webpack_require__(490), __webpack_require__(574), __webpack_require__(575), __webpack_require__(576), __webpack_require__(577), __webpack_require__(578), __webpack_require__(582), __webpack_require__(472), __webpack_require__(583), __webpack_require__(508), __webpack_require__(585), __webpack_require__(533), __webpack_require__(586), __webpack_require__(587), __webpack_require__(588), __webpack_require__(526), __webpack_require__(589), __webpack_require__(535), __webpack_require__(591), __webpack_require__(592), __webpack_require__(468), __webpack_require__(593), __webpack_require__(594), __webpack_require__(595), __webpack_require__(536), __webpack_require__(528), __webpack_require__(596), __webpack_require__(598), __webpack_require__(527), __webpack_require__(537), __webpack_require__(538), __webpack_require__(539), __webpack_require__(600), __webpack_require__(601), __webpack_require__(602), __webpack_require__(480), __webpack_require__(603), __webpack_require__(541), __webpack_require__(609), __webpack_require__(540), __webpack_require__(543), __webpack_require__(610), __webpack_require__(544), __webpack_require__(611), __webpack_require__(612), __webpack_require__(545), __webpack_require__(530), __webpack_require__(531), __webpack_require__(529), __webpack_require__(547), __webpack_require__(654), __webpack_require__(613), __webpack_require__(548), __webpack_require__(615), __webpack_require__(617), __webpack_require__(549), __webpack_require__(619), __webpack_require__(620), __webpack_require__(621), __webpack_require__(622), __webpack_require__(624), __webpack_require__(551), __webpack_require__(550), __webpack_require__(626), __webpack_require__(627), __webpack_require__(628), __webpack_require__(554), __webpack_require__(633), __webpack_require__(496), __webpack_require__(634), __webpack_require__(635), __webpack_require__(560), __webpack_require__(559), __webpack_require__(644), __webpack_require__(561), __webpack_require__(637), __webpack_require__(638), __webpack_require__(640), __webpack_require__(641), __webpack_require__(515), __webpack_require__(642), __webpack_require__(643), __webpack_require__(497), __webpack_require__(645), __webpack_require__(562), __webpack_require__(563), __webpack_require__(564), __webpack_require__(646)], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
 				__WEBPACK_AMD_DEFINE_RESULT__ = (typeof __WEBPACK_AMD_DEFINE_FACTORY__ === 'function' ?
 				(__WEBPACK_AMD_DEFINE_FACTORY__.apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__)) : __WEBPACK_AMD_DEFINE_FACTORY__),
 				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
@@ -44478,7 +44479,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
 //# sourceMappingURL=module.js.map
 
 /***/ }),
-/* 796 */
+/* 797 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;(function (factory) {
@@ -44569,14 +44570,14 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
 //# sourceMappingURL=click-block.js.map
 
 /***/ }),
-/* 797 */
+/* 798 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return RegisterV1Module; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(38);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__register_v1__ = __webpack_require__(798);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__register_v1__ = __webpack_require__(799);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -44609,7 +44610,7 @@ var RegisterV1Module = (function () {
 //# sourceMappingURL=register-v1.module.js.map
 
 /***/ }),
-/* 798 */
+/* 799 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -44658,7 +44659,7 @@ var RegisterV1Component = (function () {
     ], RegisterV1Component.prototype, "data", void 0);
     RegisterV1Component = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-            selector: 'register-v1',template:/*ion-inline-start:"/Volumes/TUBBY/Dev/Project-Watermellon/src/components/register/register-v1/register-v1.html"*/'<div class="signup-1 white">\n  <button ion-button clear icon-only small color="dark" class="mgl-0 mgt-15 pdl-5 pdr-5 shadow-3 fs-22 black text-white bdra-0 btn-back-page" (click)="onCallbackEvent(\'onDismiss\')">\n      <ion-icon name="ios-arrow-round-back"></ion-icon>\n  </button>\n\n  <div col-9 padding class="wrapper-page mg-auto mgt-20">\n    <ion-row class="ani-right-to-left">\n      <h3 class="fs-16 fw-600 text-black mgb-20">{{data.txtHead}}</h3>\n    </ion-row>\n    <ion-row class="logo-img mgb-40 ani-right-to-left">\n      <img [src]="data.imgLogo" alt="">\n    </ion-row>\n\n    <div class="ani-bottom-to-top">\n      <ion-list class="mg-0">\n        <ion-item class="fs-13 text-grey-4 stroke-grey-2 line-1 pdl-0">\n          <ion-input type="text" placeholder="Username" [(ngModel)]="username"></ion-input>\n        </ion-item>\n      </ion-list>\n      <ion-list class="mg-0">\n        <ion-item class="fs-13 text-grey-4 stroke-grey-2 line-1 pdl-0">\n          <ion-input type="text" placeholder="Fullname" [(ngModel)]="fullname"></ion-input>\n        </ion-item>\n      </ion-list>\n      <ion-list class="mg-0">\n        <ion-item class="fs-13 text-grey-4 stroke-grey-2 line-1 pdl-0">\n          <ion-input type="email" placeholder="Email" [(ngModel)]="email"></ion-input>\n        </ion-item>\n      </ion-list>\n      <ion-list class="mg-0">\n        <ion-item class="fs-13 text-grey-4 stroke-grey-2 line-1 pdl-0">\n          <ion-input type="number" placeholder="Phone" [(ngModel)]="phone"></ion-input>\n        </ion-item>\n      </ion-list>\n      <ion-list class="mg-0">\n        <ion-item class="fs-13 text-grey-4 stroke-grey-2 line-1 pdl-0">\n          <ion-input type="text" placeholder="Address" [(ngModel)]="address"></ion-input>\n        </ion-item>\n      </ion-list>\n      <ion-list class="mg-0">\n        <ion-item class="fs-13 text-grey-4 stroke-grey-2 line-1 pdl-0">\n          <ion-input type="password" placeholder="Password" [(ngModel)]="password"></ion-input>\n        </ion-item>\n      </ion-list>\n    </div>\n    \n    <div class="text-center mgb-50 mgt-40 ani-top-to-bottom">\n      <button ion-button block color="dark" class="mgt-30 bdra-0 text-white spacing-1 shadow-3 pink-vs-red"  (click)="onCallbackEvent(\'onSignUp\')">\n        {{data.btnSignUp}}\n      </button>\n    </div>\n  </div>\n</div>\n'/*ion-inline-end:"/Volumes/TUBBY/Dev/Project-Watermellon/src/components/register/register-v1/register-v1.html"*/
+            selector: 'register-v1',template:/*ion-inline-start:"/Users/andrewhein/Documents/GitHub/Project-Watermellon/src/components/register/register-v1/register-v1.html"*/'<div class="signup-1 white">\n  <button ion-button clear icon-only small color="dark" class="mgl-0 mgt-15 pdl-5 pdr-5 shadow-3 fs-22 black text-white bdra-0 btn-back-page" (click)="onCallbackEvent(\'onDismiss\')">\n      <ion-icon name="ios-arrow-round-back"></ion-icon>\n  </button>\n\n  <div col-9 padding class="wrapper-page mg-auto mgt-20">\n    <ion-row class="ani-right-to-left">\n      <h3 class="fs-16 fw-600 text-black mgb-20">{{data.txtHead}}</h3>\n    </ion-row>\n    <ion-row class="logo-img mgb-40 ani-right-to-left">\n      <img [src]="data.imgLogo" alt="">\n    </ion-row>\n\n    <div class="ani-bottom-to-top">\n      <ion-list class="mg-0">\n        <ion-item class="fs-13 text-grey-4 stroke-grey-2 line-1 pdl-0">\n          <ion-input type="text" placeholder="Username" [(ngModel)]="username"></ion-input>\n        </ion-item>\n      </ion-list>\n      <ion-list class="mg-0">\n        <ion-item class="fs-13 text-grey-4 stroke-grey-2 line-1 pdl-0">\n          <ion-input type="text" placeholder="Fullname" [(ngModel)]="fullname"></ion-input>\n        </ion-item>\n      </ion-list>\n      <ion-list class="mg-0">\n        <ion-item class="fs-13 text-grey-4 stroke-grey-2 line-1 pdl-0">\n          <ion-input type="email" placeholder="Email" [(ngModel)]="email"></ion-input>\n        </ion-item>\n      </ion-list>\n      <ion-list class="mg-0">\n        <ion-item class="fs-13 text-grey-4 stroke-grey-2 line-1 pdl-0">\n          <ion-input type="number" placeholder="Phone" [(ngModel)]="phone"></ion-input>\n        </ion-item>\n      </ion-list>\n      <ion-list class="mg-0">\n        <ion-item class="fs-13 text-grey-4 stroke-grey-2 line-1 pdl-0">\n          <ion-input type="text" placeholder="Address" [(ngModel)]="address"></ion-input>\n        </ion-item>\n      </ion-list>\n      <ion-list class="mg-0">\n        <ion-item class="fs-13 text-grey-4 stroke-grey-2 line-1 pdl-0">\n          <ion-input type="password" placeholder="Password" [(ngModel)]="password"></ion-input>\n        </ion-item>\n      </ion-list>\n    </div>\n    \n    <div class="text-center mgb-50 mgt-40 ani-top-to-bottom">\n      <button ion-button block color="dark" class="mgt-30 bdra-0 text-white spacing-1 shadow-3 pink-vs-red"  (click)="onCallbackEvent(\'onSignUp\')">\n        {{data.btnSignUp}}\n      </button>\n    </div>\n  </div>\n</div>\n'/*ion-inline-end:"/Users/andrewhein/Documents/GitHub/Project-Watermellon/src/components/register/register-v1/register-v1.html"*/
         }),
         __metadata("design:paramtypes", [])
     ], RegisterV1Component);
@@ -44668,14 +44669,14 @@ var RegisterV1Component = (function () {
 //# sourceMappingURL=register-v1.js.map
 
 /***/ }),
-/* 799 */
+/* 800 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return RegisterV2Module; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(38);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__register_v2__ = __webpack_require__(800);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__register_v2__ = __webpack_require__(801);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -44708,7 +44709,7 @@ var RegisterV2Module = (function () {
 //# sourceMappingURL=register-v2.module.js.map
 
 /***/ }),
-/* 800 */
+/* 801 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -44766,7 +44767,7 @@ var RegisterV2Component = (function () {
     ], RegisterV2Component.prototype, "signupSlider", void 0);
     RegisterV2Component = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-            selector: 'register-v2',template:/*ion-inline-start:"/Volumes/TUBBY/Dev/Project-Watermellon/src/components/register/register-v2/register-v2.html"*/'\n<div class="signup-2">\n  <div class="decor hong-vs-lanon shadow-3 ani-bottom-to-left"></div>\n  <div class="decor-2 tim-vs-datroi shadow-3 ani-bottom-to-left"></div>\n\n  <div class="wrapper-page">\n    <div class="text-right">\n      <button ion-button outline icon-only small color="dark" class="text-white stroke-white stroke-1 button-circle back-page mgr-15 mgt-20" (click)="onCallbackEvent(\'onDismiss\')">\n        <ion-icon name="ios-close"></ion-icon>\n      </button>\n    </div>\n\n    <div padding class="top-signup ani-right-to-left">\n      <h4 class="mgb-0">{{data.txtHead}}</h4>\n      <ion-row padding class="logo-img mgb-40 pdt-0">\n        <img [src]="data.imgLogo" alt="">\n      </ion-row>\n\n      <h4 class="text-left uppercase spacing-1 fw-400">Please Provide</h4>\n      <p class="text-left fs-13 text-grey-4 mgb-0">Please provide full and accurate information below</p>\n    </div>\n    \n    <ion-slides #signupSlider class="ani-left-to-right">\n      <ion-slide class="text-white" padding>\n        <ion-list class="mgb-10">\n          <ion-item class="text-grey-5 white round">\n            <ion-input class="fs-13" type="text" placeholder="{{data.txtFullName}}" [(ngModel)]="fullname"></ion-input>\n          </ion-item>\n        </ion-list>\n        <ion-list class="mgb-10">\n          <ion-item class="text-grey-5 white round">\n            <ion-input class="fs-13" type="text" placeholder="{{data.txtAddress}}" [(ngModel)]="address"></ion-input>\n          </ion-item>\n        </ion-list>\n\n        <button ion-button outline (click)="next()" color="light" class="mgt-15 pink-vs-red text-white button-circle uppercase fw-600 spacing-1 fs-14 shadow-3">\n          <ion-icon name="ios-arrow-forward-outline"></ion-icon>\n        </button>\n      </ion-slide>\n\n      <ion-slide padding>        \n        <ion-list class="mgb-10">\n          <ion-item class="text-grey-5 white round">\n            <ion-input class="fs-13" type="email" placeholder="{{data.txtEmail}}" [(ngModel)]="email"></ion-input>\n          </ion-item>\n        </ion-list>\n\n        <ion-list class="mgb-10">\n          <ion-item class="text-grey-5 white round">\n            <ion-input class="fs-13" type="password" placeholder="{{data.txtPassword}}" [(ngModel)]="password"></ion-input>\n          </ion-item>\n        </ion-list>\n\n        <button ion-button round outline color="light" class="mgt-15 text-white pink-vs-red pull-right uppercase fw-600 spacing-1 fs-12" (click)="onCallbackEvent(\'onSignUp\')">{{data.btnSignUp}}</button>\n\n        <button ion-button outline (click)="prev()" color="light" class="mgt-15 mgr-5 text-white pink-vs-red button-circle pull-right uppercase fw-600 spacing-1 fs-14">\n          <ion-icon name="ios-arrow-back-outline"></ion-icon>\n        </button>\n      </ion-slide>\n    </ion-slides>\n\n    <button ion-button color="light" clear small class="block mg-auto mgb-20 btn-signup text-grey-5 ani-bottom-to-top" (click)="onCallbackEvent(\'onForgotPassword\')">{{data.btnForgotPassword}}</button>\n\n  </div>\n</div>'/*ion-inline-end:"/Volumes/TUBBY/Dev/Project-Watermellon/src/components/register/register-v2/register-v2.html"*/
+            selector: 'register-v2',template:/*ion-inline-start:"/Users/andrewhein/Documents/GitHub/Project-Watermellon/src/components/register/register-v2/register-v2.html"*/'\n<div class="signup-2">\n  <div class="decor hong-vs-lanon shadow-3 ani-bottom-to-left"></div>\n  <div class="decor-2 tim-vs-datroi shadow-3 ani-bottom-to-left"></div>\n\n  <div class="wrapper-page">\n    <div class="text-right">\n      <button ion-button outline icon-only small color="dark" class="text-white stroke-white stroke-1 button-circle back-page mgr-15 mgt-20" (click)="onCallbackEvent(\'onDismiss\')">\n        <ion-icon name="ios-close"></ion-icon>\n      </button>\n    </div>\n\n    <div padding class="top-signup ani-right-to-left">\n      <h4 class="mgb-0">{{data.txtHead}}</h4>\n      <ion-row padding class="logo-img mgb-40 pdt-0">\n        <img [src]="data.imgLogo" alt="">\n      </ion-row>\n\n      <h4 class="text-left uppercase spacing-1 fw-400">Please Provide</h4>\n      <p class="text-left fs-13 text-grey-4 mgb-0">Please provide full and accurate information below</p>\n    </div>\n    \n    <ion-slides #signupSlider class="ani-left-to-right">\n      <ion-slide class="text-white" padding>\n        <ion-list class="mgb-10">\n          <ion-item class="text-grey-5 white round">\n            <ion-input class="fs-13" type="text" placeholder="{{data.txtFullName}}" [(ngModel)]="fullname"></ion-input>\n          </ion-item>\n        </ion-list>\n        <ion-list class="mgb-10">\n          <ion-item class="text-grey-5 white round">\n            <ion-input class="fs-13" type="text" placeholder="{{data.txtAddress}}" [(ngModel)]="address"></ion-input>\n          </ion-item>\n        </ion-list>\n\n        <button ion-button outline (click)="next()" color="light" class="mgt-15 pink-vs-red text-white button-circle uppercase fw-600 spacing-1 fs-14 shadow-3">\n          <ion-icon name="ios-arrow-forward-outline"></ion-icon>\n        </button>\n      </ion-slide>\n\n      <ion-slide padding>        \n        <ion-list class="mgb-10">\n          <ion-item class="text-grey-5 white round">\n            <ion-input class="fs-13" type="email" placeholder="{{data.txtEmail}}" [(ngModel)]="email"></ion-input>\n          </ion-item>\n        </ion-list>\n\n        <ion-list class="mgb-10">\n          <ion-item class="text-grey-5 white round">\n            <ion-input class="fs-13" type="password" placeholder="{{data.txtPassword}}" [(ngModel)]="password"></ion-input>\n          </ion-item>\n        </ion-list>\n\n        <button ion-button round outline color="light" class="mgt-15 text-white pink-vs-red pull-right uppercase fw-600 spacing-1 fs-12" (click)="onCallbackEvent(\'onSignUp\')">{{data.btnSignUp}}</button>\n\n        <button ion-button outline (click)="prev()" color="light" class="mgt-15 mgr-5 text-white pink-vs-red button-circle pull-right uppercase fw-600 spacing-1 fs-14">\n          <ion-icon name="ios-arrow-back-outline"></ion-icon>\n        </button>\n      </ion-slide>\n    </ion-slides>\n\n    <button ion-button color="light" clear small class="block mg-auto mgb-20 btn-signup text-grey-5 ani-bottom-to-top" (click)="onCallbackEvent(\'onForgotPassword\')">{{data.btnForgotPassword}}</button>\n\n  </div>\n</div>'/*ion-inline-end:"/Users/andrewhein/Documents/GitHub/Project-Watermellon/src/components/register/register-v2/register-v2.html"*/
         }),
         __metadata("design:paramtypes", [])
     ], RegisterV2Component);
@@ -44776,14 +44777,14 @@ var RegisterV2Component = (function () {
 //# sourceMappingURL=register-v2.js.map
 
 /***/ }),
-/* 801 */
+/* 802 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return RegisterV3Module; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(38);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__register_v3__ = __webpack_require__(802);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__register_v3__ = __webpack_require__(803);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -44816,7 +44817,7 @@ var RegisterV3Module = (function () {
 //# sourceMappingURL=register-v3.module.js.map
 
 /***/ }),
-/* 802 */
+/* 803 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -44864,7 +44865,7 @@ var RegisterV3Component = (function () {
     ], RegisterV3Component.prototype, "data", void 0);
     RegisterV3Component = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-            selector: 'register-v3',template:/*ion-inline-start:"/Volumes/TUBBY/Dev/Project-Watermellon/src/components/register/register-v3/register-v3.html"*/'\n<div class="signup-3 white">\n  \n  <div class="bg-img">\n    <img [src]="data.imgBg" alt="">\n  </div>\n\n  <div class="wrapper-page text-center black-opct">\n\n    <div class="text-right">\n      <button ion-button outline icon-only small color="dark" class="mgt-20 mgr-15 text-white stroke-white stroke-1 button-circle back-page" (click)="onCallbackEvent(\'onDismiss\')">\n        <ion-icon name="ios-close"></ion-icon>\n      </button>\n    </div>\n    \n    <div col-10 class="main-form mg-auto mgt--30">\n      <ion-row class="ani-right-to-left">\n        <h3 class="fs-20 fw-600 text-white mgb-20 spacing-3 pull-left">{{data.txtHead}}</h3>\n      </ion-row>\n      <ion-row class="logo-img mgb-40 pull-left ani-right-to-left">\n        <img [src]="data.imgLogo" alt="">\n      </ion-row>\n\n      <div class="ani-bottom-to-top">\n        <ion-list class="mgb-10">\n          <ion-item class="fs-13 text-white white-opct round">\n            <ion-input type="text" placeholder="{{data.txtUserName}}" [(ngModel)]="username"></ion-input>\n          </ion-item>\n        </ion-list>\n        <ion-list class="mgb-10">\n          <ion-item class="fs-13 text-white white-opct round">\n            <ion-input type="text" placeholder="{{data.txtFullName}}" [(ngModel)]="fullname"></ion-input>\n          </ion-item>\n        </ion-list>\n        <ion-list class="mgb-10">\n          <ion-item class="fs-13 text-white white-opct round">\n            <ion-input type="text" placeholder="{{data.txtAddress}}" [(ngModel)]="address"></ion-input>\n          </ion-item>\n        </ion-list>\n        <ion-list class="mgb-10">\n          <ion-item class="fs-13 text-white white-opct round">\n            <ion-input type="text" placeholder="{{data.txtEmail}}" [(ngModel)]="email"></ion-input>\n          </ion-item>\n        </ion-list>\n        <ion-list class="mgb-10">\n          <ion-item class="fs-13 text-white white-opct round">\n            <ion-input type="password" placeholder="{{data.txtPassword}}" [(ngModel)]="password"></ion-input>\n          </ion-item>\n        </ion-list>\n      </div>\n      \n      <div class="text-center ani-bottom-to-top">\n        <button ion-button block round color="dark" class="mgt-30 text-white uppercase spacing-1 shadow-3 pink-vs-red" (click)="onCallbackEvent(\'onSignUp\')">\n         {{data.btnSignUp}}\n        </button>\n      </div>\n    </div>\n\n    <button ion-button color="light" clear small class="mgb-20 btn-signup text-white ani-bottom-to-top" (click)="onCallbackEvent(\'onForgotPassword\')">{{data.btnForgotPassword}}</button>\n  </div>\n</div>\n'/*ion-inline-end:"/Volumes/TUBBY/Dev/Project-Watermellon/src/components/register/register-v3/register-v3.html"*/
+            selector: 'register-v3',template:/*ion-inline-start:"/Users/andrewhein/Documents/GitHub/Project-Watermellon/src/components/register/register-v3/register-v3.html"*/'\n<div class="signup-3 white">\n  \n  <div class="bg-img">\n    <img [src]="data.imgBg" alt="">\n  </div>\n\n  <div class="wrapper-page text-center black-opct">\n\n    <div class="text-right">\n      <button ion-button outline icon-only small color="dark" class="mgt-20 mgr-15 text-white stroke-white stroke-1 button-circle back-page" (click)="onCallbackEvent(\'onDismiss\')">\n        <ion-icon name="ios-close"></ion-icon>\n      </button>\n    </div>\n    \n    <div col-10 class="main-form mg-auto mgt--30">\n      <ion-row class="ani-right-to-left">\n        <h3 class="fs-20 fw-600 text-white mgb-20 spacing-3 pull-left">{{data.txtHead}}</h3>\n      </ion-row>\n      <ion-row class="logo-img mgb-40 pull-left ani-right-to-left">\n        <img [src]="data.imgLogo" alt="">\n      </ion-row>\n\n      <div class="ani-bottom-to-top">\n        <ion-list class="mgb-10">\n          <ion-item class="fs-13 text-white white-opct round">\n            <ion-input type="text" placeholder="{{data.txtUserName}}" [(ngModel)]="username"></ion-input>\n          </ion-item>\n        </ion-list>\n        <ion-list class="mgb-10">\n          <ion-item class="fs-13 text-white white-opct round">\n            <ion-input type="text" placeholder="{{data.txtFullName}}" [(ngModel)]="fullname"></ion-input>\n          </ion-item>\n        </ion-list>\n        <ion-list class="mgb-10">\n          <ion-item class="fs-13 text-white white-opct round">\n            <ion-input type="text" placeholder="{{data.txtAddress}}" [(ngModel)]="address"></ion-input>\n          </ion-item>\n        </ion-list>\n        <ion-list class="mgb-10">\n          <ion-item class="fs-13 text-white white-opct round">\n            <ion-input type="text" placeholder="{{data.txtEmail}}" [(ngModel)]="email"></ion-input>\n          </ion-item>\n        </ion-list>\n        <ion-list class="mgb-10">\n          <ion-item class="fs-13 text-white white-opct round">\n            <ion-input type="password" placeholder="{{data.txtPassword}}" [(ngModel)]="password"></ion-input>\n          </ion-item>\n        </ion-list>\n      </div>\n      \n      <div class="text-center ani-bottom-to-top">\n        <button ion-button block round color="dark" class="mgt-30 text-white uppercase spacing-1 shadow-3 pink-vs-red" (click)="onCallbackEvent(\'onSignUp\')">\n         {{data.btnSignUp}}\n        </button>\n      </div>\n    </div>\n\n    <button ion-button color="light" clear small class="mgb-20 btn-signup text-white ani-bottom-to-top" (click)="onCallbackEvent(\'onForgotPassword\')">{{data.btnForgotPassword}}</button>\n  </div>\n</div>\n'/*ion-inline-end:"/Users/andrewhein/Documents/GitHub/Project-Watermellon/src/components/register/register-v3/register-v3.html"*/
         }),
         __metadata("design:paramtypes", [])
     ], RegisterV3Component);
@@ -44874,14 +44875,14 @@ var RegisterV3Component = (function () {
 //# sourceMappingURL=register-v3.js.map
 
 /***/ }),
-/* 803 */
+/* 804 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return RegisterV4Module; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(38);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__register_v4__ = __webpack_require__(804);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__register_v4__ = __webpack_require__(805);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -44914,7 +44915,7 @@ var RegisterV4Module = (function () {
 //# sourceMappingURL=register-v4.module.js.map
 
 /***/ }),
-/* 804 */
+/* 805 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -44962,7 +44963,7 @@ var RegisterV4Component = (function () {
     ], RegisterV4Component.prototype, "data", void 0);
     RegisterV4Component = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-            selector: 'register-v4',template:/*ion-inline-start:"/Volumes/TUBBY/Dev/Project-Watermellon/src/components/register/register-v4/register-v4.html"*/'\n<div class="signup-4 pink text-center">\n\n    <div class="text-right">\n      <button ion-button outline icon-only small color="dark" class="mgt-20 mgr-15 text-white stroke-white stroke-1 button-circle back-page" (click)="onCallbackEvent(\'onDismiss\')">\n        <ion-icon name="ios-close"></ion-icon>\n      </button>\n    </div>\n    \n    <div col-10 class="main-form mg-auto mgt--30">\n      <div class="ani-right-to-left text-center">\n        <h3 class="fs-30 fw-100 text-white mgb-35 spacing-3">{{data.txtHead}}</h3>\n        <h4 class="uppercase fs-16 text-black spacing-5 opct-5">{{data.txtAnswer}}</h4>\n      </div>\n\n      <ion-row class="logo-img mgt-15 mgb-30 ani-right-to-left">\n        <ion-col col-4 class="text-center">\n          <div class="mg-auto thumb-avt circle stroke stroke-2 stroke-white ovfl-hidden">\n            <img [src]="data.avt1">\n          </div>\n          <p class="text-white mgb-0 mgt-5 uppercase fs-12 spacing-1 opct-8 fw-500">{{data.txtUser1}}</p>\n        </ion-col>\n        <ion-col col-4 class="text-center">\n          <div class="mg-auto thumb-avt circle stroke stroke-2 stroke-white ovfl-hidden">\n            <img [src]="data.avt2">\n          </div>\n          <p class="text-white mgb-0 mgt-5 uppercase fs-12 spacing-1 opct-8 fw-500">{{data.txtUser2}}</p>\n        </ion-col>\n        <ion-col col-4 class="text-center">\n          <div class="mg-auto thumb-avt circle stroke stroke-2 stroke-white ovfl-hidden">\n            <img [src]="data.avt3">\n          </div>\n          <p class="text-white mgb-0 mgt-5 uppercase fs-12 spacing-1 opct-8 fw-500">{{data.txtUser3}}</p>\n        </ion-col>\n      </ion-row>\n\n      <div class="ani-bottom-to-top">\n        <ion-list class="mgb-10">\n          <ion-item class="fs-14 text-white opct-7 stroke-2 stroke-grey-5 round">\n            <ion-input type="text" placeholder="{{data.txtUserName}}" [(ngModel)]="username"></ion-input>\n          </ion-item>\n        </ion-list>\n        <ion-list class="mgb-10">\n          <ion-item class="fs-14 text-white opct-7 stroke-2 stroke-grey-5 round">\n            <ion-input type="text" placeholder="{{data.txtEmail}}" [(ngModel)]="email"></ion-input>\n          </ion-item>\n        </ion-list>\n        <ion-list class="mgb-10">\n          <ion-item class="fs-14 text-white opct-7 stroke-2 stroke-grey-5 round">\n            <ion-input type="password" placeholder="{{data.txtPassword}}" [(ngModel)]="password"></ion-input>\n          </ion-item>\n        </ion-list>\n        <ion-list class="mgb-10">\n          <ion-item class="fs-14 text-white opct-7 stroke-2 stroke-grey-5 round">\n            <ion-input type="password" placeholder="{{data.txtConfirmPassword}}" [(ngModel)]="confirm_password"></ion-input>\n          </ion-item>\n        </ion-list>\n      </div>\n      \n      <div class="text-center ani-bottom-to-top">\n        <button ion-button block round color="dark" class="mgt-35 text-pink uppercase spacing-3 shadow-2 hong-vs-lanon" (click)="onCallbackEvent(\'onSignUp\')">\n         {{data.btnSignUp}}\n        </button>\n      </div>\n    </div>\n\n    <div class="mgt-20 pdb-20">\n      <span class="text-white opct-6">{{data.txtLogin}}</span>\n      <button ion-button color="light" clear small class="mgt--5 pd-0 btn-signup fw-600 text-black text-italic ani-bottom-to-top" (click)="onCallbackEvent(\'onForgotPassword\')">{{data.btnLogin}}</button>\n    </div>\n\n</div>\n'/*ion-inline-end:"/Volumes/TUBBY/Dev/Project-Watermellon/src/components/register/register-v4/register-v4.html"*/
+            selector: 'register-v4',template:/*ion-inline-start:"/Users/andrewhein/Documents/GitHub/Project-Watermellon/src/components/register/register-v4/register-v4.html"*/'\n<div class="signup-4 pink text-center">\n\n    <div class="text-right">\n      <button ion-button outline icon-only small color="dark" class="mgt-20 mgr-15 text-white stroke-white stroke-1 button-circle back-page" (click)="onCallbackEvent(\'onDismiss\')">\n        <ion-icon name="ios-close"></ion-icon>\n      </button>\n    </div>\n    \n    <div col-10 class="main-form mg-auto mgt--30">\n      <div class="ani-right-to-left text-center">\n        <h3 class="fs-30 fw-100 text-white mgb-35 spacing-3">{{data.txtHead}}</h3>\n        <h4 class="uppercase fs-16 text-black spacing-5 opct-5">{{data.txtAnswer}}</h4>\n      </div>\n\n      <ion-row class="logo-img mgt-15 mgb-30 ani-right-to-left">\n        <ion-col col-4 class="text-center">\n          <div class="mg-auto thumb-avt circle stroke stroke-2 stroke-white ovfl-hidden">\n            <img [src]="data.avt1">\n          </div>\n          <p class="text-white mgb-0 mgt-5 uppercase fs-12 spacing-1 opct-8 fw-500">{{data.txtUser1}}</p>\n        </ion-col>\n        <ion-col col-4 class="text-center">\n          <div class="mg-auto thumb-avt circle stroke stroke-2 stroke-white ovfl-hidden">\n            <img [src]="data.avt2">\n          </div>\n          <p class="text-white mgb-0 mgt-5 uppercase fs-12 spacing-1 opct-8 fw-500">{{data.txtUser2}}</p>\n        </ion-col>\n        <ion-col col-4 class="text-center">\n          <div class="mg-auto thumb-avt circle stroke stroke-2 stroke-white ovfl-hidden">\n            <img [src]="data.avt3">\n          </div>\n          <p class="text-white mgb-0 mgt-5 uppercase fs-12 spacing-1 opct-8 fw-500">{{data.txtUser3}}</p>\n        </ion-col>\n      </ion-row>\n\n      <div class="ani-bottom-to-top">\n        <ion-list class="mgb-10">\n          <ion-item class="fs-14 text-white opct-7 stroke-2 stroke-grey-5 round">\n            <ion-input type="text" placeholder="{{data.txtUserName}}" [(ngModel)]="username"></ion-input>\n          </ion-item>\n        </ion-list>\n        <ion-list class="mgb-10">\n          <ion-item class="fs-14 text-white opct-7 stroke-2 stroke-grey-5 round">\n            <ion-input type="text" placeholder="{{data.txtEmail}}" [(ngModel)]="email"></ion-input>\n          </ion-item>\n        </ion-list>\n        <ion-list class="mgb-10">\n          <ion-item class="fs-14 text-white opct-7 stroke-2 stroke-grey-5 round">\n            <ion-input type="password" placeholder="{{data.txtPassword}}" [(ngModel)]="password"></ion-input>\n          </ion-item>\n        </ion-list>\n        <ion-list class="mgb-10">\n          <ion-item class="fs-14 text-white opct-7 stroke-2 stroke-grey-5 round">\n            <ion-input type="password" placeholder="{{data.txtConfirmPassword}}" [(ngModel)]="confirm_password"></ion-input>\n          </ion-item>\n        </ion-list>\n      </div>\n      \n      <div class="text-center ani-bottom-to-top">\n        <button ion-button block round color="dark" class="mgt-35 text-pink uppercase spacing-3 shadow-2 hong-vs-lanon" (click)="onCallbackEvent(\'onSignUp\')">\n         {{data.btnSignUp}}\n        </button>\n      </div>\n    </div>\n\n    <div class="mgt-20 pdb-20">\n      <span class="text-white opct-6">{{data.txtLogin}}</span>\n      <button ion-button color="light" clear small class="mgt--5 pd-0 btn-signup fw-600 text-black text-italic ani-bottom-to-top" (click)="onCallbackEvent(\'onForgotPassword\')">{{data.btnLogin}}</button>\n    </div>\n\n</div>\n'/*ion-inline-end:"/Users/andrewhein/Documents/GitHub/Project-Watermellon/src/components/register/register-v4/register-v4.html"*/
         }),
         __metadata("design:paramtypes", [])
     ], RegisterV4Component);
@@ -44972,14 +44973,14 @@ var RegisterV4Component = (function () {
 //# sourceMappingURL=register-v4.js.map
 
 /***/ }),
-/* 805 */
+/* 806 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return RegisterV5Module; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(38);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__register_v5__ = __webpack_require__(806);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__register_v5__ = __webpack_require__(807);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -45012,7 +45013,7 @@ var RegisterV5Module = (function () {
 //# sourceMappingURL=register-v5.module.js.map
 
 /***/ }),
-/* 806 */
+/* 807 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -45070,7 +45071,7 @@ var RegisterV5Component = (function () {
     ], RegisterV5Component.prototype, "signupSlider", void 0);
     RegisterV5Component = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-            selector: 'register-v5',template:/*ion-inline-start:"/Volumes/TUBBY/Dev/Project-Watermellon/src/components/register/register-v5/register-v5.html"*/'\n<div class="signup-5 black">\n  <ion-row class="wrapper-top-signup ani-right-to-left">\n    <button ion-button outline icon-only small color="dark" class="mgt-10 mgl-15 mgr-10 text-white stroke-white stroke-1 button-circle back-page" (click)="onCallbackEvent(\'onDismiss\')">\n      <ion-icon name="ios-close"></ion-icon>\n    </button>\n    <h3 class="fs-14 fw-500 text-white uppercase mgb-20 spacing-3 pull-left">{{data.txtHead}}</h3>\n  </ion-row>\n\n  <div class="wrapper-page">\n    <div class="bg-img pink-vs-red">\n      <img [src]="data.imgBg" alt="">\n      <div class="mgb-5">\n        <span>\n          <button ion-button clear small round (click)="next()" color="light" class="mgt-0 text-white uppercase fw-500 spacing-3 fs-13">\n            Next step\n          </button>\n          <button ion-button clear small round (click)="prev()" color="light" class="mgr-5 text-white uppercase fw-500 spacing-3 fs-13">\n            Back step\n          </button>\n        </span>\n      </div>\n    </div>\n  \n\n    <div class="main-form">\n      <ion-slides #signupSlider class="ani-bottom-to-top">\n        <ion-slide class="text-white pdr-50" padding>\n          <div class="white mgt-30 shadow-3 bdra-5" padding>\n            <ion-list class="mgb-10">\n              <ion-label class="text-black fs-12 uppercase text-left mgb-0">User name</ion-label>\n              <ion-item class="pdl-0 fs-13 white-opct text-grey-3 line-1 stroke-grey-3">\n                <ion-input type="text" placeholder="{{data.txtUserName}}" [(ngModel)]="username"></ion-input>\n              </ion-item>\n            </ion-list>\n            <ion-list class="mgb-10">\n              <ion-label class="text-black fs-12 uppercase text-left mgb-0">Full name</ion-label>\n              <ion-item class="pdl-0 fs-13 white-opct text-grey-3 line-1 stroke-grey-3">\n                <ion-input type="text" placeholder="{{data.txtFullName}}" [(ngModel)]="fullname"></ion-input>\n              </ion-item>\n            </ion-list>\n            <ion-list class="mgb-10">\n              <ion-label class="text-black fs-12 uppercase text-left mgb-0">Address</ion-label>\n              <ion-item class="pdl-0 fs-13 white-opct text-grey-3">\n                <ion-input type="text" placeholder="{{data.txtAddress}}" [(ngModel)]="address"></ion-input>\n              </ion-item>\n            </ion-list>\n          </div>\n        </ion-slide>\n\n        <ion-slide class="text-white pdr-50" padding>\n          <div class="white mgt-30 shadow-3 bdra-5" padding>\n            <ion-list class="mgb-10">\n              <ion-label class="text-black fs-12 uppercase text-left mgb-0">Email</ion-label>\n              <ion-item class="pdl-0 fs-13 text-white text-grey-3 line-1 stroke-grey-3">\n                <ion-input type="text" placeholder="{{data.txtEmail}}" [(ngModel)]="email"></ion-input>\n              </ion-item>\n            </ion-list>\n            <ion-list class="mgb-10">\n              <ion-label class="text-black fs-12 uppercase text-left mgb-0">Password</ion-label>\n              <ion-item class="pdl-0 fs-13 text-white text-grey-3">\n                <ion-input type="password" placeholder="{{data.txtPassword}}" [(ngModel)]="password"></ion-input>\n              </ion-item>\n            </ion-list>\n\n            <button ion-button block round color="dark" class="mgt-30 text-white uppercase spacing-1 shadow-3 pink-vs-red" (click)="onCallbackEvent(\'onSignUp\')">\n             {{data.btnSignUp}}\n            </button>\n          </div>\n        </ion-slide>\n      </ion-slides>\n    \n    </div>\n\n  </div>\n</div>\n'/*ion-inline-end:"/Volumes/TUBBY/Dev/Project-Watermellon/src/components/register/register-v5/register-v5.html"*/
+            selector: 'register-v5',template:/*ion-inline-start:"/Users/andrewhein/Documents/GitHub/Project-Watermellon/src/components/register/register-v5/register-v5.html"*/'\n<div class="signup-5 black">\n  <ion-row class="wrapper-top-signup ani-right-to-left">\n    <button ion-button outline icon-only small color="dark" class="mgt-10 mgl-15 mgr-10 text-white stroke-white stroke-1 button-circle back-page" (click)="onCallbackEvent(\'onDismiss\')">\n      <ion-icon name="ios-close"></ion-icon>\n    </button>\n    <h3 class="fs-14 fw-500 text-white uppercase mgb-20 spacing-3 pull-left">{{data.txtHead}}</h3>\n  </ion-row>\n\n  <div class="wrapper-page">\n    <div class="bg-img pink-vs-red">\n      <img [src]="data.imgBg" alt="">\n      <div class="mgb-5">\n        <span>\n          <button ion-button clear small round (click)="next()" color="light" class="mgt-0 text-white uppercase fw-500 spacing-3 fs-13">\n            Next step\n          </button>\n          <button ion-button clear small round (click)="prev()" color="light" class="mgr-5 text-white uppercase fw-500 spacing-3 fs-13">\n            Back step\n          </button>\n        </span>\n      </div>\n    </div>\n  \n\n    <div class="main-form">\n      <ion-slides #signupSlider class="ani-bottom-to-top">\n        <ion-slide class="text-white pdr-50" padding>\n          <div class="white mgt-30 shadow-3 bdra-5" padding>\n            <ion-list class="mgb-10">\n              <ion-label class="text-black fs-12 uppercase text-left mgb-0">User name</ion-label>\n              <ion-item class="pdl-0 fs-13 white-opct text-grey-3 line-1 stroke-grey-3">\n                <ion-input type="text" placeholder="{{data.txtUserName}}" [(ngModel)]="username"></ion-input>\n              </ion-item>\n            </ion-list>\n            <ion-list class="mgb-10">\n              <ion-label class="text-black fs-12 uppercase text-left mgb-0">Full name</ion-label>\n              <ion-item class="pdl-0 fs-13 white-opct text-grey-3 line-1 stroke-grey-3">\n                <ion-input type="text" placeholder="{{data.txtFullName}}" [(ngModel)]="fullname"></ion-input>\n              </ion-item>\n            </ion-list>\n            <ion-list class="mgb-10">\n              <ion-label class="text-black fs-12 uppercase text-left mgb-0">Address</ion-label>\n              <ion-item class="pdl-0 fs-13 white-opct text-grey-3">\n                <ion-input type="text" placeholder="{{data.txtAddress}}" [(ngModel)]="address"></ion-input>\n              </ion-item>\n            </ion-list>\n          </div>\n        </ion-slide>\n\n        <ion-slide class="text-white pdr-50" padding>\n          <div class="white mgt-30 shadow-3 bdra-5" padding>\n            <ion-list class="mgb-10">\n              <ion-label class="text-black fs-12 uppercase text-left mgb-0">Email</ion-label>\n              <ion-item class="pdl-0 fs-13 text-white text-grey-3 line-1 stroke-grey-3">\n                <ion-input type="text" placeholder="{{data.txtEmail}}" [(ngModel)]="email"></ion-input>\n              </ion-item>\n            </ion-list>\n            <ion-list class="mgb-10">\n              <ion-label class="text-black fs-12 uppercase text-left mgb-0">Password</ion-label>\n              <ion-item class="pdl-0 fs-13 text-white text-grey-3">\n                <ion-input type="password" placeholder="{{data.txtPassword}}" [(ngModel)]="password"></ion-input>\n              </ion-item>\n            </ion-list>\n\n            <button ion-button block round color="dark" class="mgt-30 text-white uppercase spacing-1 shadow-3 pink-vs-red" (click)="onCallbackEvent(\'onSignUp\')">\n             {{data.btnSignUp}}\n            </button>\n          </div>\n        </ion-slide>\n      </ion-slides>\n    \n    </div>\n\n  </div>\n</div>\n'/*ion-inline-end:"/Users/andrewhein/Documents/GitHub/Project-Watermellon/src/components/register/register-v5/register-v5.html"*/
         }),
         __metadata("design:paramtypes", [])
     ], RegisterV5Component);
@@ -45080,14 +45081,14 @@ var RegisterV5Component = (function () {
 //# sourceMappingURL=register-v5.js.map
 
 /***/ }),
-/* 807 */
+/* 808 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return RegisterV6Module; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(38);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__register_v6__ = __webpack_require__(808);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__register_v6__ = __webpack_require__(809);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -45120,7 +45121,7 @@ var RegisterV6Module = (function () {
 //# sourceMappingURL=register-v6.module.js.map
 
 /***/ }),
-/* 808 */
+/* 809 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -45178,7 +45179,7 @@ var RegisterV6Component = (function () {
     ], RegisterV6Component.prototype, "signupSlider", void 0);
     RegisterV6Component = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-            selector: 'register-v6',template:/*ion-inline-start:"/Volumes/TUBBY/Dev/Project-Watermellon/src/components/register/register-v6/register-v6.html"*/'\n<div class="signup-6 white">\n  \n  <ion-row class="wrapper-top-signup ani-right-to-left">\n    <button ion-button outline icon-only small color="dark" class="mgt-10 mgl-15 mgr-10 text-black stroke-black stroke-1 button-circle back-page" (click)="onCallbackEvent(\'onDismiss\')">\n      <ion-icon name="ios-close"></ion-icon>\n    </button>\n    <h3 class="fs-14 fw-500 text-black uppercase mgb-20 spacing-3 pull-left">{{data.txtHead}}</h3>\n  </ion-row>\n\n  \n  <div class="bg-img">\n    <img [src]="data.imgBg" alt="">\n  </div>\n\n  <div class="wrapper-page white-opct-1">\n    \n    <div class="main-form full-width mgt-30">\n      <ion-slides #signupSlider class="ani-bottom-to-top">\n        <ion-slide class="text-white pdr-35 pdl-35">\n          <div class="white shadow-3 mgt-30 pdb-25 form-1">\n            <img class="mgt--35 mgl--20 pull-left ani-left-to-right shadow-3" src="assets/img/demo4.jpg">\n            <div class="clear-both" padding>\n              <ion-list class="mgb-10">\n                <ion-label class="text-black fs-12 uppercase text-left mgb-0">User name</ion-label>\n                <ion-item class="pdl-0 fs-13 text-grey-3 line-1 stroke-grey-3">\n                  <ion-input type="text" placeholder="{{data.txtUserName}}" [(ngModel)]="username"></ion-input>\n                </ion-item>\n              </ion-list>\n              <ion-list class="mgb-10">\n                <ion-label class="text-black fs-12 uppercase text-left mgb-0">Full name</ion-label>\n                <ion-item class="pdl-0 fs-13 text-grey-3 line-1 stroke-grey-3">\n                  <ion-input type="text" placeholder="{{data.txtFullName}}" [(ngModel)]="fullname"></ion-input>\n                </ion-item>\n              </ion-list>\n              <ion-list class="mgb-10">\n                <ion-label class="text-black fs-12 uppercase text-left mgb-0">Address</ion-label>\n                <ion-item class="pdl-0 fs-13 text-grey-3">\n                  <ion-input type="text" placeholder="{{data.txtAddress}}" [(ngModel)]="address"></ion-input>\n                </ion-item>\n              </ion-list>\n            </div>\n          </div>\n          \n          <button ion-button large (click)="next()" color="light" class="mgt--35 text-white uppercase fw-500 spacing-3 fs-13 tim-vs-datroi bdra-0 pdl-40 pdr-40 pull-right mgr--20 ani-right-to-left shadow-2">\n            Next step\n          </button>\n        </ion-slide>\n\n        <ion-slide class="text-white pdr-35 pdl-30">\n          <div class="white mgt-30 shadow-3 pdb-20 form-2 text-left">\n            <img class="mgt--35 mgr--20 pull-right ani-left-to-right shadow-3" src="assets/img/demo6.jpg">\n            <div class="clear-both" padding>\n              <ion-list class="mgb-10">\n                <ion-label class="text-black fs-12 uppercase text-left mgb-0">Email</ion-label>\n                <ion-item class="pdl-0 fs-13 text-grey-3 line-1 stroke-grey-3">\n                  <ion-input type="text" placeholder="{{data.txtEmail}}" [(ngModel)]="email"></ion-input>\n                </ion-item>\n              </ion-list>\n              <ion-list class="mgb-10">\n                <ion-label class="text-black fs-12 uppercase text-left mgb-0">Password</ion-label>\n                <ion-item class="pdl-0 fs-13 text-grey-3">\n                  <ion-input type="password" placeholder="{{data.txtPassword}}" [(ngModel)]="password"></ion-input>\n                </ion-item>\n              </ion-list>\n\n              <button ion-button round color="dark" class="mgt-20 text-white uppercase spacing-1 shadow-3 pink-vs-red" (click)="onCallbackEvent(\'onSignUp\')">\n               {{data.btnSignUp}}\n              </button>  \n            </div>\n          </div>\n\n          <button ion-button large (click)="prev()" color="light" class="pdt-20 mgt--15 text-white uppercase fw-500 spacing-3 fs-13 tim-vs-datroi bdra-0 pdl-40 pdr-40 pull-right mgr--20 ani-right-to-left shadow-2">\n            Back step\n          </button>\n        </ion-slide>\n      </ion-slides>\n\n    </div>\n\n  </div>\n</div>\n'/*ion-inline-end:"/Volumes/TUBBY/Dev/Project-Watermellon/src/components/register/register-v6/register-v6.html"*/
+            selector: 'register-v6',template:/*ion-inline-start:"/Users/andrewhein/Documents/GitHub/Project-Watermellon/src/components/register/register-v6/register-v6.html"*/'\n<div class="signup-6 white">\n  \n  <ion-row class="wrapper-top-signup ani-right-to-left">\n    <button ion-button outline icon-only small color="dark" class="mgt-10 mgl-15 mgr-10 text-black stroke-black stroke-1 button-circle back-page" (click)="onCallbackEvent(\'onDismiss\')">\n      <ion-icon name="ios-close"></ion-icon>\n    </button>\n    <h3 class="fs-14 fw-500 text-black uppercase mgb-20 spacing-3 pull-left">{{data.txtHead}}</h3>\n  </ion-row>\n\n  \n  <div class="bg-img">\n    <img [src]="data.imgBg" alt="">\n  </div>\n\n  <div class="wrapper-page white-opct-1">\n    \n    <div class="main-form full-width mgt-30">\n      <ion-slides #signupSlider class="ani-bottom-to-top">\n        <ion-slide class="text-white pdr-35 pdl-35">\n          <div class="white shadow-3 mgt-30 pdb-25 form-1">\n            <img class="mgt--35 mgl--20 pull-left ani-left-to-right shadow-3" src="assets/img/demo4.jpg">\n            <div class="clear-both" padding>\n              <ion-list class="mgb-10">\n                <ion-label class="text-black fs-12 uppercase text-left mgb-0">User name</ion-label>\n                <ion-item class="pdl-0 fs-13 text-grey-3 line-1 stroke-grey-3">\n                  <ion-input type="text" placeholder="{{data.txtUserName}}" [(ngModel)]="username"></ion-input>\n                </ion-item>\n              </ion-list>\n              <ion-list class="mgb-10">\n                <ion-label class="text-black fs-12 uppercase text-left mgb-0">Full name</ion-label>\n                <ion-item class="pdl-0 fs-13 text-grey-3 line-1 stroke-grey-3">\n                  <ion-input type="text" placeholder="{{data.txtFullName}}" [(ngModel)]="fullname"></ion-input>\n                </ion-item>\n              </ion-list>\n              <ion-list class="mgb-10">\n                <ion-label class="text-black fs-12 uppercase text-left mgb-0">Address</ion-label>\n                <ion-item class="pdl-0 fs-13 text-grey-3">\n                  <ion-input type="text" placeholder="{{data.txtAddress}}" [(ngModel)]="address"></ion-input>\n                </ion-item>\n              </ion-list>\n            </div>\n          </div>\n          \n          <button ion-button large (click)="next()" color="light" class="mgt--35 text-white uppercase fw-500 spacing-3 fs-13 tim-vs-datroi bdra-0 pdl-40 pdr-40 pull-right mgr--20 ani-right-to-left shadow-2">\n            Next step\n          </button>\n        </ion-slide>\n\n        <ion-slide class="text-white pdr-35 pdl-30">\n          <div class="white mgt-30 shadow-3 pdb-20 form-2 text-left">\n            <img class="mgt--35 mgr--20 pull-right ani-left-to-right shadow-3" src="assets/img/demo6.jpg">\n            <div class="clear-both" padding>\n              <ion-list class="mgb-10">\n                <ion-label class="text-black fs-12 uppercase text-left mgb-0">Email</ion-label>\n                <ion-item class="pdl-0 fs-13 text-grey-3 line-1 stroke-grey-3">\n                  <ion-input type="text" placeholder="{{data.txtEmail}}" [(ngModel)]="email"></ion-input>\n                </ion-item>\n              </ion-list>\n              <ion-list class="mgb-10">\n                <ion-label class="text-black fs-12 uppercase text-left mgb-0">Password</ion-label>\n                <ion-item class="pdl-0 fs-13 text-grey-3">\n                  <ion-input type="password" placeholder="{{data.txtPassword}}" [(ngModel)]="password"></ion-input>\n                </ion-item>\n              </ion-list>\n\n              <button ion-button round color="dark" class="mgt-20 text-white uppercase spacing-1 shadow-3 pink-vs-red" (click)="onCallbackEvent(\'onSignUp\')">\n               {{data.btnSignUp}}\n              </button>  \n            </div>\n          </div>\n\n          <button ion-button large (click)="prev()" color="light" class="pdt-20 mgt--15 text-white uppercase fw-500 spacing-3 fs-13 tim-vs-datroi bdra-0 pdl-40 pdr-40 pull-right mgr--20 ani-right-to-left shadow-2">\n            Back step\n          </button>\n        </ion-slide>\n      </ion-slides>\n\n    </div>\n\n  </div>\n</div>\n'/*ion-inline-end:"/Users/andrewhein/Documents/GitHub/Project-Watermellon/src/components/register/register-v6/register-v6.html"*/
         }),
         __metadata("design:paramtypes", [])
     ], RegisterV6Component);

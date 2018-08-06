@@ -1,6 +1,6 @@
 webpackJsonp([21],{
 
-/***/ 437:
+/***/ 438:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -8,7 +8,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "WordpressPageModule", function() { return WordpressPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(38);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__wordpress__ = __webpack_require__(735);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__wordpress__ = __webpack_require__(736);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -38,7 +38,7 @@ var WordpressPageModule = (function () {
 
 /***/ }),
 
-/***/ 735:
+/***/ 736:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -76,7 +76,7 @@ var WordpressPage = (function () {
     };
     WordpressPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-            selector: 'page-wordpress',template:/*ion-inline-start:"/Volumes/TUBBY/Dev/Project-Watermellon/src/pages/ready-app/wordpress/wordpress.html"*/'<ion-tabs class="shadow-3 skin skin-light">\n	<ion-tab [root]="wpHomePage" tabTitle="" tabIcon="ios-home"></ion-tab>\n	<ion-tab [root]="wpCategoryPage" tabTitle="" tabIcon="ios-list-box"></ion-tab>\n	<ion-tab [root]="wpSearchPage" tabTitle="" tabIcon="ios-search"></ion-tab>\n	<ion-tab [root]="wpFavoritePage" tabTitle="" tabIcon="ios-heart"></ion-tab>\n</ion-tabs>\n'/*ion-inline-end:"/Volumes/TUBBY/Dev/Project-Watermellon/src/pages/ready-app/wordpress/wordpress.html"*/,
+            selector: 'page-wordpress',template:/*ion-inline-start:"/Users/andrewhein/Documents/GitHub/Project-Watermellon/src/pages/ready-app/wordpress/wordpress.html"*/'<ion-tabs class="shadow-3 skin skin-light">\n	<ion-tab [root]="wpHomePage" tabTitle="" tabIcon="ios-home"></ion-tab>\n	<ion-tab [root]="wpCategoryPage" tabTitle="" tabIcon="ios-list-box"></ion-tab>\n	<ion-tab [root]="wpSearchPage" tabTitle="" tabIcon="ios-search"></ion-tab>\n	<ion-tab [root]="wpFavoritePage" tabTitle="" tabIcon="ios-heart"></ion-tab>\n</ion-tabs>\n'/*ion-inline-end:"/Users/andrewhein/Documents/GitHub/Project-Watermellon/src/pages/ready-app/wordpress/wordpress.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["n" /* NavParams */]])
     ], WordpressPage);

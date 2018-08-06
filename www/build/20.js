@@ -1,6 +1,6 @@
 webpackJsonp([20],{
 
-/***/ 442:
+/***/ 443:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -8,7 +8,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SettingColorPageModule", function() { return SettingColorPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(38);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__setting_color__ = __webpack_require__(809);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__setting_color__ = __webpack_require__(810);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -38,7 +38,7 @@ var SettingColorPageModule = (function () {
 
 /***/ }),
 
-/***/ 809:
+/***/ 810:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -87,7 +87,7 @@ var SettingColorPage = (function () {
     };
     SettingColorPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-            selector: 'setting-color',template:/*ion-inline-start:"/Volumes/TUBBY/Dev/Project-Watermellon/src/pages/settings/setting-color/setting-color.html"*/'<ion-header *ngIf="settings!=null"  class="{{settings.skin.main_skin}}">\n  <ion-navbar>\n    <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title>Theme Setting</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content *ngIf="settings!=null" padding class="{{settings.skin.main_bg}}">\n  	<h4 class="mgb-10 {{settings.skin.text_1}}">Setting color</h4>\n  	<h6 class="mgt-5 mgb-20 {{settings.skin.text_2}} fw-400">Choose color you love</h6>\n\n  	<ion-list no-lines class="lst-no-background" radio-group [(ngModel)]="selected_skin" (ionChange)="setSkin()" >\n	    <ion-item *ngFor="let item of list, let i = index" class="pdl-0 fs-13 text-grey-5">\n	      	<ion-label class="{{settings.skin.text_1}}">{{item.title}}</ion-label>\n	      	<ion-radio [value]="i"></ion-radio>\n	    </ion-item>\n  	</ion-list>\n</ion-content>\n'/*ion-inline-end:"/Volumes/TUBBY/Dev/Project-Watermellon/src/pages/settings/setting-color/setting-color.html"*/
+            selector: 'setting-color',template:/*ion-inline-start:"/Users/andrewhein/Documents/GitHub/Project-Watermellon/src/pages/settings/setting-color/setting-color.html"*/'<ion-header *ngIf="settings!=null"  class="{{settings.skin.main_skin}}">\n  <ion-navbar>\n    <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title>Theme Setting</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content *ngIf="settings!=null" padding class="{{settings.skin.main_bg}}">\n  	<h4 class="mgb-10 {{settings.skin.text_1}}">Setting color</h4>\n  	<h6 class="mgt-5 mgb-20 {{settings.skin.text_2}} fw-400">Choose color you love</h6>\n\n  	<ion-list no-lines class="lst-no-background" radio-group [(ngModel)]="selected_skin" (ionChange)="setSkin()" >\n	    <ion-item *ngFor="let item of list, let i = index" class="pdl-0 fs-13 text-grey-5">\n	      	<ion-label class="{{settings.skin.text_1}}">{{item.title}}</ion-label>\n	      	<ion-radio [value]="i"></ion-radio>\n	    </ion-item>\n  	</ion-list>\n</ion-content>\n'/*ion-inline-end:"/Users/andrewhein/Documents/GitHub/Project-Watermellon/src/pages/settings/setting-color/setting-color.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2__providers_settings_settings__["a" /* SettingsProvider */],
             __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* Events */]])
