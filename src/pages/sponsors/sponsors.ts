@@ -21,7 +21,7 @@ import { DomSanitizer } from '@angular/platform-browser';
     url:any;
 
    constructor(public navCtrl: NavController, public navParams: NavParams, public sanitize: DomSanitizer) {
-       this.url = sanitize.bypassSecurityTrustResourceUrl("https://westmorelandfair.com/_app/daily-events/");
+       this.url = sanitize.bypassSecurityTrustResourceUrl("https://westmorelandfair.com/_app/sponsors");
    }
 
    ionViewDidLoad() {

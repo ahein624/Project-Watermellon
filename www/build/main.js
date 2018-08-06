@@ -219,10 +219,9 @@ var MenuProvider = (function () {
     }; //end getContent
     MenuProvider = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["Injectable"])(),
-        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_0__angular_common_http__["a" /* HttpClient */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_0__angular_common_http__["a" /* HttpClient */]) === "function" && _a || Object])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_0__angular_common_http__["a" /* HttpClient */]])
     ], MenuProvider);
     return MenuProvider;
-    var _a;
 }());
 
 //# sourceMappingURL=menu.js.map
@@ -407,23 +406,23 @@ var map = {
 		29
 	],
 	"../pages/ready-app/unsplash/unsplash-search/unsplash-search.module": [
-		433,
+		430,
 		11
 	],
 	"../pages/ready-app/unsplash/unsplash.module": [
-		441,
+		431,
 		28
 	],
 	"../pages/ready-app/wordpress/wordpress-category/wordpress-category.module": [
-		430,
+		432,
 		27
 	],
 	"../pages/ready-app/wordpress/wordpress-detail/wordpress-detail.module": [
-		431,
+		448,
 		26
 	],
 	"../pages/ready-app/wordpress/wordpress-favorite/wordpress-favorite.module": [
-		432,
+		433,
 		25
 	],
 	"../pages/ready-app/wordpress/wordpress-home/wordpress-home.module": [
@@ -455,23 +454,23 @@ var map = {
 		6
 	],
 	"../pages/register/register.module": [
-		442,
+		441,
 		0
 	],
 	"../pages/settings/setting-color/setting-color.module": [
-		443,
+		442,
 		20
 	],
 	"../pages/settings/setting-dashboard/setting-dashboard.module": [
-		444,
+		443,
 		19
 	],
 	"../pages/settings/setting-sidemenu/setting-sidemenu.module": [
-		446,
+		445,
 		18
 	],
 	"../pages/sponsors/sponsors.module": [
-		445,
+		444,
 		17
 	],
 	"../pages/ui-elements/ui-elements.module": [
@@ -479,7 +478,7 @@ var map = {
 		1
 	],
 	"../pages/vendors/vendors.module": [
-		448,
+		446,
 		16
 	]
 };
@@ -1517,6 +1516,7 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__ionic_native_status_bar__ = __webpack_require__(251);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__ionic_native_splash_screen__ = __webpack_require__(252);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_18_angular2_masonry__ = __webpack_require__(256);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18_angular2_masonry___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_18_angular2_masonry__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__ngx_translate_core__ = __webpack_require__(379);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__ngx_translate_http_loader__ = __webpack_require__(387);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__ionic_native_firebase__ = __webpack_require__(389);
@@ -1645,10 +1645,10 @@ var AppModule = (function () {
                         { loadChildren: '../pages/ready-app/unsplash/unsplash-favorite/unsplash-favorite.module#UnsplashFavoriestPageModule', name: 'UnsplashFavoritePage', segment: 'unsplash-favorite', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/ready-app/unsplash/unsplash-home/unsplash-home.module#UnsplashHomePageModule', name: 'UnsplashHomePage', segment: 'unsplash-home', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/ready-app/unsplash/unsplash-modal-photo/unsplash-modal-photo.module#UnsplashModalPhotoPageModule', name: 'UnsplashModalPhotoPage', segment: 'unsplash-modal-photo', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/ready-app/wordpress/wordpress-category/wordpress-category.module#WordpressCategoryPageModule', name: 'WordpressCategoryPage', segment: 'wordpress-category', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/ready-app/wordpress/wordpress-detail/wordpress-detail.module#WordpressDetailPageModule', name: 'WordpressDetailPage', segment: 'wordpress-detail', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/ready-app/wordpress/wordpress-favorite/wordpress-favorite.module#WordpressFavoritePageModule', name: 'WordpressFavoritePage', segment: 'wordpress-favorite', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/ready-app/unsplash/unsplash-search/unsplash-search.module#UnsplashSearchPageModule', name: 'UnsplashSearchPage', segment: 'unsplash-search', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/ready-app/unsplash/unsplash.module#UnsplashPageModule', name: 'UnsplashPage', segment: 'unsplash', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/ready-app/wordpress/wordpress-category/wordpress-category.module#WordpressCategoryPageModule', name: 'WordpressCategoryPage', segment: 'wordpress-category', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/ready-app/wordpress/wordpress-favorite/wordpress-favorite.module#WordpressFavoritePageModule', name: 'WordpressFavoritePage', segment: 'wordpress-favorite', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/ready-app/wordpress/wordpress-home/wordpress-home.module#WordpressHomePageModule', name: 'WordpressHomePage', segment: 'wordpress-home', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/ready-app/wordpress/wordpress-posts/wordpress-posts.module#WordpressPostsPageModule', name: 'WordpressPostsPage', segment: 'wordpress-posts', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/ready-app/wordpress/wordpress-search/wordpress-search.module#WordpressSearchPageModule', name: 'WordpressSearchPage', segment: 'wordpress-search', priority: 'low', defaultHistory: [] },
@@ -1656,14 +1656,14 @@ var AppModule = (function () {
                         { loadChildren: '../pages/ready-app/youtube/youtube-detail/youtube-detail.module#YoutubeDetailPageModule', name: 'YoutubeDetailPage', segment: 'youtube-detail', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/ready-app/youtube/youtube-favorite/youtube-favorite.module#YoutubeFavoritePageModule', name: 'YoutubeFavoritePage', segment: 'youtube-favorite', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/ready-app/youtube/youtube.module#YoutubePageModule', name: 'YoutubePage', segment: 'youtube', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/ready-app/unsplash/unsplash.module#UnsplashPageModule', name: 'UnsplashPage', segment: 'unsplash', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/register/register.module#RegisterPageModule', name: 'RegisterPage', segment: 'register', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/settings/setting-color/setting-color.module#SettingColorPageModule', name: 'SettingColorPage', segment: 'setting-color', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/settings/setting-dashboard/setting-dashboard.module#SettingDashboardPageModule', name: 'SettingDashboardPage', segment: 'setting-dashboard', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/sponsors/sponsors.module#SponsorsPageModule', name: 'SponsorsPage', segment: 'sponsors', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/settings/setting-sidemenu/setting-sidemenu.module#SettingSidemenuPageModule', name: 'SettingSidemenuPage', segment: 'setting-sidemenu', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/vendors/vendors.module#VendorsPageModule', name: 'VendorsPage', segment: 'vendors', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/ui-elements/ui-elements.module#UiElementsPageModule', name: 'UiElementsPage', segment: 'ui-elements', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/vendors/vendors.module#VendorsPageModule', name: 'VendorsPage', segment: 'vendors', priority: 'low', defaultHistory: [] }
+                        { loadChildren: '../pages/ready-app/wordpress/wordpress-detail/wordpress-detail.module#WordpressDetailPageModule', name: 'WordpressDetailPage', segment: 'wordpress-detail', priority: 'low', defaultHistory: [] }
                     ]
                 }),
                 __WEBPACK_IMPORTED_MODULE_19__ngx_translate_core__["b" /* TranslateModule */].forRoot({
@@ -1673,7 +1673,7 @@ var AppModule = (function () {
                         deps: [__WEBPACK_IMPORTED_MODULE_4__angular_http__["b" /* Http */]]
                     }
                 }),
-                __WEBPACK_IMPORTED_MODULE_18_angular2_masonry__["a" /* MasonryModule */]
+                __WEBPACK_IMPORTED_MODULE_18_angular2_masonry__["MasonryModule"]
             ],
             bootstrap: [__WEBPACK_IMPORTED_MODULE_2_ionic_angular__["e" /* IonicApp */]],
             entryComponents: [
