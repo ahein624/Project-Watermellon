@@ -1,15 +1,14 @@
 webpackJsonp([30],{
 
-/***/ 447:
+/***/ 426:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "UnsplashFavoriestPageModule", function() { return UnsplashFavoriestPageModule; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "UnsplashCollectionPageModule", function() { return UnsplashCollectionPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(38);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__unsplash_favorite__ = __webpack_require__(804);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_gallery_info_gallery_info_gallery_module__ = __webpack_require__(496);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__unsplash_collection__ = __webpack_require__(724);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -19,129 +18,31 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
-
-var UnsplashFavoriestPageModule = (function () {
-    function UnsplashFavoriestPageModule() {
+var UnsplashCollectionPageModule = (function () {
+    function UnsplashCollectionPageModule() {
     }
-    UnsplashFavoriestPageModule = __decorate([
+    UnsplashCollectionPageModule = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["NgModule"])({
             declarations: [
-                __WEBPACK_IMPORTED_MODULE_2__unsplash_favorite__["a" /* UnsplashFavoritePage */],
+                __WEBPACK_IMPORTED_MODULE_2__unsplash_collection__["a" /* UnsplashCollectionPage */],
             ],
             imports: [
-                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__unsplash_favorite__["a" /* UnsplashFavoritePage */]),
-                __WEBPACK_IMPORTED_MODULE_3__components_gallery_info_gallery_info_gallery_module__["a" /* InfoGalleryModule */]
+                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__unsplash_collection__["a" /* UnsplashCollectionPage */]),
             ],
         })
-    ], UnsplashFavoriestPageModule);
-    return UnsplashFavoriestPageModule;
+    ], UnsplashCollectionPageModule);
+    return UnsplashCollectionPageModule;
 }());
 
-//# sourceMappingURL=unsplash-favorite.module.js.map
+//# sourceMappingURL=unsplash-collection.module.js.map
 
 /***/ }),
 
-/***/ 496:
+/***/ 724:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return InfoGalleryModule; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(38);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__info_gallery__ = __webpack_require__(497);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-
-
-
-var InfoGalleryModule = (function () {
-    function InfoGalleryModule() {
-    }
-    InfoGalleryModule = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["NgModule"])({
-            declarations: [
-                __WEBPACK_IMPORTED_MODULE_2__info_gallery__["a" /* InfoGalleryComponent */]
-            ],
-            imports: [
-                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__info_gallery__["a" /* InfoGalleryComponent */]),
-            ],
-            exports: [
-                __WEBPACK_IMPORTED_MODULE_2__info_gallery__["a" /* InfoGalleryComponent */]
-            ],
-            schemas: [__WEBPACK_IMPORTED_MODULE_0__angular_core__["CUSTOM_ELEMENTS_SCHEMA"]]
-        })
-    ], InfoGalleryModule);
-    return InfoGalleryModule;
-}());
-
-//# sourceMappingURL=info-gallery.module.js.map
-
-/***/ }),
-
-/***/ 497:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return InfoGalleryComponent; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-/**
- * Generated class for the InfoGalleryComponent component.
- *
- * See https://angular.io/api/core/Component for more info on Angular
- * Components.
- */
-var InfoGalleryComponent = (function () {
-    function InfoGalleryComponent() {
-        var _this = this;
-        this.onCallbackEvent = function (event, item, e) {
-            if (e) {
-                e.stopPropagation();
-            }
-            if (_this.events[event]) {
-                _this.events[event](item);
-            }
-        };
-    }
-    __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Input"])(),
-        __metadata("design:type", Object)
-    ], InfoGalleryComponent.prototype, "data", void 0);
-    __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Input"])(),
-        __metadata("design:type", Object)
-    ], InfoGalleryComponent.prototype, "events", void 0);
-    InfoGalleryComponent = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-            selector: 'info-gallery',template:/*ion-inline-start:"/Users/andrewhein/Desktop/WestmorelandWorking/src/components/gallery/info-gallery/info-gallery.html"*/'<ion-row class="pdl-5 pdr-5">\n<ion-col col-6 *ngFor="let item of data" class="mgb-10 ani-right-to-left">\n<div class="wrapper-info-gallery">\n	<img src="{{item.path}}" alt="" (click)="onCallbackEvent(\'onClick\',item, $event)">\n</div>\n\n<div class="text-info">\n	<h4 class="title fs-13 fw-500 text-ellipsis mgt-5 mgb-0" [innerHTML]="item.title"></h4>\n</div>\n\n</ion-col>\n</ion-row>\n'/*ion-inline-end:"/Users/andrewhein/Desktop/WestmorelandWorking/src/components/gallery/info-gallery/info-gallery.html"*/
-        }),
-        __metadata("design:paramtypes", [])
-    ], InfoGalleryComponent);
-    return InfoGalleryComponent;
-}());
-
-//# sourceMappingURL=info-gallery.js.map
-
-/***/ }),
-
-/***/ 804:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return UnsplashFavoritePage; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return UnsplashCollectionPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(38);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_unsplash_service_unsplash_service__ = __webpack_require__(254);
@@ -158,57 +59,57 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 /**
-* Generated class for the UnsplashFavoriestPage page.
-*
-* See https://ionicframework.com/docs/components/#navigation for more info on
-* Ionic pages and navigation.
-*/
-var UnsplashFavoritePage = (function () {
-    function UnsplashFavoritePage(navCtrl, navParams, unsplashService, modalCtrl) {
+ * Generated class for the UnsplashCollectionPage page.
+ *
+ * See https://ionicframework.com/docs/components/#navigation for more info on
+ * Ionic pages and navigation.
+ */
+var UnsplashCollectionPage = (function () {
+    function UnsplashCollectionPage(navCtrl, unsplashService, navParams) {
         this.navCtrl = navCtrl;
-        this.navParams = navParams;
         this.unsplashService = unsplashService;
-        this.modalCtrl = modalCtrl;
-        this.data = new Array();
-        this.events = {};
+        this.navParams = navParams;
+        this.list = new Array();
+        this.page = 0;
+        this.per_page = 20;
+        this.spnState = 'show';
     }
-    UnsplashFavoritePage.prototype.ionViewDidEnter = function () {
+    UnsplashCollectionPage.prototype.loadMore = function (infiniteScroll) {
         var _this = this;
-        this.data = new Array();
-        var that = this;
-        this.unsplashService.getAllFavorites().then(function (result) {
-            for (var i = 0; i < result.length; i++) {
-                _this.data.push({
-                    'id': result[i].id,
-                    'path': result[i].path,
-                    'title': 'Photo by ' + result[i].title,
-                    'links': result[i].links,
-                    'isFavorite': true
-                });
+        if (infiniteScroll === void 0) { infiniteScroll = null; }
+        this.page += 1;
+        this.unsplashService.getCollections(this.page, this.per_page).subscribe(function (data) {
+            _this.list = _this.list.concat(data);
+            if (infiniteScroll) {
+                infiniteScroll.complete();
             }
-            _this.events.onClick = function (item) {
-                var myModal = that.modalCtrl.create('UnsplashModalPhotoPage', { 'data': item });
-                myModal.present();
-            };
+            _this.spnState = 'hide';
+        }, function (error) {
+            if (infiniteScroll != null) {
+                infiniteScroll.enable(false);
+            }
+            _this.spnState = 'hide';
         });
     };
-    UnsplashFavoritePage.prototype.removeAll = function () {
-        this.unsplashService.clearAllFavorite();
-        this.data = new Array();
+    UnsplashCollectionPage.prototype.ionViewDidLoad = function () {
+        this.loadMore();
     };
-    UnsplashFavoritePage = __decorate([
+    UnsplashCollectionPage.prototype.detail = function (item) {
+        console.log(item.id);
+        this.navCtrl.push('UnsplashCategoryDetailPage', { id: item.id, collection_name: item.title });
+    };
+    UnsplashCollectionPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-            selector: 'page-unsplash-favorite',template:/*ion-inline-start:"/Users/andrewhein/Desktop/WestmorelandWorking/src/pages/ready-app/unsplash/unsplash-favorite/unsplash-favorite.html"*/'<!--\n  Generated template for the UnsplashFavoriestPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n  <ion-navbar>\n    <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title>Favorite</ion-title>\n    <ion-buttons end>\n      <button ion-button icon-only small class="grey-2 bdra-50 text-black" (click)="removeAll()">\n        <ion-icon class="fs-18" name="md-trash"></ion-icon>\n      </button>\n    </ion-buttons>\n  </ion-navbar>\n</ion-header>\n\n<ion-content>\n  <info-gallery [data]="data" [events]="events"></info-gallery>\n</ion-content>\n'/*ion-inline-end:"/Users/andrewhein/Desktop/WestmorelandWorking/src/pages/ready-app/unsplash/unsplash-favorite/unsplash-favorite.html"*/,
+            selector: 'page-unsplash-collection',template:/*ion-inline-start:"/Users/andrewhein/Documents/GitHub/Project-Watermellon/src/pages/ready-app/unsplash/unsplash-collection/unsplash-collection.html"*/'<!--\n  Generated template for the UnsplashCollectionPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n	<ion-navbar>\n		<button ion-button menuToggle>\n	      <ion-icon name="menu"></ion-icon>\n	    </button>\n		<ion-title>Collection</ion-title>\n	</ion-navbar>\n</ion-header>\n\n<ion-content>\n<ion-spinner class="indicator" [ngClass]="spnState"></ion-spinner>\n<ion-card *ngFor="let item of list" class="card-img-bg bdra-5 card card-md" (click)=\'detail(item)\'>\n<img  *ngIf="item.preview_photos[0]" [src]="item.preview_photos[0].urls.regular">\n<img  *ngIf="item.preview_photos.length==0" src="assets/img/bg-material.jpg">\n<div class="card-title">{{item.title}}</div>\n<div class="card-subtitle">{{item.total_photos}} photos</div>\n</ion-card>\n   <ion-infinite-scroll (ionInfinite)="loadMore($event)">\n     <ion-infinite-scroll-content></ion-infinite-scroll-content>\n   </ion-infinite-scroll>\n</ion-content>\n'/*ion-inline-end:"/Users/andrewhein/Documents/GitHub/Project-Watermellon/src/pages/ready-app/unsplash/unsplash-collection/unsplash-collection.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* NavController */],
-            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["n" /* NavParams */],
             __WEBPACK_IMPORTED_MODULE_2__providers_unsplash_service_unsplash_service__["a" /* UnsplashService */],
-            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* ModalController */]])
-    ], UnsplashFavoritePage);
-    return UnsplashFavoritePage;
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["n" /* NavParams */]])
+    ], UnsplashCollectionPage);
+    return UnsplashCollectionPage;
 }());
 
-//# sourceMappingURL=unsplash-favorite.js.map
+//# sourceMappingURL=unsplash-collection.js.map
 
 /***/ })
 

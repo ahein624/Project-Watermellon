@@ -1,14 +1,14 @@
 webpackJsonp([38],{
 
-/***/ 475:
+/***/ 416:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "VendorsPageModule", function() { return VendorsPageModule; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "FacebookCommentPageModule", function() { return FacebookCommentPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(38);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__vendors__ = __webpack_require__(957);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__facebook_comment__ = __webpack_require__(714);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -18,35 +18,34 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
-var VendorsPageModule = (function () {
-    function VendorsPageModule() {
+var FacebookCommentPageModule = (function () {
+    function FacebookCommentPageModule() {
     }
-    VendorsPageModule = __decorate([
+    FacebookCommentPageModule = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["NgModule"])({
             declarations: [
-                __WEBPACK_IMPORTED_MODULE_2__vendors__["a" /* VendorsPage */],
+                __WEBPACK_IMPORTED_MODULE_2__facebook_comment__["a" /* FacebookCommentPage */],
             ],
             imports: [
-                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__vendors__["a" /* VendorsPage */]),
+                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__facebook_comment__["a" /* FacebookCommentPage */]),
             ],
-            schemas: [__WEBPACK_IMPORTED_MODULE_0__angular_core__["CUSTOM_ELEMENTS_SCHEMA"]]
         })
-    ], VendorsPageModule);
-    return VendorsPageModule;
+    ], FacebookCommentPageModule);
+    return FacebookCommentPageModule;
 }());
 
-//# sourceMappingURL=vendors.module.js.map
+//# sourceMappingURL=facebook-comment.module.js.map
 
 /***/ }),
 
-/***/ 957:
+/***/ 714:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return VendorsPage; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FacebookCommentPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(38);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_platform_browser__ = __webpack_require__(33);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_facebook_facebook__ = __webpack_require__(260);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -60,33 +59,58 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 /**
- * Generated class for the VendorsPage page.
+ * Generated class for the FacebookCommentPage page.
  *
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
  */
-// Leaving this existing code incase we need to come back and reference it.
-var VendorsPage = (function () {
-    function VendorsPage(navCtrl, navParams, sanitize) {
+var FacebookCommentPage = (function () {
+    function FacebookCommentPage(navCtrl, navParams, facebookService) {
         this.navCtrl = navCtrl;
         this.navParams = navParams;
-        this.sanitize = sanitize;
-        this.params = {};
-        this.url = sanitize.bypassSecurityTrustResourceUrl("https://westmorelandfair.com/_app/daily-events/");
+        this.facebookService = facebookService;
+        this.next = null;
+        this.spnState = 'show';
+        this.item = this.navParams.get('item');
+        this.list = new Array();
+        this.loadMore();
     }
-    VendorsPage.prototype.ionViewDidLoad = function () {
-        console.log('ionViewDidLoad VendorsPage');
+    FacebookCommentPage.prototype.loadMore = function (infiniteScroll) {
+        var _this = this;
+        if (infiniteScroll === void 0) { infiniteScroll = null; }
+        this.facebookService.getComments(this.next, this.item).subscribe(function (data) {
+            var tmpData = data.data;
+            _this.next = data.paging.next;
+            _this.list = _this.list.concat(tmpData);
+            if (infiniteScroll) {
+                infiniteScroll.complete();
+            }
+            if (_this.next == undefined) {
+                if (infiniteScroll != null) {
+                    infiniteScroll.enable(false);
+                }
+            }
+            _this.spnState = 'hide';
+        }, function (error) {
+            console.log(error);
+            if (infiniteScroll != null) {
+                infiniteScroll.enable(false);
+            }
+            _this.spnState = 'hide';
+        });
     };
-    VendorsPage = __decorate([
+    FacebookCommentPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-            selector: 'page-vendors',template:/*ion-inline-start:"/Users/andrewhein/Desktop/WestmorelandWorking/src/pages/vendors/vendors.html"*/'<!--\n  Generated template for the AboutPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header class="skin skin-wcf skin-brown">\n  <ion-navbar>\n  <button ion-button menuToggle>\n    <ion-icon name="menu"></ion-icon>\n  </button>\n  <ion-title>Vendors</ion-title>\n  </ion-navbar>\n  </ion-header>\n\n\n<ion-content class="no-scroll">\n    <iframe height="100%" width="100%" [src]="url"></iframe>\n</ion-content>\n\n\n '/*ion-inline-end:"/Users/andrewhein/Desktop/WestmorelandWorking/src/pages/vendors/vendors.html"*/,
+            selector: 'page-facebook-comment',template:/*ion-inline-start:"/Users/andrewhein/Documents/GitHub/Project-Watermellon/src/pages/ready-app/facebook/facebook-comment/facebook-comment.html"*/'<!--\n  Generated template for the FacebookCommentPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>facebook-comment</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content>\n<ion-spinner class="indicator" [ngClass]="spnState"></ion-spinner>\n<ion-list>\n  <ion-item *ngFor="let item of list">\n    <ion-avatar item-start>\n<!--       <img src="http://graph.facebook.com/{{item.from.id}}/picture?type=square"> -->\n    </ion-avatar>\n<!--     <h2>{{item.from.name}}</h2> -->\n    <p>{{item.message}}</p>\n  </ion-item>\n</ion-list>\n  <ion-infinite-scroll (ionInfinite)="loadMore($event)">\n    <ion-infinite-scroll-content></ion-infinite-scroll-content>\n  </ion-infinite-scroll>\n</ion-content>\n'/*ion-inline-end:"/Users/andrewhein/Documents/GitHub/Project-Watermellon/src/pages/ready-app/facebook/facebook-comment/facebook-comment.html"*/,
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["n" /* NavParams */], __WEBPACK_IMPORTED_MODULE_2__angular_platform_browser__["DomSanitizer"]])
-    ], VendorsPage);
-    return VendorsPage;
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* NavController */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["n" /* NavParams */],
+            __WEBPACK_IMPORTED_MODULE_2__providers_facebook_facebook__["a" /* FacebookService */]])
+    ], FacebookCommentPage);
+    return FacebookCommentPage;
 }());
 
-//# sourceMappingURL=vendors.js.map
+//# sourceMappingURL=facebook-comment.js.map
 
 /***/ })
 

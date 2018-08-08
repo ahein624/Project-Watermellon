@@ -1,15 +1,15 @@
 webpackJsonp([9],{
 
-/***/ 460:
+/***/ 417:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "YoutubeFavoritePageModule", function() { return YoutubeFavoritePageModule; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "FacebookPageModule", function() { return FacebookPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(38);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__youtube_favorite__ = __webpack_require__(817);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__pipes_pipes_module__ = __webpack_require__(504);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__facebook__ = __webpack_require__(715);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__pipes_pipes_module__ = __webpack_require__(477);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -20,35 +20,35 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
-var YoutubeFavoritePageModule = (function () {
-    function YoutubeFavoritePageModule() {
+var FacebookPageModule = (function () {
+    function FacebookPageModule() {
     }
-    YoutubeFavoritePageModule = __decorate([
+    FacebookPageModule = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["NgModule"])({
             declarations: [
-                __WEBPACK_IMPORTED_MODULE_2__youtube_favorite__["a" /* YoutubeFavoritePage */],
+                __WEBPACK_IMPORTED_MODULE_2__facebook__["a" /* FacebookPage */]
             ],
             imports: [
-                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__youtube_favorite__["a" /* YoutubeFavoritePage */]),
+                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__facebook__["a" /* FacebookPage */]),
                 __WEBPACK_IMPORTED_MODULE_3__pipes_pipes_module__["a" /* PipesModule */]
-            ],
+            ]
         })
-    ], YoutubeFavoritePageModule);
-    return YoutubeFavoritePageModule;
+    ], FacebookPageModule);
+    return FacebookPageModule;
 }());
 
-//# sourceMappingURL=youtube-favorite.module.js.map
+//# sourceMappingURL=facebook.module.js.map
 
 /***/ }),
 
-/***/ 504:
+/***/ 477:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return PipesModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__time_ago_time_ago__ = __webpack_require__(505);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__time_ago_iso_8061_time_ago_iso_8061__ = __webpack_require__(506);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__time_ago_time_ago__ = __webpack_require__(478);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__time_ago_iso_8061_time_ago_iso_8061__ = __webpack_require__(479);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -77,7 +77,7 @@ var PipesModule = (function () {
 
 /***/ }),
 
-/***/ 505:
+/***/ 478:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -131,7 +131,7 @@ var TimeAgoPipe = (function () {
 
 /***/ }),
 
-/***/ 506:
+/***/ 479:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -176,14 +176,15 @@ var TimeAgoIso_8061Pipe = (function () {
 
 /***/ }),
 
-/***/ 817:
+/***/ 715:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return YoutubeFavoritePage; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FacebookPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(38);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_youtube_service_youtube_service__ = __webpack_require__(262);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_http__ = __webpack_require__(81);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__providers_facebook_facebook__ = __webpack_require__(260);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -196,50 +197,90 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
+
 /**
- * Generated class for the YoutubeFavoritePage page.
+ * Generated class for the FacebookPage page.
  *
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
  */
-var YoutubeFavoritePage = (function () {
-    function YoutubeFavoritePage(navCtrl, navParams, ytService) {
+var FacebookPage = (function () {
+    function FacebookPage(navCtrl, navParams, http, fbService) {
         this.navCtrl = navCtrl;
         this.navParams = navParams;
-        this.ytService = ytService;
-        this.data = new Array();
-        this.events = {};
+        this.http = http;
+        this.fbService = fbService;
+        this.next = null;
+        this.page = null;
+        this.spnState = 'show';
+        this.list = new Array();
     }
-    YoutubeFavoritePage.prototype.ionViewDidEnter = function () {
+    FacebookPage.prototype.ionViewDidLoad = function () {
         var _this = this;
-        this.data = new Array();
-        this.ytService.getAllFavorites().then(function (result) {
-            _this.data = result;
+        console.log('ionViewDidLoad FacebookPage');
+        this.spnState = 'show';
+        this.fbService.getPage().subscribe(function (data) {
+            _this.page = data;
+            _this.loadMore();
+        }, function (error) {
+            _this.spnState = 'hide';
         });
     };
-    YoutubeFavoritePage.prototype.doFavorite = function (item) {
-        this.ytService.doFavorite(item);
-        var index = this.ytService.getIndexOf(item.id.videoId, this.data);
-        if (index != -1) {
-            this.data.splice(index, 1);
+    FacebookPage.prototype.loadMore = function (infiniteScroll) {
+        var _this = this;
+        if (infiniteScroll === void 0) { infiniteScroll = null; }
+        if (this.next == null) {
+            this.fbService.getPosts(this.next).subscribe(function (data) {
+                var tmpData = data.data;
+                console.log(tmpData);
+                _this.next = data.paging.next;
+                _this.list = _this.list.concat(tmpData);
+                if (infiniteScroll) {
+                    infiniteScroll.complete();
+                }
+                _this.spnState = 'hide';
+            }, function (error) {
+                console.log(error);
+                if (infiniteScroll != null) {
+                    infiniteScroll.enable(false);
+                }
+                _this.spnState = 'hide';
+            });
+        }
+        else {
+            this.fbService.getPosts(this.next).subscribe(function (data) {
+                var tmpData = data.data;
+                _this.next = data.paging.next;
+                _this.list = _this.list.concat(tmpData);
+                if (infiniteScroll) {
+                    infiniteScroll.complete();
+                }
+                if (_this.next == undefined) {
+                    infiniteScroll.enable(false);
+                }
+                _this.spnState = 'hide';
+            }, function (error) {
+                console.log(error);
+                if (infiniteScroll != null) {
+                    infiniteScroll.enable(false);
+                }
+                _this.spnState = 'hide';
+            });
         }
     };
-    YoutubeFavoritePage.prototype.doClear = function () {
-        this.ytService.clearAllFavorite();
-        this.data = new Array();
-    };
-    YoutubeFavoritePage = __decorate([
+    FacebookPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-            selector: 'page-youtube-favorite',template:/*ion-inline-start:"/Users/andrewhein/Desktop/WestmorelandWorking/src/pages/ready-app/youtube/youtube-favorite/youtube-favorite.html"*/'<!--\n  Generated template for the YoutubeFavoritePage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>youtubeFavorite</ion-title>\n     <ion-buttons right>\n      <button ion-button icon-only (click)="doClear()">\n      <ion-icon class="fs-24 text-grey-5" name="trash">\n      </ion-icon>\n    </button>\n    </ion-buttons>\n  </ion-navbar>\n</ion-header>\n\n\n<ion-content>\n <ion-card *ngFor="let item of data" class="bdra-5 card card-md" >\n    <img [src]="item.snippet.thumbnails.medium.url" (click)="ytService.doReadMore(item,navCtrl)">\n    <ion-card-content class="card-content card-content-md" (click)="ytService.doReadMore(item,navCtrl)">\n      <ion-card-title class="fs-18 card-title card-title-md" [innerHTML]="item.snippet.title"></ion-card-title>\n      <p class="text-grey fs-12">{{item.snippet.publishedAt | timeAgoIso_8061}}</p>\n    </ion-card-content>\n\n    <ion-row class="row">\n      <ion-col>\n        <button (click)="doFavorite(item)" ion-button icon-left clear small class="text-black favorite">\n          <ion-icon  [name]="item.isFavorite == true ? \'heart\' : \'heart-outline\'"></ion-icon>\n        </button>\n      </ion-col>\n\n      <ion-col center text-center>\n         <button (click)="ytService.doShare(item)" ion-button icon-left clear small class="text-black">\n             <ion-icon name="share"></ion-icon>\n        </button>\n      </ion-col>\n\n      <ion-col right text-right>\n        <button (click)="ytService.doOpen(item)" ion-button icon-left clear small class="text-black">\n          <ion-icon name="open"></ion-icon>\n        </button>\n      </ion-col>\n      \n    </ion-row>\n  </ion-card>\n\n</ion-content>\n'/*ion-inline-end:"/Users/andrewhein/Desktop/WestmorelandWorking/src/pages/ready-app/youtube/youtube-favorite/youtube-favorite.html"*/,
+            selector: 'page-facebook',template:/*ion-inline-start:"/Users/andrewhein/Documents/GitHub/Project-Watermellon/src/pages/ready-app/facebook/facebook.html"*/'<!--\n  Generated template for the Facebook page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n<ion-navbar>\n<button ion-button menuToggle>\n  <ion-icon name="menu"></ion-icon>\n</button>\n<ion-title>facebook</ion-title>\n</ion-navbar>\n</ion-header>\n\n<ion-content class="white-1">\n<ion-spinner class="indicator" [ngClass]="spnState"></ion-spinner>\n<ion-card *ngFor="let item of list" class="bdra-5 mgb-10">\n<ion-item>\n<ion-avatar item-start class="mgt-6 mgb-6">\n<img src="{{page.picture.data.url}}">\n</ion-avatar>\n<h2 class="fs-14">{{page.name}}</h2>\n<p class="fs-10 text-grey-4">{{item.updated_time | timeAgo}}</p> \n</ion-item>\n\n<img [src]="item.full_picture"/>\n<ion-card-content>\n<ion-card-title class="pd-0 fs-15 fw-600">{{item.name}}</ion-card-title>\n<p class="mgt-10">{{item.message}}</p>\n</ion-card-content>\n\n<ion-row>\n<ion-col>\n<button ion-button icon-left clear small class="text-black">\n<ion-icon name="thumbs-up"></ion-icon>\n  <div>{{item.likes.summary.total_count}}</div>\n</button>\n</ion-col>\n\n<ion-col center text-center>\n<button ion-button icon-left clear small class="text-black" (click)="fbService.goToComment(item,navCtrl)">\n  <ion-icon name="chatbubbles"></ion-icon>\n  <div>{{item.comments.summary.total_count}}</div>\n</button>\n</ion-col>\n\n<ion-col right text-right>\n<button ion-button icon-left clear small class="text-black" (click)="fbService.doOpen(item)">\n  <ion-icon name="open"></ion-icon>\n</button>\n</ion-col>\n\n<ion-col right text-right>\n<button (click)="fbService.doShare(navCtrl,item)" ion-button icon-left clear small class="text-black">\n  <ion-icon name="share"></ion-icon>\n</button>\n</ion-col>\n\n</ion-row>\n</ion-card>\n\n<ion-infinite-scroll (ionInfinite)="loadMore($event)">\n<ion-infinite-scroll-content></ion-infinite-scroll-content>\n</ion-infinite-scroll>\n</ion-content>\n'/*ion-inline-end:"/Users/andrewhein/Documents/GitHub/Project-Watermellon/src/pages/ready-app/facebook/facebook.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* NavController */],
             __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["n" /* NavParams */],
-            __WEBPACK_IMPORTED_MODULE_2__providers_youtube_service_youtube_service__["a" /* YoutubeService */]])
-    ], YoutubeFavoritePage);
-    return YoutubeFavoritePage;
+            __WEBPACK_IMPORTED_MODULE_2__angular_http__["b" /* Http */],
+            __WEBPACK_IMPORTED_MODULE_3__providers_facebook_facebook__["a" /* FacebookService */]])
+    ], FacebookPage);
+    return FacebookPage;
 }());
 
-//# sourceMappingURL=youtube-favorite.js.map
+//# sourceMappingURL=facebook.js.map
 
 /***/ })
 

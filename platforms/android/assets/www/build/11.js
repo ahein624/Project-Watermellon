@@ -1,15 +1,15 @@
 webpackJsonp([11],{
 
-/***/ 437:
+/***/ 430:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "FacebookPageModule", function() { return FacebookPageModule; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "UnsplashSearchPageModule", function() { return UnsplashSearchPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(38);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__facebook__ = __webpack_require__(794);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__pipes_pipes_module__ = __webpack_require__(504);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__unsplash_search__ = __webpack_require__(728);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_gallery_info_gallery_info_gallery_module__ = __webpack_require__(469);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -20,171 +20,131 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
-var FacebookPageModule = (function () {
-    function FacebookPageModule() {
+var UnsplashSearchPageModule = (function () {
+    function UnsplashSearchPageModule() {
     }
-    FacebookPageModule = __decorate([
+    UnsplashSearchPageModule = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["NgModule"])({
             declarations: [
-                __WEBPACK_IMPORTED_MODULE_2__facebook__["a" /* FacebookPage */]
+                __WEBPACK_IMPORTED_MODULE_2__unsplash_search__["a" /* UnsplashSearchPage */]
             ],
             imports: [
-                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__facebook__["a" /* FacebookPage */]),
-                __WEBPACK_IMPORTED_MODULE_3__pipes_pipes_module__["a" /* PipesModule */]
-            ]
+                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__unsplash_search__["a" /* UnsplashSearchPage */]),
+                __WEBPACK_IMPORTED_MODULE_3__components_gallery_info_gallery_info_gallery_module__["a" /* InfoGalleryModule */]
+            ],
         })
-    ], FacebookPageModule);
-    return FacebookPageModule;
+    ], UnsplashSearchPageModule);
+    return UnsplashSearchPageModule;
 }());
 
-//# sourceMappingURL=facebook.module.js.map
+//# sourceMappingURL=unsplash-search.module.js.map
 
 /***/ }),
 
-/***/ 504:
+/***/ 469:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return PipesModule; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__time_ago_time_ago__ = __webpack_require__(505);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__time_ago_iso_8061_time_ago_iso_8061__ = __webpack_require__(506);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-
-
-
-var PipesModule = (function () {
-    function PipesModule() {
-    }
-    PipesModule = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["NgModule"])({
-            declarations: [__WEBPACK_IMPORTED_MODULE_1__time_ago_time_ago__["a" /* TimeAgoPipe */],
-                __WEBPACK_IMPORTED_MODULE_2__time_ago_iso_8061_time_ago_iso_8061__["a" /* TimeAgoIso_8061Pipe */]],
-            imports: [],
-            exports: [__WEBPACK_IMPORTED_MODULE_1__time_ago_time_ago__["a" /* TimeAgoPipe */],
-                __WEBPACK_IMPORTED_MODULE_2__time_ago_iso_8061_time_ago_iso_8061__["a" /* TimeAgoIso_8061Pipe */]]
-        })
-    ], PipesModule);
-    return PipesModule;
-}());
-
-//# sourceMappingURL=pipes.module.js.map
-
-/***/ }),
-
-/***/ 505:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TimeAgoPipe; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-
-/**
- * Generated class for the TimeAgoPipe pipe.
- *
- * See https://angular.io/api/core/Pipe for more info on Angular Pipes.
- */
-var TimeAgoPipe = (function () {
-    function TimeAgoPipe() {
-    }
-    /**
-     * Takes a value and makes it lowercase.
-     */
-    TimeAgoPipe.prototype.transform = function (time) {
-        var args = [];
-        for (var _i = 1; _i < arguments.length; _i++) {
-            args[_i - 1] = arguments[_i];
-        }
-        //return value.toLowerCase();
-        var date = new Date((time || "").replace(/-/g, "/").replace(/[TZ]/g, " ")), diff = (((new Date()).getTime() - date.getTime()) / 1000), day_diff = Math.floor(diff / 86400);
-        if (isNaN(day_diff) || day_diff < 0 || day_diff >= 31)
-            return;
-        return day_diff == 0 && (diff < 60 && "just now" ||
-            diff < 120 && "1 minute ago" ||
-            diff < 3600 && Math.floor(diff / 60) + " minutes ago" ||
-            diff < 7200 && "1 hour ago" ||
-            diff < 86400 && Math.floor(diff / 3600) + " hours ago") ||
-            day_diff == 1 && "Yesterday" ||
-            day_diff < 7 && day_diff + " days ago" ||
-            day_diff < 31 && Math.ceil(day_diff / 7) + " weeks ago";
-    };
-    TimeAgoPipe = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Pipe"])({
-            name: 'timeAgo',
-        })
-    ], TimeAgoPipe);
-    return TimeAgoPipe;
-}());
-
-//# sourceMappingURL=time-ago.js.map
-
-/***/ }),
-
-/***/ 506:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TimeAgoIso_8061Pipe; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-
-/**
- * Generated class for the TimeAgoIso_8061Pipe pipe.
- *
- * See https://angular.io/api/core/Pipe for more info on Angular Pipes.
- */
-var TimeAgoIso_8061Pipe = (function () {
-    function TimeAgoIso_8061Pipe() {
-    }
-    /**
-     * Takes a value and makes it lowercase.
-     */
-    TimeAgoIso_8061Pipe.prototype.transform = function (time) {
-        var args = [];
-        for (var _i = 1; _i < arguments.length; _i++) {
-            args[_i - 1] = arguments[_i];
-        }
-        var date = new Date(time);
-        var myDate = date.getDate() + "/" + (date.getMonth() + 1) + "/" + date.getFullYear();
-        return myDate;
-    };
-    TimeAgoIso_8061Pipe = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Pipe"])({
-            name: 'timeAgoIso_8061',
-        })
-    ], TimeAgoIso_8061Pipe);
-    return TimeAgoIso_8061Pipe;
-}());
-
-//# sourceMappingURL=time-ago-iso-8061.js.map
-
-/***/ }),
-
-/***/ 794:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FacebookPage; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return InfoGalleryModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(38);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_http__ = __webpack_require__(81);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__providers_facebook_facebook__ = __webpack_require__(260);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__info_gallery__ = __webpack_require__(470);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+
+
+var InfoGalleryModule = (function () {
+    function InfoGalleryModule() {
+    }
+    InfoGalleryModule = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["NgModule"])({
+            declarations: [
+                __WEBPACK_IMPORTED_MODULE_2__info_gallery__["a" /* InfoGalleryComponent */]
+            ],
+            imports: [
+                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__info_gallery__["a" /* InfoGalleryComponent */]),
+            ],
+            exports: [
+                __WEBPACK_IMPORTED_MODULE_2__info_gallery__["a" /* InfoGalleryComponent */]
+            ],
+            schemas: [__WEBPACK_IMPORTED_MODULE_0__angular_core__["CUSTOM_ELEMENTS_SCHEMA"]]
+        })
+    ], InfoGalleryModule);
+    return InfoGalleryModule;
+}());
+
+//# sourceMappingURL=info-gallery.module.js.map
+
+/***/ }),
+
+/***/ 470:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return InfoGalleryComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+/**
+ * Generated class for the InfoGalleryComponent component.
+ *
+ * See https://angular.io/api/core/Component for more info on Angular
+ * Components.
+ */
+var InfoGalleryComponent = (function () {
+    function InfoGalleryComponent() {
+        var _this = this;
+        this.onCallbackEvent = function (event, item, e) {
+            if (e) {
+                e.stopPropagation();
+            }
+            if (_this.events[event]) {
+                _this.events[event](item);
+            }
+        };
+    }
+    __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Input"])(),
+        __metadata("design:type", Object)
+    ], InfoGalleryComponent.prototype, "data", void 0);
+    __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Input"])(),
+        __metadata("design:type", Object)
+    ], InfoGalleryComponent.prototype, "events", void 0);
+    InfoGalleryComponent = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+            selector: 'info-gallery',template:/*ion-inline-start:"/Users/andrewhein/Documents/GitHub/Project-Watermellon/src/components/gallery/info-gallery/info-gallery.html"*/'<ion-row class="pdl-5 pdr-5">\n<ion-col col-6 *ngFor="let item of data" class="mgb-10 ani-right-to-left">\n<div class="wrapper-info-gallery">\n	<img src="{{item.path}}" alt="" (click)="onCallbackEvent(\'onClick\',item, $event)">\n</div>\n\n<div class="text-info">\n	<h4 class="title fs-13 fw-500 text-ellipsis mgt-5 mgb-0" [innerHTML]="item.title"></h4>\n</div>\n\n</ion-col>\n</ion-row>\n'/*ion-inline-end:"/Users/andrewhein/Documents/GitHub/Project-Watermellon/src/components/gallery/info-gallery/info-gallery.html"*/
+        }),
+        __metadata("design:paramtypes", [])
+    ], InfoGalleryComponent);
+    return InfoGalleryComponent;
+}());
+
+//# sourceMappingURL=info-gallery.js.map
+
+/***/ }),
+
+/***/ 728:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return UnsplashSearchPage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(38);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_unsplash_service_unsplash_service__ = __webpack_require__(254);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -197,90 +157,67 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
-
 /**
- * Generated class for the FacebookPage page.
+ * Generated class for the UnsplashSearchPage page.
  *
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
  */
-var FacebookPage = (function () {
-    function FacebookPage(navCtrl, navParams, http, fbService) {
+var UnsplashSearchPage = (function () {
+    function UnsplashSearchPage(navCtrl, navParams, unsplashService) {
         this.navCtrl = navCtrl;
         this.navParams = navParams;
-        this.http = http;
-        this.fbService = fbService;
-        this.next = null;
-        this.page = null;
+        this.unsplashService = unsplashService;
+        this.data = new Array();
+        this.events = {};
+        this.page = 0;
+        this.per_page = 20;
+        this.query = '';
         this.spnState = 'show';
-        this.list = new Array();
     }
-    FacebookPage.prototype.ionViewDidLoad = function () {
+    UnsplashSearchPage.prototype.loadMore = function (infiniteScroll) {
         var _this = this;
-        console.log('ionViewDidLoad FacebookPage');
-        this.spnState = 'show';
-        this.fbService.getPage().subscribe(function (data) {
-            _this.page = data;
-            _this.loadMore();
+        if (infiniteScroll === void 0) { infiniteScroll = null; }
+        this.page += 1;
+        this.unsplashService.searchPhotos(this.query, this.page, this.per_page).subscribe(function (data) {
+            for (var i = 0; i < data.results.length; i++) {
+                _this.data.push({
+                    'path': data.results[i].urls.regular,
+                    'title': 'Photo by ' + data.results[i].user.name
+                });
+            }
+            if (infiniteScroll) {
+                infiniteScroll.complete();
+            }
+            _this.spnState = 'hide';
         }, function (error) {
+            if (infiniteScroll != null) {
+                infiniteScroll.enable(false);
+            }
             _this.spnState = 'hide';
         });
     };
-    FacebookPage.prototype.loadMore = function (infiniteScroll) {
-        var _this = this;
-        if (infiniteScroll === void 0) { infiniteScroll = null; }
-        if (this.next == null) {
-            this.fbService.getPosts(this.next).subscribe(function (data) {
-                var tmpData = data.data;
-                console.log(tmpData);
-                _this.next = data.paging.next;
-                _this.list = _this.list.concat(tmpData);
-                if (infiniteScroll) {
-                    infiniteScroll.complete();
-                }
-                _this.spnState = 'hide';
-            }, function (error) {
-                console.log(error);
-                if (infiniteScroll != null) {
-                    infiniteScroll.enable(false);
-                }
-                _this.spnState = 'hide';
-            });
-        }
-        else {
-            this.fbService.getPosts(this.next).subscribe(function (data) {
-                var tmpData = data.data;
-                _this.next = data.paging.next;
-                _this.list = _this.list.concat(tmpData);
-                if (infiniteScroll) {
-                    infiniteScroll.complete();
-                }
-                if (_this.next == undefined) {
-                    infiniteScroll.enable(false);
-                }
-                _this.spnState = 'hide';
-            }, function (error) {
-                console.log(error);
-                if (infiniteScroll != null) {
-                    infiniteScroll.enable(false);
-                }
-                _this.spnState = 'hide';
-            });
-        }
+    UnsplashSearchPage.prototype.onInput = function () {
+        this.page = 0;
+        this.data = [];
+        this.spnState = 'show';
+        this.loadMore();
     };
-    FacebookPage = __decorate([
+    UnsplashSearchPage.prototype.ionViewDidLoad = function () {
+        this.loadMore();
+    };
+    UnsplashSearchPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-            selector: 'page-facebook',template:/*ion-inline-start:"/Users/andrewhein/Desktop/WestmorelandWorking/src/pages/ready-app/facebook/facebook.html"*/'<!--\n  Generated template for the Facebook page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n<ion-navbar>\n<button ion-button menuToggle>\n  <ion-icon name="menu"></ion-icon>\n</button>\n<ion-title>facebook</ion-title>\n</ion-navbar>\n</ion-header>\n\n<ion-content class="white-1">\n<ion-spinner class="indicator" [ngClass]="spnState"></ion-spinner>\n<ion-card *ngFor="let item of list" class="bdra-5 mgb-10">\n<ion-item>\n<ion-avatar item-start class="mgt-6 mgb-6">\n<img src="{{page.picture.data.url}}">\n</ion-avatar>\n<h2 class="fs-14">{{page.name}}</h2>\n<p class="fs-10 text-grey-4">{{item.updated_time | timeAgo}}</p> \n</ion-item>\n\n<img [src]="item.full_picture"/>\n<ion-card-content>\n<ion-card-title class="pd-0 fs-15 fw-600">{{item.name}}</ion-card-title>\n<p class="mgt-10">{{item.message}}</p>\n</ion-card-content>\n\n<ion-row>\n<ion-col>\n<button ion-button icon-left clear small class="text-black">\n<ion-icon name="thumbs-up"></ion-icon>\n  <div>{{item.likes.summary.total_count}}</div>\n</button>\n</ion-col>\n\n<ion-col center text-center>\n<button ion-button icon-left clear small class="text-black" (click)="fbService.goToComment(item,navCtrl)">\n  <ion-icon name="chatbubbles"></ion-icon>\n  <div>{{item.comments.summary.total_count}}</div>\n</button>\n</ion-col>\n\n<ion-col right text-right>\n<button ion-button icon-left clear small class="text-black" (click)="fbService.doOpen(item)">\n  <ion-icon name="open"></ion-icon>\n</button>\n</ion-col>\n\n<ion-col right text-right>\n<button (click)="fbService.doShare(navCtrl,item)" ion-button icon-left clear small class="text-black">\n  <ion-icon name="share"></ion-icon>\n</button>\n</ion-col>\n\n</ion-row>\n</ion-card>\n\n<ion-infinite-scroll (ionInfinite)="loadMore($event)">\n<ion-infinite-scroll-content></ion-infinite-scroll-content>\n</ion-infinite-scroll>\n</ion-content>\n'/*ion-inline-end:"/Users/andrewhein/Desktop/WestmorelandWorking/src/pages/ready-app/facebook/facebook.html"*/,
+            selector: 'page-unsplash-search',template:/*ion-inline-start:"/Users/andrewhein/Documents/GitHub/Project-Watermellon/src/pages/ready-app/unsplash/unsplash-search/unsplash-search.html"*/'<!--\n  Generated template for the UnsplashSearchPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n	<ion-navbar>\n		<button ion-button menuToggle>\n	      	<ion-icon name="menu"></ion-icon>\n	    </button>\n		<ion-searchbar [(ngModel)]="query" [showCancelButton]="shouldShowCancel" (ionInput)="onInput()" class="light-searchbar round transparent text-white pdl-10 pdr-10"></ion-searchbar>\n	</ion-navbar>\n</ion-header>\n\n\n<ion-content>\n<ion-spinner class="indicator" [ngClass]="spnState"></ion-spinner>\n<info-gallery [data]="data" [events]="events"></info-gallery>\n<ion-infinite-scroll (ionInfinite)="loadMore($event)">\n<ion-infinite-scroll-content></ion-infinite-scroll-content>\n</ion-infinite-scroll>\n</ion-content>\n'/*ion-inline-end:"/Users/andrewhein/Documents/GitHub/Project-Watermellon/src/pages/ready-app/unsplash/unsplash-search/unsplash-search.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* NavController */],
             __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["n" /* NavParams */],
-            __WEBPACK_IMPORTED_MODULE_2__angular_http__["b" /* Http */],
-            __WEBPACK_IMPORTED_MODULE_3__providers_facebook_facebook__["a" /* FacebookService */]])
-    ], FacebookPage);
-    return FacebookPage;
+            __WEBPACK_IMPORTED_MODULE_2__providers_unsplash_service_unsplash_service__["a" /* UnsplashService */]])
+    ], UnsplashSearchPage);
+    return UnsplashSearchPage;
 }());
 
-//# sourceMappingURL=facebook.js.map
+//# sourceMappingURL=unsplash-search.js.map
 
 /***/ })
 

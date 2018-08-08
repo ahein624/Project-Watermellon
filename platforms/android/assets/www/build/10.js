@@ -1,15 +1,14 @@
-webpackJsonp([10],{
+webpackJsonp([10,49],{
 
-/***/ 459:
+/***/ 391:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "YoutubeDetailPageModule", function() { return YoutubeDetailPageModule; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ModalBasicModule", function() { return ModalBasicModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(38);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__youtube_detail__ = __webpack_require__(816);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__pipes_pipes_module__ = __webpack_require__(504);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__modal_basic__ = __webpack_require__(488);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -19,36 +18,40 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
-
-var YoutubeDetailPageModule = (function () {
-    function YoutubeDetailPageModule() {
+var ModalBasicModule = (function () {
+    function ModalBasicModule() {
     }
-    YoutubeDetailPageModule = __decorate([
+    ModalBasicModule = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["NgModule"])({
             declarations: [
-                __WEBPACK_IMPORTED_MODULE_2__youtube_detail__["a" /* YoutubeDetailPage */],
+                __WEBPACK_IMPORTED_MODULE_2__modal_basic__["a" /* ModalBasicComponent */],
             ],
             imports: [
-                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__youtube_detail__["a" /* YoutubeDetailPage */]),
-                __WEBPACK_IMPORTED_MODULE_3__pipes_pipes_module__["a" /* PipesModule */]
+                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__modal_basic__["a" /* ModalBasicComponent */]),
             ],
+            exports: [
+                __WEBPACK_IMPORTED_MODULE_2__modal_basic__["a" /* ModalBasicComponent */]
+            ],
+            schemas: [__WEBPACK_IMPORTED_MODULE_0__angular_core__["CUSTOM_ELEMENTS_SCHEMA"]]
         })
-    ], YoutubeDetailPageModule);
-    return YoutubeDetailPageModule;
+    ], ModalBasicModule);
+    return ModalBasicModule;
 }());
 
-//# sourceMappingURL=youtube-detail.module.js.map
+//# sourceMappingURL=modal-basic.module.js.map
 
 /***/ }),
 
-/***/ 504:
+/***/ 393:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return PipesModule; });
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ModalsModule", function() { return ModalsModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__time_ago_time_ago__ = __webpack_require__(505);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__time_ago_iso_8061_time_ago_iso_8061__ = __webpack_require__(506);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(38);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__modals__ = __webpack_require__(517);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__modal_basic_modal_basic_module__ = __webpack_require__(391);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -58,129 +61,37 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
-var PipesModule = (function () {
-    function PipesModule() {
+
+var ModalsModule = (function () {
+    function ModalsModule() {
     }
-    PipesModule = __decorate([
+    ModalsModule = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["NgModule"])({
-            declarations: [__WEBPACK_IMPORTED_MODULE_1__time_ago_time_ago__["a" /* TimeAgoPipe */],
-                __WEBPACK_IMPORTED_MODULE_2__time_ago_iso_8061_time_ago_iso_8061__["a" /* TimeAgoIso_8061Pipe */]],
-            imports: [],
-            exports: [__WEBPACK_IMPORTED_MODULE_1__time_ago_time_ago__["a" /* TimeAgoPipe */],
-                __WEBPACK_IMPORTED_MODULE_2__time_ago_iso_8061_time_ago_iso_8061__["a" /* TimeAgoIso_8061Pipe */]]
+            declarations: [
+                __WEBPACK_IMPORTED_MODULE_2__modals__["a" /* ModalsComponent */],
+            ],
+            imports: [
+                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__modals__["a" /* ModalsComponent */]),
+                __WEBPACK_IMPORTED_MODULE_3__modal_basic_modal_basic_module__["ModalBasicModule"]
+            ],
+            exports: [
+                __WEBPACK_IMPORTED_MODULE_2__modals__["a" /* ModalsComponent */]
+            ],
+            schemas: [__WEBPACK_IMPORTED_MODULE_0__angular_core__["CUSTOM_ELEMENTS_SCHEMA"]]
         })
-    ], PipesModule);
-    return PipesModule;
+    ], ModalsModule);
+    return ModalsModule;
 }());
 
-//# sourceMappingURL=pipes.module.js.map
+//# sourceMappingURL=modals.module.js.map
 
 /***/ }),
 
-/***/ 505:
+/***/ 488:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TimeAgoPipe; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-
-/**
- * Generated class for the TimeAgoPipe pipe.
- *
- * See https://angular.io/api/core/Pipe for more info on Angular Pipes.
- */
-var TimeAgoPipe = (function () {
-    function TimeAgoPipe() {
-    }
-    /**
-     * Takes a value and makes it lowercase.
-     */
-    TimeAgoPipe.prototype.transform = function (time) {
-        var args = [];
-        for (var _i = 1; _i < arguments.length; _i++) {
-            args[_i - 1] = arguments[_i];
-        }
-        //return value.toLowerCase();
-        var date = new Date((time || "").replace(/-/g, "/").replace(/[TZ]/g, " ")), diff = (((new Date()).getTime() - date.getTime()) / 1000), day_diff = Math.floor(diff / 86400);
-        if (isNaN(day_diff) || day_diff < 0 || day_diff >= 31)
-            return;
-        return day_diff == 0 && (diff < 60 && "just now" ||
-            diff < 120 && "1 minute ago" ||
-            diff < 3600 && Math.floor(diff / 60) + " minutes ago" ||
-            diff < 7200 && "1 hour ago" ||
-            diff < 86400 && Math.floor(diff / 3600) + " hours ago") ||
-            day_diff == 1 && "Yesterday" ||
-            day_diff < 7 && day_diff + " days ago" ||
-            day_diff < 31 && Math.ceil(day_diff / 7) + " weeks ago";
-    };
-    TimeAgoPipe = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Pipe"])({
-            name: 'timeAgo',
-        })
-    ], TimeAgoPipe);
-    return TimeAgoPipe;
-}());
-
-//# sourceMappingURL=time-ago.js.map
-
-/***/ }),
-
-/***/ 506:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TimeAgoIso_8061Pipe; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-
-/**
- * Generated class for the TimeAgoIso_8061Pipe pipe.
- *
- * See https://angular.io/api/core/Pipe for more info on Angular Pipes.
- */
-var TimeAgoIso_8061Pipe = (function () {
-    function TimeAgoIso_8061Pipe() {
-    }
-    /**
-     * Takes a value and makes it lowercase.
-     */
-    TimeAgoIso_8061Pipe.prototype.transform = function (time) {
-        var args = [];
-        for (var _i = 1; _i < arguments.length; _i++) {
-            args[_i - 1] = arguments[_i];
-        }
-        var date = new Date(time);
-        var myDate = date.getDate() + "/" + (date.getMonth() + 1) + "/" + date.getFullYear();
-        return myDate;
-    };
-    TimeAgoIso_8061Pipe = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Pipe"])({
-            name: 'timeAgoIso_8061',
-        })
-    ], TimeAgoIso_8061Pipe);
-    return TimeAgoIso_8061Pipe;
-}());
-
-//# sourceMappingURL=time-ago-iso-8061.js.map
-
-/***/ }),
-
-/***/ 816:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return YoutubeDetailPage; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ModalBasicComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(38);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -195,30 +106,112 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 /**
- * Generated class for the YoutubeDetailPage page.
+ * Generated class for the RegisterV1Component component.
  *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
+ * See https://angular.io/api/core/Component for more info on Angular
+ * Components.
  */
-var YoutubeDetailPage = (function () {
-    function YoutubeDetailPage(navCtrl, navParams) {
-        this.navCtrl = navCtrl;
-        this.navParams = navParams;
-        this.item = {};
-        this.item = this.navParams.get('item');
-        console.log(this.item);
+var ModalBasicComponent = (function () {
+    function ModalBasicComponent(modalCtrl, viewCtrl) {
+        var _this = this;
+        this.modalCtrl = modalCtrl;
+        this.viewCtrl = viewCtrl;
+        this.onCallbackEvent = function (event) {
+            if (_this.events[event]) {
+                _this.events[event]();
+            }
+        };
+        console.log('Hello ModalsComponent Component');
     }
-    YoutubeDetailPage = __decorate([
+    ModalBasicComponent.prototype.dismiss = function () {
+        this.viewCtrl.dismiss();
+    };
+    __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Input"])(),
+        __metadata("design:type", Object)
+    ], ModalBasicComponent.prototype, "events", void 0);
+    __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Input"])(),
+        __metadata("design:type", Object)
+    ], ModalBasicComponent.prototype, "data", void 0);
+    ModalBasicComponent = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-            selector: 'page-youtube-detail',template:/*ion-inline-start:"/Users/andrewhein/Desktop/WestmorelandWorking/src/pages/ready-app/youtube/youtube-detail/youtube-detail.html"*/'<!--\n  Generated template for the YoutubeDetailPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>youtube-detail</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content>\n  <ion-card class="bdra-5 card-button-pst shadow-3 mgb-30">\n    <img src="{{item.snippet.thumbnails.high.url}}"/>\n    <ion-card-content class="pst-relative">\n\n      <button ion-button icon-only class="pst-absolute button-circle button-large shadow-2 pink-vs-red text-white" style="float:right">\n        <ion-icon class="fs-20" name="ios-play"></ion-icon>\n      </button>\n\n      <ion-card-title class="fs-20 fw-600 text-center mgt-25">{{item.snippet.title}}</ion-card-title>\n        <p class="text-grey fs-14 text-center">{{item.snippet.publishedAt | timeAgoIso_8061}}</p>\n      <p class="text-center mgb-20">{{item.snippet.description}}</p>\n    </ion-card-content>\n  </ion-card>\n</ion-content>\n'/*ion-inline-end:"/Users/andrewhein/Desktop/WestmorelandWorking/src/pages/ready-app/youtube/youtube-detail/youtube-detail.html"*/,
+            selector: 'modal-basic',template:/*ion-inline-start:"/Users/andrewhein/Documents/GitHub/Project-Watermellon/src/components/ui-elements/modal-basic/modal-basic.html"*/'<ion-header class="skin-transparent transparent">\n  <ion-toolbar class="skin-transparent">\n    <ion-title>\n      modal_basic\n    </ion-title>\n    <ion-buttons start>\n      <button ion-button icon-only class="circle text-grey-5 button-circle mgr-10 mgl-10" (click)="dismiss()">\n        <ion-icon name="ios-close"></ion-icon>\n      </button>\n    </ion-buttons>\n  </ion-toolbar>\n</ion-header>\n\n<ion-content>    \n  <h4 padding class="mgt-50 mgb-10">modal_box_title</h4>\n  \n  <ion-list>\n    <ion-item>\n      <ion-label>view_all_location</ion-label>\n      <ion-toggle [(ngModel)]="all_local"></ion-toggle>\n    </ion-item>\n\n    <ion-item>\n      <ion-label>county</ion-label>\n      <ion-select [disabled]="all_local ? true : null" [(ngModel)]="county">\n        <ion-option value="null">County 1</ion-option>\n        <ion-option value="null">County 2</ion-option>\n        <ion-option value="null">County 3</ion-option>\n        <ion-option value="null">County 4</ion-option>\n        <ion-option value="null">County 5</ion-option>\n      </ion-select>\n    </ion-item>\n\n    <ion-item>\n      <ion-label>cities</ion-label>\n      <ion-select [disabled]="all_local ? true : null" [(ngModel)]="cities">\n        <ion-option value="null">All cities</ion-option>\n        <ion-option value="null">Cities 1</ion-option>\n        <ion-option value="null">Cities 2</ion-option>\n        <ion-option value="null">Cities 3</ion-option>\n        <ion-option value="null">Cities 4</ion-option>\n        <ion-option value="null">Cities 5</ion-option>\n      </ion-select>\n    </ion-item>\n  </ion-list>\n</ion-content>\n'/*ion-inline-end:"/Users/andrewhein/Documents/GitHub/Project-Watermellon/src/components/ui-elements/modal-basic/modal-basic.html"*/
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* NavController */],
-            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["n" /* NavParams */]])
-    ], YoutubeDetailPage);
-    return YoutubeDetailPage;
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* ModalController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["r" /* ViewController */]])
+    ], ModalBasicComponent);
+    return ModalBasicComponent;
 }());
 
-//# sourceMappingURL=youtube-detail.js.map
+//# sourceMappingURL=modal-basic.js.map
+
+/***/ }),
+
+/***/ 517:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ModalsComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(38);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+/**
+ * Generated class for the RegisterV1Component component.
+ *
+ * See https://angular.io/api/core/Component for more info on Angular
+ * Components.
+ */
+var ModalsComponent = (function () {
+    function ModalsComponent(modalCtrl) {
+        var _this = this;
+        this.modalCtrl = modalCtrl;
+        this.onCallbackEvent = function (event) {
+            if (_this.events[event]) {
+                _this.events[event]();
+            }
+        };
+        console.log('Hello ModalsComponent Component');
+    }
+    ModalsComponent.prototype.openModalBasic = function (characterNum) {
+        var modal = this.modalCtrl.create('ModalBasicComponent', characterNum);
+        modal.present();
+    };
+    ModalsComponent.prototype.openModalBox = function (characterNum) {
+        var modal = this.modalCtrl.create('ModalBoxComponent', characterNum);
+        modal.present();
+    };
+    ModalsComponent.prototype.openModalMenu = function (characterNum) {
+        var modal = this.modalCtrl.create('ModalMenuComponent', characterNum);
+        modal.present();
+    };
+    __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Input"])(),
+        __metadata("design:type", Object)
+    ], ModalsComponent.prototype, "events", void 0);
+    __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Input"])(),
+        __metadata("design:type", Object)
+    ], ModalsComponent.prototype, "data", void 0);
+    ModalsComponent = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+            selector: 'modals',template:/*ion-inline-start:"/Users/andrewhein/Documents/GitHub/Project-Watermellon/src/components/ui-elements/modals/modals.html"*/'<div>\n  \n   <ion-list>\n    <ion-list-header>Hobbits</ion-list-header>\n\n    <a ion-item (click)="openModalBasic()">Show Modal Basic</a>\n    <a ion-item (click)="openModalBox()">Show Modal Box</a>\n    <a ion-item (click)="openModalMenu()">Show Modal Menu</a>\n  </ion-list>\n\n</div>'/*ion-inline-end:"/Users/andrewhein/Documents/GitHub/Project-Watermellon/src/components/ui-elements/modals/modals.html"*/
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* ModalController */]])
+    ], ModalsComponent);
+    return ModalsComponent;
+}());
+
+//# sourceMappingURL=modals.js.map
 
 /***/ })
 

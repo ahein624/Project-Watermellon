@@ -1,14 +1,14 @@
 webpackJsonp([43],{
 
-/***/ 463:
+/***/ 408:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SettingColorPageModule", function() { return SettingColorPageModule; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ContactUsPageModule", function() { return ContactUsPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(38);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__setting_color__ = __webpack_require__(889);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__contact_us__ = __webpack_require__(682);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -18,34 +18,35 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
-var SettingColorPageModule = (function () {
-    function SettingColorPageModule() {
+var ContactUsPageModule = (function () {
+    function ContactUsPageModule() {
     }
-    SettingColorPageModule = __decorate([
+    ContactUsPageModule = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["NgModule"])({
             declarations: [
-                __WEBPACK_IMPORTED_MODULE_2__setting_color__["a" /* SettingColorPage */],
+                __WEBPACK_IMPORTED_MODULE_2__contact_us__["a" /* ContactUsPage */],
             ],
             imports: [
-                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__setting_color__["a" /* SettingColorPage */]),
+                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__contact_us__["a" /* ContactUsPage */]),
             ],
+            schemas: [__WEBPACK_IMPORTED_MODULE_0__angular_core__["CUSTOM_ELEMENTS_SCHEMA"]]
         })
-    ], SettingColorPageModule);
-    return SettingColorPageModule;
+    ], ContactUsPageModule);
+    return ContactUsPageModule;
 }());
 
-//# sourceMappingURL=setting-color.module.js.map
+//# sourceMappingURL=contact-us.module.js.map
 
 /***/ }),
 
-/***/ 889:
+/***/ 682:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SettingColorPage; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ContactUsPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(38);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_settings_settings__ = __webpack_require__(140);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_platform_browser__ = __webpack_require__(33);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -59,43 +60,33 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 /**
- * Generated class for the RegisterV1Component component.
+ * Generated class for the ContactPage page.
  *
- * See https://angular.io/api/core/Component for more info on Angular
- * Components.
+ * See https://ionicframework.com/docs/components/#navigation for more info on
+ * Ionic pages and navigation.
  */
-var SettingColorPage = (function () {
-    function SettingColorPage(settingsProvider, events) {
-        var _this = this;
-        this.settingsProvider = settingsProvider;
-        this.events = events;
-        this.list = new Array();
-        this.settings = null;
-        this.selected_skin = 1;
-        this.list = this.settingsProvider.getSkins();
-        this.settingsProvider.getSettings().then(function (data) {
-            _this.settings = data;
-            _this.selected_skin = _this.settingsProvider.getIndexOf(_this.settings.skin.main_bg, _this.list);
-        });
+// Leaving this existing code incase we need to come back and reference it.
+var ContactUsPage = (function () {
+    function ContactUsPage(navCtrl, navParams, sanitize) {
+        this.navCtrl = navCtrl;
+        this.navParams = navParams;
+        this.sanitize = sanitize;
+        this.params = {};
+        this.url = sanitize.bypassSecurityTrustResourceUrl("https://westmorelandfair.com/_app/contact-us/");
     }
-    SettingColorPage.prototype.setSkin = function () {
-        var _this = this;
-        this.settingsProvider.setSkin(this.list[this.selected_skin]).then(function (data) {
-            _this.events.publish('settings_change: change', data);
-            _this.settings = data;
-        });
+    ContactUsPage.prototype.ionViewDidLoad = function () {
+        console.log('ionViewDidLoad ContactUsPage');
     };
-    SettingColorPage = __decorate([
+    ContactUsPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-            selector: 'setting-color',template:/*ion-inline-start:"/Users/andrewhein/Desktop/WestmorelandWorking/src/pages/settings/setting-color/setting-color.html"*/'<ion-header *ngIf="settings!=null"  class="{{settings.skin.main_skin}}">\n  <ion-navbar>\n    <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title>Theme Setting</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content *ngIf="settings!=null" padding class="{{settings.skin.main_bg}}">\n  	<h4 class="mgb-10 {{settings.skin.text_1}}">Setting color</h4>\n  	<h6 class="mgt-5 mgb-20 {{settings.skin.text_2}} fw-400">Choose color you love</h6>\n\n  	<ion-list no-lines class="lst-no-background" radio-group [(ngModel)]="selected_skin" (ionChange)="setSkin()" >\n	    <ion-item *ngFor="let item of list, let i = index" class="pdl-0 fs-13 text-grey-5">\n	      	<ion-label class="{{settings.skin.text_1}}">{{item.title}}</ion-label>\n	      	<ion-radio [value]="i"></ion-radio>\n	    </ion-item>\n  	</ion-list>\n</ion-content>\n'/*ion-inline-end:"/Users/andrewhein/Desktop/WestmorelandWorking/src/pages/settings/setting-color/setting-color.html"*/
+            selector: 'page-contact',template:/*ion-inline-start:"/Users/andrewhein/Documents/GitHub/Project-Watermellon/src/pages/contact-us/contact-us.html"*/'<!--\n  Generated template for the AboutPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header class="skin skin-wcf skin-brown">\n  <ion-navbar>\n  <button ion-button menuToggle>\n    <ion-icon name="menu"></ion-icon>\n  </button>\n  <ion-title>Contact</ion-title>\n  </ion-navbar>\n  </ion-header>\n\n\n<ion-content class="no-scroll">\n    <iframe height="100%" width="100%" [src]="url"></iframe>\n</ion-content>\n\n\n '/*ion-inline-end:"/Users/andrewhein/Documents/GitHub/Project-Watermellon/src/pages/contact-us/contact-us.html"*/,
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2__providers_settings_settings__["a" /* SettingsProvider */],
-            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* Events */]])
-    ], SettingColorPage);
-    return SettingColorPage;
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["n" /* NavParams */], __WEBPACK_IMPORTED_MODULE_2__angular_platform_browser__["DomSanitizer"]])
+    ], ContactUsPage);
+    return ContactUsPage;
 }());
 
-//# sourceMappingURL=setting-color.js.map
+//# sourceMappingURL=contact-us.js.map
 
 /***/ })
 

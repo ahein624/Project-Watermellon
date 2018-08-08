@@ -1,14 +1,14 @@
 webpackJsonp([40],{
 
-/***/ 472:
+/***/ 411:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ShopPageModule", function() { return ShopPageModule; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "FragmentPageModule", function() { return FragmentPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(38);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__shop__ = __webpack_require__(910);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__fragment__ = __webpack_require__(685);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -18,33 +18,34 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
-var ShopPageModule = (function () {
-    function ShopPageModule() {
+var FragmentPageModule = (function () {
+    function FragmentPageModule() {
     }
-    ShopPageModule = __decorate([
+    FragmentPageModule = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["NgModule"])({
             declarations: [
-                __WEBPACK_IMPORTED_MODULE_2__shop__["a" /* ShopPage */],
+                __WEBPACK_IMPORTED_MODULE_2__fragment__["a" /* FragmentPage */],
             ],
             imports: [
-                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__shop__["a" /* ShopPage */]),
+                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__fragment__["a" /* FragmentPage */]),
             ],
         })
-    ], ShopPageModule);
-    return ShopPageModule;
+    ], FragmentPageModule);
+    return FragmentPageModule;
 }());
 
-//# sourceMappingURL=shop.module.js.map
+//# sourceMappingURL=fragment.module.js.map
 
 /***/ }),
 
-/***/ 910:
+/***/ 685:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ShopPage; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FragmentPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(38);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_loading_service_loading_service__ = __webpack_require__(258);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -56,43 +57,43 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 
 
+
 /**
- * Generated class for the ShopPage page.
+ * Generated class for the FragmentPage page.
  *
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
  */
-var ShopPage = (function () {
-    function ShopPage(navCtrl, navParams) {
+var FragmentPage = (function () {
+    function FragmentPage(navCtrl, navParams, loadingService) {
         this.navCtrl = navCtrl;
         this.navParams = navParams;
-        this.shopBlogPage = 'ShopBlogPage';
-        this.shopCategoryPage = 'ShopCategoryPage';
-        this.shopDetailProductPage = 'ShopDetailProductPage';
-        this.shopHomePage = 'ShopHomePage';
+        this.loadingService = loadingService;
+        this.pages = this.navParams.get('pages');
+        this.subPage = this.navParams.get('subPage');
+        console.log(this.subPage);
+        console.log(this.pages);
     }
-    ShopPage.prototype.ionViewDidLoad = function () {
-        console.log('ionViewDidLoad ShopPage');
+    FragmentPage.prototype.ionViewDidLoad = function () {
+        console.log('ionViewDidLoad FragmentPage');
     };
-    ShopPage.prototype.ionViewDidEnter = function () {
-        this.tabRef.select(0);
-        this.shopHomePage = 'ShopHomePage';
-        //this.tabRef.setTabP
+    FragmentPage.prototype.goTo = function (page) {
+        var that = this;
+        this.loadingService.show();
+        this.navCtrl.push(this.subPage, { 'page': page }).then(function () {
+            that.loadingService.dismiss();
+        });
     };
-    __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["ViewChild"])('tabs'),
-        __metadata("design:type", __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["q" /* Tabs */])
-    ], ShopPage.prototype, "tabRef", void 0);
-    ShopPage = __decorate([
+    FragmentPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-            selector: 'page-shop',template:/*ion-inline-start:"/Users/andrewhein/Desktop/WestmorelandWorking/src/pages/shop/shop.html"*/'<ion-tabs #tabs class="shadow-3 skin-light skin skin-white stroke-top stroke-1 stroke-grey-1">\n	<ion-tab [root]="shopHomePage" tabTitle="" tabIcon="md-home"></ion-tab>\n	<ion-tab [root]="shopCategoryPage" tabTitle="" tabIcon="md-list"></ion-tab>\n	<ion-tab [root]="shopBlogPage" tabTitle="" tabIcon="md-paper"></ion-tab>\n	<ion-tab [root]="tab4Root" tabTitle="" tabIcon="ios-contact"></ion-tab>\n</ion-tabs>\n\n'/*ion-inline-end:"/Users/andrewhein/Desktop/WestmorelandWorking/src/pages/shop/shop.html"*/,
+            selector: 'page-fragment',template:/*ion-inline-start:"/Users/andrewhein/Documents/GitHub/Project-Watermellon/src/pages/fragment/fragment.html"*/'<!--\n  Generated template for the FragmentPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<!-- <ion-header>\n\n<ion-navbar>\n	<ion-title class="uppercase">Fragment</ion-title>\n</ion-navbar>\n\n</ion-header>\n -->\n\n\n<ion-header>\n  	<ion-navbar>\n    	<button ion-button menuToggle>\n      		<ion-icon name="menu"></ion-icon>\n    	</button>\n    	<ion-title>Fragment</ion-title>\n  	</ion-navbar>\n</ion-header>\n\n\n\n<ion-content>\n	<ion-list no-lines>\n  		<button ion-item *ngFor="let item of pages" ion-item class="ani-bottom-to-left" (click)="goTo(item)">{{item.title}}</button>\n	</ion-list>\n</ion-content>\n'/*ion-inline-end:"/Users/andrewhein/Documents/GitHub/Project-Watermellon/src/pages/fragment/fragment.html"*/,
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["n" /* NavParams */]])
-    ], ShopPage);
-    return ShopPage;
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["n" /* NavParams */], __WEBPACK_IMPORTED_MODULE_2__providers_loading_service_loading_service__["a" /* LoadingService */]])
+    ], FragmentPage);
+    return FragmentPage;
 }());
 
-//# sourceMappingURL=shop.js.map
+//# sourceMappingURL=fragment.js.map
 
 /***/ })
 

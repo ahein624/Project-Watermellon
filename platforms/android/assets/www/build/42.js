@@ -1,14 +1,14 @@
 webpackJsonp([42],{
 
-/***/ 464:
+/***/ 409:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SettingDashboardPageModule", function() { return SettingDashboardPageModule; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "DailyEventsPageModule", function() { return DailyEventsPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(38);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__setting_dashboard__ = __webpack_require__(890);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__daily_events__ = __webpack_require__(683);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -18,33 +18,35 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
-var SettingDashboardPageModule = (function () {
-    function SettingDashboardPageModule() {
+var DailyEventsPageModule = (function () {
+    function DailyEventsPageModule() {
     }
-    SettingDashboardPageModule = __decorate([
+    DailyEventsPageModule = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["NgModule"])({
             declarations: [
-                __WEBPACK_IMPORTED_MODULE_2__setting_dashboard__["a" /* SettingDashboardPage */],
+                __WEBPACK_IMPORTED_MODULE_2__daily_events__["a" /* DailyEventsPage */],
             ],
             imports: [
-                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__setting_dashboard__["a" /* SettingDashboardPage */]),
+                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__daily_events__["a" /* DailyEventsPage */]),
             ],
+            schemas: [__WEBPACK_IMPORTED_MODULE_0__angular_core__["CUSTOM_ELEMENTS_SCHEMA"]]
         })
-    ], SettingDashboardPageModule);
-    return SettingDashboardPageModule;
+    ], DailyEventsPageModule);
+    return DailyEventsPageModule;
 }());
 
-//# sourceMappingURL=setting-dashboard.module.js.map
+//# sourceMappingURL=daily-events.module.js.map
 
 /***/ }),
 
-/***/ 890:
+/***/ 683:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SettingDashboardPage; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return DailyEventsPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__providers_settings_settings__ = __webpack_require__(140);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(38);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_platform_browser__ = __webpack_require__(33);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -56,34 +58,35 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 
 
+
 /**
- * Generated class for the RegisterV1Component component.
+ * Generated class for the DailyEventsPage page.
  *
- * See https://angular.io/api/core/Component for more info on Angular
- * Components.
+ * See https://ionicframework.com/docs/components/#navigation for more info on
+ * Ionic pages and navigation.
  */
-var SettingDashboardPage = (function () {
-    function SettingDashboardPage(settingsProvider) {
-        var _this = this;
-        this.settingsProvider = settingsProvider;
-        this.settings = {};
-        this.settingsProvider.getSettings().then(function (data) {
-            _this.settings = data;
-        });
+// Leaving this existing code incase we need to come back and reference it.
+var DailyEventsPage = (function () {
+    function DailyEventsPage(navCtrl, navParams, sanitize) {
+        this.navCtrl = navCtrl;
+        this.navParams = navParams;
+        this.sanitize = sanitize;
+        this.params = {};
+        this.url = sanitize.bypassSecurityTrustResourceUrl("https://westmorelandfair.com/_app/daily-events/");
     }
-    SettingDashboardPage.prototype.setDashboard = function () {
-        this.settingsProvider.setDashboard(this.settings.dashboard_type);
+    DailyEventsPage.prototype.ionViewDidLoad = function () {
+        console.log('ionViewDidLoad DailyEventsPage');
     };
-    SettingDashboardPage = __decorate([
+    DailyEventsPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-            selector: 'setting-dashboard',template:/*ion-inline-start:"/Users/andrewhein/Desktop/WestmorelandWorking/src/pages/settings/setting-dashboard/setting-dashboard.html"*/'<ion-header>\n  <ion-navbar>\n    <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title>Dashboard Setting</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content>\n  	\n  	<ion-list radio-group [(ngModel)]="settings.dashboard_type" (ionChange)="setDashboard()">\n	  <ion-item>\n	    <ion-label>Grid</ion-label>\n	    <ion-radio  value="1" checked></ion-radio>\n	  </ion-item>\n	  <ion-item>\n	    <ion-label>Categories</ion-label>\n	    <ion-radio value="2"></ion-radio>\n	  </ion-item>\n	  <ion-item>\n	    <ion-label>List</ion-label>\n	    <ion-radio  value="3"></ion-radio>\n	  </ion-item>\n	</ion-list>\n\n</ion-content>\n'/*ion-inline-end:"/Users/andrewhein/Desktop/WestmorelandWorking/src/pages/settings/setting-dashboard/setting-dashboard.html"*/
+            selector: 'page-events',template:/*ion-inline-start:"/Users/andrewhein/Documents/GitHub/Project-Watermellon/src/pages/daily-events/daily-events.html"*/'<!--\n  Generated template for the AboutPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header class="skin skin-wcf skin-brown">\n  <ion-navbar>\n  <button ion-button menuToggle>\n    <ion-icon name="menu"></ion-icon>\n  </button>\n  <ion-title>Daily Events</ion-title>\n  </ion-navbar>\n  </ion-header>\n\n\n<ion-content class="no-scroll">\n    <iframe height="100%" width="100%" [src]="url"></iframe>\n</ion-content>\n\n\n '/*ion-inline-end:"/Users/andrewhein/Documents/GitHub/Project-Watermellon/src/pages/daily-events/daily-events.html"*/,
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__providers_settings_settings__["a" /* SettingsProvider */]])
-    ], SettingDashboardPage);
-    return SettingDashboardPage;
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["n" /* NavParams */], __WEBPACK_IMPORTED_MODULE_2__angular_platform_browser__["DomSanitizer"]])
+    ], DailyEventsPage);
+    return DailyEventsPage;
 }());
 
-//# sourceMappingURL=setting-dashboard.js.map
+//# sourceMappingURL=daily-events.js.map
 
 /***/ })
 

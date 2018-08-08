@@ -334,11 +334,11 @@ var map = {
 		40
 	],
 	"../pages/gallery/gallery-modal/gallery-modal.module": [
-		412,
+		413,
 		15
 	],
 	"../pages/gallery/gallery.module": [
-		413,
+		412,
 		3
 	],
 	"../pages/home/home.module": [
@@ -394,11 +394,11 @@ var map = {
 		30
 	],
 	"../pages/ready-app/unsplash/unsplash-favorite/unsplash-favorite.module": [
-		428,
+		427,
 		13
 	],
 	"../pages/ready-app/unsplash/unsplash-home/unsplash-home.module": [
-		427,
+		428,
 		12
 	],
 	"../pages/ready-app/unsplash/unsplash-modal-photo/unsplash-modal-photo.module": [
@@ -1627,8 +1627,8 @@ var AppModule = (function () {
                         { loadChildren: '../pages/daily-events/daily-events.module#DailyEventsPageModule', name: 'DailyEventsPage', segment: 'daily-events', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/directions/directions.module#DirectionsPageModule', name: 'DirectionsPage', segment: 'directions', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/fragment/fragment.module#FragmentPageModule', name: 'FragmentPage', segment: 'fragment', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/gallery/gallery-modal/gallery-modal.module#GalleryModalPageModule', name: 'GalleryModalPage', segment: 'gallery-modal', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/gallery/gallery.module#GalleryPageModule', name: 'GalleryPage', segment: 'gallery', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/gallery/gallery-modal/gallery-modal.module#GalleryModalPageModule', name: 'GalleryModalPage', segment: 'gallery-modal', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/home/home.module#HomePageModule', name: 'HomePage', segment: 'home', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/profile/profile.module#ProfilePageModule', name: 'ProfilePage', segment: 'profile', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/ready-app/facebook/facebook-comment/facebook-comment.module#FacebookCommentPageModule', name: 'FacebookCommentPage', segment: 'facebook-comment', priority: 'low', defaultHistory: [] },
@@ -1642,8 +1642,8 @@ var AppModule = (function () {
                         { loadChildren: '../pages/ready-app/twitter/twitter.module#TwitterPageModule', name: 'TwitterPage', segment: 'twitter', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/ready-app/unsplash/unsplash-category-detail/unsplash-category-detail.module#UnsplashCategoryDetailPageModule', name: 'UnsplashCategoryDetailPage', segment: 'unsplash-category-detail', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/ready-app/unsplash/unsplash-collection/unsplash-collection.module#UnsplashCollectionPageModule', name: 'UnsplashCollectionPage', segment: 'unsplash-collection', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/ready-app/unsplash/unsplash-home/unsplash-home.module#UnsplashHomePageModule', name: 'UnsplashHomePage', segment: 'unsplash-home', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/ready-app/unsplash/unsplash-favorite/unsplash-favorite.module#UnsplashFavoriestPageModule', name: 'UnsplashFavoritePage', segment: 'unsplash-favorite', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/ready-app/unsplash/unsplash-home/unsplash-home.module#UnsplashHomePageModule', name: 'UnsplashHomePage', segment: 'unsplash-home', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/ready-app/unsplash/unsplash-modal-photo/unsplash-modal-photo.module#UnsplashModalPhotoPageModule', name: 'UnsplashModalPhotoPage', segment: 'unsplash-modal-photo', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/ready-app/unsplash/unsplash-search/unsplash-search.module#UnsplashSearchPageModule', name: 'UnsplashSearchPage', segment: 'unsplash-search', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/ready-app/unsplash/unsplash.module#UnsplashPageModule', name: 'UnsplashPage', segment: 'unsplash', priority: 'low', defaultHistory: [] },

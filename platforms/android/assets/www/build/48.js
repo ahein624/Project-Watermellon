@@ -1,14 +1,14 @@
 webpackJsonp([48],{
 
-/***/ 454:
+/***/ 402:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "WordpressFavoritePageModule", function() { return WordpressFavoritePageModule; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ModalBoxModule", function() { return ModalBoxModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(38);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__wordpress_favorite__ = __webpack_require__(811);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__modal_box__ = __webpack_require__(662);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -18,34 +18,37 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
-var WordpressFavoritePageModule = (function () {
-    function WordpressFavoritePageModule() {
+var ModalBoxModule = (function () {
+    function ModalBoxModule() {
     }
-    WordpressFavoritePageModule = __decorate([
+    ModalBoxModule = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["NgModule"])({
             declarations: [
-                __WEBPACK_IMPORTED_MODULE_2__wordpress_favorite__["a" /* WordpressFavoritePage */],
+                __WEBPACK_IMPORTED_MODULE_2__modal_box__["a" /* ModalBoxComponent */],
             ],
             imports: [
-                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__wordpress_favorite__["a" /* WordpressFavoritePage */]),
+                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__modal_box__["a" /* ModalBoxComponent */]),
             ],
+            exports: [
+                __WEBPACK_IMPORTED_MODULE_2__modal_box__["a" /* ModalBoxComponent */]
+            ],
+            schemas: [__WEBPACK_IMPORTED_MODULE_0__angular_core__["CUSTOM_ELEMENTS_SCHEMA"]]
         })
-    ], WordpressFavoritePageModule);
-    return WordpressFavoritePageModule;
+    ], ModalBoxModule);
+    return ModalBoxModule;
 }());
 
-//# sourceMappingURL=wordpress-favorite.module.js.map
+//# sourceMappingURL=modal-box.module.js.map
 
 /***/ }),
 
-/***/ 811:
+/***/ 662:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return WordpressFavoritePage; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ModalBoxComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(38);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_wordpress_wordpress__ = __webpack_require__(255);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -57,51 +60,45 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 
 
-
 /**
- * Generated class for the WordpressFavoritePage page.
+ * Generated class for the RegisterV1Component component.
  *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
+ * See https://angular.io/api/core/Component for more info on Angular
+ * Components.
  */
-var WordpressFavoritePage = (function () {
-    function WordpressFavoritePage(navCtrl, navParams, wpService) {
-        this.navCtrl = navCtrl;
-        this.navParams = navParams;
-        this.wpService = wpService;
-        this.data = new Array();
-    }
-    WordpressFavoritePage.prototype.ionViewDidEnter = function () {
+var ModalBoxComponent = (function () {
+    function ModalBoxComponent(modalCtrl, viewCtrl) {
         var _this = this;
-        this.data = new Array();
-        var that = this;
-        this.wpService.getAllFavorites().then(function (result) {
-            _this.data = result;
-        });
+        this.modalCtrl = modalCtrl;
+        this.viewCtrl = viewCtrl;
+        this.onCallbackEvent = function (event) {
+            if (_this.events[event]) {
+                _this.events[event]();
+            }
+        };
+        console.log('Hello ModalsComponent Component');
+    }
+    ModalBoxComponent.prototype.dismiss = function () {
+        this.viewCtrl.dismiss();
     };
-    WordpressFavoritePage.prototype.doFavorite = function (item) {
-        this.wpService.doFavorite(item);
-        var index = this.wpService.getIndexOf(item.id, this.data);
-        if (index != -1) {
-            this.data.splice(index, 1);
-        }
-    };
-    WordpressFavoritePage.prototype.doClear = function () {
-        this.wpService.clearAllFavorite();
-        this.data = new Array();
-    };
-    WordpressFavoritePage = __decorate([
+    __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Input"])(),
+        __metadata("design:type", Object)
+    ], ModalBoxComponent.prototype, "events", void 0);
+    __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Input"])(),
+        __metadata("design:type", Object)
+    ], ModalBoxComponent.prototype, "data", void 0);
+    ModalBoxComponent = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-            selector: 'page-wordpress-favorite',template:/*ion-inline-start:"/Users/andrewhein/Desktop/WestmorelandWorking/src/pages/ready-app/wordpress/wordpress-favorite/wordpress-favorite.html"*/'<!--\n  Generated template for the WordpressFavoritePage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title>Favorites</ion-title>\n    <ion-buttons right>\n      <button ion-button icon-only (click)="doClear()">\n      <ion-icon class="fs-24 text-grey-5" name="trash">\n      </ion-icon>\n    </button>\n    </ion-buttons>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content class="white-1">\n<ion-card *ngFor="let item of data" class="bdra-5 card card-md">\n    <img *ngIf="item.thumb!=null" [src]="item.thumb" (click)="wpService.doReadMore(navCtrl,item)">\n    <ion-card-content class="card-content card-content-md" (click)="wpService.doReadMore(navCtrl,item)">\n      <ion-card-title class="fs-16 fw-600 card-title card-title-md" [innerHTML]="item.title"></ion-card-title>\n      <p  [innerHTML]="item.excerpt"></p>\n    </ion-card-content>\n\n    <ion-row class="row">\n      <ion-col>\n        <button (click)="doFavorite(item)" ion-button icon-left clear small class="text-grey-5 favorite">\n          <ion-icon  [name]="item.isFavorite == true ? \'heart\' : \'heart-outline\'"></ion-icon>\n        </button>\n      </ion-col>\n\n      <ion-col center text-center>\n         <button (click)="wpService.doShare(item)" ion-button icon-left clear small class="text-grey-5">\n             <ion-icon name="md-share"></ion-icon>\n        </button>\n      </ion-col>\n\n      <ion-col right text-right>\n        <button (click)="wpService.doOpen(item)" ion-button icon-left clear small class="text-grey-5">\n          <ion-icon name="md-open"></ion-icon>\n        </button>\n      </ion-col>\n      \n      <ion-col right text-right>\n        <button (click)="wpService.doReadMore(navCtrl,item)" ion-button icon-left clear small class="text-grey-5 fs-20">\n          <ion-icon name="ios-more"></ion-icon>\n        </button>\n      </ion-col>\n\n    </ion-row>\n  </ion-card>\n</ion-content>\n'/*ion-inline-end:"/Users/andrewhein/Desktop/WestmorelandWorking/src/pages/ready-app/wordpress/wordpress-favorite/wordpress-favorite.html"*/,
+            selector: 'modal-box',template:/*ion-inline-start:"/Users/andrewhein/Documents/GitHub/Project-Watermellon/src/components/ui-elements/modal-box/modal-box.html"*/'<ion-content padding class="modal-box">\n  <ion-row class="close-modal" (click)="dismiss()"></ion-row>\n  <ion-row class="main-modal bdra-10" col-2>\n    <div class="modal-box-wrapper">\n      \n      <h4 class="mgb-10">modal_box_title</h4>\n      <h6 class="mgt-5 mgb-20">modal_box_quote</h6>\n      \n      <ion-list>\n        <ion-item>\n          <ion-label>view_all_location</ion-label>\n          <ion-toggle [(ngModel)]="all_local"></ion-toggle>\n        </ion-item>\n\n        <ion-item>\n          <ion-label>county</ion-label>\n          <ion-select [disabled]="all_local ? true : null" [(ngModel)]="county">\n            <ion-option value="null">County 1</ion-option>\n            <ion-option value="null">County 2</ion-option>\n            <ion-option value="null">County 3</ion-option>\n            <ion-option value="null">County 4</ion-option>\n            <ion-option value="null">County 5</ion-option>\n          </ion-select>\n        </ion-item>\n\n        <ion-item>\n          <ion-label>cities</ion-label>\n          <ion-select [disabled]="all_local ? true : null" [(ngModel)]="cities">\n            <ion-option value="null">All cities</ion-option>\n            <ion-option value="null">Cities 1</ion-option>\n            <ion-option value="null">Cities 2</ion-option>\n            <ion-option value="null">Cities 3</ion-option>\n            <ion-option value="null">Cities 4</ion-option>\n            <ion-option value="null">Cities 5</ion-option>\n          </ion-select>\n        </ion-item>\n      </ion-list>\n\n    </div>\n  </ion-row>\n</ion-content>'/*ion-inline-end:"/Users/andrewhein/Documents/GitHub/Project-Watermellon/src/components/ui-elements/modal-box/modal-box.html"*/
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* NavController */],
-            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["n" /* NavParams */],
-            __WEBPACK_IMPORTED_MODULE_2__providers_wordpress_wordpress__["a" /* WordpressService */]])
-    ], WordpressFavoritePage);
-    return WordpressFavoritePage;
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* ModalController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["r" /* ViewController */]])
+    ], ModalBoxComponent);
+    return ModalBoxComponent;
 }());
 
-//# sourceMappingURL=wordpress-favorite.js.map
+//# sourceMappingURL=modal-box.js.map
 
 /***/ })
 

@@ -1,6 +1,6 @@
 webpackJsonp([15],{
 
-/***/ 412:
+/***/ 413:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -8,8 +8,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "GalleryModalPageModule", function() { return GalleryModalPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(38);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__gallery_modal__ = __webpack_require__(686);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_gallery_gallery_modal_gallery_modal_module__ = __webpack_require__(687);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__gallery_modal__ = __webpack_require__(697);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_gallery_gallery_modal_gallery_modal_module__ = __webpack_require__(698);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -41,7 +41,7 @@ var GalleryModalPageModule = (function () {
 
 /***/ }),
 
-/***/ 686:
+/***/ 697:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -95,14 +95,14 @@ var GalleryModalPage = (function () {
 
 /***/ }),
 
-/***/ 687:
+/***/ 698:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return GalleryModalModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(38);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__gallery_modal__ = __webpack_require__(688);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__gallery_modal__ = __webpack_require__(699);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_angular2_masonry__ = __webpack_require__(256);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_angular2_masonry___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_angular2_masonry__);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -140,7 +140,7 @@ var GalleryModalModule = (function () {
 
 /***/ }),
 
-/***/ 688:
+/***/ 699:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";

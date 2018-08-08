@@ -1,15 +1,14 @@
 webpackJsonp([37],{
 
-/***/ 424:
+/***/ 418:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "MagazineDetailPageModule", function() { return MagazineDetailPageModule; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "InstagramCommentPageModule", function() { return InstagramCommentPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(38);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__magazine_detail__ = __webpack_require__(755);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_blog_blog_post_detail_blog_post_detail_module__ = __webpack_require__(553);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__instagram_comment__ = __webpack_require__(716);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -19,129 +18,34 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
-
-var MagazineDetailPageModule = (function () {
-    function MagazineDetailPageModule() {
+var InstagramCommentPageModule = (function () {
+    function InstagramCommentPageModule() {
     }
-    MagazineDetailPageModule = __decorate([
+    InstagramCommentPageModule = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["NgModule"])({
             declarations: [
-                __WEBPACK_IMPORTED_MODULE_2__magazine_detail__["a" /* MagazineDetailPage */],
+                __WEBPACK_IMPORTED_MODULE_2__instagram_comment__["a" /* InstagramCommentPage */],
             ],
             imports: [
-                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__magazine_detail__["a" /* MagazineDetailPage */]),
-                __WEBPACK_IMPORTED_MODULE_3__components_blog_blog_post_detail_blog_post_detail_module__["a" /* BlogPostDetailModule */]
+                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__instagram_comment__["a" /* InstagramCommentPage */]),
             ],
         })
-    ], MagazineDetailPageModule);
-    return MagazineDetailPageModule;
+    ], InstagramCommentPageModule);
+    return InstagramCommentPageModule;
 }());
 
-//# sourceMappingURL=magazine-detail.module.js.map
+//# sourceMappingURL=instagram-comment.module.js.map
 
 /***/ }),
 
-/***/ 553:
+/***/ 716:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return BlogPostDetailModule; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return InstagramCommentPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(38);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__blog_post_detail__ = __webpack_require__(554);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-
-
-
-var BlogPostDetailModule = (function () {
-    function BlogPostDetailModule() {
-    }
-    BlogPostDetailModule = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["NgModule"])({
-            declarations: [
-                __WEBPACK_IMPORTED_MODULE_2__blog_post_detail__["a" /* BlogPostDetailComponent */],
-            ],
-            imports: [
-                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__blog_post_detail__["a" /* BlogPostDetailComponent */]),
-            ],
-            exports: [
-                __WEBPACK_IMPORTED_MODULE_2__blog_post_detail__["a" /* BlogPostDetailComponent */]
-            ],
-            schemas: [__WEBPACK_IMPORTED_MODULE_0__angular_core__["CUSTOM_ELEMENTS_SCHEMA"]]
-        })
-    ], BlogPostDetailModule);
-    return BlogPostDetailModule;
-}());
-
-//# sourceMappingURL=blog-post-detail.module.js.map
-
-/***/ }),
-
-/***/ 554:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return BlogPostDetailComponent; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-/**
- * Generated class for the BlogPostDetailComponent component.
- *
- * See https://angular.io/api/core/Component for more info on Angular
- * Components.
- */
-var BlogPostDetailComponent = (function () {
-    function BlogPostDetailComponent() {
-        var _this = this;
-        this.onCallbackEvent = function (event) {
-            if (_this.events[event]) {
-                _this.events[event]();
-            }
-        };
-        console.log('Hello BlogPostDetailComponent Component');
-    }
-    __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Input"])(),
-        __metadata("design:type", Object)
-    ], BlogPostDetailComponent.prototype, "data", void 0);
-    __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Input"])(),
-        __metadata("design:type", Object)
-    ], BlogPostDetailComponent.prototype, "events", void 0);
-    BlogPostDetailComponent = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-            selector: 'blog-post-detail',template:/*ion-inline-start:"/Users/andrewhein/Desktop/WestmorelandWorking/src/components/blog/blog-post-detail/blog-post-detail.html"*/'<div class="white-1 blog-detail">\n  \n  <img src="assets/img/bg6.jpg" class="ani-left-to-right" alt="">\n  <ion-row padding>\n    <h2 class="title text-center fw-800 mgt-20 ani-bottom-to-top">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>\n    <p class="date text-grey-3 fs-13 text-center ani-fade-out">Nov 23, 2017 at 07:00</p>\n    \n    <div class="info text-center mgt-15 mgb-40 block ani-bottom-to-top">\n      <span class="fs-13 grey-2 pdl-10 pdr-10 pdt-5 pdb-5 text-grey-5"><ion-icon class="mgr-10" name="ios-eye"></ion-icon>200</span>\n      <span class="fs-13 grey-2 pdl-10 pdr-10 pdt-5 pdb-5 text-grey-5"><ion-icon class="mgr-10" name="ios-chatbubbles"></ion-icon>34</span>\n      <span class="fs-13 grey-2 pdl-10 pdr-10 pdt-5 pdb-5 text-grey-5"><ion-icon class="mgr-10" name="ios-person"></ion-icon>by <b>Koodinh</b></span>\n    </div>\n\n    <div class="txt-post text-center preface pdt-30 ani-top-to-bottom">Mauris ac ligula elit. Nulla pulvinar eget leo ut aliquet. Praesent sit amet luctus quam. Nam fringilla iaculis mi, ut maximus mauris molestie feugiat. Curabitur nec scelerisque elit. Nunc eu odio facilisis, tempor enim eget, venenatis sem.</div>\n  </ion-row>\n    \n  <ion-slides pager class="height-auto mgt-20 mgb-30 ani-bottom-to-top">\n    <ion-slide>\n      <img src="assets/img/bg20.jpg" alt="">\n    </ion-slide>\n\n    <ion-slide>\n      <img src="assets/img/bg12.jpg" alt="">\n    </ion-slide>\n\n    <ion-slide>\n      <img src="assets/img/bg15.jpg" alt="">\n    </ion-slide>\n  </ion-slides>\n    \n\n  <ion-row padding class="ani-bottom-to-top">\n    <div class="txt-post">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vel ipsum in purus mollis dictum eget vitae purus. Nulla ultrices est odio, a maximus velit pretium ac. Donec vel elementum mi. Proin elementum pulvinar neque, in lacinia nibh tempus auctor. Nam sapien velit, commodo ac nibh a, maximus ullamcorper nunc. Integer luctus tortor dignissim, dictum neque at, scelerisque purus. Vivamus nec erat vel magna posuere euismod. Sed ac augue eu tellus tincidunt fermentum eget sit amet nunc. Donec sit amet mi libero. Cras nunc arcu, ultrices nec sapien eu, convallis posuere libero. Pellentesque vulputate lacus eros, at lobortis lorem egestas et. Vestibulum tempus quam in efficitur lobortis. Maecenas consectetur consequat sem pharetra aliquet. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</div>\n\n    <div class="quote grey-1 pd-20 mgt-20 mgb-20 fw-600 fs-16">\n      Nunc feugiat eros nunc, et vestibulum metus mollis et. Nullam eu viverra velit, id ultrices nisl.\n    </div>\n\n    <div class="txt-post">Morbi laoreet magna elit, id dapibus massa varius consequat. Praesent rhoncus nunc quam, eu mollis velit commodo ut. Etiam euismod elit mi, non auctor velit blandit ut. Aenean vitae pulvinar mi, ac pretium tellus. Morbi eu auctor sem, sollicitudin cursus felis. Praesent vestibulum velit sed eros iaculis ornare. Praesent diam diam, pellentesque eget scelerisque sed, bibendum ut risus. Sed sed fermentum sem. Integer vel justo felis. Proin eget quam est.</div>\n    \n    <div class="excerpts grey-1 pdt-30 pd-20 mgt-20 mgb-20">\n      <ion-icon class="fs-30 pull-left mgr-15" name="quote"></ion-icon>\n      <p class="fs-16">Curabitur nec scelerisque elit. Nunc eu odio facilisis, tempor enim eget, venenatis sem.</p>\n      <ion-list no-lines class="lst-no-background">\n        <ion-item>\n          <ion-avatar item-start>\n            <img src="assets/img/avt5.jpg">\n          </ion-avatar>\n          <h2 class="fs-16 fw-600">LuanThanh</h2>\n          <h3>Designer</h3>\n        </ion-item>\n      </ion-list>\n    </div>\n\n    <div class="txt-post">In sit amet ipsum sagittis, convallis ipsum fringilla, interdum ante. Etiam vel tincidunt mauris. Nunc feugiat eros nunc, et vestibulum metus mollis et. Nullam eu viverra velit, id ultrices nisl. Donec non enim elementum, laoreet sapien id, feugiat tellus.</div>\n  </ion-row>\n  \n\n  <ion-row padding class="mgt-20 mgb-50 pdt-10 pdb-5 stroke stroke-1 stroke-grey-1 ani-right-to-left">\n    <p>Share with: \n      <button ion-button outline small color="light" class="pull-right mgt--5 text-blue stroke-blue stroke-1 button-circle">\n        <ion-icon name="logo-facebook"></ion-icon>\n      </button>\n      <button ion-button outline small color="light" class="pull-right mgt--5 text-cyan stroke-cyan stroke-1 button-circle">\n        <ion-icon name="logo-twitter"></ion-icon>\n      </button>\n      <button ion-button outline small color="light" class="pull-right mgt--5 text-red stroke-red stroke-1 button-circle">\n        <ion-icon name="logo-google"></ion-icon>\n      </button>\n      <button ion-button outline small color="light" class="pull-right mgt--5 text-brown stroke-brown stroke-1 button-circle">\n        <ion-icon name="logo-instagram"></ion-icon>\n      </button>\n      <button ion-button outline small color="light" class="pull-right mgt--5 text-pink stroke-pink stroke-1 button-circle">\n        <ion-icon name="logo-pinterest"></ion-icon>\n      </button>\n    </p>\n  </ion-row>\n\n\n  <div class="ani-bottom-to-top">\n    <p padding class="fs-18 fw-600"><ion-icon class="mgr-10 ani-left-to-right" name="ios-chatbubbles">\n      </ion-icon>Comments: <b class="text-red">34</b>\n    </p>\n\n    <ion-list no-lines class="grey-2 lst-comments ani-fade-out">\n      <ion-item>\n        <ion-avatar item-start>\n          <img src="assets/img/avt6.jpg">\n        </ion-avatar>\n        \n        <ion-item class="grey-1 fs-14 bdra-5">\n          <ion-textarea type="text" placeholder="Background color"></ion-textarea>\n        </ion-item>\n\n        <button ion-button small icon-left class="pdl-0 blue text-white bdra-5">\n          <ion-icon class="fs-16" name="ios-add"></ion-icon>Add comment\n        </button>\n\n      </ion-item>\n    </ion-list>\n  </div>\n  \n\n  <ion-list no-lines class="lst-no-background lst-comments ani-bottom-to-top">\n    <ion-item class="ani-bottom-to-left">\n      <ion-avatar item-start>\n        <img src="assets/img/avt1.jpg">\n      </ion-avatar>\n      <ion-row>\n        <h2 class="fs-16 fw-600">LuanThanh</h2>\n        <span class="pull-right mgl-20 fs-13 text-grey-2 mgt-5">04:00 am</span>\n      </ion-row>\n      <ion-row class="mgt-10">\n        <p class="text-cm">Morbi laoreet magna elit, id dapibus massa varius consequat. Praesent rhoncus nunc quam, eu mollis velit commodo ut.</p>\n        <button ion-button clear small icon-left class="pdl-0">\n          <ion-icon class="fs-16" name="ios-chatbubbles-outline"></ion-icon>Reply\n        </button>\n        <button ion-button clear small icon-left class="">\n          <ion-icon class="fs-16" name="ios-heart-outline"></ion-icon>Like\n        </button>\n      </ion-row>\n    </ion-item>\n    \n    <ion-item class="ani-bottom-to-left">\n      <ion-avatar item-start>\n        <img src="assets/img/avt2.jpg">\n      </ion-avatar>\n      <ion-row>\n        <h2 class="fs-16 fw-600">LuanThanh</h2>\n        <span class="pull-right mgl-20 fs-13 text-grey-2 mgt-5">04:00 am</span>\n      </ion-row>\n      <ion-row class="mgt-10">\n        <p class="text-cm">Morbi laoreet magna elit, id dapibus massa varius consequat. Praesent rhoncus nunc quam, eu mollis velit commodo ut.</p>\n        <button ion-button clear small icon-left class="pdl-0">\n          <ion-icon class="fs-16" name="ios-chatbubbles-outline"></ion-icon>Reply\n        </button>\n        <button ion-button clear small icon-left class="">\n          <ion-icon class="fs-16" name="ios-heart-outline"></ion-icon>Like\n        </button>\n      </ion-row>\n    </ion-item>\n\n    <ion-item class="ani-bottom-to-left">\n      <ion-avatar item-start>\n        <img src="assets/img/avt3.jpg">\n      </ion-avatar>\n      <ion-row>\n        <h2 class="fs-16 fw-600">LuanThanh</h2>\n        <span class="pull-right mgl-20 fs-13 text-grey-2 mgt-5">04:00 am</span>\n      </ion-row>\n      <ion-row class="mgt-10">\n        <p class="text-cm">Morbi laoreet magna elit, id dapibus massa varius consequat. Praesent rhoncus nunc quam, eu mollis velit commodo ut.</p>\n        <button ion-button clear small icon-left class="pdl-0">\n          <ion-icon class="fs-16" name="ios-chatbubbles-outline"></ion-icon>Reply\n        </button>\n        <button ion-button clear small icon-left class="">\n          <ion-icon class="fs-16" name="ios-heart-outline"></ion-icon>Like\n        </button>\n      </ion-row>\n    </ion-item>\n\n    <ion-item class="ani-bottom-to-left">\n      <ion-avatar item-start>\n        <img src="assets/img/avt4.jpg">\n      </ion-avatar>\n      <ion-row>\n        <h2 class="fs-16 fw-600">LuanThanh</h2>\n        <span class="pull-right mgl-20 fs-13 text-grey-2 mgt-5">04:00 am</span>\n      </ion-row>\n      <ion-row class="mgt-10">\n        <p class="text-cm">Morbi laoreet magna elit, id dapibus massa varius consequat. Praesent rhoncus nunc quam, eu mollis velit commodo ut.</p>\n        <button ion-button clear small icon-left class="pdl-0">\n          <ion-icon class="fs-16" name="ios-chatbubbles-outline"></ion-icon>Reply\n        </button>\n        <button ion-button clear small icon-left class="">\n          <ion-icon class="fs-16" name="ios-heart-outline"></ion-icon>Like\n        </button>\n      </ion-row>\n    </ion-item>\n\n    <ion-item class="ani-bottom-to-left">\n      <ion-avatar item-start>\n        <img src="assets/img/avt5.jpg">\n      </ion-avatar>\n      <ion-row>\n        <h2 class="fs-16 fw-600">LuanThanh</h2>\n        <span class="pull-right mgl-20 fs-13 text-grey-2 mgt-5">04:00 am</span>\n      </ion-row>\n      <ion-row class="mgt-10">\n        <p class="text-cm">Morbi laoreet magna elit, id dapibus massa varius consequat. Praesent rhoncus nunc quam, eu mollis velit commodo ut.</p>\n        <button ion-button clear small icon-left class="pdl-0">\n          <ion-icon class="fs-16" name="ios-chatbubbles-outline"></ion-icon>Reply\n        </button>\n        <button ion-button clear small icon-left class="">\n          <ion-icon class="fs-16" name="ios-heart-outline"></ion-icon>Like\n        </button>\n      </ion-row>\n    </ion-item>\n  </ion-list>\n\n  <button ion-button block icon-left clear class="mgb-30 text-grey-5">\n    <ion-icon name="ios-add"></ion-icon>\n    More comment\n  </button>\n\n</div>\n'/*ion-inline-end:"/Users/andrewhein/Desktop/WestmorelandWorking/src/components/blog/blog-post-detail/blog-post-detail.html"*/
-        }),
-        __metadata("design:paramtypes", [])
-    ], BlogPostDetailComponent);
-    return BlogPostDetailComponent;
-}());
-
-//# sourceMappingURL=blog-post-detail.js.map
-
-/***/ }),
-
-/***/ 755:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MagazineDetailPage; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(38);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_instagram_instagram__ = __webpack_require__(261);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -153,37 +57,44 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 
 
+
 /**
- * Generated class for the MagazineListPage page.
+ * Generated class for the InstagramCommentPage page.
  *
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
  */
-var MagazineDetailPage = (function () {
-    function MagazineDetailPage(navCtrl, navParams) {
+var InstagramCommentPage = (function () {
+    function InstagramCommentPage(navCtrl, navParams, instagramService) {
+        var _this = this;
         this.navCtrl = navCtrl;
         this.navParams = navParams;
-        this.data = {};
-        this.events = {};
-        this.events.openDetail = function (item) {
-            // let chatModal = modalCtrl.create('ChatConversationPage',{'data':item});
-            // chatModal.present();
-            navCtrl.push('MagazineDetailPage');
-        };
+        this.instagramService = instagramService;
+        this.spnState = 'show';
+        this.item = this.navParams.get('item');
+        this.instagramService.getComments(this.item).subscribe(function (data) {
+            _this.list = new Array();
+            _this.list = data.data;
+            _this.spnState = 'hide';
+        }, function (error) {
+            _this.spnState = 'hide';
+        });
     }
-    MagazineDetailPage.prototype.ionViewDidLoad = function () {
-        console.log('ionViewDidLoad MagazineDetailPage');
+    InstagramCommentPage.prototype.ionViewDidLoad = function () {
+        console.log('ionViewDidLoad InstagramCommentPage');
     };
-    MagazineDetailPage = __decorate([
+    InstagramCommentPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-            selector: 'page-magazine-detail',template:/*ion-inline-start:"/Users/andrewhein/Desktop/WestmorelandWorking/src/pages/magazine/magazine-detail/magazine-detail.html"*/'<!--\n  Generated template for the MagazineListPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n\n\n<ion-header>\n  <ion-navbar>\n    <ion-title class="inline-block">Detail magazine</ion-title>\n  </ion-navbar>\n</ion-header>\n\n\n<ion-content class="white">\n	<blog-post-detail [data]="data" [events]="events"></blog-post-detail>\n</ion-content>\n\n'/*ion-inline-end:"/Users/andrewhein/Desktop/WestmorelandWorking/src/pages/magazine/magazine-detail/magazine-detail.html"*/,
+            selector: 'page-instagram-comment',template:/*ion-inline-start:"/Users/andrewhein/Documents/GitHub/Project-Watermellon/src/pages/ready-app/instagram/instagram-comment/instagram-comment.html"*/'<!--\n  Generated template for the InstagramCommentPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>instagram-comment</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content>\n  <ion-spinner class="indicator" [ngClass]="spnState"></ion-spinner>\n  <ion-list>\n  <ion-item *ngFor="let item of list">\n    <ion-avatar item-start>\n      <img src="{{item.from.profile_picture}}">\n    </ion-avatar>\n    <h2>{{item.from.username}}</h2>\n    <p>{{item.text}}</p>\n  </ion-item>\n </ion-list>\n</ion-content>\n'/*ion-inline-end:"/Users/andrewhein/Documents/GitHub/Project-Watermellon/src/pages/ready-app/instagram/instagram-comment/instagram-comment.html"*/,
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["n" /* NavParams */]])
-    ], MagazineDetailPage);
-    return MagazineDetailPage;
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* NavController */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["n" /* NavParams */],
+            __WEBPACK_IMPORTED_MODULE_2__providers_instagram_instagram__["a" /* InstagramService */]])
+    ], InstagramCommentPage);
+    return InstagramCommentPage;
 }());
 
-//# sourceMappingURL=magazine-detail.js.map
+//# sourceMappingURL=instagram-comment.js.map
 
 /***/ })
 
