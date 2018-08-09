@@ -1,6 +1,6 @@
 webpackJsonp([15],{
 
-/***/ 413:
+/***/ 412:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -8,8 +8,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "GalleryModalPageModule", function() { return GalleryModalPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(38);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__gallery_modal__ = __webpack_require__(697);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_gallery_gallery_modal_gallery_modal_module__ = __webpack_require__(698);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__gallery_modal__ = __webpack_require__(686);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_gallery_gallery_modal_gallery_modal_module__ = __webpack_require__(687);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -41,7 +41,7 @@ var GalleryModalPageModule = (function () {
 
 /***/ }),
 
-/***/ 697:
+/***/ 686:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -84,7 +84,7 @@ var GalleryModalPage = (function () {
     };
     GalleryModalPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-            selector: 'page-gallery-modal',template:/*ion-inline-start:"/Users/andrewhein/Documents/GitHub/Project-Watermellon/src/pages/gallery/gallery-modal/gallery-modal.html"*/'<gallery-modal class="black-opct-1" [data]="data" [events]="events"></gallery-modal>\n'/*ion-inline-end:"/Users/andrewhein/Documents/GitHub/Project-Watermellon/src/pages/gallery/gallery-modal/gallery-modal.html"*/,
+            selector: 'page-gallery-modal',template:/*ion-inline-start:"D:\Visual Studio\Personal\Project-Watermellon\src\pages\gallery\gallery-modal\gallery-modal.html"*/'<gallery-modal class="black-opct-1" [data]="data" [events]="events"></gallery-modal>\n\n'/*ion-inline-end:"D:\Visual Studio\Personal\Project-Watermellon\src\pages\gallery\gallery-modal\gallery-modal.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["n" /* NavParams */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["r" /* ViewController */]])
     ], GalleryModalPage);
@@ -95,14 +95,14 @@ var GalleryModalPage = (function () {
 
 /***/ }),
 
-/***/ 698:
+/***/ 687:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return GalleryModalModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(38);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__gallery_modal__ = __webpack_require__(699);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__gallery_modal__ = __webpack_require__(688);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_angular2_masonry__ = __webpack_require__(256);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_angular2_masonry___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_angular2_masonry__);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -140,7 +140,7 @@ var GalleryModalModule = (function () {
 
 /***/ }),
 
-/***/ 699:
+/***/ 688:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -181,7 +181,7 @@ var GalleryModalComponent = (function () {
     ], GalleryModalComponent.prototype, "events", void 0);
     GalleryModalComponent = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-            selector: 'gallery-modal',template:/*ion-inline-start:"/Users/andrewhein/Documents/GitHub/Project-Watermellon/src/components/gallery/gallery-modal/gallery-modal.html"*/'<div fullscreen fullscreen-no-pdt>\n  <div class="wrapper-view-img">\n    <div class="view-img-detail">\n      <img [src]="data.path" alt="">\n      <button ion-button icon-only small outline class="text-white button-circle mgr-10 mgt-15 stroke stroke-1 stroke-white" (click)="onCallbackEvent(\'onDismiss\')">\n        <ion-icon name="ios-close"></ion-icon>\n      </button>\n    </div>\n  </div>\n</div>\n'/*ion-inline-end:"/Users/andrewhein/Documents/GitHub/Project-Watermellon/src/components/gallery/gallery-modal/gallery-modal.html"*/
+            selector: 'gallery-modal',template:/*ion-inline-start:"D:\Visual Studio\Personal\Project-Watermellon\src\components\gallery\gallery-modal\gallery-modal.html"*/'<div fullscreen fullscreen-no-pdt>\n\n  <div class="wrapper-view-img">\n\n    <div class="view-img-detail">\n\n      <img [src]="data.path" alt="">\n\n      <button ion-button icon-only small outline class="text-white button-circle mgr-10 mgt-15 stroke stroke-1 stroke-white" (click)="onCallbackEvent(\'onDismiss\')">\n\n        <ion-icon name="ios-close"></ion-icon>\n\n      </button>\n\n    </div>\n\n  </div>\n\n</div>\n\n'/*ion-inline-end:"D:\Visual Studio\Personal\Project-Watermellon\src\components\gallery\gallery-modal\gallery-modal.html"*/
         }),
         __metadata("design:paramtypes", [])
     ], GalleryModalComponent);
